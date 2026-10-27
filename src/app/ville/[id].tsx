@@ -1,3 +1,4 @@
+import { Image } from 'expo-image';
 import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
@@ -74,7 +75,9 @@ export default function VilleScreen() {
                 accessibilityLabel={`${p.name}. ${p.hook}`}
                 style={({ pressed }) => [styles.card, { backgroundColor: colors.surface, opacity: pressed ? 0.85 : 1 }]}>
                 <View style={[styles.mark, { backgroundColor: tone.bg }]}>
-                  {p.kind === 'gem' ? (
+                  {p.photo ? (
+                    <Image source={{ uri: p.photo.url }} style={styles.thumb} contentFit="cover" transition={200} />
+                  ) : p.kind === 'gem' ? (
                     <View style={[styles.diamond, { backgroundColor: tone.ink }]} />
                   ) : (
                     <RText style={styles.initial} color={tone.ink}>
@@ -113,7 +116,8 @@ const styles = StyleSheet.create({
   segmentItem: { flex: 1, minHeight: touch.min - 4, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
   segmentText: { fontFamily: fonts.bold, fontSize: 14 },
   card: { flexDirection: 'row', gap: space.m, padding: space.m, borderRadius: radius.card },
-  mark: { width: 56, height: 56, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
+  mark: { width: 64, height: 64, borderRadius: 16, alignItems: 'center', justifyContent: 'center', overflow: 'hidden' },
+  thumb: { width: 64, height: 64 },
   diamond: { width: 18, height: 18, borderRadius: 4, transform: [{ rotate: '45deg' }] },
   initial: { fontFamily: fonts.display, fontSize: 26 },
   row: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: space.s },

@@ -1,3 +1,4 @@
+import { Image } from 'expo-image';
 import { useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { Linking, Pressable, ScrollView, StyleSheet, View } from 'react-native';
@@ -55,18 +56,41 @@ export default function LieuScreen() {
   return (
     <View style={[styles.root, { backgroundColor: colors.background }]}>
       <ScrollView contentContainerStyle={{ paddingBottom: 120 + insets.bottom }}>
-        {/* En-tête illustré (la photo sous licence arrive avec la vérification de la fiche). */}
-        <View style={[styles.hero, { backgroundColor: heroTone.bg, paddingTop: insets.top + space.s }]}>
-          <BackButton onDark />
-          <View style={styles.heroCenter} accessible accessibilityLabel={`Illustration : ${kindLabel[place.kind]}`}>
-            {isGem ? (
-              <View style={[styles.heroDiamond, { backgroundColor: heroTone.ink }]} />
-            ) : (
-              <RText style={styles.heroInitial} color={heroTone.ink}>
-                {place.name.charAt(0)}
-              </RText>
-            )}
+        {/* En-tête : photo sous licence libre si disponible, sinon illustration aux couleurs du type. */}
+        <View style={[styles.hero, { backgroundColor: heroTone.bg }]}>
+          {place.photo ? (
+            <Image
+              source={{ uri: place.photo.url }}
+              style={StyleSheet.absoluteFill}
+              contentFit="cover"
+              transition={250}
+              accessibilityLabel={`Photo : ${place.name}`}
+            />
+          ) : (
+            <View style={styles.heroCenter} accessible accessibilityLabel={`Illustration : ${kindLabel[place.kind]}`}>
+              {isGem ? (
+                <View style={[styles.heroDiamond, { backgroundColor: heroTone.ink }]} />
+              ) : (
+                <RText style={styles.heroInitial} color={heroTone.ink}>
+                  {place.name.charAt(0)}
+                </RText>
+              )}
+            </View>
+          )}
+          <View style={[styles.heroTop, { paddingTop: insets.top + space.s }]}>
+            <BackButton onDark />
           </View>
+          {place.photo ? (
+            <Pressable
+              accessibilityRole="link"
+              accessibilityLabel={`Crédit photo : ${place.photo.author}, licence ${place.photo.license}`}
+              onPress={() => Linking.openURL(place.photo!.sourceUrl)}
+              style={styles.credit}>
+              <RText style={styles.creditText} color="#FFFFFF" numberOfLines={1}>
+                Photo : {place.photo.author} · {place.photo.license}
+              </RText>
+            </Pressable>
+          ) : null}
         </View>
 
         <View style={[styles.sheet, { backgroundColor: colors.background }]}>
@@ -183,7 +207,10 @@ export default function LieuScreen() {
 
 const styles = StyleSheet.create({
   root: { flex: 1 },
-  hero: { height: 260, paddingHorizontal: space.l },
+  hero: { height: 300, overflow: 'hidden' },
+  heroTop: { position: 'absolute', top: 0, left: space.l },
+  credit: { position: 'absolute', right: space.s, bottom: radius.sheet + 6, maxWidth: '80%', backgroundColor: 'rgba(14,17,22,0.6)', paddingHorizontal: 8, paddingVertical: 3, borderRadius: 8 },
+  creditText: { fontFamily: fonts.semibold, fontSize: 10.5, lineHeight: 14 },
   heroCenter: { flex: 1, alignItems: 'center', justifyContent: 'center' },
   heroInitial: { fontFamily: fonts.display, fontSize: 96, lineHeight: 110 },
   heroDiamond: { width: 64, height: 64, borderRadius: 14, transform: [{ rotate: '45deg' }] },

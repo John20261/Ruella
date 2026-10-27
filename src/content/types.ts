@@ -54,6 +54,8 @@ export type Place = {
   lng: number;
   /** Position contrôlée sur une carte de référence (sinon : approximative). */
   coordsVerified: boolean;
+  /** Source de la position contrôlée (OpenStreetMap ou Wikidata). */
+  geoSource?: string;
   /** Rayon de la zone où cocher rapporte des points. */
   radiusM: number;
   indoor: boolean;
