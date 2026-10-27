@@ -54,7 +54,7 @@ export function Stamp({
           numberOfLines={1}
           adjustsFontSizeToFit
           minimumFontScale={0.6}
-          style={[styles.place, { fontSize: Math.max(7, size * 0.075), maxWidth: size - 34, textAlign: 'center' }]}
+          style={[styles.place, { fontSize: placeFontSize(place, size), letterSpacing: 0.6, maxWidth: size - 30, textAlign: 'center' }]}
           color={color}>
           {place.toUpperCase()}
         </RText>
@@ -69,6 +69,13 @@ export function Stamp({
       </View>
     </View>
   );
+}
+
+/** Taille du nom de lieu pour qu'il tienne sur une ligne dans l'anneau, quelle que soit sa longueur. */
+export function placeFontSize(place: string, size: number): number {
+  const available = size - 30;
+  const fitted = available / (place.length * 0.78);
+  return Math.max(6.5, Math.min(size * 0.08, fitted));
 }
 
 const styles = StyleSheet.create({
