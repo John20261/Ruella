@@ -10,7 +10,11 @@ export default function AppTabs() {
   const { colors } = useRuellaTheme();
 
   return (
-    <NativeTabs tintColor={colors.accent} iconColor={colors.textMuted} indicatorColor={colors.surfaceAlt}>
+    <NativeTabs
+      tintColor={colors.accent}
+      iconColor={colors.textMuted}
+      indicatorColor={colors.surfaceAlt}
+      labelVisibilityMode="labeled">
       <NativeTabs.Trigger name="index">
         <NativeTabs.Trigger.Label>Journée</NativeTabs.Trigger.Label>
         <NativeTabs.Trigger.Icon sf={{ default: 'map', selected: 'map.fill' }} md="map" />
