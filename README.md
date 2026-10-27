@@ -1,56 +1,48 @@
-# Welcome to your Expo app 👋
+# Ruella
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Votre journée dans la ville, prête chaque matin, avec les secrets que les autres ratent.
 
-## Get started
+Application iPhone et Android (Expo SDK 58, React Native). La conception complète (étapes 1 à 7, toutes validées) est dans le cahier de conception « Ruella — Cahier de conception ».
 
-1. Install dependencies
+## Avancement
 
-   ```bash
-   npm install
-   ```
+| Lot | Contenu | État |
+| --- | --- | --- |
+| 0 | Fondations : système de design, 4 onglets, thèmes, schéma Supabase, tests | En cours de démo |
+| 1 | Contenu de Prague et page Éditeur | À venir |
+| 2 | La journée (carte, ligne du jour, cocher) | À venir |
+| 3 | Hors ligne | À venir |
+| 4 | Création du séjour | À venir |
+| 5 | Récompenses | À venir |
+| 6 | Compte, achats, confidentialité | À venir |
+| 7 | Finitions | À venir |
+| 8 | Bêta et publication | À venir |
 
-2. Start the app
+## Organisation du code
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+src/app/            écrans (Expo Router) : index = Journée, sejours, recompenses, profil
+src/components/ui/  composants du système de design (texte, bouton, verre, tuile, tampon…)
+src/theme/          couleurs, arrondis, polices ; thème sombre par défaut
+src/lib/            logique métier testée (recalage des horaires…), client Supabase
+supabase/migrations schéma de base de données et règles de sécurité (RLS)
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+## Commandes
 
-### Other setup steps
+```bash
+npm install
+npm start          # serveur de développement
+npm run check      # typage + lint + tests (obligatoire avant chaque livraison)
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+## Démo sur téléphone
 
-## Learn more
+Chaque envoi sur `main` publie une démo via GitHub Actions (`.github/workflows/preview.yml`), à ouvrir dans l'app Expo Go. Prérequis : le secret `EXPO_TOKEN` dans les réglages du dépôt.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Règles
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Aucune couleur en dur : tout vient de `src/theme/tokens.ts`.
+- Aucune clé secrète dans l'app ; seules l'URL Supabase et la clé publique `anon` (variables `EXPO_PUBLIC_…`).
+- Aucune position GPS envoyée au serveur : seulement des preuves de visite.
+- `npm run check` doit passer avant tout envoi.
