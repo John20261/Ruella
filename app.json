@@ -45,6 +45,14 @@
     },
     "runtimeVersion": {
       "policy": "sdkVersion"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3b6878bd-c5c1-42db-baf9-71d0289e7527"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/3b6878bd-c5c1-42db-baf9-71d0289e7527"
     }
   }
 }

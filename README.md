@@ -38,7 +38,7 @@ npm run check      # typage + lint + tests (obligatoire avant chaque livraison)
 
 ## Démo sur téléphone
 
-Chaque envoi sur `main` publie une démo via GitHub Actions (`.github/workflows/preview.yml`), à ouvrir dans l'app Expo Go. Prérequis : le secret `EXPO_TOKEN` dans les réglages du dépôt.
+Chaque envoi sur `main` publie une démo via EAS Workflows (`.eas/workflows/preview.yml`), à ouvrir dans l'app Expo Go. Le projet Expo est relié au dépôt GitHub, aucune clé n'est nécessaire.
 
 ## Règles
 

@@ -1,0 +1,15 @@
+# Démo sur téléphone : à chaque envoi sur « main », Expo publie une mise à jour
+# ouvrable dans Expo Go (projet Expo relié au dépôt GitHub John20261/Ruella).
+name: Démo sur téléphone
+
+on:
+  push:
+    branches: ['main']
+
+jobs:
+  publish_preview_update:
+    name: Publier la démo
+    type: update
+    params:
+      branch: preview
+      message: 'Démo Ruella'
