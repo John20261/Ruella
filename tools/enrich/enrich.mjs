@@ -30,7 +30,7 @@ async function entityFromEnwiki(title) {
   const url = `https://www.wikidata.org/w/api.php?action=wbgetentities&sites=enwiki&titles=${encodeURIComponent(title)}&props=claims|labels|sitelinks&languages=fr|en|cs&format=json`;
   const data = await getJson(url);
   const entity = Object.values(data.entities ?? {})[0];
-  return entity && !entity.missing ? entity : null;
+  return entity && typeof entity.id === 'string' && entity.id.startsWith('Q') ? entity : null;
 }
 
 async function entityFromSearch(query) {
@@ -85,6 +85,7 @@ async function main() {
       let entity = null;
       if (t.enwiki) entity = await entityFromEnwiki(t.enwiki);
       if (!entity && t.search) entity = await entityFromSearch(t.search);
+      if (!entity && t.enwiki) entity = await entityFromSearch(t.enwiki);
 
       if (entity) {
         row.wikidata = `https://www.wikidata.org/wiki/${entity.id}`;
@@ -97,7 +98,10 @@ async function main() {
         const image = claimValue(entity, 'P18');
         if (image) row.photo = await commonsPhoto(image);
       }
-      if (t.osm) row.osm = await nominatim(t.osm);
+      for (const q of [t.osm, ...(t.osmAlt ?? [])].filter(Boolean)) {
+        row.osm = await nominatim(q);
+        if (row.osm) break;
+      }
     } catch (err) {
       row.error = String(err.message ?? err);
     }
