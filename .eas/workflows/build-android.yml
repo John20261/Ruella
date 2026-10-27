@@ -1,0 +1,16 @@
+# Fabrique l'application Android installable (APK) dans le cloud Expo.
+# Déclenché seulement par un envoi sur la branche « build-android »,
+# pour ne pas consommer le quota gratuit à chaque modification.
+name: Application Android à installer
+
+on:
+  push:
+    branches: ['build-android']
+
+jobs:
+  build_android:
+    name: Construire Ruella pour Android
+    type: build
+    params:
+      platform: android
+      profile: preview

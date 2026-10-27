@@ -38,7 +38,10 @@ npm run check      # typage + lint + tests (obligatoire avant chaque livraison)
 
 ## Démo sur téléphone
 
-Chaque envoi sur `main` publie une démo via EAS Workflows (`.eas/workflows/preview.yml`), à ouvrir dans l'app Expo Go. Le projet Expo est relié au dépôt GitHub, aucune clé n'est nécessaire.
+L'Expo Go des stores ne suit pas le SDK 58 : on teste avec une vraie application Android fabriquée par Expo.
+
+1. Envoyer `main` sur la branche `build-android` fabrique l'APK (`.eas/workflows/build-android.yml`), à installer depuis expo.dev.
+2. Chaque envoi sur `main` publie une mise à jour (`.eas/workflows/preview.yml`) reçue automatiquement par cette application (canal `preview`).
 
 ## Règles
 
