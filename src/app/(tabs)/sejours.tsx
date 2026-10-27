@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import { StyleSheet, View } from 'react-native';
 
 import { Button } from '@/components/ui/button';
@@ -31,7 +32,8 @@ export default function SejoursScreen() {
           <Pill label={d.gems} tone={colors.pills.gem} />
         </View>
       ))}
-      <Button label="Créer un séjour" variant="celebrate" style={{ marginTop: space.s }} />
+      <Button label="Explorer Prague" variant="secondary" onPress={() => router.push('/ville/prague')} style={{ marginTop: space.s }} />
+      <Button label="Créer un séjour" variant="celebrate" />
       <RText variant="caption" muted style={{ textAlign: 'center' }}>
         {"L'assistant de création arrive au lot 4."}
       </RText>

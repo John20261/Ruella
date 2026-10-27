@@ -6,12 +6,11 @@ import {
   Inter_800ExtraBold,
 } from '@expo-google-fonts/inter';
 import { useFonts } from 'expo-font';
-import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router';
+import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 
-import AppTabs from '@/components/app-tabs';
 import { RuellaThemeProvider, useRuellaTheme } from '@/theme/theme-context';
 
 SplashScreen.preventAutoHideAsync();
@@ -26,7 +25,11 @@ function ThemedNavigation() {
         colors: { ...base.colors, background: colors.background, card: colors.surface, text: colors.text, primary: colors.accent },
       }}>
       <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
-      <AppTabs />
+      <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.background } }}>
+        <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="ville/[id]" />
+        <Stack.Screen name="lieu/[id]" />
+      </Stack>
     </ThemeProvider>
   );
 }
