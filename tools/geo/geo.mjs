@@ -62,7 +62,7 @@ function chain(ways) {
 const river = await overpass(`[out:json][timeout:60];way["waterway"="river"]["name"="Vltava"](${BBOX});out geom;`);
 const riverLines = chain(river.elements).filter((l) => l.length > 5).map((l) => round(simplify(l, 0.0004)));
 
-const parksQ = await overpass(`[out:json][timeout:90];(way["leisure"="park"]["name"](${BBOX});relation["leisure"="park"]["name"](${BBOX}););out geom;`);
+const parksQ = await overpass(`[out:json][timeout:90];(way["leisure"~"^(park|garden)$"]["name"](${BBOX});relation["leisure"~"^(park|garden)$"]["name"](${BBOX});way["landuse"~"^(forest|grass)$"]["name"](${BBOX});relation["landuse"="forest"]["name"](${BBOX});way["natural"="wood"]["name"](${BBOX}););out geom;`);
 const parks = [];
 for (const el of parksQ.elements) {
   let ring = null;
@@ -74,12 +74,12 @@ for (const el of parksQ.elements) {
   if (!ring || ring.length < 4) continue;
   const lats = ring.map((p) => p[0]), lngs = ring.map((p) => p[1]);
   const area = (Math.max(...lats) - Math.min(...lats)) * (Math.max(...lngs) - Math.min(...lngs));
-  if (area < 0.00004) continue; // ignore les petits squares
-  parks.push({ name: el.tags?.name ?? '', ring: round(simplify(ring, 0.0003)) });
+  if (area < 0.00002) continue; // ignore les petits squares
+  parks.push({ name: el.tags?.name ?? '', area, ring: round(simplify(ring, 0.0002)) });
 }
-parks.sort((a, b) => b.ring.length - a.ring.length);
+parks.sort((a, b) => b.area - a.area);
 
-const out = { bbox: BBOX, river: riverLines, parks: parks.slice(0, 40) };
+const out = { bbox: BBOX, river: riverLines, parks: parks.slice(0, 60).map(({ name, ring }) => ({ name, ring })) };
 mkdirSync(dirname(OUT), { recursive: true });
 writeFileSync(OUT, JSON.stringify(out));
 console.log('rivière', riverLines.map((l) => l.length), 'parcs', out.parks.length, out.parks.map((p) => p.name).join(' | '));
