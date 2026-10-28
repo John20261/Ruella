@@ -9,7 +9,7 @@ const placesByCity: Record<string, Place[]> = {
 
 /** Catégories affichées dans l'écran « Explorer la ville ». */
 export const kindGroups: { key: 'visites' | 'pepites' | 'restaurants'; label: string; kinds: PlaceKind[] }[] = [
-  { key: 'visites', label: 'Visites', kinds: ['monument', 'museum', 'district', 'viewpoint'] },
+  { key: 'visites', label: 'Visites', kinds: ['monument', 'museum', 'district', 'viewpoint', 'park'] },
   { key: 'pepites', label: 'Pépites', kinds: ['gem'] },
   { key: 'restaurants', label: 'Restaurants', kinds: ['restaurant'] },
 ];
@@ -45,6 +45,7 @@ export const kindLabel: Record<PlaceKind, string> = {
   restaurant: 'Restaurant',
   viewpoint: 'Point de vue',
   district: 'Quartier',
+  park: 'Parc',
 };
 
 /**
@@ -111,13 +112,17 @@ export function validateCatalog(): string[] {
 }
 
 /** Avancement du contenu d'une ville, pour suivre l'objectif 40 / 40 / 25. */
+function groupKinds(key: (typeof kindGroups)[number]['key']): PlaceKind[] {
+  return kindGroups.find((g) => g.key === key)?.kinds ?? [];
+}
+
 export function contentProgress(cityId: string) {
   const places = getPlaces(cityId);
   const count = (kinds: PlaceKind[]) => places.filter((p) => kinds.includes(p.kind)).length;
   return {
-    visites: count(['monument', 'museum', 'district', 'viewpoint']),
-    pepites: count(['gem']),
-    restaurants: count(['restaurant']),
+    visites: count(groupKinds('visites')),
+    pepites: count(groupKinds('pepites')),
+    restaurants: count(groupKinds('restaurants')),
     verifiees: places.filter((p) => p.verification.status === 'verified').length,
     publiees: places.filter((p) => p.status === 'published').length,
     total: places.length,

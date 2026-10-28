@@ -3,7 +3,7 @@
  * Le catalogue est écrit ici, vérifié par `validatePlace`, puis publié en fichiers (pack ville).
  */
 
-export type PlaceKind = 'monument' | 'museum' | 'gem' | 'restaurant' | 'viewpoint' | 'district';
+export type PlaceKind = 'monument' | 'museum' | 'gem' | 'restaurant' | 'viewpoint' | 'district' | 'park';
 
 export type Wish =
   | 'histoire'

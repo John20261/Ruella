@@ -32,7 +32,7 @@ create table public.cities (
   hidden boolean not null default false     -- ville de test (Toulouse)
 );
 
-create type public.place_kind as enum ('monument', 'museum', 'gem', 'restaurant', 'viewpoint', 'district');
+create type public.place_kind as enum ('monument', 'museum', 'gem', 'restaurant', 'viewpoint', 'district', 'park');
 create type public.content_status as enum ('draft', 'review', 'published');
 
 create table public.places (
