@@ -10,12 +10,32 @@ import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
+import { Pressable, Text, View } from 'react-native';
 
 import { CelebrationHost } from '@/components/celebration';
 import { hydrate, useHydrated } from '@/store/app-store';
 import { RuellaThemeProvider, useRuellaTheme } from '@/theme/theme-context';
 
 SplashScreen.preventAutoHideAsync();
+
+/** Si un écran plante, on affiche un message lisible au lieu d'un écran vide. */
+export function ErrorBoundary({ error, retry }: { error: Error; retry: () => Promise<void> }) {
+  SplashScreen.hideAsync().catch(() => {});
+  return (
+    <View style={{ flex: 1, backgroundColor: '#0E1116', padding: 32, justifyContent: 'center', gap: 16 }}>
+      <Text style={{ color: '#F2F4F7', fontSize: 26, fontWeight: '800' }}>Oups, Ruella a trébuché</Text>
+      <Text style={{ color: '#A5ADBA', fontSize: 15, lineHeight: 21 }}>
+        Vos séjours et vos points sont en sécurité sur le téléphone. Réessayez ; si le problème revient, envoyez une capture de ce message.
+      </Text>
+      <Text selectable style={{ color: '#FF8A8A', fontSize: 12 }}>
+        {error.message}
+      </Text>
+      <Pressable onPress={retry} accessibilityRole="button" style={{ backgroundColor: '#FF7A59', borderRadius: 16, minHeight: 52, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ color: '#2A0E05', fontSize: 16, fontWeight: '700' }}>Réessayer</Text>
+      </Pressable>
+    </View>
+  );
+}
 
 function ThemedNavigation() {
   const { scheme, colors } = useRuellaTheme();
