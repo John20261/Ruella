@@ -1,0 +1,30 @@
+name: Collecte fond de carte
+
+# Rivière et parcs depuis OpenStreetMap (Overpass), simplifiés pour la carte légère de l'app.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['tools/geo/**']
+
+permissions:
+  contents: write
+
+jobs:
+  geo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/geo/geo.mjs out/geo-prague.json
+      - name: Déposer le résultat sur la branche geo-results
+        run: |
+          git config user.name "ruella-bot"
+          git config user.email "ruella-bot@users.noreply.github.com"
+          git checkout --orphan geo-results
+          git rm -rq --cached .
+          git add -f out/geo-prague.json
+          git commit -qm "Fond de carte ${{ github.run_id }}"
+          git push -f origin HEAD:geo-results
