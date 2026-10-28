@@ -1,137 +1,28 @@
 [
-  {
-    "id": "prg-horloge-astronomique",
-    "enwiki": "Prague astronomical clock"
-  },
-  {
-    "id": "prg-place-vieille-ville",
-    "enwiki": "Old Town Square"
-  },
-  {
-    "id": "prg-josefov",
-    "enwiki": "Josefov"
-  },
-  {
-    "id": "prg-musee-lego",
-    "search": "Museum of Bricks Prague",
-    "osm": "Muzeum Lega Národní Praha"
-  },
-  {
-    "id": "prg-metronome",
-    "enwiki": "Prague Metronome"
-  },
-  {
-    "id": "prg-musee-miniatures",
-    "search": "Museum of Miniatures Prague",
-    "osm": "Muzeum miniatur Strahovské nádvoří Praha",
-    "osmAlt": [
-      "Muzeum miniatur Praha"
-    ]
-  },
-  {
-    "id": "prg-carillon-lorette",
-    "enwiki": "Loreta (Prague)",
-    "search": "Loreta Prague Hradčany",
-    "osm": "Loreta Loretánské náměstí Praha"
-  },
-  {
-    "id": "prg-novy-svet",
-    "enwiki": "Nový Svět (Prague)",
-    "search": "Nový Svět Hradčany street",
-    "osm": "Nový Svět Hradčany Praha"
-  },
-  {
-    "id": "prg-chateau",
-    "enwiki": "Prague Castle"
-  },
-  {
-    "id": "prg-jardins-rempart",
-    "search": "Garden on the Ramparts",
-    "osm": "Zahrada Na Valech Praha",
-    "osmAlt": [
-      "Rajská zahrada Praha",
-      "Jižní zahrady Pražského hradu"
-    ]
-  },
-  {
-    "id": "prg-nerudova",
-    "enwiki": "Nerudova Street",
-    "search": "Nerudova Prague street",
-    "osm": "Nerudova Praha"
-  },
-  {
-    "id": "prg-lokal-bile-kuzelky",
-    "osm": "Lokál U Bílé kuželky Míšeňská Praha"
-  },
-  {
-    "id": "prg-wallenstein",
-    "enwiki": "Wallenstein Garden",
-    "search": "Wallenstein Garden Prague",
-    "osm": "Valdštejnská zahrada Praha"
-  },
-  {
-    "id": "prg-cerny-pisse",
-    "search": "Proudy David Černý",
-    "osm": "Hergetova cihelna Praha"
-  },
-  {
-    "id": "prg-rue-feu-rouge",
-    "osm": "Vinárna Čertovka U Lužického semináře Praha"
-  },
-  {
-    "id": "prg-lennon-kampa",
-    "enwiki": "Lennon Wall"
-  },
-  {
-    "id": "prg-karel-zeman",
-    "enwiki": "Karel Zeman Museum",
-    "osm": "Muzeum Karla Zemana Saská Praha",
-    "search": "Museum of Karel Zeman"
-  },
-  {
-    "id": "prg-pont-charles",
-    "enwiki": "Charles Bridge"
-  },
-  {
-    "id": "prg-choco-cafe",
-    "osm": "Choco Café U Červené židle Liliová Praha"
-  },
-  {
-    "id": "prg-lampadaire-cubiste",
-    "search": "cubist lamppost Prague",
-    "osm": "Kubistická lucerna Jungmannovo náměstí Praha",
-    "osmAlt": [
-      "Kubistický kandelábr Praha"
-    ]
-  },
-  {
-    "id": "prg-u-pinkasu",
-    "osm": "U Pinkasů Jungmannovo náměstí Praha"
-  },
-  {
-    "id": "prg-musee-technique",
-    "enwiki": "National Technical Museum (Prague)",
-    "search": "National Technical Museum Prague",
-    "osm": "Národní technické muzeum Kostelní Praha"
-  },
-  {
-    "id": "prg-lucerna",
-    "enwiki": "Lucerna Palace"
-  },
-  {
-    "id": "prg-musee-national",
-    "enwiki": "National Museum (Prague)"
-  },
-  {
-    "id": "prg-maison-dansante",
-    "enwiki": "Dancing House"
-  },
-  {
-    "id": "prg-tete-kafka",
-    "enwiki": "Head of Franz Kafka"
-  },
-  {
-    "id": "prg-cafe-louvre",
-    "osm": "Café Louvre Národní Praha"
-  }
+  { "id": "prg-tour-poudre", "enwiki": "Powder Tower, Prague" },
+  { "id": "prg-maison-municipale", "enwiki": "Municipal House" },
+  { "id": "prg-klementinum", "enwiki": "Clementinum" },
+  { "id": "prg-eglise-tyn", "enwiki": "Church of Our Lady before Týn" },
+  { "id": "prg-hotel-de-ville", "enwiki": "Old Town Hall (Prague)" },
+  { "id": "prg-saint-nicolas", "enwiki": "St. Nicholas Church (Malá Strana)" },
+  { "id": "prg-bibliotheque-strahov", "search": "Strahov Library", "enwiki": "Strahov Monastery", "osm": "Strahovská knihovna Praha" },
+  { "id": "prg-ruelle-or", "enwiki": "Golden Lane" },
+  { "id": "prg-petrin-tour", "enwiki": "Petřín Lookout Tower" },
+  { "id": "prg-labyrinthe-miroirs", "search": "Mirror Maze Petřín", "osm": "Zrcadlové bludiště Petřín Praha" },
+  { "id": "prg-funiculaire-petrin", "enwiki": "Petřín funicular", "osm": "lanová dráha na Petřín Újezd Praha" },
+  { "id": "prg-vysehrad", "enwiki": "Vyšehrad" },
+  { "id": "prg-tour-zizkov", "enwiki": "Žižkov Television Tower" },
+  { "id": "prg-musee-mucha", "enwiki": "Mucha Museum", "osm": "Muchovo muzeum Panská Praha" },
+  { "id": "prg-musee-kafka", "enwiki": "Franz Kafka Museum", "osm": "Muzeum Franze Kafky Cihelná Praha" },
+  { "id": "prg-synagogue-espagnole", "enwiki": "Spanish Synagogue (Prague)" },
+  { "id": "prg-cimetiere-juif", "enwiki": "Old Jewish Cemetery, Prague" },
+  { "id": "prg-synagogue-vieille-nouvelle", "enwiki": "Old New Synagogue" },
+  { "id": "prg-musee-communisme", "enwiki": "Museum of Communism (Prague)", "osm": "Muzeum komunismu V Celnici Praha" },
+  { "id": "prg-place-venceslas", "enwiki": "Wenceslas Square" },
+  { "id": "prg-tour-pont-vieille-ville", "enwiki": "Old Town Bridge Tower" },
+  { "id": "prg-rudolfinum", "enwiki": "Rudolfinum" },
+  { "id": "prg-musee-kampa", "enwiki": "Museum Kampa" },
+  { "id": "prg-enfant-jesus", "enwiki": "Church of Our Lady Victorious (Prague)" },
+  { "id": "prg-zoo", "enwiki": "Prague Zoo" },
+  { "id": "prg-palais-lobkowicz", "enwiki": "Lobkowicz Palace" }
 ]
