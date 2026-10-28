@@ -6,8 +6,8 @@ import { dirname } from 'node:path';
 const OUT = process.argv[2] ?? 'out/geo.json';
 const CITY = process.argv[3] ?? 'prague';
 const CITIES = {
-  prague: { bbox: '50.00,14.32,50.14,14.52', river: '^Vltava$', canal: null },
-  toulouse: { bbox: '43.54,1.36,43.67,1.52', river: 'Garonne', canal: 'Canal du Midi|Canal de Brienne|Canal latéral' },
+  prague: { bbox: '50.00,14.32,50.14,14.52', river: '^Vltava$', canal: null, minArea: 0.00002 },
+  toulouse: { bbox: '43.54,1.36,43.67,1.52', river: 'Garonne', canal: 'Canal du Midi|Canal de Brienne|Canal latéral', minArea: 0.000003 },
 };
 const CONF = CITIES[CITY];
 const BBOX = CONF.bbox; // sud, ouest, nord, est
@@ -101,7 +101,7 @@ for (const el of parksQ.elements) {
   if (!ring || ring.length < 4) continue;
   const lats = ring.map((p) => p[0]), lngs = ring.map((p) => p[1]);
   const area = (Math.max(...lats) - Math.min(...lats)) * (Math.max(...lngs) - Math.min(...lngs));
-  if (area < 0.00002) continue; // ignore les petits squares
+  if (area < CONF.minArea) continue; // ignore les petits squares
   parks.push({ name: el.tags?.name ?? '', area, ring: round(simplify(ring, 0.0002)) });
 }
 parks.sort((a, b) => b.area - a.area);
