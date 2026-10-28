@@ -11,6 +11,8 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 
+import { CelebrationHost } from '@/components/celebration';
+import { hydrate, useHydrated } from '@/store/app-store';
 import { RuellaThemeProvider, useRuellaTheme } from '@/theme/theme-context';
 
 SplashScreen.preventAutoHideAsync();
@@ -29,7 +31,11 @@ function ThemedNavigation() {
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="ville/[id]" />
         <Stack.Screen name="lieu/[id]" />
+        <Stack.Screen name="sejour/nouveau" options={{ presentation: 'modal' }} />
+        <Stack.Screen name="editeur" />
+        <Stack.Screen name="confidentialite" />
       </Stack>
+      <CelebrationHost />
     </ThemeProvider>
   );
 }
@@ -43,11 +49,17 @@ export default function RootLayout() {
     Inter_800ExtraBold,
   });
 
-  useEffect(() => {
-    if (loaded || error) SplashScreen.hideAsync();
-  }, [loaded, error]);
+  const ready = useHydrated();
 
-  if (!loaded && !error) return null;
+  useEffect(() => {
+    hydrate();
+  }, []);
+
+  useEffect(() => {
+    if ((loaded || error) && ready) SplashScreen.hideAsync();
+  }, [loaded, error, ready]);
+
+  if ((!loaded && !error) || !ready) return null;
 
   return (
     <RuellaThemeProvider>

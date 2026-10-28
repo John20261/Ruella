@@ -1,24 +1,26 @@
 import { router } from 'expo-router';
 import { Pressable, StyleSheet } from 'react-native';
 
-import { RText } from '@/components/ui/r-text';
+import { Icon } from '@/components/ui/icon';
 import { useRuellaTheme } from '@/theme/theme-context';
-import { fonts, touch } from '@/theme/tokens';
+import { touch } from '@/theme/tokens';
 
-export function BackButton({ onDark }: { onDark?: boolean }) {
+export function BackButton({ onDark, onPress }: { onDark?: boolean; onPress?: () => void }) {
   const { colors } = useRuellaTheme();
   return (
     <Pressable
       accessibilityRole="button"
       accessibilityLabel="Retour"
-      onPress={() => (router.canGoBack() ? router.back() : router.replace('/'))}
-      style={[
+      onPress={onPress ?? (() => (router.canGoBack() ? router.back() : router.replace('/')))}
+      style={({ pressed }) => [
         styles.btn,
-        { backgroundColor: onDark ? 'rgba(14,17,22,0.55)' : colors.surface, borderColor: onDark ? 'rgba(255,255,255,0.25)' : colors.border },
+        {
+          backgroundColor: onDark ? 'rgba(14,17,22,0.55)' : colors.surface,
+          borderColor: onDark ? 'rgba(255,255,255,0.25)' : colors.border,
+          transform: [{ scale: pressed ? 0.94 : 1 }],
+        },
       ]}>
-      <RText style={styles.chevron} color={onDark ? '#FFFFFF' : colors.text}>
-        ‹
-      </RText>
+      <Icon name="left" size={22} color={onDark ? '#FFFFFF' : colors.text} strokeWidth={2.4} />
     </Pressable>
   );
 }
@@ -32,5 +34,4 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  chevron: { fontFamily: fonts.bold, fontSize: 28, lineHeight: 30, marginTop: -2 },
 });

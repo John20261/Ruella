@@ -8,23 +8,26 @@ Application iPhone et Android (Expo SDK 58, React Native). La conception complè
 
 | Lot | Contenu | État |
 | --- | --- | --- |
-| 0 | Fondations : système de design, 4 onglets, thèmes, schéma Supabase, tests | En cours de démo |
-| 1 | Contenu de Prague et page Éditeur | À venir |
-| 2 | La journée (carte, ligne du jour, cocher) | À venir |
-| 3 | Hors ligne | À venir |
-| 4 | Création du séjour | À venir |
-| 5 | Récompenses | À venir |
-| 6 | Compte, achats, confidentialité | À venir |
-| 7 | Finitions | À venir |
-| 8 | Bêta et publication | À venir |
+| 0 | Fondations : système de design, 4 onglets, thèmes, schéma Supabase, tests | Fait |
+| 1 | Contenu de Prague (40 visites, 40 pépites, 25 restaurants) et espace éditeur | Fait (vérification des horaires en cours : 16/105) |
+| 2 | La journée : carte légère sans tuiles, ligne du jour, cocher, réordonner, transports | Fait |
+| 3 | Hors ligne : fiches, carte et planificateur embarqués, photos enregistrables | Fait |
+| 4 | Création du séjour : assistant en 5 étapes et planificateur (zones, repas, pépites, pluie) | Fait |
+| 5 | Récompenses : points, niveaux, 11 badges, passeport de 15 quartiers | Fait |
+| 6 | Compte local, export et effacement des données, confidentialité | Fait (compte en ligne et achats : quand il y aura des utilisateurs) |
+| 7 | Finitions : icône, animations, retours haptiques, accessibilité | Fait |
+| 8 | Bêta Android (APK) ; dossier de publication dans `docs/publication.md` | Bêta prête, stores en attente de vos comptes |
 
 ## Organisation du code
 
 ```
-src/app/            écrans (Expo Router) : index = Journée, sejours, recompenses, profil
-src/components/ui/  composants du système de design (texte, bouton, verre, tuile, tampon…)
+src/app/            écrans (Expo Router) : Journée, Séjours, Récompenses, Profil, assistant, fiche, éditeur
+src/components/     carte légère (city-map), ligne du jour, célébrations, système de design (ui/)
+src/content/        catalogue des villes, quartiers, fond de carte OpenStreetMap
+src/store/          état local (AsyncStorage) : profil, séjours, visites
 src/theme/          couleurs, arrondis, polices ; thème sombre par défaut
-src/lib/            logique métier testée (recalage des horaires…), client Supabase
+src/lib/            logique testée : planificateur, récompenses, géographie, horaires, hors ligne
+tools/              collectes automatiques (positions, photos, fond de carte) via GitHub Actions
 supabase/migrations schéma de base de données et règles de sécurité (RLS)
 ```
 

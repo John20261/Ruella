@@ -14,4 +14,9 @@ describe('directionsUrl', () => {
       'https://www.google.com/maps/dir/?api=1&destination=50.0865,14.4114&travelmode=walking',
     );
   });
+
+  it('propose les transports en commun quand c’est loin', () => {
+    expect(directionsUrl(pont, 'android', 'transit')).toContain('travelmode=transit');
+    expect(directionsUrl(pont, 'ios', 'transit')).toContain('dirflg=r');
+  });
 });

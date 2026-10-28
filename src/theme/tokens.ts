@@ -55,6 +55,16 @@ export type ThemeColors = {
     success: TileTone;
     info: TileTone;
   };
+  /** Carte légère dessinée par l'app (sans tuiles). */
+  map: {
+    bg: string;
+    water: string;
+    park: string;
+    label: string;
+    route: string;
+    routeDone: string;
+    user: string;
+  };
 };
 
 export const lightColors: ThemeColors = {
@@ -88,6 +98,15 @@ export const lightColors: ThemeColors = {
     success: { bg: '#DCEFE3', ink: '#145234' },
     info: { bg: '#DCE6FB', ink: '#123A8C' },
   },
+  map: {
+    bg: '#E4E7E0',
+    water: '#B7CCE0',
+    park: '#CFE0C6',
+    label: 'rgba(18,33,46,0.42)',
+    route: palette.bleu,
+    routeDone: 'rgba(18,33,46,0.25)',
+    user: palette.bleu,
+  },
 };
 
 export const darkColors: ThemeColors = {
@@ -120,6 +139,15 @@ export const darkColors: ThemeColors = {
     gem: { bg: '#FFC857', ink: '#2A1D02' },
     success: { bg: '#16352A', ink: '#7FE9B9' },
     info: { bg: '#1C2A4A', ink: '#A9C3FF' },
+  },
+  map: {
+    bg: '#121821',
+    water: '#1D3350',
+    park: '#16261F',
+    label: 'rgba(242,244,247,0.34)',
+    route: palette.corail,
+    routeDone: 'rgba(242,244,247,0.22)',
+    user: '#6EA8FF',
   },
 };
 

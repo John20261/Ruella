@@ -1,0 +1,350 @@
+import { router } from 'expo-router';
+import { useState } from 'react';
+import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import Animated, { FadeIn, FadeInRight, FadeOutLeft, useAnimatedStyle, withSpring } from 'react-native-reanimated';
+import { SafeAreaView } from 'react-native-safe-area-context';
+
+import { BackButton } from '@/components/back-button';
+import { Button } from '@/components/ui/button';
+import { Icon, type IconName } from '@/components/ui/icon';
+import { RText } from '@/components/ui/r-text';
+import type { AgeBand, Wish } from '@/content/types';
+import { getPlaces } from '@/lib/catalog';
+import { dayLong, dayShort, hour } from '@/lib/dates';
+import { currentPosition } from '@/lib/location';
+import { scheduleMorning } from '@/lib/notifications';
+import { addDays, planTrip } from '@/lib/planner';
+import { toMinutes, toTime } from '@/lib/schedule';
+import { actions, getState, todayISO, useApp } from '@/store/app-store';
+import type { Base, Pace, Traveler, Trip } from '@/store/types';
+import { useRuellaTheme } from '@/theme/theme-context';
+import { fonts, radius, space, touch } from '@/theme/tokens';
+
+const STEPS = ['Où ?', 'Quand ?', 'Qui ?', 'Comment ?', 'Départ'];
+
+const CITIES = [
+  { id: 'prague', name: 'Prague', detail: '105 lieux · 40 pépites', ready: true },
+  { id: 'vienne', name: 'Vienne', detail: 'Bientôt', ready: false },
+  { id: 'budapest', name: 'Budapest', detail: 'Bientôt', ready: false },
+  { id: 'lisbonne', name: 'Lisbonne', detail: 'Bientôt', ready: false },
+];
+
+const BANDS: { band: AgeBand; label: string }[] = [
+  { band: 'adult', label: 'Adulte' },
+  { band: '13-17', label: '13–17 ans' },
+  { band: '8-12', label: '8–12 ans' },
+  { band: 'under8', label: 'Moins de 8 ans' },
+];
+
+const PACES: { pace: Pace; title: string; detail: string; icon: IconName }[] = [
+  { pace: 'calme', title: 'Tranquille', detail: 'Environ 5 h 30 de visites, pauses longues', icon: 'walk' },
+  { pace: 'equilibre', title: 'Équilibré', detail: 'Environ 7 h, le bon rythme en famille', icon: 'route' },
+  { pace: 'intense', title: 'Intense', detail: 'Environ 8 h 30, on voit un maximum', icon: 'sparkles' },
+];
+
+const WISHES: { wish: Wish; label: string }[] = [
+  { wish: 'histoire', label: 'Histoire' },
+  { wish: 'insolite', label: 'Insolite' },
+  { wish: 'vues', label: 'Panoramas' },
+  { wish: 'art', label: 'Art' },
+  { wish: 'architecture', label: 'Architecture' },
+  { wish: 'enfants', label: 'Pour les enfants' },
+  { wish: 'gourmand', label: 'Gourmand' },
+  { wish: 'nature', label: 'Nature' },
+  { wish: 'photo', label: 'Photo' },
+  { wish: 'musique', label: 'Musique' },
+  { wish: 'shopping', label: 'Shopping' },
+];
+
+const BASES: Base[] = [
+  { name: 'Place de la Vieille-Ville', lat: 50.0875, lng: 14.4214 },
+  { name: 'Náměstí Republiky', lat: 50.0882, lng: 14.4282 },
+  { name: 'Place Venceslas', lat: 50.0814, lng: 14.4280 },
+  { name: 'Malá Strana', lat: 50.0878, lng: 14.4036 },
+  { name: 'Gare centrale', lat: 50.0832, lng: 14.4353 },
+  { name: 'Anděl', lat: 50.0706, lng: 14.4036 },
+];
+
+export default function NouveauSejour() {
+  const { colors } = useRuellaTheme();
+  const profile = useApp((s) => s.profile);
+  const visitedCount = useApp((s) => new Set(s.visits.map((v) => v.placeId)).size);
+
+  const [step, setStep] = useState(0);
+  const [cityId, setCityId] = useState('prague');
+  const [start, setStart] = useState(todayISO());
+  const [days, setDays] = useState(3);
+  const [startTime, setStartTime] = useState('09:30');
+  const [travelers, setTravelers] = useState<Traveler[]>(profile.travelers);
+  const [pace, setPace] = useState<Pace>(profile.pace);
+  const [wishes, setWishes] = useState<Wish[]>(profile.wishes);
+  const [base, setBase] = useState<Base>(BASES[0]);
+  const [rainDays, setRainDays] = useState<number[]>([]);
+  const [locating, setLocating] = useState(false);
+  const [busy, setBusy] = useState(false);
+
+  const progress = useAnimatedStyle(() => ({ width: withSpring(`${((step + 1) / STEPS.length) * 100}%`, { damping: 18 }) }));
+
+  const addTraveler = (band: AgeBand) =>
+    setTravelers((t) => [...t, { id: `t${Date.now().toString(36)}`, name: band === 'adult' ? `Adulte ${t.filter((x) => x.band === 'adult').length + 1}` : `Enfant ${t.filter((x) => x.band !== 'adult').length + 1}`, band }]);
+
+  const compose = () => {
+    setBusy(true);
+    // On laisse l'animation s'afficher avant le calcul (quelques millisecondes).
+    setTimeout(() => {
+      const ages = [...new Set(travelers.map((t) => t.band))];
+      const planned = planTrip({
+        places: getPlaces(cityId),
+        cityId,
+        startDate: start,
+        days,
+        startTime,
+        pace,
+        wishes,
+        ages,
+        base,
+        rainDays,
+        exclude: [...new Set(getState().visits.map((v) => v.placeId))],
+      });
+      const trip: Trip = { id: `trip${Date.now().toString(36)}`, cityId, createdAt: new Date().toISOString(), base, days: planned };
+      actions.setProfile({ travelers, pace, wishes });
+      actions.addTrip(trip);
+      scheduleMorning(trip, getState().profile.morning);
+      router.dismissAll();
+      router.replace('/');
+    }, 900);
+  };
+
+  if (busy) {
+    return (
+      <View style={[styles.busy, { backgroundColor: colors.background }]}>
+        <Animated.View entering={FadeIn} style={{ alignItems: 'center', gap: space.l }}>
+          <ActivityIndicator size="large" color={colors.accent} />
+          <RText variant="place" style={{ textAlign: 'center' }}>
+            Composition de vos {days} journées…
+          </RText>
+          <RText muted style={{ textAlign: 'center' }}>
+            Quartiers regroupés, déjeuners sur le chemin, pépites glissées entre deux visites.
+          </RText>
+        </Animated.View>
+      </View>
+    );
+  }
+
+  return (
+    <SafeAreaView style={[styles.root, { backgroundColor: colors.background }]}>
+      <View style={styles.header}>
+        <BackButton onPress={() => (step === 0 ? router.back() : setStep(step - 1))} />
+        <RText variant="caption" muted>
+          Étape {step + 1} sur {STEPS.length}
+        </RText>
+      </View>
+      <View style={[styles.track, { backgroundColor: colors.surfaceAlt }]}>
+        <Animated.View style={[styles.fill, { backgroundColor: colors.accent }, progress]} />
+      </View>
+
+      <ScrollView contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
+        <Animated.View key={step} entering={FadeInRight.duration(260)} exiting={FadeOutLeft.duration(160)} style={{ gap: space.l }}>
+          <RText variant="title">{STEPS[step]}</RText>
+
+          {step === 0 ? (
+            <View style={{ gap: space.m }}>
+              {CITIES.map((c) => (
+                <Option key={c.id} title={c.name} detail={c.detail} icon="pin" active={cityId === c.id} disabled={!c.ready} onPress={() => setCityId(c.id)} />
+              ))}
+            </View>
+          ) : null}
+
+          {step === 1 ? (
+            <View style={{ gap: space.l }}>
+              <Stepper label="Premier jour" value={dayLong(start)} onMinus={() => setStart(addDays(start, -1))} onPlus={() => setStart(addDays(start, 1))} />
+              <Stepper label="Nombre de jours" value={`${days} jour${days > 1 ? 's' : ''}`} onMinus={() => setDays(Math.max(1, days - 1))} onPlus={() => setDays(Math.min(7, days + 1))} />
+              <Stepper
+                label="Départ chaque matin"
+                value={hour(startTime)}
+                onMinus={() => setStartTime(toTime(Math.max(6 * 60, toMinutes(startTime) - 30)))}
+                onPlus={() => setStartTime(toTime(Math.min(14 * 60, toMinutes(startTime) + 30)))}
+              />
+              <View style={{ gap: space.s }}>
+                <RText variant="bodyStrong">Pluie annoncée ?</RText>
+                <RText variant="caption" muted>
+                  Touchez les jours pluvieux : on y regroupe musées et lieux couverts.
+                </RText>
+                <View style={styles.wrap}>
+                  {Array.from({ length: days }, (_, i) => (
+                    <Toggle key={i} label={`${dayShort(addDays(start, i))}${rainDays.includes(i) ? ' · pluie' : ''}`} active={rainDays.includes(i)} onPress={() => setRainDays((r) => (r.includes(i) ? r.filter((x) => x !== i) : [...r, i]))} />
+                  ))}
+                </View>
+              </View>
+            </View>
+          ) : null}
+
+          {step === 2 ? (
+            <View style={{ gap: space.m }}>
+              {travelers.map((t) => (
+                <View key={t.id} style={[styles.traveler, { backgroundColor: colors.surface }]}>
+                  <Icon name="user" size={22} color={colors.textMuted} />
+                  <View style={{ flex: 1 }}>
+                    <RText variant="bodyStrong">{t.name}</RText>
+                    <View style={[styles.wrap, { marginTop: 6 }]}>
+                      {BANDS.map((b) => (
+                        <Toggle key={b.band} small label={b.label} active={t.band === b.band} onPress={() => setTravelers((list) => list.map((x) => (x.id === t.id ? { ...x, band: b.band } : x)))} />
+                      ))}
+                    </View>
+                  </View>
+                  {travelers.length > 1 ? (
+                    <Pressable onPress={() => setTravelers((list) => list.filter((x) => x.id !== t.id))} accessibilityRole="button" accessibilityLabel={`Retirer ${t.name}`} hitSlop={8} style={styles.iconBtn}>
+                      <Icon name="close" size={18} color={colors.textMuted} />
+                    </Pressable>
+                  ) : null}
+                </View>
+              ))}
+              <View style={styles.row}>
+                <Button label="+ Adulte" variant="secondary" style={{ flex: 1 }} onPress={() => addTraveler('adult')} />
+                <Button label="+ Enfant" variant="secondary" style={{ flex: 1 }} onPress={() => addTraveler('8-12')} />
+              </View>
+              <RText variant="caption" muted>
+                Les âges servent à écarter ce qui ne plaira pas aux plus jeunes. Aucun compte n’est créé pour les enfants.
+              </RText>
+            </View>
+          ) : null}
+
+          {step === 3 ? (
+            <View style={{ gap: space.l }}>
+              <View style={{ gap: space.m }}>
+                {PACES.map((p) => (
+                  <Option key={p.pace} title={p.title} detail={p.detail} icon={p.icon} active={pace === p.pace} onPress={() => setPace(p.pace)} />
+                ))}
+              </View>
+              <RText variant="heading">Vos envies</RText>
+              <View style={styles.wrap}>
+                {WISHES.map((w) => (
+                  <Toggle key={w.wish} label={w.label} active={wishes.includes(w.wish)} onPress={() => setWishes((list) => (list.includes(w.wish) ? list.filter((x) => x !== w.wish) : [...list, w.wish]))} />
+                ))}
+              </View>
+            </View>
+          ) : null}
+
+          {step === 4 ? (
+            <View style={{ gap: space.m }}>
+              <RText muted>Chaque journée part de là et s’organise autour.</RText>
+              <Option
+                title="Ma position actuelle"
+                detail={base.name === 'Ma position' ? 'Utilisée pour ce séjour, elle reste sur le téléphone' : 'Idéal si vous êtes à votre hôtel'}
+                icon="navigate"
+                active={base.name === 'Ma position'}
+                busy={locating}
+                onPress={async () => {
+                  setLocating(true);
+                  const pos = await currentPosition();
+                  setLocating(false);
+                  if (pos) setBase({ name: 'Ma position', ...pos });
+                }}
+              />
+              {BASES.map((b) => (
+                <Option key={b.name} title={b.name} icon="pin" active={base.name === b.name} onPress={() => setBase(b)} />
+              ))}
+              {visitedCount > 0 ? (
+                <RText variant="caption" muted>
+                  {visitedCount} lieu{visitedCount > 1 ? 'x' : ''} déjà visité{visitedCount > 1 ? 's' : ''} : on ne vous les reproposera pas.
+                </RText>
+              ) : null}
+            </View>
+          ) : null}
+        </Animated.View>
+      </ScrollView>
+
+      <View style={[styles.footer, { borderTopColor: colors.border }]}>
+        {step < STEPS.length - 1 ? (
+          <Button label="Continuer" onPress={() => setStep(step + 1)} style={{ flex: 1 }} />
+        ) : (
+          <Button label="Composer mon séjour" variant="celebrate" haptic onPress={compose} style={{ flex: 1 }} />
+        )}
+      </View>
+    </SafeAreaView>
+  );
+}
+
+function Option({ title, detail, icon, active, disabled, busy, onPress }: { title: string; detail?: string; icon: IconName; active: boolean; disabled?: boolean; busy?: boolean; onPress: () => void }) {
+  const { colors } = useRuellaTheme();
+  return (
+    <Pressable
+      disabled={disabled}
+      onPress={onPress}
+      accessibilityRole="radio"
+      accessibilityState={{ checked: active, disabled }}
+      accessibilityLabel={detail ? `${title}, ${detail}` : title}
+      style={({ pressed }) => [
+        styles.option,
+        { backgroundColor: colors.surface, borderColor: active ? colors.accent : 'transparent', opacity: disabled ? 0.45 : pressed ? 0.85 : 1 },
+      ]}>
+      <View style={[styles.optionIcon, { backgroundColor: active ? colors.accent : colors.surfaceAlt }]}>
+        {busy ? <ActivityIndicator color={colors.onAction} /> : <Icon name={icon} size={20} color={active ? colors.onAction : colors.textMuted} />}
+      </View>
+      <View style={{ flex: 1 }}>
+        <RText variant="heading">{title}</RText>
+        {detail ? (
+          <RText variant="caption" muted>
+            {detail}
+          </RText>
+        ) : null}
+      </View>
+      {active ? <Icon name="check" size={22} color={colors.accent} strokeWidth={2.6} /> : null}
+    </Pressable>
+  );
+}
+
+function Toggle({ label, active, onPress, small }: { label: string; active: boolean; onPress: () => void; small?: boolean }) {
+  const { colors } = useRuellaTheme();
+  return (
+    <Pressable
+      onPress={onPress}
+      accessibilityRole="checkbox"
+      accessibilityState={{ checked: active }}
+      style={[styles.toggle, small && styles.toggleSmall, { backgroundColor: active ? colors.action : colors.surface, borderColor: active ? colors.action : colors.border }]}>
+      <RText style={{ fontFamily: fonts.bold, fontSize: small ? 12 : 14 }} color={active ? colors.onAction : colors.text}>
+        {label}
+      </RText>
+    </Pressable>
+  );
+}
+
+function Stepper({ label, value, onMinus, onPlus }: { label: string; value: string; onMinus: () => void; onPlus: () => void }) {
+  const { colors } = useRuellaTheme();
+  return (
+    <View style={[styles.stepper, { backgroundColor: colors.surface }]}>
+      <View style={{ flex: 1 }}>
+        <RText variant="caption" muted>
+          {label}
+        </RText>
+        <RText variant="heading">{value}</RText>
+      </View>
+      <Pressable onPress={onMinus} accessibilityRole="button" accessibilityLabel={`${label} : moins`} style={[styles.stepBtn, { backgroundColor: colors.surfaceAlt }]}>
+        <Icon name="left" size={18} />
+      </Pressable>
+      <Pressable onPress={onPlus} accessibilityRole="button" accessibilityLabel={`${label} : plus`} style={[styles.stepBtn, { backgroundColor: colors.surfaceAlt }]}>
+        <Icon name="right" size={18} />
+      </Pressable>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  root: { flex: 1 },
+  busy: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: space.xxl },
+  header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: space.l, paddingTop: space.s },
+  track: { height: 4, marginHorizontal: space.l, marginTop: space.m, borderRadius: 2, overflow: 'hidden' },
+  fill: { height: 4, borderRadius: 2 },
+  content: { padding: space.l, paddingBottom: 40 },
+  wrap: { flexDirection: 'row', flexWrap: 'wrap', gap: space.s },
+  row: { flexDirection: 'row', gap: space.s },
+  option: { flexDirection: 'row', alignItems: 'center', gap: space.m, padding: space.m, borderRadius: radius.card, borderWidth: 2, minHeight: 68 },
+  optionIcon: { width: 42, height: 42, borderRadius: 13, alignItems: 'center', justifyContent: 'center' },
+  toggle: { paddingHorizontal: 14, minHeight: touch.min, borderRadius: radius.pill, borderWidth: 1, justifyContent: 'center' },
+  toggleSmall: { paddingHorizontal: 10, minHeight: 34 },
+  traveler: { flexDirection: 'row', alignItems: 'flex-start', gap: space.m, padding: space.m, borderRadius: radius.card },
+  iconBtn: { width: 36, height: 36, alignItems: 'center', justifyContent: 'center' },
+  stepper: { flexDirection: 'row', alignItems: 'center', gap: space.s, padding: space.m, borderRadius: radius.card },
+  stepBtn: { width: touch.min, height: touch.min, borderRadius: 14, alignItems: 'center', justifyContent: 'center' },
+  footer: { padding: space.l, borderTopWidth: StyleSheet.hairlineWidth },
+});

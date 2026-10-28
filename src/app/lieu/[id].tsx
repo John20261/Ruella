@@ -8,8 +8,14 @@ import { BackButton } from '@/components/back-button';
 import { Button } from '@/components/ui/button';
 import { Pill } from '@/components/ui/pill';
 import { RText } from '@/components/ui/r-text';
+import { Icon } from '@/components/ui/icon';
+import { Sheet, SheetItem } from '@/components/ui/sheet';
 import { formatDuration, getPlace, kindLabel } from '@/lib/catalog';
+import { checkPlace } from '@/lib/check';
+import { dayLong } from '@/lib/dates';
 import { directionsUrl } from '@/lib/directions';
+import { pointsFor } from '@/lib/rewards';
+import { actions, activeTrip, useApp } from '@/store/app-store';
 import type { Place } from '@/content/types';
 import { useRuellaTheme } from '@/theme/theme-context';
 import { fonts, radius, space } from '@/theme/tokens';
@@ -31,6 +37,9 @@ export default function LieuScreen() {
   const { colors } = useRuellaTheme();
   const insets = useSafeAreaInsets();
   const [storyOpen, setStoryOpen] = useState(false);
+  const [picker, setPicker] = useState(false);
+  const trip = useApp(activeTrip);
+  const visited = useApp((s) => s.visits.some((v) => v.placeId === id));
   const place = getPlace(id);
 
   if (!place) {
@@ -43,6 +52,7 @@ export default function LieuScreen() {
   }
 
   const isGem = place.kind === 'gem';
+  const inTripDay = trip ? trip.days.findIndex((d) => d.stops.some((x) => x.placeId === place.id)) : -1;
   const heroTone = isGem ? colors.pills.gem : place.kind === 'restaurant' ? colors.tiles.mint : colors.tiles.blue;
   const verified = place.verification.status === 'verified';
 
@@ -115,6 +125,29 @@ export default function LieuScreen() {
               </RText>
             ) : null}
             <RText muted>{place.hook}</RText>
+          </View>
+
+          <View style={styles.quick}>
+            {trip && trip.cityId === place.cityId ? (
+              <Pressable
+                onPress={() => setPicker(true)}
+                accessibilityRole="button"
+                style={({ pressed }) => [styles.quickBtn, { backgroundColor: colors.surface, opacity: pressed ? 0.8 : 1 }]}>
+                <Icon name="plus" size={18} color={colors.accent} />
+                <RText variant="bodyStrong">{inTripDay >= 0 ? `Jour ${inTripDay + 1}` : 'Ajouter'}</RText>
+              </Pressable>
+            ) : null}
+            <Pressable
+              onPress={() => (visited ? actions.unlogVisit(place.id) : checkPlace(place.id))}
+              accessibilityRole="checkbox"
+              accessibilityState={{ checked: visited }}
+              accessibilityLabel={visited ? 'Visité. Toucher pour annuler' : `Je l’ai fait : plus ${pointsFor(place, false)} points`}
+              style={({ pressed }) => [styles.quickBtn, { backgroundColor: visited ? colors.tiles.mint.bg : colors.surface, opacity: pressed ? 0.8 : 1 }]}>
+              <Icon name="check" size={18} color={visited ? colors.tiles.mint.ink : colors.textMuted} strokeWidth={2.6} />
+              <RText variant="bodyStrong" color={visited ? colors.tiles.mint.ink : undefined}>
+                {visited ? 'Visité' : `Je l’ai fait · +${pointsFor(place, false)}`}
+              </RText>
+            </Pressable>
           </View>
 
           {isGem && place.why ? (
@@ -201,6 +234,24 @@ export default function LieuScreen() {
         ) : null}
         <Button label="Y aller" style={{ flex: 1 }} onPress={() => Linking.openURL(directionsUrl(place))} />
       </View>
+
+      <Sheet visible={picker} onClose={() => setPicker(false)} title="Ajouter à quel jour ?" subtitle={place.name}>
+        {trip?.days.map((d, i) => {
+          const already = d.stops.some((x) => x.placeId === place.id);
+          return (
+            <SheetItem
+              key={d.date}
+              icon={already ? 'check' : 'calendar'}
+              label={`Jour ${i + 1} · ${dayLong(d.date)}`}
+              detail={already ? 'Déjà au programme' : d.title}
+              onPress={() => {
+                if (!already) actions.addPlaceToDay(trip.id, i, place.id);
+                setPicker(false);
+              }}
+            />
+          );
+        })}
+      </Sheet>
     </View>
   );
 }
@@ -216,6 +267,8 @@ const styles = StyleSheet.create({
   heroDiamond: { width: 64, height: 64, borderRadius: 14, transform: [{ rotate: '45deg' }] },
   sheet: { marginTop: -radius.sheet, borderTopLeftRadius: radius.sheet, borderTopRightRadius: radius.sheet, padding: space.l, gap: space.l },
   pills: { flexDirection: 'row', flexWrap: 'wrap', gap: space.s },
+  quick: { flexDirection: 'row', gap: space.s },
+  quickBtn: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 8, minHeight: 48, borderRadius: radius.button, paddingHorizontal: space.m },
   box: { borderRadius: radius.tile, padding: space.l, gap: space.s },
   infos: { flexDirection: 'row', flexWrap: 'wrap', gap: space.s },
   info: { flexGrow: 1, flexBasis: '45%', borderRadius: radius.tile, padding: space.m, gap: 2 },
