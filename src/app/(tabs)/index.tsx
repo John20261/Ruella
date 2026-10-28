@@ -14,7 +14,7 @@ import { Pill } from '@/components/ui/pill';
 import { RText } from '@/components/ui/r-text';
 import { Sheet, SheetItem } from '@/components/ui/sheet';
 import { Tile } from '@/components/ui/tile';
-import { formatDuration, getPlace, kindLabel } from '@/lib/catalog';
+import { cities, formatDuration, getPlace, kindLabel } from '@/lib/catalog';
 import { checkStop } from '@/lib/check';
 import { dayLong, dayShort, hour } from '@/lib/dates';
 import { directionsUrl } from '@/lib/directions';
@@ -322,13 +322,17 @@ function EmptyDay() {
             Votre journée dans la ville, prête chaque matin.
           </RText>
           <RText muted style={{ fontSize: 17, lineHeight: 24 }}>
-            Un parcours à pied pensé pour votre famille, les pépites que les autres ratent, et des tampons à collectionner.
+            Prague et Toulouse : un parcours à pied pensé pour votre famille, les pépites que les autres ratent, et des tampons à collectionner.
           </RText>
         </Animated.View>
         <View style={{ flex: 1 }} />
         <Glass style={{ padding: space.l, gap: space.m, marginBottom: 110 }}>
           <Button label="Créer mon séjour" variant="celebrate" onPress={() => router.push('/sejour/nouveau')} />
-          <Button label="Explorer Prague" variant="ghost" onPress={() => router.push('/ville/prague')} />
+          <View style={{ flexDirection: 'row', gap: space.s }}>
+            {cities.map((c) => (
+              <Button key={c.id} label={c.name} variant="ghost" style={{ flex: 1 }} onPress={() => router.push({ pathname: '/ville/[id]', params: { id: c.id } })} />
+            ))}
+          </View>
         </Glass>
       </View>
     </View>

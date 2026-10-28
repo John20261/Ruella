@@ -82,5 +82,7 @@ export type City = {
   currency: string;
   /** Rectangle de la ville : toute fiche doit être dedans. */
   bounds: { minLat: number; maxLat: number; minLng: number; maxLng: number };
+  /** Centre historique : point de départ par défaut et centrage de la carte. */
+  center?: { lat: number; lng: number };
   hidden?: boolean;
 };

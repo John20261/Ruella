@@ -191,8 +191,10 @@ function addMeals(route: Place[], base: LatLng, startTime: string, restaurants: 
   let lunch = t >= LUNCH_AT + 60; // départ après le déjeuner : pas de repas à insérer
   for (const p of route) {
     const arrive = t + leg(pos, p).minutes;
+    // Grande visite qui couvre le midi (parc, Cité de l'espace…) : on y déjeune sur place.
+    if (!lunch && p.durationMin >= 180 && arrive < LUNCH_AT && arrive + p.durationMin > LUNCH_AT + 60) lunch = true;
     if (!lunch && (arrive >= LUNCH_AT || (arrive >= LUNCH_AT - 45 && arrive + p.durationMin > LUNCH_AT + 60))) {
-      const r = nearest(pos, restaurants, used, (x) => x.priceLevel !== '€€€' && (x.durationMin >= 40));
+      const r = nearest(pos, restaurants, used, (x) => x.priceLevel !== '€€€' && x.durationMin >= 45);
       if (r) {
         out.push(r);
         used.add(r.id);
@@ -206,7 +208,7 @@ function addMeals(route: Place[], base: LatLng, startTime: string, restaurants: 
     pos = p;
   }
   if (!lunch && out.length) {
-    const r = nearest(pos, restaurants, used, (x) => x.durationMin >= 40);
+    const r = nearest(pos, restaurants, used, (x) => x.durationMin >= 45);
     if (r) {
       out.push(r);
       used.add(r.id);
@@ -307,6 +309,17 @@ export function planTrip(input: PlanInput): TripDay[] {
       const weakest = [...route].sort((a, b) => score(a, wishes, ages) - score(b, wishes, ages))[0];
       route = route.filter((p) => p !== weakest);
       used.delete(weakest.id);
+    }
+    // Journée trop courte : on la complète avec les meilleurs lieux encore libres, tout près du parcours.
+    for (let guard = 0; guard < 6 && routeMinutes(base, route) < budget * 0.75; guard++) {
+      const room = budget - routeMinutes(base, route);
+      const heart = centroid(route.length ? route : [base]);
+      const extra = candidates
+        .map((c) => c.p)
+        .find((p) => !used.has(p.id) && p.durationMin <= room && (!rain.has(i) || p.indoor) && distanceM(heart, p) < 1100);
+      if (!extra) break;
+      used.add(extra.id);
+      route = preferLongVisitsEarly(base, orderRoute(base, [...route, extra]));
     }
     const gemSlots = Math.max(0, Math.min(PACE_GEMS[pace], Math.floor((budget - routeMinutes(base, route)) / 12)));
     route = weaveGems(route, base, rain.has(i) ? gems.filter((g) => g.indoor) : gems, used, gemSlots);

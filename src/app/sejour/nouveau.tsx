@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Icon, type IconName } from '@/components/ui/icon';
 import { RText } from '@/components/ui/r-text';
 import type { AgeBand, Wish } from '@/content/types';
-import { getPlaces } from '@/lib/catalog';
+import { cities, getPlaces } from '@/lib/catalog';
 import { dayLong, dayShort, hour } from '@/lib/dates';
 import { currentPosition } from '@/lib/location';
 import { scheduleMorning } from '@/lib/notifications';
@@ -22,12 +22,13 @@ import { fonts, radius, space, touch } from '@/theme/tokens';
 
 const STEPS = ['Où ?', 'Quand ?', 'Qui ?', 'Comment ?', 'Départ'];
 
-const CITIES = [
-  { id: 'prague', name: 'Prague', detail: '105 lieux · 40 pépites', ready: true },
-  { id: 'vienne', name: 'Vienne', detail: 'Bientôt', ready: false },
-  { id: 'budapest', name: 'Budapest', detail: 'Bientôt', ready: false },
-  { id: 'lisbonne', name: 'Lisbonne', detail: 'Bientôt', ready: false },
-];
+const SOON = ['Vienne', 'Budapest', 'Lisbonne'];
+
+function cityDetail(id: string): string {
+  const places = getPlaces(id);
+  const gems = places.filter((p) => p.kind === 'gem').length;
+  return `${places.length} lieux · ${gems} pépites`;
+}
 
 const BANDS: { band: AgeBand; label: string }[] = [
   { band: 'adult', label: 'Adulte' },
@@ -56,14 +57,24 @@ const WISHES: { wish: Wish; label: string }[] = [
   { wish: 'shopping', label: 'Shopping' },
 ];
 
-const BASES: Base[] = [
-  { name: 'Place de la Vieille-Ville', lat: 50.0875, lng: 14.4214 },
-  { name: 'Náměstí Republiky', lat: 50.0882, lng: 14.4282 },
-  { name: 'Place Venceslas', lat: 50.0814, lng: 14.4280 },
-  { name: 'Malá Strana', lat: 50.0878, lng: 14.4036 },
-  { name: 'Gare centrale', lat: 50.0832, lng: 14.4353 },
-  { name: 'Anděl', lat: 50.0706, lng: 14.4036 },
-];
+const BASES: Record<string, Base[]> = {
+  prague: [
+    { name: 'Place de la Vieille-Ville', lat: 50.0875, lng: 14.4214 },
+    { name: 'Náměstí Republiky', lat: 50.0882, lng: 14.4282 },
+    { name: 'Place Venceslas', lat: 50.0814, lng: 14.428 },
+    { name: 'Malá Strana', lat: 50.0878, lng: 14.4036 },
+    { name: 'Gare centrale', lat: 50.0832, lng: 14.4353 },
+    { name: 'Anděl', lat: 50.0706, lng: 14.4036 },
+  ],
+  toulouse: [
+    { name: 'Place du Capitole', lat: 43.6045, lng: 1.444 },
+    { name: 'Jean-Jaurès', lat: 43.606, lng: 1.449 },
+    { name: 'Gare Matabiau', lat: 43.6113, lng: 1.4538 },
+    { name: 'Les Carmes', lat: 43.5976, lng: 1.4453 },
+    { name: 'Saint-Cyprien', lat: 43.5975, lng: 1.431 },
+    { name: 'Compans-Caffarelli', lat: 43.611, lng: 1.435 },
+  ],
+};
 
 export default function NouveauSejour() {
   const { colors } = useRuellaTheme();
@@ -78,7 +89,7 @@ export default function NouveauSejour() {
   const [travelers, setTravelers] = useState<Traveler[]>(profile.travelers);
   const [pace, setPace] = useState<Pace>(profile.pace);
   const [wishes, setWishes] = useState<Wish[]>(profile.wishes);
-  const [base, setBase] = useState<Base>(BASES[0]);
+  const [base, setBase] = useState<Base>(BASES.prague[0]);
   const [rainDays, setRainDays] = useState<number[]>([]);
   const [locating, setLocating] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -149,8 +160,21 @@ export default function NouveauSejour() {
 
           {step === 0 ? (
             <View style={{ gap: space.m }}>
-              {CITIES.map((c) => (
-                <Option key={c.id} title={c.name} detail={c.detail} icon="pin" active={cityId === c.id} disabled={!c.ready} onPress={() => setCityId(c.id)} />
+              {cities.map((c) => (
+                <Option
+                  key={c.id}
+                  title={c.name}
+                  detail={`${c.country} · ${cityDetail(c.id)}`}
+                  icon="pin"
+                  active={cityId === c.id}
+                  onPress={() => {
+                    setCityId(c.id);
+                    setBase(BASES[c.id]?.[0] ?? { name: c.name, ...(c.center ?? { lat: 0, lng: 0 }) });
+                  }}
+                />
+              ))}
+              {SOON.map((name) => (
+                <Option key={name} title={name} detail="Bientôt" icon="pin" active={false} disabled onPress={() => {}} />
               ))}
             </View>
           ) : null}
@@ -241,7 +265,7 @@ export default function NouveauSejour() {
                   if (pos) setBase({ name: 'Ma position', ...pos });
                 }}
               />
-              {BASES.map((b) => (
+              {(BASES[cityId] ?? []).map((b) => (
                 <Option key={b.name} title={b.name} icon="pin" active={base.name === b.name} onPress={() => setBase(b)} />
               ))}
               {visitedCount > 0 ? (

@@ -15,6 +15,7 @@ export const prague: City = {
   timezone: 'Europe/Prague',
   currency: 'CZK',
   bounds: { minLat: 49.94, maxLat: 50.18, minLng: 14.22, maxLng: 14.71 },
+  center: { lat: 50.0875, lng: 14.4214 },
 };
 
 const TODO: Place['verification'] = { status: 'to_verify', sources: [] };
@@ -2076,7 +2077,7 @@ export const praguePlaces: Place[] = [
     indoor: true,
     ages: ['under8', '8-12', '13-17', 'adult'],
     wishes: ['gourmand'],
-    durationMin: 40,
+    durationMin: 45,
     priceLevel: '€',
   },
   {
@@ -2230,7 +2231,7 @@ export const praguePlaces: Place[] = [
     indoor: true,
     ages: ['under8', '8-12', '13-17', 'adult'],
     wishes: ['gourmand'],
-    durationMin: 40,
+    durationMin: 45,
     priceLevel: '€',
   },
   {

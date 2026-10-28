@@ -124,3 +124,33 @@ describe('regroupement et ordre', () => {
     expect(r[0]).toEqual(pts[2]);
   });
 });
+
+describe('Toulouse', () => {
+  const tls = getPlaces('toulouse');
+  const days = planTrip({
+    places: tls,
+    cityId: 'toulouse',
+    startDate: '2026-11-02',
+    days: 3,
+    startTime: '09:30',
+    pace: 'equilibre',
+    wishes: ['enfants', 'histoire'],
+    ages: ['adult', '8-12', '13-17'],
+    base: { name: 'Place du Capitole', lat: 43.6045, lng: 1.444 },
+  });
+
+  it('compose trois journées toulousaines avec un déjeuner (au restaurant ou sur place)', () => {
+    expect(days).toHaveLength(3);
+    for (const d of days) {
+      const places = d.stops.map((s) => getPlace(s.placeId)!);
+      expect(places.some((p) => p.kind === 'restaurant' || p.durationMin >= 180)).toBe(true);
+      expect(d.stops.every((s) => getPlace(s.placeId)?.cityId === 'toulouse')).toBe(true);
+    }
+  });
+
+  it('propose les incontournables pour les enfants', () => {
+    const ids = days.flatMap((d) => d.stops.map((s) => s.placeId));
+    expect(ids).toContain('tls-capitole');
+    expect(ids.some((id) => id === 'tls-cite-espace' || id === 'tls-halle-machine')).toBe(true);
+  });
+});

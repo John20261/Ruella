@@ -1,10 +1,12 @@
 import { prague, praguePlaces } from '@/content/prague';
+import { toulouse, toulousePlaces } from '@/content/toulouse';
 import type { City, Place, PlaceKind } from '@/content/types';
 
-export const cities: City[] = [prague];
+export const cities: City[] = [prague, toulouse];
 
 const placesByCity: Record<string, Place[]> = {
   prague: praguePlaces,
+  toulouse: toulousePlaces,
 };
 
 /** Catégories affichées dans l'écran « Explorer la ville ». */

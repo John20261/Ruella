@@ -10,7 +10,7 @@ import { Pill } from '@/components/ui/pill';
 import { RText } from '@/components/ui/r-text';
 import { Screen } from '@/components/ui/screen';
 import { Sheet, SheetItem } from '@/components/ui/sheet';
-import { getCity, getPlace } from '@/lib/catalog';
+import { cities, getCity, getPlace } from '@/lib/catalog';
 import { dayShort, range } from '@/lib/dates';
 import { actions, useApp } from '@/store/app-store';
 import type { Trip } from '@/store/types';
@@ -105,7 +105,11 @@ export default function SejoursScreen() {
       })}
 
       <Button label="Créer un séjour" variant="celebrate" onPress={() => router.push('/sejour/nouveau')} style={{ marginTop: space.s }} />
-      <Button label="Explorer Prague" variant="secondary" onPress={() => router.push('/ville/prague')} />
+      <View style={{ flexDirection: 'row', gap: space.s }}>
+        {cities.map((c) => (
+          <Button key={c.id} label={`Explorer ${c.name}`} variant="secondary" style={{ flex: 1, paddingHorizontal: 8 }} onPress={() => router.push({ pathname: '/ville/[id]', params: { id: c.id } })} />
+        ))}
+      </View>
 
       <Sheet visible={!!menu} onClose={() => setMenu(null)} title={menu ? getCity(menu.cityId)?.name : undefined} subtitle={menu ? range(menu.days[0].date, menu.days[menu.days.length - 1].date) : undefined}>
         {menu ? (

@@ -8,6 +8,7 @@ import { Icon, type IconName } from '@/components/ui/icon';
 import { RText } from '@/components/ui/r-text';
 import { Screen } from '@/components/ui/screen';
 import type { AgeBand } from '@/content/types';
+import { cities } from '@/lib/catalog';
 import { askLocation } from '@/lib/location';
 import { scheduleMorning } from '@/lib/notifications';
 import { cityPhotos, downloadCity, offlineDate } from '@/lib/offline';
@@ -33,12 +34,12 @@ export default function ProfilScreen() {
   const { colors, preference, setPreference } = useRuellaTheme();
   const profile = useApp((s) => s.profile);
   const trip = useApp(activeTrip);
-  const [offline, setOffline] = useState<string | null>(null);
-  const [progress, setProgress] = useState<{ done: number; total: number } | null>(null);
+  const [offline, setOffline] = useState<Record<string, string | null>>({});
+  const [progress, setProgress] = useState<{ cityId: string; done: number; total: number } | null>(null);
   const [editorTaps, setEditorTaps] = useState(0);
 
   useEffect(() => {
-    offlineDate('prague').then(setOffline);
+    Promise.all(cities.map(async (c) => [c.id, await offlineDate(c.id)] as const)).then((rows) => setOffline(Object.fromEntries(rows)));
   }, []);
 
   const card = [styles.card, { backgroundColor: colors.surface }];
@@ -151,19 +152,27 @@ export default function ProfilScreen() {
 
       <Section title="Hors ligne">
         <View style={card}>
-          <Row
-            icon="download"
-            label={progress ? `Enregistrement… ${progress.done}/${progress.total}` : offline ? 'Photos de Prague enregistrées' : 'Enregistrer les photos de Prague'}
-            detail={offline && !progress ? `Le ${new Date(offline).toLocaleDateString('fr-FR')} · fiches et carte sont toujours disponibles` : `${cityPhotos('prague').length} photos, pour un séjour sans réseau`}
-            last
-            onPress={async () => {
-              if (progress) return;
-              setProgress({ done: 0, total: cityPhotos('prague').length });
-              await downloadCity('prague', (done, total) => setProgress({ done, total }));
-              setProgress(null);
-              setOffline(await offlineDate('prague'));
-            }}
-          />
+          {cities.map((c, i) => {
+            const date = offline[c.id];
+            const busy = progress?.cityId === c.id;
+            return (
+              <Row
+                key={c.id}
+                icon="download"
+                label={busy ? `Enregistrement… ${progress.done}/${progress.total}` : date ? `Photos de ${c.name} enregistrées` : `Enregistrer les photos de ${c.name}`}
+                detail={date && !busy ? `Le ${new Date(date).toLocaleDateString('fr-FR')} · fiches et carte sont toujours disponibles` : `${cityPhotos(c.id).length} photos, pour un séjour sans réseau`}
+                last={i === cities.length - 1}
+                onPress={async () => {
+                  if (progress) return;
+                  setProgress({ cityId: c.id, done: 0, total: cityPhotos(c.id).length });
+                  await downloadCity(c.id, (done, total) => setProgress({ cityId: c.id, done, total }));
+                  setProgress(null);
+                  const d = await offlineDate(c.id);
+                  setOffline((o) => ({ ...o, [c.id]: d }));
+                }}
+              />
+            );
+          })}
         </View>
       </Section>
 

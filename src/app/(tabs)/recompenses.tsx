@@ -8,9 +8,9 @@ import { RText } from '@/components/ui/r-text';
 import { Screen } from '@/components/ui/screen';
 import { Stamp } from '@/components/ui/stamp';
 import { Tile } from '@/components/ui/tile';
-import { getPlace } from '@/lib/catalog';
+import { cities, getCity, getPlace } from '@/lib/catalog';
 import { computeBadges, computeStamps, computeTotals, levelOf, pointsFor } from '@/lib/rewards';
-import { useApp } from '@/store/app-store';
+import { activeTrip, useApp } from '@/store/app-store';
 import { useRuellaTheme } from '@/theme/theme-context';
 import { radius, space } from '@/theme/tokens';
 
@@ -23,7 +23,10 @@ export default function RecompensesScreen() {
   const totals = computeTotals(visits, getPlace);
   const level = levelOf(totals.points);
   const badges = computeBadges(visits, getPlace);
-  const stamps = computeStamps('prague', visits, getPlace);
+  const tripCity = useApp((s) => activeTrip(s)?.cityId);
+  const visitedCities = cities.filter((c) => visits.some((v) => getPlace(v.placeId)?.cityId === c.id)).map((c) => c.id);
+  const passportCities = [...new Set([...(tripCity ? [tripCity] : []), ...visitedCities])];
+  if (passportCities.length === 0) passportCities.push(cities[0].id);
   const muted = '#9A8F78';
 
   const fill = useSharedValue(0);
@@ -33,7 +36,6 @@ export default function RecompensesScreen() {
   const fillStyle = useAnimatedStyle(() => ({ width: `${Math.max(3, fill.value * 100)}%` }));
 
   const recent = [...visits].sort((a, b) => b.at.localeCompare(a.at)).slice(0, 6);
-  const earnedStamps = stamps.filter((s) => s.earned).length;
 
   return (
     <Screen>
@@ -70,32 +72,38 @@ export default function RecompensesScreen() {
         <Tile label="À pied" value={`${totals.km.toString().replace('.', ',')} km`} tone={colors.tiles.mint} />
       </View>
 
-      <View style={[styles.passport, { backgroundColor: colors.paper }]}>
-        <View style={styles.row}>
-          <RText variant="place" style={{ fontSize: 20 }} color="#12212E">
-            Passeport · Prague
-          </RText>
-          <RText variant="caption" color="#6B5E44">
-            {earnedStamps} quartier{earnedStamps > 1 ? 's' : ''} sur {stamps.length}
-          </RText>
-        </View>
-        <View style={styles.stamps}>
-          {stamps.map((s, i) => (
-            <Stamp
-              key={s.districtId}
-              place={s.name}
-              title={s.earned ? `${s.count} étape${s.count > 1 ? 's' : ''}` : s.name}
-              date={short(s.at)}
-              color={STAMP_COLORS[i % STAMP_COLORS.length]}
-              earned={s.earned}
-              shape={i % 2 ? 'square' : 'round'}
-              tilt={((i * 7) % 15) - 7}
-              size={92}
-              mutedColor={muted}
-            />
-          ))}
-        </View>
-      </View>
+      {passportCities.map((cityId) => {
+        const stamps = computeStamps(cityId, visits, getPlace);
+        const earnedStamps = stamps.filter((s) => s.earned).length;
+        return (
+          <View key={cityId} style={[styles.passport, { backgroundColor: colors.paper }]}>
+            <View style={styles.row}>
+              <RText variant="place" style={{ fontSize: 20 }} color="#12212E">
+                Passeport · {getCity(cityId)?.name}
+              </RText>
+              <RText variant="caption" color="#6B5E44">
+                {earnedStamps} quartier{earnedStamps > 1 ? 's' : ''} sur {stamps.length}
+              </RText>
+            </View>
+            <View style={styles.stamps}>
+              {stamps.map((s, i) => (
+                <Stamp
+                  key={s.districtId}
+                  place={s.name}
+                  title={s.earned ? `${s.count} étape${s.count > 1 ? 's' : ''}` : s.name}
+                  date={short(s.at)}
+                  color={STAMP_COLORS[i % STAMP_COLORS.length]}
+                  earned={s.earned}
+                  shape={i % 2 ? 'square' : 'round'}
+                  tilt={((i * 7) % 15) - 7}
+                  size={92}
+                  mutedColor={muted}
+                />
+              ))}
+            </View>
+          </View>
+        );
+      })}
 
       <RText variant="heading" style={{ marginTop: space.s }}>
         Badges

@@ -6,6 +6,7 @@ import Svg, { Circle, G, Path, Polygon, Rect, Text as SvgText } from 'react-nati
 import { RText } from '@/components/ui/r-text';
 import { cityDistricts } from '@/content/districts';
 import { cityGeo } from '@/content/geo';
+import { getCity } from '@/lib/catalog';
 import type { LatLng } from '@/lib/geo';
 import { useRuellaTheme } from '@/theme/theme-context';
 import { fonts } from '@/theme/tokens';
@@ -45,7 +46,7 @@ export function CityMap({ cityId, markers, base, user, highlightId, onSelect, st
   const view = useMemo(() => {
     const pts: LatLng[] = [...markers, ...(base ? [base] : [])];
     if (user && pts.length && pts.some((p) => Math.abs(p.lat - user.lat) < 0.03 && Math.abs(p.lng - user.lng) < 0.04)) pts.push(user);
-    if (!pts.length) pts.push({ lat: 50.0875, lng: 14.4214 });
+    if (!pts.length) pts.push(getCity(cityId)?.center ?? { lat: 50.0875, lng: 14.4214 });
     let minLat = Math.min(...pts.map((p) => p.lat));
     let maxLat = Math.max(...pts.map((p) => p.lat));
     let minLng = Math.min(...pts.map((p) => p.lng));
@@ -63,7 +64,7 @@ export function CityMap({ cityId, markers, base, user, highlightId, onSelect, st
     }
     const kx = Math.cos(((minLat + maxLat) / 2) * (Math.PI / 180));
     return { minLat, maxLat, minLng, maxLng, kx };
-  }, [markers, base, user]);
+  }, [markers, base, user, cityId]);
 
   const proj = useMemo(() => {
     const pad = 34;
@@ -147,6 +148,9 @@ export function CityMap({ cityId, markers, base, user, highlightId, onSelect, st
             ))}
             {geo?.river.map((l, i) => (
               <Path key={`r${i}`} d={toPath(l)} stroke={colors.map.water} strokeWidth={riverWidth} strokeLinecap="round" strokeLinejoin="round" fill="none" />
+            ))}
+            {geo?.canals?.map((l, i) => (
+              <Path key={`c${i}`} d={toPath(l)} stroke={colors.map.water} strokeWidth={Math.max(3, riverWidth * 0.22)} strokeLinecap="round" strokeLinejoin="round" fill="none" />
             ))}
             {cityDistricts(cityId).map((d) => {
               const { x, y } = proj.xy(d.lat, d.lng);
