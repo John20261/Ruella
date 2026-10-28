@@ -4,7 +4,13 @@ import { writeFileSync, mkdirSync } from 'node:fs';
 import { dirname } from 'node:path';
 
 const OUT = process.argv[2] ?? 'out/geo.json';
-const BBOX = '50.00,14.32,50.14,14.52'; // sud, ouest, nord, est (Prague centre élargi)
+const CITY = process.argv[3] ?? 'prague';
+const CITIES = {
+  prague: { bbox: '50.00,14.32,50.14,14.52', river: '^Vltava$', canal: null },
+  toulouse: { bbox: '43.54,1.36,43.67,1.52', river: 'Garonne', canal: 'Canal du Midi|Canal de Brienne|Canal latéral' },
+};
+const CONF = CITIES[CITY];
+const BBOX = CONF.bbox; // sud, ouest, nord, est
 const ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
 
 async function overpass(q) {
@@ -59,8 +65,13 @@ function chain(ways) {
   return lines.sort((a, b) => b.length - a.length);
 }
 
-const river = await overpass(`[out:json][timeout:60];way["waterway"="river"]["name"="Vltava"](${BBOX});out geom;`);
+const river = await overpass(`[out:json][timeout:60];way["waterway"="river"]["name"~"${CONF.river}"](${BBOX});out geom;`);
 const riverLines = chain(river.elements).filter((l) => l.length > 5).map((l) => round(simplify(l, 0.0004)));
+let canalLines = [];
+if (CONF.canal) {
+  const canal = await overpass(`[out:json][timeout:60];way["waterway"="canal"]["name"~"${CONF.canal}"](${BBOX});out geom;`);
+  canalLines = chain(canal.elements).filter((l) => l.length > 3).map((l) => round(simplify(l, 0.0003)));
+}
 
 const parksQ = await overpass(`[out:json][timeout:90];(way["leisure"~"^(park|garden)$"]["name"](${BBOX});relation["leisure"~"^(park|garden)$"]["name"](${BBOX});way["landuse"~"^(forest|grass)$"]["name"](${BBOX});relation["landuse"="forest"]["name"](${BBOX});way["natural"="wood"]["name"](${BBOX}););out geom;`);
 const parks = [];
@@ -79,7 +90,7 @@ for (const el of parksQ.elements) {
 }
 parks.sort((a, b) => b.area - a.area);
 
-const out = { bbox: BBOX, river: riverLines, parks: parks.slice(0, 60).map(({ name, ring }) => ({ name, ring })) };
+const out = { bbox: BBOX, river: riverLines, canals: canalLines, parks: parks.slice(0, 60).map(({ name, ring }) => ({ name, ring })) };
 mkdirSync(dirname(OUT), { recursive: true });
 writeFileSync(OUT, JSON.stringify(out));
-console.log('rivière', riverLines.map((l) => l.length), 'parcs', out.parks.length, out.parks.map((p) => p.name).join(' | '));
+console.log('rivière', riverLines.map((l) => l.length), 'canaux', canalLines.map((l) => l.length), 'parcs', out.parks.length, out.parks.map((p) => p.name).join(' | '));

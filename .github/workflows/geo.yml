@@ -18,13 +18,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node tools/geo/geo.mjs out/geo-prague.json
+      - run: node tools/geo/geo.mjs out/geo-prague.json prague
+      - run: node tools/geo/geo.mjs out/geo-toulouse.json toulouse
       - name: Déposer le résultat sur la branche geo-results
         run: |
           git config user.name "ruella-bot"
           git config user.email "ruella-bot@users.noreply.github.com"
           git checkout --orphan geo-results
           git rm -rq --cached .
-          git add -f out/geo-prague.json
+          git add -f out/geo-prague.json out/geo-toulouse.json
           git commit -qm "Fond de carte ${{ github.run_id }}"
           git push -f origin HEAD:geo-results

@@ -26,15 +26,19 @@ async function getJson(url) {
 
 const stripHtml = (s) => (s ?? '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
 
-async function entityFromEnwiki(title) {
-  const url = `https://www.wikidata.org/w/api.php?action=wbgetentities&sites=enwiki&titles=${encodeURIComponent(title)}&props=claims|labels|sitelinks&languages=fr|en|cs&format=json`;
+// Ville visée : Prague par défaut ; un fichier de cibles peut préciser { country, bbox, items }.
+let COUNTRY = 'cz';
+let BBOX = [49.94, 50.18, 14.22, 14.71];
+
+async function entityFromWiki(title, site = 'enwiki') {
+  const url = `https://www.wikidata.org/w/api.php?action=wbgetentities&sites=${site}&titles=${encodeURIComponent(title)}&props=claims|labels|sitelinks&languages=fr|en|cs&format=json`;
   const data = await getJson(url);
   const entity = Object.values(data.entities ?? {})[0];
   return entity && typeof entity.id === 'string' && entity.id.startsWith('Q') ? entity : null;
 }
 
-async function entityFromSearch(query) {
-  const url = `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(query)}&language=en&limit=5&format=json`;
+async function entityFromSearch(query, lang = 'en') {
+  const url = `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(query)}&language=${lang}&limit=5&format=json`;
   const data = await getJson(url);
   for (const hit of data.search ?? []) {
     const e = await getJson(
@@ -42,7 +46,7 @@ async function entityFromSearch(query) {
     );
     const entity = e.entities[hit.id];
     const coord = entity?.claims?.P625?.[0]?.mainsnak?.datavalue?.value;
-    if (coord && coord.latitude > 49.94 && coord.latitude < 50.18 && coord.longitude > 14.22 && coord.longitude < 14.71) {
+    if (coord && coord.latitude > BBOX[0] && coord.latitude < BBOX[1] && coord.longitude > BBOX[2] && coord.longitude < BBOX[3]) {
       return entity;
     }
   }
@@ -66,7 +70,7 @@ async function commonsPhoto(fileName) {
 
 async function nominatim(query) {
   await sleep(1100);
-  const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=jsonv2&limit=1&countrycodes=cz`;
+  const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=jsonv2&limit=1&countrycodes=${COUNTRY}`;
   const data = await getJson(url);
   const hit = data[0];
   return hit ? { lat: Number(hit.lat), lng: Number(hit.lon), osm: `https://www.openstreetmap.org/${hit.osm_type}/${hit.osm_id}`, label: hit.display_name } : null;
@@ -76,16 +80,23 @@ const claimValue = (entity, prop) => entity?.claims?.[prop]?.[0]?.mainsnak?.data
 
 async function main() {
   const [, , input, output] = process.argv;
-  const targets = JSON.parse(await readFile(input, 'utf8'));
+  const raw = JSON.parse(await readFile(input, 'utf8'));
+  const targets = Array.isArray(raw) ? raw : raw.items;
+  if (!Array.isArray(raw)) {
+    COUNTRY = raw.country ?? COUNTRY;
+    BBOX = raw.bbox ?? BBOX;
+  }
   const results = [];
 
   for (const t of targets) {
     const row = { id: t.id };
     try {
       let entity = null;
-      if (t.enwiki) entity = await entityFromEnwiki(t.enwiki);
-      if (!entity && t.search) entity = await entityFromSearch(t.search);
+      if (t.frwiki) entity = await entityFromWiki(t.frwiki, 'frwiki');
+      if (!entity && t.enwiki) entity = await entityFromWiki(t.enwiki);
+      if (!entity && t.search) entity = await entityFromSearch(t.search, t.frwiki ? 'fr' : 'en');
       if (!entity && t.enwiki) entity = await entityFromSearch(t.enwiki);
+      if (!entity && t.frwiki) entity = await entityFromSearch(t.frwiki, 'fr');
 
       if (entity) {
         row.wikidata = `https://www.wikidata.org/wiki/${entity.id}`;
