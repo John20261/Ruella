@@ -13,7 +13,21 @@ const CONF = CITIES[CITY];
 const BBOX = CONF.bbox; // sud, ouest, nord, est
 const ENDPOINTS = ['https://overpass-api.de/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
 
+const pause = (ms) => new Promise((r) => setTimeout(r, ms));
+
 async function overpass(q) {
+  for (let attempt = 0; attempt < 4; attempt++) {
+    try {
+      return await overpassOnce(q);
+    } catch (e) {
+      console.error('nouvel essai', attempt + 1, e.message);
+      await pause(15000 * (attempt + 1));
+    }
+  }
+  throw new Error('Overpass indisponible');
+}
+
+async function overpassOnce(q) {
   for (const url of ENDPOINTS) {
     try {
       const res = await fetch(url, { method: 'POST', body: 'data=' + encodeURIComponent(q), headers: { 'User-Agent': 'Ruella/1.0 (github.com/John20261/Ruella)' } });
@@ -69,10 +83,12 @@ const river = await overpass(`[out:json][timeout:60];way["waterway"="river"]["na
 const riverLines = chain(river.elements).filter((l) => l.length > 5).map((l) => round(simplify(l, 0.0004)));
 let canalLines = [];
 if (CONF.canal) {
+  await pause(5000);
   const canal = await overpass(`[out:json][timeout:60];way["waterway"="canal"]["name"~"${CONF.canal}"](${BBOX});out geom;`);
   canalLines = chain(canal.elements).filter((l) => l.length > 3).map((l) => round(simplify(l, 0.0003)));
 }
 
+await pause(5000);
 const parksQ = await overpass(`[out:json][timeout:90];(way["leisure"~"^(park|garden)$"]["name"](${BBOX});relation["leisure"~"^(park|garden)$"]["name"](${BBOX});way["landuse"~"^(forest|grass)$"]["name"](${BBOX});relation["landuse"="forest"]["name"](${BBOX});way["natural"="wood"]["name"](${BBOX}););out geom;`);
 const parks = [];
 for (const el of parksQ.elements) {

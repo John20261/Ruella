@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 22
       - run: node tools/geo/geo.mjs out/geo-prague.json prague
-      - run: node tools/geo/geo.mjs out/geo-toulouse.json toulouse
+      - run: sleep 20 && node tools/geo/geo.mjs out/geo-toulouse.json toulouse
       - name: Déposer le résultat sur la branche geo-results
         run: |
           git config user.name "ruella-bot"
