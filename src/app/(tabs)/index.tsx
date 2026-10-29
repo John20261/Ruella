@@ -366,17 +366,17 @@ function EmptyDay() {
             Votre journée dans la ville, prête chaque matin.
           </RText>
           <RText muted style={{ fontSize: 17, lineHeight: 24 }}>
-            Prague et Toulouse : un parcours à pied pensé pour votre famille, les pépites que les autres ratent, et des tampons à collectionner.
+            Prague, Toulouse et dix capitales d’Europe : un parcours à pied pensé pour votre famille, les pépites que les autres ratent, et des tampons à collectionner.
           </RText>
         </Animated.View>
         <View style={{ flex: 1 }} />
         <Glass style={{ padding: space.l, gap: space.m, marginBottom: 110 }}>
           <Button label="Créer mon séjour" variant="celebrate" onPress={() => router.push('/sejour/nouveau')} />
-          <View style={{ flexDirection: 'row', gap: space.s }}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: space.s }}>
             {cities.map((c) => (
-              <Button key={c.id} label={c.name} variant="ghost" style={{ flex: 1 }} onPress={() => router.push({ pathname: '/ville/[id]', params: { id: c.id } })} />
+              <Button key={c.id} label={c.name} variant="ghost" style={{ paddingHorizontal: space.l }} onPress={() => router.push({ pathname: '/ville/[id]', params: { id: c.id } })} />
             ))}
-          </View>
+          </ScrollView>
         </Glass>
       </View>
     </View>

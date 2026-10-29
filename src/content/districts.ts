@@ -1,6 +1,8 @@
 import type { LatLng } from '@/lib/geo';
 import { distanceM } from '@/lib/geo';
 
+import { capitals } from './cities';
+
 /** Quartiers d'une ville : donnent un nom aux journées et un tampon au passeport. */
 export type District = LatLng & { id: string; cityId: string; name: string; short: string };
 
@@ -36,6 +38,7 @@ export const districts: District[] = [
   { id: 'tls-montaudran', cityId: 'toulouse', name: 'Montaudran', short: 'Montaudran', lat: 43.5735, lng: 1.4780 },
   { id: 'tls-cite-espace', cityId: 'toulouse', name: "Cité de l'espace", short: 'Cité espace', lat: 43.5870, lng: 1.4930 },
   { id: 'tls-blagnac', cityId: 'toulouse', name: 'Blagnac', short: 'Blagnac', lat: 43.6600, lng: 1.3650 },
+  ...capitals.flatMap((c) => c.districts),
 ];
 
 export function cityDistricts(cityId: string): District[] {

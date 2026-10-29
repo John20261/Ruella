@@ -17,6 +17,7 @@ Application iPhone et Android (Expo SDK 58, React Native). La conception complè
 | 6 | Compte local, export et effacement des données, confidentialité | Fait (compte en ligne et achats : quand il y aura des utilisateurs) |
 | 7 | Finitions : icône, animations, retours haptiques, accessibilité | Fait |
 | 8 | Bêta Android (APK) ; dossier de publication dans `docs/publication.md` | Bêta prête, stores en attente de vos comptes |
+| 11 | Dix capitales européennes (Paris, Londres, Rome, Madrid, Lisbonne, Berlin, Amsterdam, Bruxelles, Vienne, Budapest) — version 1.3.0 | Fait (prix estimés) |
 | 10 | Budget sur place (entrées, repas, transports, trains), carte manipulable, ajout d'étapes, présentations de tous les lieux | Fait |
 | 9 | Deuxième ville : Toulouse (29 visites, 30 pépites, 18 restaurants, Garonne et canaux) | Fait (9 fiches vérifiées sur sites officiels) |
 

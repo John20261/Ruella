@@ -14,7 +14,7 @@ import { RText } from '@/components/ui/r-text';
 import { CATEGORY_LABEL, MEAL_BUDGET_LABEL, computeBudget, type BudgetCategory } from '@/lib/budget';
 import { getCity, getPlace } from '@/lib/catalog';
 import { dayLong, dayShort } from '@/lib/dates';
-import { EUR_PER, formatEUR, formatLocal } from '@/lib/money';
+import { EUR_PER, formatEUR, formatLocal, rateLabel } from '@/lib/money';
 import { actions, useApp } from '@/store/app-store';
 import type { ExpenseCategory, MealBudget } from '@/store/types';
 import { useRuellaTheme } from '@/theme/theme-context';
@@ -271,6 +271,11 @@ export default function BudgetScreen() {
                 ) : null}
               </View>
             </View>
+            {t.estimate ? (
+              <RText variant="caption" muted>
+                Tarifs estimés : vérifiez sur place ou dans l’application officielle.
+              </RText>
+            ) : null}
             <RText>{t.howToBuy}</RText>
             <TransitApps apps={t.apps} />
             {t.tips.map((tip) => (
@@ -352,7 +357,7 @@ export default function BudgetScreen() {
         </View>
 
         <RText variant="caption" muted style={{ textAlign: 'center' }}>
-          Prix moyens observés quand aucun tarif officiel n’a été relu (« estimé »). Couronnes converties à 1 € ≈ {String(Math.round((1 / EUR_PER.CZK) * 10) / 10).replace('.', ',')} CZK. Les enfants bénéficient des tarifs réduits selon l’âge saisi dans Profil.
+          Prix moyens observés quand aucun tarif officiel n’a été relu (« estimé »). {city && city.currency !== 'EUR' ? `Conversion indicative : ${rateLabel(city.currency)}.` : ''} Les enfants bénéficient des tarifs réduits selon l’âge saisi dans Profil.
         </RText>
       </ScrollView>
     </SafeAreaView>

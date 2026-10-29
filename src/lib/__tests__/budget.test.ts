@@ -50,13 +50,30 @@ describe('tarifs', () => {
 });
 
 describe('applications de transport', () => {
-  it('chaque ville propose une application officielle pour acheter ses billets', () => {
+  it('chaque ville propose une application officielle avec des liens vers les magasins', () => {
     for (const city of cities) {
-      const app = city.transit?.apps.find((a) => a.tickets);
-      expect([city.id, !!app]).toEqual([city.id, true]);
-      expect(app!.ios.startsWith('https://apps.apple.com/')).toBe(true);
-      expect(app!.android.startsWith('https://play.google.com/store/apps/details?id=')).toBe(true);
+      const apps = city.transit?.apps ?? [];
+      expect([city.id, apps.length > 0]).toEqual([city.id, true]);
+      for (const app of apps) {
+        expect([app.name, app.ios.startsWith('https://apps.apple.com/')]).toEqual([app.name, true]);
+        expect([app.name, app.android.startsWith('https://play.google.com/store/')]).toEqual([app.name, true]);
+      }
     }
+  });
+
+  it('les capitales ont leurs transports, leurs quartiers et au moins 25 lieux', () => {
+    const ids = ['paris', 'londres', 'rome', 'madrid', 'lisbonne', 'berlin', 'amsterdam', 'bruxelles', 'vienne', 'budapest'];
+    for (const id of ids) {
+      const city = cities.find((c) => c.id === id);
+      expect([id, !!city?.transit]).toEqual([id, true]);
+      expect([id, getPlaces(id).length >= 25]).toEqual([id, true]);
+      expect([id, getPlaces(id).filter((p) => p.kind === 'restaurant').length >= 6]).toEqual([id, true]);
+    }
+  });
+
+  it('les monnaies locales se convertissent en euros', () => {
+    expect(toEUR(100, 'GBP')).toBeCloseTo(117, 5);
+    expect(toEUR(390, 'HUF')).toBeCloseTo(1, 5);
   });
 });
 

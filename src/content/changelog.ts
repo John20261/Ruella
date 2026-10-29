@@ -3,6 +3,19 @@ export type Release = { version: string; date: string; title: string; items: str
 
 export const changelog: Release[] = [
   {
+    version: '1.3.0',
+    date: '2026-10-29',
+    title: 'Dix capitales européennes',
+    items: [
+      'Dix nouvelles villes : Paris, Londres, Rome, Madrid, Lisbonne, Berlin, Amsterdam, Bruxelles, Vienne et Budapest.',
+      'Pour chacune : environ 12 visites, 8 pépites et 6 restaurants, avec présentation, conseils et prix indicatifs.',
+      'Transports de chaque ville : tarifs, gratuité des enfants, comment payer, et lien vers l’application officielle.',
+      'Quartiers, points de départ et fond de carte (fleuve, canaux, parcs) pour chaque capitale.',
+      'Budget en livres sterling et en forints, converti en euros.',
+      'Recherche de ville dans l’assistant de création de séjour.',
+    ],
+  },
+  {
     version: '1.2.0',
     date: '2026-10-29',
     title: 'Budget, carte libre et Toulouse',

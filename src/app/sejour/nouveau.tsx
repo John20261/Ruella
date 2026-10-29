@@ -1,6 +1,6 @@
 import { router } from 'expo-router';
 import { useState } from 'react';
-import { ActivityIndicator, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { ActivityIndicator, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import Animated, { FadeIn, FadeInRight, FadeOutLeft, useAnimatedStyle, withSpring } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Icon, type IconName } from '@/components/ui/icon';
 import { RText } from '@/components/ui/r-text';
 import type { AgeBand, Wish } from '@/content/types';
+import { capitals } from '@/content/cities';
 import { cities, getPlaces } from '@/lib/catalog';
 import { dayLong, dayShort, hour } from '@/lib/dates';
 import { currentPosition } from '@/lib/location';
@@ -27,7 +28,12 @@ function bandOf(age: number): AgeBand {
 
 const STEPS = ['Où ?', 'Quand ?', 'Qui ?', 'Comment ?', 'Budget', 'Départ'];
 
-const SOON = ['Vienne', 'Budapest', 'Lisbonne'];
+/** Recherche sans accents ni majuscules (« budapest », « hongrie », « lisb »). */
+function matchCity(name: string, country: string, query: string): boolean {
+  const norm = (t: string) => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const q = norm(query.trim());
+  return !q || norm(name).includes(q) || norm(country).includes(q);
+}
 
 function cityDetail(id: string): string {
   const places = getPlaces(id);
@@ -72,6 +78,7 @@ const BASES: Record<string, Base[]> = {
     { name: 'Saint-Cyprien', lat: 43.5975, lng: 1.431 },
     { name: 'Compans-Caffarelli', lat: 43.611, lng: 1.435 },
   ],
+  ...Object.fromEntries(capitals.map((c) => [c.city.id, c.bases])),
 };
 
 export default function NouveauSejour() {
@@ -88,6 +95,7 @@ export default function NouveauSejour() {
   const [pace, setPace] = useState<Pace>(profile.pace);
   const [wishes, setWishes] = useState<Wish[]>(profile.wishes);
   const [base, setBase] = useState<Base>(BASES.prague[0]);
+  const [cityQuery, setCityQuery] = useState('');
   const [rainDays, setRainDays] = useState<number[]>([]);
   const [locating, setLocating] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -167,7 +175,24 @@ export default function NouveauSejour() {
 
           {step === 0 ? (
             <View style={{ gap: space.m }}>
-              {cities.map((c) => (
+              <View style={[styles.search, { backgroundColor: colors.surface }]}>
+                <Icon name="pin" size={18} color={colors.textMuted} />
+                <TextInput
+                  value={cityQuery}
+                  onChangeText={setCityQuery}
+                  placeholder={`Chercher parmi ${cities.length} villes`}
+                  placeholderTextColor={colors.textMuted}
+                  style={[styles.searchInput, { color: colors.text }]}
+                  accessibilityLabel="Rechercher une ville"
+                  returnKeyType="search"
+                />
+                {cityQuery ? (
+                  <Pressable onPress={() => setCityQuery('')} accessibilityLabel="Effacer la recherche" hitSlop={10}>
+                    <Icon name="close" size={18} color={colors.textMuted} />
+                  </Pressable>
+                ) : null}
+              </View>
+              {cities.filter((c) => matchCity(c.name, c.country, cityQuery)).map((c) => (
                 <Option
                   key={c.id}
                   title={c.name}
@@ -179,9 +204,6 @@ export default function NouveauSejour() {
                     setBase(BASES[c.id]?.[0] ?? { name: c.name, ...(c.center ?? { lat: 0, lng: 0 }) });
                   }}
                 />
-              ))}
-              {SOON.map((name) => (
-                <Option key={name} title={name} detail="Bientôt" icon="pin" active={false} disabled onPress={() => {}} />
               ))}
             </View>
           ) : null}
@@ -390,6 +412,8 @@ function Stepper({ label, value, onMinus, onPlus }: { label: string; value: stri
 }
 
 const styles = StyleSheet.create({
+  search: { flexDirection: 'row', alignItems: 'center', gap: space.s, paddingHorizontal: space.m, borderRadius: radius.button, minHeight: touch.primary },
+  searchInput: { flex: 1, fontFamily: fonts.semibold, fontSize: 15, paddingVertical: 0 },
   root: { flex: 1 },
   busy: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: space.xxl },
   header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: space.l, paddingTop: space.s },

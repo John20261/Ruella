@@ -125,9 +125,20 @@ export default function SejoursScreen() {
       })}
 
       <Button label="Créer un séjour" variant="celebrate" onPress={() => router.push('/sejour/nouveau')} style={{ marginTop: space.s }} />
-      <View style={{ flexDirection: 'row', gap: space.s }}>
+      <RText variant="heading" style={{ marginTop: space.m }}>
+        Explorer une ville
+      </RText>
+      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: space.s }}>
         {cities.map((c) => (
-          <Button key={c.id} label={`Explorer ${c.name}`} variant="secondary" style={{ flex: 1, paddingHorizontal: 8 }} onPress={() => router.push({ pathname: '/ville/[id]', params: { id: c.id } })} />
+          <Pressable
+            key={c.id}
+            accessibilityRole="button"
+            accessibilityLabel={`Explorer ${c.name}`}
+            onPress={() => router.push({ pathname: '/ville/[id]', params: { id: c.id } })}
+            style={({ pressed }) => [styles.cityChip, { backgroundColor: colors.surface, opacity: pressed ? 0.7 : 1 }]}>
+            <Icon name="pin" size={14} color={colors.accent} />
+            <RText variant="bodyStrong">{c.name}</RText>
+          </Pressable>
         ))}
       </View>
 
@@ -144,6 +155,7 @@ export default function SejoursScreen() {
 }
 
 const styles = StyleSheet.create({
+  cityChip: { flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: 14, minHeight: 40, borderRadius: radius.pill },
   empty: { borderRadius: radius.card + 6, padding: space.xl, alignItems: 'center', gap: space.s },
   trip: { borderRadius: radius.card + 6, overflow: 'hidden', borderWidth: 2 },
   cover: { height: 150 },

@@ -1,5 +1,6 @@
 import { describe, expect, it } from '@jest/globals';
 
+import { capitals } from '@/content/cities';
 import { getPlace, getPlaces } from '@/lib/catalog';
 import { distanceM, leg } from '@/lib/geo';
 import { addDays, cluster, computeTimes, orderRoute, planTrip, rainSwap } from '@/lib/planner';
@@ -153,4 +154,32 @@ describe('Toulouse', () => {
     expect(ids).toContain('tls-capitole');
     expect(ids.some((id) => id === 'tls-cite-espace' || id === 'tls-halle-machine')).toBe(true);
   });
+});
+
+describe('capitales 1.3.0', () => {
+  for (const { city, bases } of capitals) {
+    it(`${city.name} : trois journées remplies, avec déjeuner et incontournables`, () => {
+      const days = planTrip({
+        places: getPlaces(city.id),
+        cityId: city.id,
+        startDate: '2026-11-02',
+        days: 3,
+        startTime: '09:30',
+        pace: 'equilibre',
+        wishes: ['histoire', 'enfants'],
+        ages: ['adult', '8-12'],
+        base: bases[0],
+      });
+      expect(days).toHaveLength(3);
+      for (const d of days) {
+        expect([city.id, d.date, d.stops.length >= 3]).toEqual([city.id, d.date, true]);
+        const places = d.stops.map((s) => getPlace(s.placeId)!);
+        expect([city.id, d.date, places.some((p) => p.kind === 'restaurant' || p.durationMin >= 180)]).toEqual([city.id, d.date, true]);
+      }
+      const ids = new Set(days.flatMap((d) => d.stops.map((s) => s.placeId)));
+      const must = getPlaces(city.id).filter((p) => p.mustSee && p.ages.includes('8-12'));
+      const seen = must.filter((p) => ids.has(p.id)).length;
+      expect([city.id, seen / must.length >= 0.6]).toEqual([city.id, true]);
+    });
+  }
 });

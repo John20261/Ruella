@@ -41,6 +41,9 @@ export default function ProfilScreen() {
   const [offline, setOffline] = useState<Record<string, string | null>>({});
   const [progress, setProgress] = useState<{ cityId: string; done: number; total: number } | null>(null);
   const [editorTaps, setEditorTaps] = useState(0);
+  const [allCities, setAllCities] = useState(false);
+  const trips = useApp((s) => s.trips);
+  const tripCities = new Set(trips.map((t) => t.cityId));
 
   useEffect(() => {
     Promise.all(cities.map(async (c) => [c.id, await offlineDate(c.id)] as const)).then((rows) => setOffline(Object.fromEntries(rows)));
@@ -167,7 +170,10 @@ export default function ProfilScreen() {
 
       <Section title="Hors ligne">
         <View style={card}>
-          {cities.map((c, i) => {
+          {(() => {
+            const mine = cities.filter((c) => tripCities.has(c.id) || offline[c.id]);
+            return allCities || mine.length === 0 ? cities : mine;
+          })().map((c, i, shown) => {
             const date = offline[c.id];
             const busy = progress?.cityId === c.id;
             return (
@@ -176,7 +182,7 @@ export default function ProfilScreen() {
                 icon="download"
                 label={busy ? `Enregistrement… ${progress.done}/${progress.total}` : date ? `Photos de ${c.name} enregistrées` : `Enregistrer les photos de ${c.name}`}
                 detail={date && !busy ? `Le ${new Date(date).toLocaleDateString('fr-FR')} · fiches et carte sont toujours disponibles` : `${cityPhotos(c.id).length} photos, pour un séjour sans réseau`}
-                last={i === cities.length - 1}
+                last={i === shown.length - 1 && allCities}
                 onPress={async () => {
                   if (progress) return;
                   setProgress({ cityId: c.id, done: 0, total: cityPhotos(c.id).length });
@@ -188,6 +194,9 @@ export default function ProfilScreen() {
               />
             );
           })}
+          {!allCities ? (
+            <Row icon="pin" label={`Voir les ${cities.length} villes`} detail="Préparer une autre destination" last onPress={() => setAllCities(true)} />
+          ) : null}
         </View>
       </Section>
 

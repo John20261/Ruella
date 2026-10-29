@@ -317,16 +317,19 @@ export function planTrip(input: PlanInput): TripDay[] {
       route = route.filter((p) => p !== weakest);
       used.delete(weakest.id);
     }
-    // Journée trop courte : on la complète avec les meilleurs lieux encore libres, tout près du parcours.
-    for (let guard = 0; guard < 6 && routeMinutes(base, route) < budget * 0.75; guard++) {
-      const room = budget - routeMinutes(base, route);
-      const heart = centroid(route.length ? route : [base]);
-      const extra = candidates
-        .map((c) => c.p)
-        .find((p) => !used.has(p.id) && p.durationMin <= room && (!rain.has(i) || p.indoor) && distanceM(heart, p) < 1100);
-      if (!extra) break;
-      used.add(extra.id);
-      route = preferLongVisitsEarly(base, orderRoute(base, [...route, extra]));
+    // Journée trop courte : on la complète avec les meilleurs lieux encore libres, tout près du parcours ;
+    // si elle reste à moitié vide (lieu excentré), on accepte un trajet en transports (4,5 km).
+    for (const [radius, fill] of [[1100, 0.75], [4500, 0.5]] as const) {
+      for (let guard = 0; guard < 6 && routeMinutes(base, route) < budget * fill; guard++) {
+        const room = budget - routeMinutes(base, route);
+        const heart = centroid(route.length ? route : [base]);
+        const extra = candidates
+          .map((c) => c.p)
+          .find((p) => !used.has(p.id) && p.durationMin <= room && (!rain.has(i) || p.indoor) && distanceM(heart, p) < radius);
+        if (!extra) break;
+        used.add(extra.id);
+        route = preferLongVisitsEarly(base, orderRoute(base, [...route, extra]));
+      }
     }
     const gemSlots = Math.max(0, Math.min(PACE_GEMS[pace], Math.floor((budget - routeMinutes(base, route)) / 12)));
     route = weaveGems(route, base, rain.has(i) ? gems.filter((g) => g.indoor) : gems, used, gemSlots);

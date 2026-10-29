@@ -35,7 +35,7 @@ export type Verification = {
   sources: string[];
 };
 
-export type Currency = 'CZK' | 'EUR';
+export type Currency = 'CZK' | 'EUR' | 'GBP' | 'HUF';
 
 /** Prix d'entrée par personne. */
 export type Cost = {
@@ -105,7 +105,7 @@ export type City = {
   name: string;
   country: string;
   timezone: string;
-  currency: string;
+  currency: Currency;
   /** Rectangle de la ville : toute fiche doit être dedans. */
   bounds: { minLat: number; maxLat: number; minLng: number; maxLng: number };
   /** Centre historique : point de départ par défaut et centrage de la carte. */
@@ -130,6 +130,8 @@ export type Transit = {
   tips: string[];
   source: string;
   verifiedAt?: string;
+  /** Tarifs estimés, non relus sur la page officielle. */
+  estimate?: boolean;
 };
 
 export type TransitApp = {
