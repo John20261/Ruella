@@ -1,0 +1,213 @@
+{
+ "country": "it",
+ "bbox": [
+  41.8,
+  41.99,
+  12.38,
+  12.6
+ ],
+ "items": [
+  {
+   "id": "rom-colisee",
+   "enwiki": "Colosseum",
+   "osm": "Colosseo, Roma",
+   "osmAlt": [
+    "Colisée, Roma"
+   ]
+  },
+  {
+   "id": "rom-forum",
+   "enwiki": "Roman Forum",
+   "osm": "Foro Romano, Roma",
+   "osmAlt": [
+    "Forum romain et Palatin, Roma"
+   ]
+  },
+  {
+   "id": "rom-pantheon",
+   "enwiki": "Pantheon, Rome",
+   "osm": "Pantheon, Roma",
+   "osmAlt": [
+    "Panthéon, Roma"
+   ]
+  },
+  {
+   "id": "rom-trevi",
+   "enwiki": "Trevi Fountain",
+   "osm": "Fontana di Trevi, Roma",
+   "osmAlt": [
+    "Fontaine de Trevi, Roma"
+   ]
+  },
+  {
+   "id": "rom-vatican",
+   "enwiki": "Vatican Museums",
+   "osm": "Musei Vaticani, Roma",
+   "osmAlt": [
+    "Musées du Vatican et chapelle Sixtine, Roma"
+   ]
+  },
+  {
+   "id": "rom-saint-pierre",
+   "enwiki": "St. Peter's Basilica",
+   "osm": "Basilica di San Pietro, Roma",
+   "osmAlt": [
+    "Basilique Saint-Pierre, Roma"
+   ]
+  },
+  {
+   "id": "rom-navone",
+   "enwiki": "Piazza Navona",
+   "osm": "Piazza Navona, Roma",
+   "osmAlt": [
+    "Place Navone, Roma"
+   ]
+  },
+  {
+   "id": "rom-chateau-saint-ange",
+   "enwiki": "Castel Sant'Angelo",
+   "osm": "Castel Sant'Angelo, Roma",
+   "osmAlt": [
+    "Château Saint-Ange, Roma"
+   ]
+  },
+  {
+   "id": "rom-espagne",
+   "enwiki": "Spanish Steps",
+   "osm": "Piazza di Spagna, Roma",
+   "osmAlt": [
+    "Place d'Espagne, Roma"
+   ]
+  },
+  {
+   "id": "rom-villa-borghese",
+   "enwiki": "Villa Borghese gardens",
+   "osm": "Villa Borghese, Roma",
+   "osmAlt": [
+    "Villa Borghèse, Roma"
+   ]
+  },
+  {
+   "id": "rom-trastevere",
+   "enwiki": "Trastevere",
+   "osm": "Trastevere, Roma",
+   "osmAlt": [
+    "Trastevere, Roma"
+   ]
+  },
+  {
+   "id": "rom-capitole",
+   "enwiki": "Capitoline Museums",
+   "osm": "Musei Capitolini, Roma",
+   "osmAlt": [
+    "Musées du Capitole, Roma"
+   ]
+  },
+  {
+   "id": "rom-serrure-aventin",
+   "osm": "Piazza dei Cavalieri di Malta, Roma",
+   "search": "Villa del Priorato di Malta",
+   "osmAlt": [
+    "Le trou de serrure de l'Aventin, Roma"
+   ]
+  },
+  {
+   "id": "rom-jardin-orangers",
+   "osm": "Giardino degli Aranci, Roma",
+   "search": "Giardino degli Aranci",
+   "osmAlt": [
+    "Jardin des Orangers, Roma"
+   ]
+  },
+  {
+   "id": "rom-bouche-verite",
+   "enwiki": "Mouth of Truth",
+   "osm": "Bocca della Verità, Roma",
+   "osmAlt": [
+    "La Bouche de la Vérité, Roma"
+   ]
+  },
+  {
+   "id": "rom-coppede",
+   "enwiki": "Coppedè",
+   "osm": "Quartiere Coppedè, Roma",
+   "osmAlt": [
+    "Quartier Coppedè, Roma"
+   ]
+  },
+  {
+   "id": "rom-tortues",
+   "enwiki": "Turtle Fountain",
+   "osm": "Fontana delle Tartarughe, Roma",
+   "osmAlt": [
+    "Fontaine des Tortues, Roma"
+   ]
+  },
+  {
+   "id": "rom-torre-argentina",
+   "enwiki": "Largo di Torre Argentina",
+   "osm": "Largo di Torre Argentina, Roma",
+   "osmAlt": [
+    "Les chats de Torre Argentina, Roma"
+   ]
+  },
+  {
+   "id": "rom-elephant-minerve",
+   "enwiki": "Elephant and Obelisk",
+   "osm": "Pulcino della Minerva, Roma",
+   "osmAlt": [
+    "L'éléphant de la Minerve, Roma"
+   ]
+  },
+  {
+   "id": "rom-pyramide",
+   "enwiki": "Pyramid of Cestius",
+   "osm": "Piramide Cestia, Roma",
+   "osmAlt": [
+    "Pyramide de Cestius, Roma"
+   ]
+  },
+  {
+   "id": "rom-da-enzo",
+   "osm": "Da Enzo al 29, Roma",
+   "osmAlt": [
+    "Da Enzo al 29, Roma"
+   ]
+  },
+  {
+   "id": "rom-da-baffetto",
+   "osm": "Pizzeria Da Baffetto, Via del Governo Vecchio, Roma",
+   "osmAlt": [
+    "Pizzeria Da Baffetto, Roma"
+   ]
+  },
+  {
+   "id": "rom-roscioli-forno",
+   "osm": "Antico Forno Roscioli, Roma",
+   "osmAlt": [
+    "Antico Forno Roscioli, Roma"
+   ]
+  },
+  {
+   "id": "rom-pizzarium",
+   "osm": "Pizzarium, Via della Meloria, Roma",
+   "osmAlt": [
+    "Pizzarium Bonci, Roma"
+   ]
+  },
+  {
+   "id": "rom-giolitti",
+   "osm": "Giolitti, Via degli Uffici del Vicario, Roma",
+   "osmAlt": [
+    "Giolitti, Roma"
+   ]
+  },
+  {
+   "id": "rom-trapizzino",
+   "osm": "Trapizzino, Trastevere, Roma",
+   "osmAlt": [
+    "Trapizzino Trastevere, Roma"
+   ]
+  }
+ ]
+}

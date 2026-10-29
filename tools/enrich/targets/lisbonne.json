@@ -1,0 +1,213 @@
+{
+ "country": "pt",
+ "bbox": [
+  38.68,
+  38.8,
+  -9.24,
+  -9.08
+ ],
+ "items": [
+  {
+   "id": "lis-belem",
+   "enwiki": "Belém Tower",
+   "osm": "Torre de Belém, Lisboa",
+   "osmAlt": [
+    "Tour de Belém, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-jeronimos",
+   "enwiki": "Jerónimos Monastery",
+   "osm": "Mosteiro dos Jerónimos, Lisboa",
+   "osmAlt": [
+    "Monastère des Hiéronymites, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-castelo",
+   "enwiki": "São Jorge Castle",
+   "osm": "Castelo de São Jorge, Lisboa",
+   "osmAlt": [
+    "Château Saint-Georges, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-alfama",
+   "enwiki": "Alfama",
+   "osm": "Alfama, Lisboa",
+   "osmAlt": [
+    "Alfama, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-tram-28",
+   "osm": "Martim Moniz tram stop, Lisboa",
+   "search": "Elétrico 28",
+   "osmAlt": [
+    "Tram 28, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-commerce",
+   "enwiki": "Praça do Comércio",
+   "osm": "Praça do Comércio, Lisboa",
+   "osmAlt": [
+    "Place du Commerce, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-oceanario",
+   "enwiki": "Lisbon Oceanarium",
+   "osm": "Oceanário de Lisboa, Lisboa",
+   "osmAlt": [
+    "Océanarium, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-santa-justa",
+   "enwiki": "Santa Justa Lift",
+   "osm": "Elevador de Santa Justa, Lisboa",
+   "osmAlt": [
+    "Ascenseur de Santa Justa, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-gulbenkian",
+   "enwiki": "Calouste Gulbenkian Museum",
+   "osm": "Museu Calouste Gulbenkian, Lisboa",
+   "osmAlt": [
+    "Musée Calouste-Gulbenkian, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-azulejo",
+   "enwiki": "National Azulejo Museum",
+   "osm": "Museu Nacional do Azulejo, Lisboa",
+   "osmAlt": [
+    "Musée national de l'azulejo, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-padrao",
+   "enwiki": "Padrão dos Descobrimentos",
+   "osm": "Padrão dos Descobrimentos, Lisboa",
+   "osmAlt": [
+    "Monument des Découvertes, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-parque-nacoes",
+   "enwiki": "Parque das Nações",
+   "osm": "Parque das Nações, Lisboa",
+   "osmAlt": [
+    "Parc des Nations, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-pasteis-belem",
+   "osm": "Pastéis de Belém, Lisboa",
+   "search": "Pastéis de Belém",
+   "osmAlt": [
+    "Les pastéis de Belém, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-santa-luzia",
+   "enwiki": "Miradouro de Santa Luzia",
+   "osm": "Miradouro de Santa Luzia, Lisboa",
+   "osmAlt": [
+    "Belvédère de Santa Luzia, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-lx-factory",
+   "enwiki": "LX Factory",
+   "osm": "LX Factory, Lisboa",
+   "osmAlt": [
+    "LX Factory, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-feira-ladra",
+   "enwiki": "Feira da Ladra",
+   "osm": "Feira da Ladra, Lisboa",
+   "osmAlt": [
+    "La foire de la Voleuse, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-bica",
+   "enwiki": "Ascensor da Bica",
+   "osm": "Ascensor da Bica, Lisboa",
+   "osmAlt": [
+    "Funiculaire de la Bica, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-sao-pedro-alcantara",
+   "enwiki": "Miradouro de São Pedro de Alcântara",
+   "osm": "Miradouro de São Pedro de Alcântara, Lisboa",
+   "osmAlt": [
+    "Belvédère de São Pedro de Alcântara, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-livraria-bertrand",
+   "osm": "Livraria Bertrand, Chiado, Lisboa",
+   "search": "Livraria Bertrand",
+   "osmAlt": [
+    "La plus vieille librairie du monde, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-jardim-estrela",
+   "enwiki": "Jardim da Estrela",
+   "osm": "Jardim da Estrela, Lisboa",
+   "osmAlt": [
+    "Le jardin de la Estrela, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-time-out-market",
+   "osm": "Time Out Market, Lisboa",
+   "osmAlt": [
+    "Time Out Market, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-cervejaria-ramiro",
+   "osm": "Cervejaria Ramiro, Lisboa",
+   "osmAlt": [
+    "Cervejaria Ramiro, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-bifanas-afonso",
+   "osm": "As Bifanas do Afonso, Lisboa",
+   "osmAlt": [
+    "As Bifanas do Afonso, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-taberna-rua-flores",
+   "osm": "Taberna da Rua das Flores, Lisboa",
+   "osmAlt": [
+    "Taberna da Rua das Flores, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-manteigaria",
+   "osm": "Manteigaria, Rua do Loreto, Lisboa",
+   "osmAlt": [
+    "Manteigaria, Lisboa"
+   ]
+  },
+  {
+   "id": "lis-ze-da-mouraria",
+   "osm": "Zé da Mouraria, Lisboa",
+   "osmAlt": [
+    "Zé da Mouraria, Lisboa"
+   ]
+  }
+ ]
+}

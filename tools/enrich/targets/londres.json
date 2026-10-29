@@ -1,0 +1,222 @@
+{
+ "country": "gb",
+ "bbox": [
+  51.4,
+  51.6,
+  -0.35,
+  0.1
+ ],
+ "items": [
+  {
+   "id": "lon-british-museum",
+   "enwiki": "British Museum",
+   "osm": "British Museum, London",
+   "osmAlt": [
+    "British Museum, London"
+   ]
+  },
+  {
+   "id": "lon-natural-history",
+   "enwiki": "Natural History Museum, London",
+   "osm": "Musée d’histoire naturelle, London",
+   "osmAlt": [
+    "Natural History Museum, London"
+   ]
+  },
+  {
+   "id": "lon-science-museum",
+   "enwiki": "Science Museum, London",
+   "osm": "Science Museum, London",
+   "osmAlt": [
+    "Science Museum, London"
+   ]
+  },
+  {
+   "id": "lon-tower-london",
+   "enwiki": "Tower of London",
+   "osm": "Tower of London, London",
+   "osmAlt": [
+    "Tour de Londres, London"
+   ]
+  },
+  {
+   "id": "lon-tower-bridge",
+   "enwiki": "Tower Bridge",
+   "osm": "Tower Bridge, London",
+   "osmAlt": [
+    "Tower Bridge, London"
+   ]
+  },
+  {
+   "id": "lon-london-eye",
+   "enwiki": "London Eye",
+   "osm": "London Eye, London",
+   "osmAlt": [
+    "London Eye, London"
+   ]
+  },
+  {
+   "id": "lon-westminster",
+   "enwiki": "Palace of Westminster",
+   "osm": "Palace of Westminster, London",
+   "osmAlt": [
+    "Westminster et Big Ben, London"
+   ]
+  },
+  {
+   "id": "lon-buckingham",
+   "enwiki": "Buckingham Palace",
+   "osm": "Buckingham Palace, London",
+   "osmAlt": [
+    "Buckingham Palace, London"
+   ]
+  },
+  {
+   "id": "lon-national-gallery",
+   "enwiki": "National Gallery",
+   "osm": "National Gallery, London",
+   "osmAlt": [
+    "National Gallery, London"
+   ]
+  },
+  {
+   "id": "lon-tate-modern",
+   "enwiki": "Tate Modern",
+   "osm": "Tate Modern, London",
+   "osmAlt": [
+    "Tate Modern, London"
+   ]
+  },
+  {
+   "id": "lon-hyde-park",
+   "enwiki": "Hyde Park, London",
+   "osm": "Hyde Park, London",
+   "osmAlt": [
+    "Hyde Park, London"
+   ]
+  },
+  {
+   "id": "lon-covent-garden",
+   "enwiki": "Covent Garden",
+   "osm": "Covent Garden, London",
+   "osmAlt": [
+    "Covent Garden, London"
+   ]
+  },
+  {
+   "id": "lon-sky-garden",
+   "osm": "Sky Garden, 20 Fenchurch Street, London",
+   "search": "Sky Garden",
+   "osmAlt": [
+    "Sky Garden, London"
+   ]
+  },
+  {
+   "id": "lon-leadenhall",
+   "enwiki": "Leadenhall Market",
+   "osm": "La City, London",
+   "osmAlt": [
+    "Leadenhall Market, London"
+   ]
+  },
+  {
+   "id": "lon-neals-yard",
+   "osm": "Neal's Yard, London",
+   "search": "Covent Garden",
+   "osmAlt": [
+    "Neal's Yard, London"
+   ]
+  },
+  {
+   "id": "lon-st-dunstan",
+   "osm": "St Dunstan in the East, London",
+   "search": "Église en ruine",
+   "osmAlt": [
+    "St Dunstan-in-the-East, London"
+   ]
+  },
+  {
+   "id": "lon-little-venice",
+   "enwiki": "Little Venice, London",
+   "osm": "Regent's Canal, London",
+   "osmAlt": [
+    "Little Venice, London"
+   ]
+  },
+  {
+   "id": "lon-postmans-park",
+   "enwiki": "Postman's Park",
+   "osm": "La City, London",
+   "osmAlt": [
+    "Postman's Park, London"
+   ]
+  },
+  {
+   "id": "lon-platform-934",
+   "osm": "King's Cross station, London",
+   "search": "Gare de King's Cross",
+   "osmAlt": [
+    "Quai 9 ¾, London"
+   ]
+  },
+  {
+   "id": "lon-kyoto-garden",
+   "osm": "Kyoto Garden, Holland Park, London",
+   "search": "Holland Park",
+   "osmAlt": [
+    "Kyoto Garden, London"
+   ]
+  },
+  {
+   "id": "lon-seven-noses",
+   "osm": "Admiralty Arch, London",
+   "search": "Soho",
+   "osmAlt": [
+    "Les sept nez de Soho, London"
+   ]
+  },
+  {
+   "id": "lon-borough-market",
+   "enwiki": "Borough Market",
+   "osm": "Borough Market, London",
+   "osmAlt": [
+    "Borough Market, London"
+   ]
+  },
+  {
+   "id": "lon-dishoom",
+   "osm": "Dishoom, Upper St Martin's Lane, London",
+   "osmAlt": [
+    "Dishoom Covent Garden, London"
+   ]
+  },
+  {
+   "id": "lon-poppies",
+   "osm": "Poppies Fish and Chips, Hanbury Street, London",
+   "osmAlt": [
+    "Poppies Fish & Chips, London"
+   ]
+  },
+  {
+   "id": "lon-regency-cafe",
+   "osm": "Regency Cafe, Regency Street, London",
+   "osmAlt": [
+    "Regency Café, London"
+   ]
+  },
+  {
+   "id": "lon-flat-iron",
+   "osm": "Flat Iron, Henrietta Street, London",
+   "osmAlt": [
+    "Flat Iron Covent Garden, London"
+   ]
+  },
+  {
+   "id": "lon-kanada-ya",
+   "osm": "Kanada-Ya, St Giles High Street, London",
+   "osmAlt": [
+    "Kanada-Ya, London"
+   ]
+  }
+ ]
+}

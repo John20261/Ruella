@@ -1,0 +1,213 @@
+{
+ "country": "hu",
+ "bbox": [
+  47.43,
+  47.57,
+  18.98,
+  19.15
+ ],
+ "items": [
+  {
+   "id": "bud-parlement",
+   "enwiki": "Hungarian Parliament Building",
+   "osm": "Országház, Budapest",
+   "osmAlt": [
+    "Parlement hongrois, Budapest"
+   ]
+  },
+  {
+   "id": "bud-bastion-pecheurs",
+   "enwiki": "Fisherman's Bastion",
+   "osm": "Halászbástya, Budapest",
+   "osmAlt": [
+    "Bastion des Pêcheurs, Budapest"
+   ]
+  },
+  {
+   "id": "bud-chateau",
+   "enwiki": "Buda Castle",
+   "osm": "Budavári Palota, Budapest",
+   "osmAlt": [
+    "Château de Buda, Budapest"
+   ]
+  },
+  {
+   "id": "bud-matthias",
+   "enwiki": "Matthias Church",
+   "osm": "Mátyás-templom, Budapest",
+   "osmAlt": [
+    "Église Matthias, Budapest"
+   ]
+  },
+  {
+   "id": "bud-szechenyi",
+   "enwiki": "Széchenyi thermal bath",
+   "osm": "Széchenyi gyógyfürdő, Budapest",
+   "osmAlt": [
+    "Bains Széchenyi, Budapest"
+   ]
+  },
+  {
+   "id": "bud-heros",
+   "enwiki": "Heroes' Square",
+   "osm": "Hősök tere, Budapest",
+   "osmAlt": [
+    "Place des Héros, Budapest"
+   ]
+  },
+  {
+   "id": "bud-basilique",
+   "enwiki": "St. Stephen's Basilica",
+   "osm": "Szent István-bazilika, Budapest",
+   "osmAlt": [
+    "Basilique Saint-Étienne, Budapest"
+   ]
+  },
+  {
+   "id": "bud-grande-synagogue",
+   "enwiki": "Dohány Street Synagogue",
+   "osm": "Dohány utcai zsinagóga, Budapest",
+   "osmAlt": [
+    "Grande Synagogue, Budapest"
+   ]
+  },
+  {
+   "id": "bud-marche-central",
+   "enwiki": "Great Market Hall",
+   "osm": "Nagyvásárcsarnok, Budapest",
+   "osmAlt": [
+    "Grande Halle, Budapest"
+   ]
+  },
+  {
+   "id": "bud-gellert-hill",
+   "enwiki": "Gellért Hill",
+   "osm": "Gellért-hegy, Budapest",
+   "osmAlt": [
+    "Colline Gellért et Citadelle, Budapest"
+   ]
+  },
+  {
+   "id": "bud-ile-marguerite",
+   "enwiki": "Margaret Island",
+   "osm": "Margitsziget, Budapest",
+   "osmAlt": [
+    "Île Marguerite, Budapest"
+   ]
+  },
+  {
+   "id": "bud-opera-bud",
+   "enwiki": "Hungarian State Opera House",
+   "osm": "Magyar Állami Operaház, Budapest",
+   "osmAlt": [
+    "Opéra national, Budapest"
+   ]
+  },
+  {
+   "id": "bud-chaussures-danube",
+   "enwiki": "Shoes on the Danube Bank",
+   "osm": "Cipők a Duna-parton, Budapest",
+   "osmAlt": [
+    "Les chaussures du Danube, Budapest"
+   ]
+  },
+  {
+   "id": "bud-szimpla",
+   "enwiki": "Szimpla Kert",
+   "osm": "Szimpla Kert, Budapest",
+   "osmAlt": [
+    "Le Szimpla Kert, Budapest"
+   ]
+  },
+  {
+   "id": "bud-funiculaire",
+   "enwiki": "Budapest Castle Hill Funicular",
+   "osm": "Budavári Sikló, Budapest",
+   "osmAlt": [
+    "Le funiculaire du château, Budapest"
+   ]
+  },
+  {
+   "id": "bud-vajdahunyad",
+   "enwiki": "Vajdahunyad Castle",
+   "osm": "Vajdahunyad vára, Budapest",
+   "osmAlt": [
+    "Le château Vajdahunyad, Budapest"
+   ]
+  },
+  {
+   "id": "bud-gozsdu",
+   "enwiki": "Gozsdu udvar",
+   "osm": "Gozsdu udvar, Budapest",
+   "osmAlt": [
+    "La cour Gozsdu, Budapest"
+   ]
+  },
+  {
+   "id": "bud-new-york-cafe",
+   "enwiki": "New York Café",
+   "osm": "New York Kávéház, Budapest",
+   "osmAlt": [
+    "Le New York Café, Budapest"
+   ]
+  },
+  {
+   "id": "bud-train-enfants",
+   "enwiki": "Children's Railway, Budapest",
+   "osm": "Gyermekvasút, Budapest",
+   "osmAlt": [
+    "Le train des enfants, Budapest"
+   ]
+  },
+  {
+   "id": "bud-pont-chaines",
+   "enwiki": "Széchenyi Chain Bridge",
+   "osm": "Széchenyi lánchíd, Budapest",
+   "osmAlt": [
+    "Le pont des Chaînes, Budapest"
+   ]
+  },
+  {
+   "id": "bud-frici-papa",
+   "osm": "Frici Papa, Király utca, Budapest",
+   "osmAlt": [
+    "Frici Papa, Budapest"
+   ]
+  },
+  {
+   "id": "bud-kisharang",
+   "osm": "Kisharang Étkezde, Budapest",
+   "osmAlt": [
+    "Kisharang Étkezde, Budapest"
+   ]
+  },
+  {
+   "id": "bud-langos-retro",
+   "osm": "Retró Lángos, Budapest",
+   "osmAlt": [
+    "Retró Lángos Büfé, Budapest"
+   ]
+  },
+  {
+   "id": "bud-gerbeaud",
+   "osm": "Gerbeaud, Vörösmarty tér, Budapest",
+   "osmAlt": [
+    "Gerbeaud, Budapest"
+   ]
+  },
+  {
+   "id": "bud-for-sale-pub",
+   "osm": "For Sale Pub, Budapest",
+   "osmAlt": [
+    "For Sale Pub, Budapest"
+   ]
+  },
+  {
+   "id": "bud-kurtos",
+   "osm": "Molnár's Kürtőskalács, Budapest",
+   "osmAlt": [
+    "Molnár’s Kürtőskalács, Budapest"
+   ]
+  }
+ ]
+}

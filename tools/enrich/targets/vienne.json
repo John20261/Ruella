@@ -1,0 +1,213 @@
+{
+ "country": "at",
+ "bbox": [
+  48.14,
+  48.27,
+  16.25,
+  16.47
+ ],
+ "items": [
+  {
+   "id": "vie-schonbrunn",
+   "enwiki": "Schönbrunn Palace",
+   "osm": "Schloss Schönbrunn, Wien",
+   "osmAlt": [
+    "Château de Schönbrunn, Wien"
+   ]
+  },
+  {
+   "id": "vie-stephansdom",
+   "enwiki": "St. Stephen's Cathedral, Vienna",
+   "osm": "Stephansdom, Wien",
+   "osmAlt": [
+    "Cathédrale Saint-Étienne, Wien"
+   ]
+  },
+  {
+   "id": "vie-hofburg",
+   "enwiki": "Hofburg",
+   "osm": "Hofburg, Wien",
+   "osmAlt": [
+    "Hofburg et musée Sissi, Wien"
+   ]
+  },
+  {
+   "id": "vie-belvedere",
+   "enwiki": "Belvedere, Vienna",
+   "osm": "Oberes Belvedere, Wien",
+   "osmAlt": [
+    "Belvédère, Wien"
+   ]
+  },
+  {
+   "id": "vie-prater",
+   "enwiki": "Wiener Riesenrad",
+   "osm": "Wiener Riesenrad, Wien",
+   "osmAlt": [
+    "Prater et la grande roue, Wien"
+   ]
+  },
+  {
+   "id": "vie-naturhistorisches",
+   "enwiki": "Natural History Museum, Vienna",
+   "osm": "Naturhistorisches Museum, Wien",
+   "osmAlt": [
+    "Musée d'histoire naturelle, Wien"
+   ]
+  },
+  {
+   "id": "vie-kunsthistorisches",
+   "enwiki": "Kunsthistorisches Museum",
+   "osm": "Kunsthistorisches Museum, Wien",
+   "osmAlt": [
+    "Musée d'histoire de l'art, Wien"
+   ]
+  },
+  {
+   "id": "vie-opera",
+   "enwiki": "Vienna State Opera",
+   "osm": "Wiener Staatsoper, Wien",
+   "osmAlt": [
+    "Opéra d'État, Wien"
+   ]
+  },
+  {
+   "id": "vie-albertina",
+   "enwiki": "Albertina",
+   "osm": "Albertina, Wien",
+   "osmAlt": [
+    "Albertina, Wien"
+   ]
+  },
+  {
+   "id": "vie-hundertwasser",
+   "enwiki": "Hundertwasserhaus",
+   "osm": "Hundertwasserhaus, Wien",
+   "osmAlt": [
+    "Maison Hundertwasser, Wien"
+   ]
+  },
+  {
+   "id": "vie-zoo-schonbrunn",
+   "enwiki": "Tiergarten Schönbrunn",
+   "osm": "Tiergarten Schönbrunn, Wien",
+   "osmAlt": [
+    "Zoo de Schönbrunn, Wien"
+   ]
+  },
+  {
+   "id": "vie-karlskirche",
+   "enwiki": "Karlskirche",
+   "osm": "Karlskirche, Wien",
+   "osmAlt": [
+    "Église Saint-Charles, Wien"
+   ]
+  },
+  {
+   "id": "vie-cafe-central",
+   "osm": "Café Central, Herrengasse, Wien",
+   "search": "Café Central",
+   "osmAlt": [
+    "Le Café Central, Wien"
+   ]
+  },
+  {
+   "id": "vie-donaukanal",
+   "enwiki": "Donaukanal",
+   "osm": "Donaukanal, Wien",
+   "osmAlt": [
+    "Les graffitis du canal du Danube, Wien"
+   ]
+  },
+  {
+   "id": "vie-anker-uhr",
+   "enwiki": "Ankeruhr",
+   "osm": "Ankeruhr, Wien",
+   "osmAlt": [
+    "L'horloge Anker, Wien"
+   ]
+  },
+  {
+   "id": "vie-naschmarkt",
+   "enwiki": "Naschmarkt",
+   "osm": "Naschmarkt, Wien",
+   "osmAlt": [
+    "Le Naschmarkt, Wien"
+   ]
+  },
+  {
+   "id": "vie-spittelberg",
+   "enwiki": "Spittelberg",
+   "osm": "Spittelberg, Wien",
+   "osmAlt": [
+    "Le quartier du Spittelberg, Wien"
+   ]
+  },
+  {
+   "id": "vie-majolikahaus",
+   "enwiki": "Majolikahaus",
+   "osm": "Majolikahaus, Wien",
+   "osmAlt": [
+    "La maison aux majoliques, Wien"
+   ]
+  },
+  {
+   "id": "vie-haus-des-meeres",
+   "enwiki": "Haus des Meeres",
+   "osm": "Haus des Meeres, Wien",
+   "osmAlt": [
+    "L'aquarium dans un bunker, Wien"
+   ]
+  },
+  {
+   "id": "vie-kapuzinergruft",
+   "enwiki": "Imperial Crypt",
+   "osm": "Kapuzinergruft, Wien",
+   "osmAlt": [
+    "La crypte des Capucins, Wien"
+   ]
+  },
+  {
+   "id": "vie-figlmuller",
+   "osm": "Figlmüller, Wollzeile, Wien",
+   "osmAlt": [
+    "Figlmüller, Wien"
+   ]
+  },
+  {
+   "id": "vie-plachutta",
+   "osm": "Plachutta, Wollzeile, Wien",
+   "osmAlt": [
+    "Plachutta Wollzeile, Wien"
+   ]
+  },
+  {
+   "id": "vie-sacher",
+   "osm": "Café Sacher, Philharmoniker Straße, Wien",
+   "osmAlt": [
+    "Café Sacher, Wien"
+   ]
+  },
+  {
+   "id": "vie-bitzinger",
+   "osm": "Bitzinger Würstelstand, Albertinaplatz, Wien",
+   "osmAlt": [
+    "Bitzinger Würstelstand, Wien"
+   ]
+  },
+  {
+   "id": "vie-demel",
+   "osm": "Demel, Kohlmarkt, Wien",
+   "osmAlt": [
+    "Demel, Wien"
+   ]
+  },
+  {
+   "id": "vie-zum-schwarzen-kameel",
+   "osm": "Zum Schwarzen Kameel, Wien",
+   "osmAlt": [
+    "Zum Schwarzen Kameel, Wien"
+   ]
+  }
+ ]
+}

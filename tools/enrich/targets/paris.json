@@ -1,0 +1,229 @@
+{
+ "country": "fr",
+ "bbox": [
+  48.78,
+  48.95,
+  2.18,
+  2.48
+ ],
+ "items": [
+  {
+   "id": "par-tour-eiffel",
+   "enwiki": "Eiffel Tower",
+   "osm": "Tour Eiffel, Paris",
+   "osmAlt": [
+    "Tour Eiffel, Paris"
+   ]
+  },
+  {
+   "id": "par-louvre",
+   "enwiki": "Louvre",
+   "osm": "Le Louvre, Paris",
+   "osmAlt": [
+    "Musée du Louvre, Paris"
+   ]
+  },
+  {
+   "id": "par-notre-dame",
+   "enwiki": "Notre-Dame de Paris",
+   "osm": "Notre-Dame de Paris, Paris",
+   "osmAlt": [
+    "Cathédrale Notre-Dame, Paris"
+   ]
+  },
+  {
+   "id": "par-sainte-chapelle",
+   "enwiki": "Sainte-Chapelle",
+   "osm": "Sainte-Chapelle, Paris",
+   "osmAlt": [
+    "Sainte-Chapelle, Paris"
+   ]
+  },
+  {
+   "id": "par-arc-triomphe",
+   "enwiki": "Arc de Triomphe",
+   "osm": "Arc de Triomphe, Paris",
+   "osmAlt": [
+    "Arc de Triomphe, Paris"
+   ]
+  },
+  {
+   "id": "par-orsay",
+   "enwiki": "Musée d'Orsay",
+   "osm": "Musée d'Orsay, Paris",
+   "osmAlt": [
+    "Musée d'Orsay, Paris"
+   ]
+  },
+  {
+   "id": "par-sacre-coeur",
+   "enwiki": "Sacré-Cœur, Paris",
+   "osm": "Basilique du Sacré-Cœur, Paris",
+   "osmAlt": [
+    "Sacré-Cœur, Paris"
+   ]
+  },
+  {
+   "id": "par-montmartre",
+   "enwiki": "Montmartre",
+   "osm": "Montmartre, Paris",
+   "osmAlt": [
+    "Butte Montmartre, Paris"
+   ]
+  },
+  {
+   "id": "par-luxembourg",
+   "enwiki": "Jardin du Luxembourg",
+   "osm": "Jardin du Luxembourg, Paris",
+   "osmAlt": [
+    "Jardin du Luxembourg, Paris"
+   ]
+  },
+  {
+   "id": "par-cite-sciences",
+   "enwiki": "Cité des Sciences et de l'Industrie",
+   "osm": "Cité des sciences et de l'industrie, Paris",
+   "osmAlt": [
+    "Cité des sciences, Paris"
+   ]
+  },
+  {
+   "id": "par-pantheon",
+   "enwiki": "Panthéon, Paris",
+   "osm": "Panthéon, Paris",
+   "osmAlt": [
+    "Panthéon, Paris"
+   ]
+  },
+  {
+   "id": "par-invalides",
+   "enwiki": "Les Invalides",
+   "osm": "Musée de l'Armée, Paris",
+   "osmAlt": [
+    "Les Invalides, Paris"
+   ]
+  },
+  {
+   "id": "par-marais",
+   "enwiki": "Le Marais",
+   "osm": "Le Marais, Paris",
+   "osmAlt": [
+    "Le Marais, Paris"
+   ]
+  },
+  {
+   "id": "par-grande-galerie",
+   "enwiki": "Grande Galerie de l'Évolution",
+   "osm": "Muséum national d’histoire naturelle, Paris",
+   "osmAlt": [
+    "Grande Galerie de l'Évolution, Paris"
+   ]
+  },
+  {
+   "id": "par-passage-panoramas",
+   "osm": "Passage des Panoramas, Paris",
+   "search": "Passages couverts",
+   "osmAlt": [
+    "Passage des Panoramas, Paris"
+   ]
+  },
+  {
+   "id": "par-rue-cremieux",
+   "osm": "Rue Crémieux, Paris",
+   "search": "12e arrondissement",
+   "osmAlt": [
+    "Rue Crémieux, Paris"
+   ]
+  },
+  {
+   "id": "par-coulee-verte",
+   "enwiki": "Coulée verte René-Dumont",
+   "osm": "Promenade plantée, Paris",
+   "osmAlt": [
+    "Coulée verte René-Dumont, Paris"
+   ]
+  },
+  {
+   "id": "par-vert-galant",
+   "osm": "Square du Vert-Galant, Paris",
+   "search": "Île de la Cité",
+   "osmAlt": [
+    "Square du Vert-Galant, Paris"
+   ]
+  },
+  {
+   "id": "par-shakespeare",
+   "enwiki": "Shakespeare and Company (bookstore)",
+   "osm": "Librairie, Paris",
+   "osmAlt": [
+    "Shakespeare and Company, Paris"
+   ]
+  },
+  {
+   "id": "par-mur-je-taime",
+   "enwiki": "Wall of Love (Paris)",
+   "osm": "Square Jehan-Rictus, Paris",
+   "osmAlt": [
+    "Le mur des je t'aime, Paris"
+   ]
+  },
+  {
+   "id": "par-point-zero",
+   "osm": "Parvis Notre-Dame - Place Jean-Paul II, Paris",
+   "search": "Parvis de Notre-Dame",
+   "osmAlt": [
+    "Point zéro des routes de France, Paris"
+   ]
+  },
+  {
+   "id": "par-arenes-lutece",
+   "enwiki": "Arènes de Lutèce",
+   "osm": "Quartier latin, Paris",
+   "osmAlt": [
+    "Arènes de Lutèce, Paris"
+   ]
+  },
+  {
+   "id": "par-chartier",
+   "osm": "Bouillon Chartier, rue du Faubourg-Montmartre, Paris",
+   "osmAlt": [
+    "Bouillon Chartier, Paris"
+   ]
+  },
+  {
+   "id": "par-bouillon-pigalle",
+   "osm": "Bouillon Pigalle, Paris",
+   "osmAlt": [
+    "Bouillon Pigalle, Paris"
+   ]
+  },
+  {
+   "id": "par-as-fallafel",
+   "osm": "L'As du Fallafel, rue des Rosiers, Paris",
+   "osmAlt": [
+    "L'As du Fallafel, Paris"
+   ]
+  },
+  {
+   "id": "par-breizh-cafe",
+   "osm": "Breizh Café, rue Vieille-du-Temple, Paris",
+   "osmAlt": [
+    "Breizh Café, Paris"
+   ]
+  },
+  {
+   "id": "par-berthillon",
+   "osm": "Berthillon, rue Saint-Louis-en-l’Île, Paris",
+   "osmAlt": [
+    "Berthillon, Paris"
+   ]
+  },
+  {
+   "id": "par-relais-entrecote",
+   "osm": "Le Relais de l'Entrecôte, rue Saint-Benoît, Paris",
+   "osmAlt": [
+    "Le Relais de l'Entrecôte, Paris"
+   ]
+  }
+ ]
+}

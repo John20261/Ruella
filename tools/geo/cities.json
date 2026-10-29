@@ -1,0 +1,62 @@
+{
+ "amsterdam": {
+  "bbox": "52.34,4.84,52.40,4.95",
+  "river": "Amstel",
+  "canal": "Prinsengracht|Keizersgracht|Herengracht|Singel",
+  "minArea": 3e-06
+ },
+ "berlin": {
+  "bbox": "52.47,13.30,52.56,13.48",
+  "river": "Spree",
+  "canal": "Landwehrkanal",
+  "minArea": 5e-06
+ },
+ "bruxelles": {
+  "bbox": "50.80,4.30,50.91,4.42",
+  "river": "Senne",
+  "canal": "Canal|Kanaal",
+  "minArea": 4e-06
+ },
+ "budapest": {
+  "bbox": "47.46,19.00,47.54,19.11",
+  "river": "Duna",
+  "canal": null,
+  "minArea": 5e-06
+ },
+ "lisbonne": {
+  "bbox": "38.68,-9.23,38.76,-9.10",
+  "river": "Tejo",
+  "canal": null,
+  "minArea": 4e-06
+ },
+ "londres": {
+  "bbox": "51.46,-0.25,51.55,0.02",
+  "river": "Thames",
+  "canal": "Regent's Canal",
+  "minArea": 4e-06
+ },
+ "madrid": {
+  "bbox": "40.38,-3.74,40.46,-3.66",
+  "river": "Manzanares",
+  "canal": null,
+  "minArea": 4e-06
+ },
+ "paris": {
+  "bbox": "48.81,2.22,48.91,2.42",
+  "river": "Seine",
+  "canal": "Canal Saint-Martin",
+  "minArea": 4e-06
+ },
+ "rome": {
+  "bbox": "41.85,12.42,41.95,12.55",
+  "river": "Tevere",
+  "canal": null,
+  "minArea": 4e-06
+ },
+ "vienne": {
+  "bbox": "48.16,16.29,48.24,16.44",
+  "river": "Donau|Donaukanal",
+  "canal": "Donaukanal",
+  "minArea": 5e-06
+ }
+}

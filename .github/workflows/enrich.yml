@@ -1,7 +1,7 @@
 name: Collecte positions et photos
 
 # Interroge Wikidata, Wikimedia Commons et OpenStreetMap pour les fiches listées
-# dans tools/enrich/targets.json ; le résultat est publié comme artefact, relu avant intégration.
+# dans tools/enrich/targets.json et tools/enrich/targets/*.json ; le résultat est relu avant intégration.
 on:
   workflow_dispatch:
   push:
@@ -14,18 +14,25 @@ permissions:
 jobs:
   enrich:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: node tools/enrich/enrich.mjs tools/enrich/targets.json out/enrichment.json
+      - name: Une ville après l'autre
+        run: |
+          for f in tools/enrich/targets/*.json; do
+            c=$(basename "$f" .json)
+            node tools/enrich/enrich.mjs "$f" "out/enrichment-$c.json" || echo "échec $c"
+          done
       - name: Déposer le résultat sur la branche enrichment-results
         run: |
           git config user.name "ruella-bot"
           git config user.email "ruella-bot@users.noreply.github.com"
           git checkout --orphan enrichment-results
           git rm -rq --cached .
-          git add -f out/enrichment.json
+          git add -f out/enrichment*.json
           git commit -qm "Résultat de collecte ${{ github.run_id }}"
           git push -f origin HEAD:enrichment-results

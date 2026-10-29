@@ -1,0 +1,213 @@
+{
+ "country": "be",
+ "bbox": [
+  50.78,
+  50.92,
+  4.28,
+  4.46
+ ],
+ "items": [
+  {
+   "id": "bru-grand-place",
+   "enwiki": "Grand-Place",
+   "osm": "Grote Markt, Bruxelles",
+   "osmAlt": [
+    "Grand-Place, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-atomium",
+   "enwiki": "Atomium",
+   "osm": "Atomium, Bruxelles",
+   "osmAlt": [
+    "Atomium, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-manneken-pis",
+   "enwiki": "Manneken Pis",
+   "osm": "Manneken Pis, Bruxelles",
+   "osmAlt": [
+    "Manneken-Pis, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-magritte",
+   "enwiki": "Magritte Museum",
+   "osm": "Musée Magritte Museum, Bruxelles",
+   "osmAlt": [
+    "Musée Magritte, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-bd",
+   "enwiki": "Belgian Comic Strip Center",
+   "osm": "Centre Belge de la Bande Dessinée, Bruxelles",
+   "osmAlt": [
+    "Centre belge de la bande dessinée, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-parlamentarium",
+   "enwiki": "Parlamentarium",
+   "osm": "Parlamentarium, Bruxelles",
+   "osmAlt": [
+    "Parlamentarium, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-cinquantenaire",
+   "enwiki": "Parc du Cinquantenaire",
+   "osm": "Parc du Cinquantenaire, Bruxelles",
+   "osmAlt": [
+    "Parc du Cinquantenaire, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-galeries",
+   "enwiki": "Royal Galleries of Saint-Hubert",
+   "osm": "Galeries Royales Saint-Hubert, Bruxelles",
+   "osmAlt": [
+    "Galeries royales Saint-Hubert, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-mont-arts",
+   "enwiki": "Mont des Arts",
+   "osm": "Kunstberg, Bruxelles",
+   "osmAlt": [
+    "Mont des Arts, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-palais-royal",
+   "enwiki": "Royal Palace of Brussels",
+   "osm": "Palais Royal, Bruxelles",
+   "osmAlt": [
+    "Palais royal, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-horta",
+   "enwiki": "Horta Museum",
+   "osm": "Musée Horta, Bruxelles",
+   "osmAlt": [
+    "Musée Horta, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-sciences-naturelles",
+   "enwiki": "Royal Belgian Institute of Natural Sciences",
+   "osm": "Muséum des Sciences naturelles, Bruxelles",
+   "osmAlt": [
+    "Muséum des sciences naturelles, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-jeanneke-pis",
+   "enwiki": "Jeanneke Pis",
+   "osm": "Jeanneke Pis, Bruxelles",
+   "osmAlt": [
+    "Jeanneke-Pis, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-murs-bd",
+   "osm": "Rue de l’Étuve, Bruxelles",
+   "search": "Parcours BD",
+   "osmAlt": [
+    "Le parcours BD dans la ville, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-toone",
+   "osm": "Théâtre Royal de Toone, Bruxelles",
+   "search": "Théâtre royal de Toone",
+   "osmAlt": [
+    "Théâtre de marionnettes Toone, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-marche-jeu-balle",
+   "enwiki": "Place du Jeu de Balle",
+   "osm": "Place du Jeu de Balle, Bruxelles",
+   "osmAlt": [
+    "Le marché aux puces du Jeu de Balle, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-ascenseur-marolles",
+   "osm": "Ascenseur des Marolles, Bruxelles",
+   "search": "Ascenseur des Marolles",
+   "osmAlt": [
+    "L'ascenseur des Marolles, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-parc-bruxelles",
+   "enwiki": "Brussels Park",
+   "osm": "Parc de Bruxelles, Bruxelles",
+   "osmAlt": [
+    "Le parc de Bruxelles, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-rue-bouchers",
+   "enwiki": "Rue des Bouchers",
+   "osm": "Rue des Bouchers, Bruxelles",
+   "osmAlt": [
+    "La rue des Bouchers, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-saint-gery",
+   "enwiki": "Halles Saint-Géry",
+   "osm": "Halles Saint-Géry, Bruxelles",
+   "osmAlt": [
+    "Les halles Saint-Géry, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-fin-de-siecle",
+   "osm": "Fin de Siècle, Rue des Chartreux, Bruxelles",
+   "osmAlt": [
+    "Fin de Siècle, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-maison-antoine",
+   "osm": "Maison Antoine, Place Jourdan, Bruxelles",
+   "osmAlt": [
+    "Maison Antoine, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-chez-leon",
+   "osm": "Chez Léon, Rue des Bouchers, Bruxelles",
+   "osmAlt": [
+    "Chez Léon, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-noordzee",
+   "osm": "Noordzee Mer du Nord, Bruxelles",
+   "osmAlt": [
+    "Noordzee - Mer du Nord, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-maison-dandoy",
+   "osm": "Maison Dandoy, Rue au Beurre, Bruxelles",
+   "osmAlt": [
+    "Maison Dandoy, Bruxelles"
+   ]
+  },
+  {
+   "id": "bru-nuetnigenough",
+   "osm": "Nüetnigenough, Bruxelles",
+   "osmAlt": [
+    "Nüetnigenough, Bruxelles"
+   ]
+  }
+ ]
+}

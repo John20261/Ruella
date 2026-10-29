@@ -1,0 +1,213 @@
+{
+ "country": "es",
+ "bbox": [
+  40.36,
+  40.5,
+  -3.78,
+  -3.6
+ ],
+ "items": [
+  {
+   "id": "mad-prado",
+   "enwiki": "Museo del Prado",
+   "osm": "Museo del Prado, Madrid",
+   "osmAlt": [
+    "Musée du Prado, Madrid"
+   ]
+  },
+  {
+   "id": "mad-palais-royal",
+   "enwiki": "Royal Palace of Madrid",
+   "osm": "Palacio Real, Madrid",
+   "osmAlt": [
+    "Palais royal, Madrid"
+   ]
+  },
+  {
+   "id": "mad-retiro",
+   "enwiki": "Buen Retiro Park",
+   "osm": "Parque del Retiro, Madrid",
+   "osmAlt": [
+    "Parc du Retiro, Madrid"
+   ]
+  },
+  {
+   "id": "mad-plaza-mayor",
+   "enwiki": "Plaza Mayor, Madrid",
+   "osm": "Plaza Mayor, Madrid",
+   "osmAlt": [
+    "Plaza Mayor, Madrid"
+   ]
+  },
+  {
+   "id": "mad-sol",
+   "enwiki": "Puerta del Sol",
+   "osm": "Puerta del Sol, Madrid",
+   "osmAlt": [
+    "Puerta del Sol, Madrid"
+   ]
+  },
+  {
+   "id": "mad-reina-sofia",
+   "enwiki": "Museo Nacional Centro de Arte Reina Sofía",
+   "osm": "Museo Reina Sofía, Madrid",
+   "osmAlt": [
+    "Musée Reina Sofía, Madrid"
+   ]
+  },
+  {
+   "id": "mad-thyssen",
+   "enwiki": "Thyssen-Bornemisza Museum",
+   "osm": "Museo Thyssen, Madrid",
+   "osmAlt": [
+    "Musée Thyssen-Bornemisza, Madrid"
+   ]
+  },
+  {
+   "id": "mad-debod",
+   "enwiki": "Temple of Debod",
+   "osm": "Templo de Debod, Madrid",
+   "osmAlt": [
+    "Temple de Debod, Madrid"
+   ]
+  },
+  {
+   "id": "mad-bernabeu",
+   "enwiki": "Santiago Bernabéu Stadium",
+   "osm": "Estadio Santiago Bernabéu, Madrid",
+   "osmAlt": [
+    "Stade Santiago-Bernabéu, Madrid"
+   ]
+  },
+  {
+   "id": "mad-gran-via",
+   "enwiki": "Gran Vía",
+   "osm": "Gran Vía, Madrid",
+   "osmAlt": [
+    "Gran Vía, Madrid"
+   ]
+  },
+  {
+   "id": "mad-almudena",
+   "enwiki": "Almudena Cathedral",
+   "osm": "Catedral de la Almudena, Madrid",
+   "osmAlt": [
+    "Cathédrale de l'Almudena, Madrid"
+   ]
+  },
+  {
+   "id": "mad-jardin-botanique",
+   "enwiki": "Royal Botanical Garden of Madrid",
+   "osm": "Real Jardín Botánico, Madrid",
+   "osmAlt": [
+    "Jardin botanique royal, Madrid"
+   ]
+  },
+  {
+   "id": "mad-palais-cristal",
+   "enwiki": "Palacio de Cristal",
+   "osm": "Palacio de Cristal, Madrid",
+   "osmAlt": [
+    "Palais de cristal, Madrid"
+   ]
+  },
+  {
+   "id": "mad-kilometre-zero",
+   "osm": "Kilómetro Cero, Puerta del Sol, Madrid",
+   "search": "Kilómetro Cero",
+   "osmAlt": [
+    "Le kilomètre zéro, Madrid"
+   ]
+  },
+  {
+   "id": "mad-ours-arbousier",
+   "enwiki": "Statue of the Bear and the Strawberry Tree",
+   "osm": "El Oso y el Madroño, Madrid",
+   "osmAlt": [
+    "L'ours et l'arbousier, Madrid"
+   ]
+  },
+  {
+   "id": "mad-ange-dechu",
+   "enwiki": "Fuente del Ángel Caído",
+   "osm": "Fuente del Ángel Caído, Madrid",
+   "osmAlt": [
+    "L'ange déchu, Madrid"
+   ]
+  },
+  {
+   "id": "mad-cuesta-moyano",
+   "enwiki": "Cuesta de Moyano",
+   "osm": "Cuesta de Moyano, Madrid",
+   "osmAlt": [
+    "Les bouquinistes de Moyano, Madrid"
+   ]
+  },
+  {
+   "id": "mad-mirador-cibeles",
+   "enwiki": "Cibeles Palace",
+   "osm": "Mirador de CentroCentro, Madrid",
+   "osmAlt": [
+    "Belvédère du palais de Cibeles, Madrid"
+   ]
+  },
+  {
+   "id": "mad-rastro",
+   "enwiki": "El Rastro",
+   "osm": "El Rastro, Madrid",
+   "osmAlt": [
+    "Le marché du Rastro, Madrid"
+   ]
+  },
+  {
+   "id": "mad-plaza-villa",
+   "enwiki": "Plaza de la Villa",
+   "osm": "Plaza de la Villa, Madrid",
+   "osmAlt": [
+    "La place de la Villa, Madrid"
+   ]
+  },
+  {
+   "id": "mad-san-gines",
+   "osm": "Chocolatería San Ginés, Madrid",
+   "osmAlt": [
+    "Chocolatería San Ginés, Madrid"
+   ]
+  },
+  {
+   "id": "mad-botin",
+   "osm": "Sobrino de Botín, Madrid",
+   "osmAlt": [
+    "Restaurante Botín, Madrid"
+   ]
+  },
+  {
+   "id": "mad-san-miguel",
+   "osm": "Mercado de San Miguel, Madrid",
+   "osmAlt": [
+    "Marché de San Miguel, Madrid"
+   ]
+  },
+  {
+   "id": "mad-casa-labra",
+   "osm": "Casa Labra, Madrid",
+   "osmAlt": [
+    "Casa Labra, Madrid"
+   ]
+  },
+  {
+   "id": "mad-el-brillante",
+   "osm": "El Brillante, Glorieta del Emperador Carlos V, Madrid",
+   "osmAlt": [
+    "El Brillante, Madrid"
+   ]
+  },
+  {
+   "id": "mad-casa-lucio",
+   "osm": "Casa Lucio, Cava Baja, Madrid",
+   "osmAlt": [
+    "Casa Lucio, Madrid"
+   ]
+  }
+ ]
+}

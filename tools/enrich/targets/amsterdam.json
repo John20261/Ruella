@@ -1,0 +1,213 @@
+{
+ "country": "nl",
+ "bbox": [
+  52.32,
+  52.42,
+  4.8,
+  4.98
+ ],
+ "items": [
+  {
+   "id": "ams-rijksmuseum",
+   "enwiki": "Rijksmuseum",
+   "osm": "Rijksmuseum, Amsterdam",
+   "osmAlt": [
+    "Rijksmuseum, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-van-gogh",
+   "enwiki": "Van Gogh Museum",
+   "osm": "Van Gogh Museum, Amsterdam",
+   "osmAlt": [
+    "Musée Van Gogh, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-anne-frank",
+   "enwiki": "Anne Frank House",
+   "osm": "Anne Frank Huis, Amsterdam",
+   "osmAlt": [
+    "Maison d'Anne Frank, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-canaux",
+   "enwiki": "Canal Ring",
+   "osm": "Grachtengordel, Amsterdam",
+   "osmAlt": [
+    "Croisière sur les canaux, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-dam",
+   "enwiki": "Royal Palace of Amsterdam",
+   "osm": "Dam & Koninklijk Paleis, Amsterdam",
+   "osmAlt": [
+    "Place du Dam et Palais royal, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-vondelpark",
+   "enwiki": "Vondelpark",
+   "osm": "Vondelpark, Amsterdam",
+   "osmAlt": [
+    "Vondelpark, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-nemo",
+   "enwiki": "NEMO Science Museum",
+   "osm": "NEMO Science Museum, Amsterdam",
+   "osmAlt": [
+    "Musée des sciences NEMO, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-artis",
+   "enwiki": "Artis zoo",
+   "osm": "Natura Artis Magistra, Amsterdam",
+   "osmAlt": [
+    "Zoo Artis, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-maison-rembrandt",
+   "enwiki": "Rembrandt House Museum",
+   "osm": "Museum Het Rembrandthuis, Amsterdam",
+   "osmAlt": [
+    "Maison de Rembrandt, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-a-dam",
+   "enwiki": "A'DAM Tower",
+   "osm": "A'DAM Lookout, Amsterdam",
+   "osmAlt": [
+    "A'DAM Lookout, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-jordaan",
+   "enwiki": "Jordaan",
+   "osm": "Jordaan, Amsterdam",
+   "osmAlt": [
+    "Jordaan, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-scheepvaart",
+   "enwiki": "National Maritime Museum, Amsterdam",
+   "osm": "Het Scheepvaartmuseum, Amsterdam",
+   "osmAlt": [
+    "Musée maritime, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-begijnhof",
+   "enwiki": "Begijnhof, Amsterdam",
+   "osm": "Begijnhof, Amsterdam",
+   "osmAlt": [
+    "Le béguinage, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-marche-fleurs",
+   "enwiki": "Bloemenmarkt",
+   "osm": "Bloemenmarkt, Amsterdam",
+   "osmAlt": [
+    "Le marché aux fleurs flottant, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-maisons-dansantes",
+   "osm": "Damrak, Amsterdam",
+   "search": "Damrak",
+   "osmAlt": [
+    "Les maisons qui dansent, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-magere-brug",
+   "enwiki": "Magere Brug",
+   "osm": "Magere Brug, Amsterdam",
+   "osmAlt": [
+    "Le pont maigre, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-moulin-gooyer",
+   "enwiki": "De Gooyer windmill",
+   "osm": "Molen De Gooyer, Amsterdam",
+   "osmAlt": [
+    "Le moulin De Gooyer, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-negen-straatjes",
+   "enwiki": "De Negen Straatjes",
+   "osm": "De 9 Straatjes, Amsterdam",
+   "osmAlt": [
+    "Les neuf petites rues, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-pont-bicycle",
+   "osm": "Fietsenstalling Stationsplein, Amsterdam",
+   "search": "Fietsenstalling Stationsplein",
+   "osmAlt": [
+    "Le parking à vélos sous l'eau, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-ferry-noord",
+   "osm": "Buiksloterweg ferry, Amsterdam",
+   "search": "Buiksloterwegveer",
+   "osmAlt": [
+    "Le ferry gratuit pour Noord, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-foodhallen",
+   "osm": "Foodhallen, Amsterdam",
+   "osmAlt": [
+    "Foodhallen, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-pancakes-amsterdam",
+   "osm": "Pancakes Amsterdam, Berenstraat",
+   "osmAlt": [
+    "Pancakes Amsterdam, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-winkel-43",
+   "osm": "Winkel 43, Amsterdam",
+   "osmAlt": [
+    "Winkel 43, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-haesje-claes",
+   "osm": "Haesje Claes, Amsterdam",
+   "osmAlt": [
+    "Haesje Claes, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-vleminckx",
+   "osm": "Vleminckx de Sausmeester, Amsterdam",
+   "osmAlt": [
+    "Vleminckx, Amsterdam"
+   ]
+  },
+  {
+   "id": "ams-stubbe-haring",
+   "osm": "Stubbe's Haring, Amsterdam",
+   "osmAlt": [
+    "Stubbe's Haring, Amsterdam"
+   ]
+  }
+ ]
+}

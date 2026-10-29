@@ -1,0 +1,213 @@
+{
+ "country": "de",
+ "bbox": [
+  52.44,
+  52.58,
+  13.24,
+  13.52
+ ],
+ "items": [
+  {
+   "id": "ber-brandebourg",
+   "enwiki": "Brandenburg Gate",
+   "osm": "Brandenburger Tor, Berlin",
+   "osmAlt": [
+    "Porte de Brandebourg, Berlin"
+   ]
+  },
+  {
+   "id": "ber-reichstag",
+   "enwiki": "Reichstag building",
+   "osm": "Reichstagsgebäude, Berlin",
+   "osmAlt": [
+    "Reichstag et sa coupole, Berlin"
+   ]
+  },
+  {
+   "id": "ber-east-side",
+   "enwiki": "East Side Gallery",
+   "osm": "East Side Gallery, Berlin",
+   "osmAlt": [
+    "East Side Gallery, Berlin"
+   ]
+  },
+  {
+   "id": "ber-memorial-mur",
+   "enwiki": "Berlin Wall Memorial",
+   "osm": "Gedenkstätte Berliner Mauer, Berlin",
+   "osmAlt": [
+    "Mémorial du Mur de Berlin, Berlin"
+   ]
+  },
+  {
+   "id": "ber-ile-musees",
+   "enwiki": "Neues Museum",
+   "osm": "Neues Museum, Berlin",
+   "osmAlt": [
+    "Neues Museum et Néfertiti, Berlin"
+   ]
+  },
+  {
+   "id": "ber-checkpoint-charlie",
+   "enwiki": "Checkpoint Charlie",
+   "osm": "Checkpoint Charlie, Berlin",
+   "osmAlt": [
+    "Checkpoint Charlie, Berlin"
+   ]
+  },
+  {
+   "id": "ber-memorial-juifs",
+   "enwiki": "Memorial to the Murdered Jews of Europe",
+   "osm": "Denkmal für die ermordeten Juden Europas, Berlin",
+   "osmAlt": [
+    "Mémorial aux Juifs assassinés, Berlin"
+   ]
+  },
+  {
+   "id": "ber-tv-tower",
+   "enwiki": "Fernsehturm Berlin",
+   "osm": "Berliner Fernsehturm, Berlin",
+   "osmAlt": [
+    "Tour de télévision, Berlin"
+   ]
+  },
+  {
+   "id": "ber-tiergarten",
+   "enwiki": "Tiergarten",
+   "osm": "Großer Tiergarten, Berlin",
+   "osmAlt": [
+    "Tiergarten et colonne de la Victoire, Berlin"
+   ]
+  },
+  {
+   "id": "ber-charlottenburg",
+   "enwiki": "Charlottenburg Palace",
+   "osm": "Schloss Charlottenburg, Berlin",
+   "osmAlt": [
+    "Château de Charlottenburg, Berlin"
+   ]
+  },
+  {
+   "id": "ber-musee-technique",
+   "enwiki": "German Museum of Technology",
+   "osm": "Deutsches Technikmuseum, Berlin",
+   "osmAlt": [
+    "Musée allemand des Techniques, Berlin"
+   ]
+  },
+  {
+   "id": "ber-gendarmenmarkt",
+   "enwiki": "Gendarmenmarkt",
+   "osm": "Gendarmenmarkt, Berlin",
+   "osmAlt": [
+    "Gendarmenmarkt, Berlin"
+   ]
+  },
+  {
+   "id": "ber-tempelhof",
+   "enwiki": "Tempelhofer Feld",
+   "osm": "Tempelhofer Feld, Berlin",
+   "osmAlt": [
+    "Le parc de Tempelhof, Berlin"
+   ]
+  },
+  {
+   "id": "ber-ampelmann",
+   "osm": "Ampelmann Shop, Hackesche Höfe, Berlin",
+   "search": "Ampelmännchen",
+   "osmAlt": [
+    "Les petits bonshommes des feux, Berlin"
+   ]
+  },
+  {
+   "id": "ber-hackesche-hofe",
+   "enwiki": "Hackesche Höfe",
+   "osm": "Hackesche Höfe, Berlin",
+   "osmAlt": [
+    "Les cours Hackesche Höfe, Berlin"
+   ]
+  },
+  {
+   "id": "ber-mauerpark",
+   "enwiki": "Mauerpark",
+   "osm": "Mauerpark, Berlin",
+   "osmAlt": [
+    "Le marché du Mauerpark, Berlin"
+   ]
+  },
+  {
+   "id": "ber-oberbaum",
+   "enwiki": "Oberbaumbrücke",
+   "osm": "Oberbaumbrücke, Berlin",
+   "osmAlt": [
+    "Le pont de l'Oberbaum, Berlin"
+   ]
+  },
+  {
+   "id": "ber-markthalle-9",
+   "enwiki": "Markthalle Neun",
+   "osm": "Markthalle Neun, Berlin",
+   "osmAlt": [
+    "La Markthalle Neun, Berlin"
+   ]
+  },
+  {
+   "id": "ber-stolpersteine",
+   "osm": "Hackescher Markt, Berlin",
+   "search": "Stolpersteine",
+   "osmAlt": [
+    "Les pavés de mémoire, Berlin"
+   ]
+  },
+  {
+   "id": "ber-treptower-park",
+   "enwiki": "Treptower Park",
+   "osm": "Treptower Park, Berlin",
+   "osmAlt": [
+    "Le mémorial de Treptow, Berlin"
+   ]
+  },
+  {
+   "id": "ber-curry-36",
+   "osm": "Curry 36, Mehringdamm, Berlin",
+   "osmAlt": [
+    "Curry 36, Berlin"
+   ]
+  },
+  {
+   "id": "ber-mustafas",
+   "osm": "Mustafa's Gemüse Kebap, Berlin",
+   "osmAlt": [
+    "Mustafa's Gemüse Kebap, Berlin"
+   ]
+  },
+  {
+   "id": "ber-zur-letzten-instanz",
+   "osm": "Zur letzten Instanz, Berlin",
+   "osmAlt": [
+    "Zur letzten Instanz, Berlin"
+   ]
+  },
+  {
+   "id": "ber-konnopke",
+   "osm": "Konnopke's Imbiß, Berlin",
+   "osmAlt": [
+    "Konnopke's Imbiß, Berlin"
+   ]
+  },
+  {
+   "id": "ber-rogacki",
+   "osm": "Rogacki, Wilmersdorfer Straße, Berlin",
+   "osmAlt": [
+    "Rogacki, Berlin"
+   ]
+  },
+  {
+   "id": "ber-cafe-einstein",
+   "osm": "Café Einstein Stammhaus, Berlin",
+   "osmAlt": [
+    "Café Einstein Stammhaus, Berlin"
+   ]
+  }
+ ]
+}

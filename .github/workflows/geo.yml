@@ -13,19 +13,24 @@ permissions:
 jobs:
   geo:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node tools/geo/geo.mjs out/geo-prague.json prague
-      - run: sleep 20 && node tools/geo/geo.mjs out/geo-toulouse.json toulouse
+      - name: Une ville après l'autre (Overpass limite le débit)
+        run: |
+          for c in prague toulouse paris londres rome madrid lisbonne berlin amsterdam bruxelles vienne budapest; do
+            node tools/geo/geo.mjs out/geo-$c.json $c || echo "échec $c"
+            sleep 20
+          done
       - name: Déposer le résultat sur la branche geo-results
         run: |
           git config user.name "ruella-bot"
           git config user.email "ruella-bot@users.noreply.github.com"
           git checkout --orphan geo-results
           git rm -rq --cached .
-          git add -f out/geo-prague.json out/geo-toulouse.json
+          git add -f out/geo-*.json
           git commit -qm "Fond de carte ${{ github.run_id }}"
           git push -f origin HEAD:geo-results

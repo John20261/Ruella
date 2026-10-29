@@ -1,6 +1,6 @@
 // Récupère la géométrie de fond d'une ville (rivière, grands parcs) sur OpenStreetMap (Overpass),
 // la simplifie (Douglas-Peucker) et l'écrit en JSON compact. Usage : node geo.mjs <sortie.json>
-import { writeFileSync, mkdirSync } from 'node:fs';
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs';
 import { dirname } from 'node:path';
 
 const OUT = process.argv[2] ?? 'out/geo.json';
@@ -8,6 +8,8 @@ const CITY = process.argv[3] ?? 'prague';
 const CITIES = {
   prague: { bbox: '50.00,14.32,50.14,14.52', river: '^Vltava$', canal: null, minArea: 0.00002 },
   toulouse: { bbox: '43.54,1.36,43.67,1.52', river: 'Garonne', canal: 'Canal du Midi|Canal de Brienne|Canal latéral', minArea: 0.000003 },
+  // Les capitales ajoutées en 1.3.0 sont décrites dans cities.json.
+  ...JSON.parse(readFileSync(new URL('./cities.json', import.meta.url), 'utf8')),
 };
 const CONF = CITIES[CITY];
 const BBOX = CONF.bbox; // sud, ouest, nord, est
