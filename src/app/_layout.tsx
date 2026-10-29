@@ -14,6 +14,7 @@ import { Pressable, Text, View } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { CelebrationHost } from '@/components/celebration';
+import { UpdateBanner } from '@/components/update-banner';
 import { hydrate, useHydrated } from '@/store/app-store';
 import { RuellaThemeProvider, useRuellaTheme } from '@/theme/theme-context';
 
@@ -55,10 +56,12 @@ function ThemedNavigation() {
         <Stack.Screen name="sejour/nouveau" options={{ presentation: 'modal' }} />
         <Stack.Screen name="sejour/ajouter" options={{ presentation: 'modal' }} />
         <Stack.Screen name="budget/[id]" />
+        <Stack.Screen name="nouveautes" />
         <Stack.Screen name="editeur" />
         <Stack.Screen name="confidentialite" />
       </Stack>
       <CelebrationHost />
+      <UpdateBanner />
     </ThemeProvider>
   );
 }

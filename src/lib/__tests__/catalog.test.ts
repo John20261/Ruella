@@ -75,3 +75,13 @@ describe('formatDuration', () => {
     expect(formatDuration(75)).toBe('1 h 15');
   });
 });
+
+describe('versions', () => {
+  it('le journal des versions décrit la version de app.json', () => {
+     
+    const app = require('../../../app.json');
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { changelog } = require('../../content/changelog');
+    expect(changelog[0].version).toBe(app.expo.version);
+  });
+});

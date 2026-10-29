@@ -195,6 +195,7 @@ export default function ProfilScreen() {
         <View style={card}>
           <Row icon="shield" label="Compte" detail="Local : tout reste sur ce téléphone, sans inscription" />
           <Row icon="download" label="Exporter mes données" detail="Séjours, visites et réglages au format JSON" onPress={exportData} />
+          <Row icon="sparkles" label={`Nouveautés de la version ${version}`} detail="Ce qui a changé à chaque version" onPress={() => router.push('/nouveautes')} />
           <Row icon="book" label="Confidentialité" onPress={() => router.push('/confidentialite')} />
           <Row icon="trash" label="Tout effacer" danger last onPress={eraseAll} />
         </View>
