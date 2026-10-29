@@ -49,6 +49,17 @@ describe('tarifs', () => {
   });
 });
 
+describe('applications de transport', () => {
+  it('chaque ville propose une application officielle pour acheter ses billets', () => {
+    for (const city of cities) {
+      const app = city.transit?.apps.find((a) => a.tickets);
+      expect([city.id, !!app]).toEqual([city.id, true]);
+      expect(app!.ios.startsWith('https://apps.apple.com/')).toBe(true);
+      expect(app!.android.startsWith('https://play.google.com/store/apps/details?id=')).toBe(true);
+    }
+  });
+});
+
 describe('contenu', () => {
   it('chaque lieu a sa présentation, chaque restaurant son prix', () => {
     for (const city of cities) {

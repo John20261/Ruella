@@ -53,7 +53,16 @@ export const toulouseTransit: Transit = {
   day: { label: 'Pass 24 h', adult: 7 },
   freeUnder: 5,
   howToBuy:
-    "Aux distributeurs des stations de métro et de tram, dans l'application Tisséo, ou par carte sans contact directement aux valideurs.",
+    "Dans l'application officielle Tisséo (billet en QR code à valider aux portiques), aux distributeurs des stations de métro et de tram, ou par carte sans contact directement aux valideurs.",
+  apps: [
+    {
+      name: 'Tisséo',
+      what: 'L’application officielle du réseau toulousain : billets sur le téléphone, itinéraires et passages en temps réel.',
+      ios: 'https://apps.apple.com/fr/app/id818553522',
+      android: 'https://play.google.com/store/apps/details?id=fr.tisseo.android',
+      tickets: true,
+    },
+  ],
   tips: [
     'Ticket 1 voyage à 1,90 € depuis le 1er juillet 2026, valable 1 h avec correspondances.',
     'Gratuit avant 5 ans ; demi-tarif pour les 5-10 ans.',

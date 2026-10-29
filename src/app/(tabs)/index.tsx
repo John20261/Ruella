@@ -7,6 +7,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { CityMap, type MapMarker } from '@/components/city-map';
 import { StopRow } from '@/components/day/stop-row';
+import { TransitApps } from '@/components/transit-apps';
 import { Button } from '@/components/ui/button';
 import { Glass } from '@/components/ui/glass';
 import { Icon, type IconName } from '@/components/ui/icon';
@@ -112,6 +113,7 @@ function DayView() {
   const city = getCity(trip.cityId);
   const budget = useMemo(() => computeBudget(trip, city, travelers, getPlace), [trip, city, travelers]);
   const dayCost = budget.byDay[dayIndex]?.amount ?? 0;
+  const transitToday = live.filter((s) => s.leg?.mode === 'transit').length;
 
   const menuPlace = menu ? getPlace(menu.placeId) : undefined;
   const menuIndex = menu ? stops.findIndex((s) => s.id === menu.id) : -1;
@@ -205,6 +207,18 @@ function DayView() {
               <Chip icon="rain" label={day.rain ? 'Plan pluie actif' : 'Il pleut ?'} detail={day.rain ? 'refaire' : 'tout à l’abri'} onPress={() => actions.rainPlan(trip.id, dayIndex)} />
               <Chip icon="tram" label="Transports" detail="billets et prix" onPress={() => router.push({ pathname: '/budget/[id]', params: { id: trip.id, day: String(dayIndex) } })} />
             </ScrollView>
+
+            {transitToday > 0 && city?.transit ? (
+              <View style={[styles.transitBanner, { backgroundColor: colors.surface }]}>
+                <RText variant="bodyStrong">
+                  {transitToday} trajet{transitToday > 1 ? 's' : ''} en tram ou métro aujourd’hui
+                </RText>
+                <RText variant="caption" muted>
+                  Achetez et activez vos billets sur le téléphone, c’est moins cher et plus rapide qu’au distributeur.
+                </RText>
+                <TransitApps apps={city.transit.apps} compact />
+              </View>
+            ) : null}
 
             {next ? <NextCard stop={next} onCheck={() => checkStop(trip.id, dayIndex, next.id, next.placeId)} /> : <DayDone empty={live.length === 0} />}
 
@@ -371,6 +385,7 @@ function EmptyDay() {
 
 const styles = StyleSheet.create({
   root: { flex: 1 },
+  transitBanner: { borderRadius: radius.card, padding: space.l, gap: space.s },
   sheetWrap: { position: 'absolute', left: 0, right: 0, bottom: 0, borderTopLeftRadius: radius.sheet, borderTopRightRadius: radius.sheet, overflow: 'hidden' },
   handleZone: { paddingTop: space.s, paddingBottom: space.s, alignItems: 'center', gap: 6 },
   handleRow: { flexDirection: 'row', alignItems: 'center', gap: 6 },

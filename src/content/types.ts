@@ -125,7 +125,19 @@ export type Transit = {
   /** Gratuit avant cet âge. */
   freeUnder: number;
   howToBuy: string;
+  /** Applications officielles conseillées (billets sur le téléphone, horaires). */
+  apps: TransitApp[];
   tips: string[];
   source: string;
   verifiedAt?: string;
+};
+
+export type TransitApp = {
+  name: string;
+  /** Ce qu'elle permet, en une phrase. */
+  what: string;
+  ios: string;
+  android: string;
+  /** Achat des billets dans l'application. */
+  tickets: boolean;
 };

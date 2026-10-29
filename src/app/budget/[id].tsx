@@ -6,6 +6,7 @@ import Animated, { FadeInDown } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { BackButton } from '@/components/back-button';
+import { TransitApps } from '@/components/transit-apps';
 import { Button } from '@/components/ui/button';
 import { Icon, type IconName } from '@/components/ui/icon';
 import { Pill } from '@/components/ui/pill';
@@ -271,6 +272,7 @@ export default function BudgetScreen() {
               </View>
             </View>
             <RText>{t.howToBuy}</RText>
+            <TransitApps apps={t.apps} />
             {t.tips.map((tip) => (
               <View key={tip} style={styles.tip}>
                 <Icon name="check" size={16} color={colors.success} />

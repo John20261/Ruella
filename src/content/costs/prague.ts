@@ -76,13 +76,23 @@ export const pragueTransit: Transit = {
   day: { label: 'Pass 24 h', adult: 140, child: 0 },
   freeUnder: 15,
   howToBuy:
-    "Dans l'application PID Lítačka (moins cher), aux distributeurs des stations de métro et de certains arrêts, ou en payant sans contact dans les trams équipés. Un billet papier doit être composté au premier passage.",
+    "Le plus simple et le moins cher : l'application officielle PID Lítačka. On y paie par carte, Apple Pay ou Google Pay, on active le billet juste avant de monter, et on montre son QR code en cas de contrôle. Sinon : distributeurs dans le métro et à certains arrêts (billet papier à composter au premier passage, un peu plus cher).",
+  apps: [
+    {
+      name: 'PID Lítačka',
+      what: 'L’application officielle des transports de Prague : billets 30 min, 90 min, 24 h et 72 h, itinéraires, position des trams en direct, en anglais.',
+      ios: 'https://apps.apple.com/cz/app/pid-l%C3%ADta%C4%8Dka/id983071129',
+      android: 'https://play.google.com/store/apps/details?id=cz.dpp.praguepublictransport',
+      tickets: true,
+    },
+  ],
   tips: [
+    'Billets moins chers dans l’application PID Lítačka que sur papier (36 CZK contre 39 CZK pour 30 min, 46 CZK contre 50 CZK pour 90 min).',
+    'Installez l’application et enregistrez votre carte bancaire avant de partir : achat en dix secondes à l’arrêt.',
     'Les enfants de 6 à 14 ans voyagent gratuitement avec une pièce d’identité ; avant 6 ans, gratuit avec un adulte.',
-    'Le billet 30 min (36 CZK) suffit pour un trajet court ; le 90 min (46 CZK) couvre les correspondances.',
     'Le funiculaire de Petřín accepte les pass 24 h et 72 h, pas les billets 30 et 90 min.',
     'Pass 72 h : 340 CZK, rentable dès 8 trajets.',
   ],
-  source: 'https://pid.cz/en/tickets-and-fare/',
+  source: 'https://pid.cz/en/new-pid-tariff-from-1-january-2026-dont-pay-more-than-you-have-to/',
   verifiedAt: '2026-10-29',
 };

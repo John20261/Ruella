@@ -5,7 +5,8 @@ import Animated, { FadeInDown, LinearTransition } from 'react-native-reanimated'
 import { Icon } from '@/components/ui/icon';
 import { RText } from '@/components/ui/r-text';
 import type { Place } from '@/content/types';
-import { formatDuration, kindLabel } from '@/lib/catalog';
+import { openTransitApp } from '@/components/transit-apps';
+import { formatDuration, getCity, kindLabel } from '@/lib/catalog';
 import { directionsUrl } from '@/lib/directions';
 import { formatMeters } from '@/lib/geo';
 import type { Stop } from '@/store/types';
@@ -109,6 +110,7 @@ function LegRow({ stop, place, lineColor }: { stop: Stop; place: Place; lineColo
   const { colors } = useRuellaTheme();
   const l = stop.leg!;
   const transit = l.mode === 'transit';
+  const app = getCity(place.cityId)?.transit?.apps.find((a) => a.tickets);
   return (
     <View style={styles.legRow}>
       <View style={styles.rail}>
@@ -119,6 +121,13 @@ function LegRow({ stop, place, lineColor }: { stop: Stop; place: Place; lineColo
         <RText variant="caption" muted>
           {transit ? `Tram ou métro conseillé · environ ${l.minutes} min · ${formatMeters(l.meters)}` : `À pied · ${l.minutes} min · ${formatMeters(l.meters)}`}
         </RText>
+        {transit && app ? (
+          <Pressable onPress={() => openTransitApp(app)} accessibilityRole="link" accessibilityLabel={`Acheter le billet dans ${app.name}`} hitSlop={10}>
+            <RText variant="caption" color={colors.accent} style={{ fontFamily: fonts.bold }}>
+              Billet : {app.name}
+            </RText>
+          </Pressable>
+        ) : null}
         {transit ? (
           <Pressable
             onPress={() => Linking.openURL(directionsUrl(place, undefined, 'transit'))}
