@@ -1,0 +1,494 @@
+[
+  {
+    "id": "bud-parlement",
+    "wikidata": "https://www.wikidata.org/wiki/Q11819",
+    "label": "Parlement hongrois",
+    "labelCs": "Országház",
+    "wikidataCoords": {
+      "lat": 47.50694444444444,
+      "lng": 19.045555555555556
+    },
+    "website": "https://www.parlament.hu/web/orszaghaz/latogatas",
+    "frwiki": "Parlement hongrois",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Budapest-Parliament-0001.jpg/1280px-Budapest-Parliament-0001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Source: User:Godot13 Derivative: User:MathKnight",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Budapest-Parliament-0001.jpg"
+    },
+    "osm": {
+      "lat": 47.5070496,
+      "lng": 19.0459186,
+      "osm": "https://www.openstreetmap.org/relation/3199085",
+      "label": "Országház, 1-3, Kossuth Lajos tér, Lipótváros, V. kerület, Budapest, 1055, Magyarország"
+    }
+  },
+  {
+    "id": "bud-bastion-pecheurs",
+    "wikidata": "https://www.wikidata.org/wiki/Q493117",
+    "label": "bastion des pêcheurs",
+    "labelCs": "Rybářská bašta",
+    "wikidataCoords": {
+      "lat": 47.50222,
+      "lng": 19.03472
+    },
+    "website": "http://www.fishermansbastion.com/history",
+    "frwiki": "Bastion des pêcheurs",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Hal%C3%A1szb%C3%A1stya_%C3%A9p%C3%BClete_d%C3%ADszl%C3%A9pcs%C5%91vel_%28103._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k%29_28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "TUX",
+      "license": "CC BY-SA 2.5 hu",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hal%C3%A1szb%C3%A1stya_%C3%A9p%C3%BClete_d%C3%ADszl%C3%A9pcs%C5%91vel_(103._sz%C3%A1m%C3%BA_m%C5%B1eml%C3%A9k)_28.jpg"
+    },
+    "osm": {
+      "lat": 47.5023053,
+      "lng": 19.0346998,
+      "osm": "https://www.openstreetmap.org/relation/17948384",
+      "label": "Halászbástya, Hunyadi János út, Buda, Víziváros, I. kerület, Budapest, 1011, Magyarország"
+    }
+  },
+  {
+    "id": "bud-chateau",
+    "wikidata": "https://www.wikidata.org/wiki/Q46313",
+    "label": "palais de Budavár",
+    "labelCs": "Budínský hrad",
+    "wikidataCoords": {
+      "lat": 47.496111111111,
+      "lng": 19.039722222222
+    },
+    "website": "https://whc.unesco.org/en/list/400",
+    "frwiki": "Palais de Budavár",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/20190502_Zamek_w_Budapeszcie_0647_1862_DxO.jpg/1280px-20190502_Zamek_w_Budapeszcie_0647_1862_DxO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20190502_Zamek_w_Budapeszcie_0647_1862_DxO.jpg"
+    },
+    "osm": {
+      "lat": 47.4959913,
+      "lng": 19.0398008,
+      "osm": "https://www.openstreetmap.org/relation/6486918",
+      "label": "Budavári Palota, Stöckl-lépcső, Vár, I. kerület, Budapest, 1013, Magyarország"
+    }
+  },
+  {
+    "id": "bud-matthias",
+    "wikidata": "https://www.wikidata.org/wiki/Q493133",
+    "label": "église Notre-Dame-de-l'Assomption de Budavár",
+    "labelCs": "Matyášův chrám",
+    "wikidataCoords": {
+      "lat": 47.501944444444,
+      "lng": 19.034166666667
+    },
+    "website": "https://www.matyas-templom.hu/",
+    "frwiki": "Église Notre-Dame-de-l'Assomption de Budavár",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Matthias_Church%2C_Budapest%2C_2017.jpg/1280px-Matthias_Church%2C_Budapest%2C_2017.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Stefan Schäfer, Lich",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matthias_Church,_Budapest,_2017.jpg"
+    },
+    "osm": {
+      "lat": 47.5020118,
+      "lng": 19.0342109,
+      "osm": "https://www.openstreetmap.org/way/37135081",
+      "label": "Budavári Nagyboldogasszony-templom, 2, Szentháromság tér, Vár, I. kerület, Budapest, 1014, Magyarország"
+    }
+  },
+  {
+    "id": "bud-szechenyi",
+    "wikidata": "https://www.wikidata.org/wiki/Q194783",
+    "label": "thermes Széchenyi",
+    "labelCs": "Széchenyiho termální lázně",
+    "wikidataCoords": {
+      "lat": 47.518333333333,
+      "lng": 19.082222222222
+    },
+    "website": "http://www.szechenyifurdo.hu/",
+    "frwiki": "Thermes Széchenyi",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Budapest_Sz%C3%A9chenyi_Baths_R01.jpg/1280px-Budapest_Sz%C3%A9chenyi_Baths_R01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Marc Ryckaert (MJJR)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Budapest_Sz%C3%A9chenyi_Baths_R01.jpg"
+    },
+    "osm": {
+      "lat": 47.5184354,
+      "lng": 19.0825223,
+      "osm": "https://www.openstreetmap.org/relation/19023",
+      "label": "Széchenyi Gyógyfürdő és Uszoda, 9-11, Állatkerti körút, Városliget, XIV. kerület, Budapest, 1146, Magyarország"
+    }
+  },
+  {
+    "id": "bud-heros",
+    "wikidata": "https://www.wikidata.org/wiki/Q248823",
+    "label": "Heroes' Square",
+    "labelCs": "náměstí Hrdinů",
+    "website": null,
+    "frwiki": null,
+    "osm": {
+      "lat": 47.5142262,
+      "lng": 19.0779989,
+      "osm": "https://www.openstreetmap.org/way/189829281",
+      "label": "Hősök tere, Városliget, XIV. kerület, Budapest, 1146, Magyarország"
+    }
+  },
+  {
+    "id": "bud-basilique",
+    "wikidata": "https://www.wikidata.org/wiki/Q338665",
+    "label": "basilique Saint-Étienne de Pest",
+    "labelCs": "Bazilika svatého Štěpána",
+    "wikidataCoords": {
+      "lat": 47.500833,
+      "lng": 19.053889
+    },
+    "website": "http://www.bazilika.biz/",
+    "frwiki": "Basilique Saint-Étienne de Pest",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/HUN-2015-Budapest-St._Stephen%27s_Basilica.jpg/1280px-HUN-2015-Budapest-St._Stephen%27s_Basilica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Godot13",
+      "license": "Attribution",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:HUN-2015-Budapest-St._Stephen%27s_Basilica.jpg"
+    },
+    "osm": {
+      "lat": 47.5007766,
+      "lng": 19.053965,
+      "osm": "https://www.openstreetmap.org/relation/20593057",
+      "label": "Szent István-bazilika, 1, Szent István tér, Lipótváros, V. kerület, Budapest, 1051, Magyarország"
+    }
+  },
+  {
+    "id": "bud-grande-synagogue",
+    "wikidata": "https://www.wikidata.org/wiki/Q754397",
+    "label": "Grande synagogue de Budapest",
+    "labelCs": "Velká synagoga",
+    "wikidataCoords": {
+      "lat": 47.4959,
+      "lng": 19.0607
+    },
+    "website": null,
+    "frwiki": "Grande synagogue de Budapest",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Synagogue-Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "The original uploader was OsvátA at Hungarian Wikipedia.",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Synagogue-Budapest.jpg"
+    },
+    "osm": {
+      "lat": 47.4961024,
+      "lng": 19.0608682,
+      "osm": "https://www.openstreetmap.org/way/223530620",
+      "label": "Dohány utcai zsinagóga, 2, Dohány utca, Erzsébetváros, VII. kerület, Budapest, 1074, Magyarország"
+    }
+  },
+  {
+    "id": "bud-marche-central",
+    "wikidata": "https://www.wikidata.org/wiki/Q195344",
+    "label": "Halles centrales de Budapest",
+    "labelCs": "Velká tržnice",
+    "wikidataCoords": {
+      "lat": 47.48669,
+      "lng": 19.0588
+    },
+    "website": null,
+    "frwiki": "Halles centrales de Budapest",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Budapest_-_K%C3%B6zponti_V%C3%A1s%C3%A1rcsarnok_%282%29.jpg/1280px-Budapest_-_K%C3%B6zponti_V%C3%A1s%C3%A1rcsarnok_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Fred Romero from Paris, France",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Budapest_-_K%C3%B6zponti_V%C3%A1s%C3%A1rcsarnok_(2).jpg"
+    },
+    "osm": {
+      "lat": 47.4865753,
+      "lng": 19.0589936,
+      "osm": "https://www.openstreetmap.org/way/24323859",
+      "label": "Központi Vásárcsarnok, 1-3, Vámház körút, Pest, Belváros, V. kerület, Budapest, 1093, Magyarország"
+    }
+  },
+  {
+    "id": "bud-gellert-hill",
+    "wikidata": "https://www.wikidata.org/wiki/Q577122",
+    "label": "Gellért-hegy",
+    "labelCs": "Gellért",
+    "wikidataCoords": {
+      "lat": 47.486388888889,
+      "lng": 19.045833333333
+    },
+    "website": null,
+    "frwiki": "Gellért-hegy",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Gellert_hill.jpg/1280px-Gellert_hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "kallerna",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gellert_hill.jpg"
+    },
+    "osm": {
+      "lat": 47.486916,
+      "lng": 19.044562,
+      "osm": "https://www.openstreetmap.org/node/963923001",
+      "label": "Gellért-hegy, Budapest, 1118, Magyarország"
+    }
+  },
+  {
+    "id": "bud-ile-marguerite",
+    "wikidata": "https://www.wikidata.org/wiki/Q18816",
+    "label": "Margit-sziget",
+    "labelCs": "Markétin ostrov",
+    "wikidataCoords": {
+      "lat": 47.5275,
+      "lng": 19.0475
+    },
+    "website": null,
+    "frwiki": "Margit-sziget",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/19-10-03-Margarethenbr%C3%BCcke_und_Margaretheninsel-RalfR.jpg/1280px-19-10-03-Margarethenbr%C3%BCcke_und_Margaretheninsel-RalfR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Ralf Roletschek",
+      "license": "CC BY-SA 1.0 fi",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:19-10-03-Margarethenbr%C3%BCcke_und_Margaretheninsel-RalfR.jpg"
+    },
+    "osm": {
+      "lat": 47.5272928,
+      "lng": 19.0478668,
+      "osm": "https://www.openstreetmap.org/relation/3232203",
+      "label": "Margitsziget, Budapest, 1007, Magyarország"
+    }
+  },
+  {
+    "id": "bud-opera-bud",
+    "wikidata": "https://www.wikidata.org/wiki/Q36833",
+    "label": "opéra d'État hongrois",
+    "labelCs": "Maďarská státní opera",
+    "wikidataCoords": {
+      "lat": 47.50278,
+      "lng": 19.05833
+    },
+    "website": "https://www.opera.hu/",
+    "frwiki": "Opéra d'État hongrois",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Hungarian_State_Opera_House_in_Budapest.jpg/1280px-Hungarian_State_Opera_House_in_Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Jeremy Oakley",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hungarian_State_Opera_House_in_Budapest.jpg"
+    },
+    "osm": {
+      "lat": 47.5028701,
+      "lng": 19.0581577,
+      "osm": "https://www.openstreetmap.org/way/24000390",
+      "label": "Magyar Állami Operaház, 22, Andrássy út, Terézváros, VI. kerület, Budapest, 1061, Magyarország"
+    }
+  },
+  {
+    "id": "bud-chaussures-danube",
+    "wikidata": "https://www.wikidata.org/wiki/Q473811",
+    "label": "Chaussures au bord du Danube",
+    "labelCs": "Boty na nábřeží Dunaje",
+    "wikidataCoords": {
+      "lat": 47.5039,
+      "lng": 19.04478
+    },
+    "website": "https://www.jewishbudapest.hu/gallery_shoes.html",
+    "frwiki": "Chaussures au bord du Danube",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Shoes_Danube_Promenade_IMGP1297.jpg/1280px-Shoes_Danube_Promenade_IMGP1297.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Nikodem Nijaki",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shoes_Danube_Promenade_IMGP1297.jpg"
+    },
+    "osm": {
+      "lat": 47.5039715,
+      "lng": 19.0447906,
+      "osm": "https://www.openstreetmap.org/node/260536715",
+      "label": "Cipők a Duna-parton, Id. Antall József rakpart, Lipótváros, V. kerület, Budapest, 1054, Magyarország"
+    }
+  },
+  {
+    "id": "bud-szimpla",
+    "wikidata": "https://www.wikidata.org/wiki/Q3509700",
+    "label": "Szimpla Kert",
+    "wikidataCoords": {
+      "lat": 47.497,
+      "lng": 19.0632
+    },
+    "website": "https://www.szimpla.hu/",
+    "frwiki": "Szimpla Kert",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Romkocsma_Szimpla_Kert_Budapest.jpg/1280px-Romkocsma_Szimpla_Kert_Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Yelkrokoyade",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Romkocsma_Szimpla_Kert_Budapest.jpg"
+    },
+    "osm": {
+      "lat": 47.4969297,
+      "lng": 19.0633135,
+      "osm": "https://www.openstreetmap.org/node/419017259",
+      "label": "Szimpla Kert, 14, Kazinczy utca, Erzsébetváros, VII. kerület, Budapest, 1075, Magyarország"
+    }
+  },
+  {
+    "id": "bud-funiculaire",
+    "wikidata": "https://www.wikidata.org/wiki/Q731939",
+    "label": "Budavári Sikló",
+    "labelCs": "Budavári Sikló",
+    "wikidataCoords": {
+      "lat": 47.49777777777778,
+      "lng": 19.039166666666667
+    },
+    "website": null,
+    "frwiki": "Budavári Sikló",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Budapest_Funicular_R01.jpg/1280px-Budapest_Funicular_R01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Marc Ryckaert (MJJR)",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Budapest_Funicular_R01.jpg"
+    },
+    "osm": {
+      "lat": 47.4977596,
+      "lng": 19.0391711,
+      "osm": "https://www.openstreetmap.org/relation/3894161",
+      "label": "Budavári Sikló, Clark Ádám tér, Buda, Víziváros, I. kerület, Budapest, 1013, Magyarország"
+    }
+  },
+  {
+    "id": "bud-vajdahunyad",
+    "wikidata": "https://www.wikidata.org/wiki/Q1092030",
+    "label": "château de Vajdahunyad",
+    "labelCs": "hrad Vajdahunyad",
+    "wikidataCoords": {
+      "lat": 47.515277777778,
+      "lng": 19.081944444444
+    },
+    "website": null,
+    "frwiki": "Château de Vajdahunyad",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Vajdahunyad_v%C3%A1ra_Budapest_September_2013.jpg/1280px-Vajdahunyad_v%C3%A1ra_Budapest_September_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Felix König",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vajdahunyad_v%C3%A1ra_Budapest_September_2013.jpg"
+    },
+    "osm": {
+      "lat": 47.5153549,
+      "lng": 19.0818753,
+      "osm": "https://www.openstreetmap.org/node/275019091",
+      "label": "Vajdahunyad vára, Hunyadi-udvar, Városliget, XIV. kerület, Budapest, 1146, Magyarország"
+    }
+  },
+  {
+    "id": "bud-gozsdu",
+    "wikidata": "https://www.wikidata.org/wiki/Q1027774",
+    "label": "Cour Gozsdu",
+    "wikidataCoords": {
+      "lat": 47.498601,
+      "lng": 19.059088
+    },
+    "website": null,
+    "frwiki": "Cour Gozsdu",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Gozsdu-yard._Between_D_and_E_yard._Passageway_of_Bldg_-5._Monument_ID_840_-_Budapest_7th_district._Kir%C3%A1ly_St._13_%26_Dob_St._16.JPG/1280px-Gozsdu-yard._Between_D_and_E_yard._Passageway_of_Bldg_-5._Monument_ID_840_-_Budapest_7th_district._Kir%C3%A1ly_St._13_%26_Dob_St._16.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Globetrotter19",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gozsdu-yard._Between_D_and_E_yard._Passageway_of_Bldg_-5._Monument_ID_840_-_Budapest_7th_district._Kir%C3%A1ly_St._13_%26_Dob_St._16.JPG"
+    },
+    "osm": {
+      "lat": 47.4985397,
+      "lng": 19.0591847,
+      "osm": "https://www.openstreetmap.org/way/261301300",
+      "label": "Gozsdu udvar, Erzsébetváros, VII. kerület, Budapest, 1075, Magyarország"
+    }
+  },
+  {
+    "id": "bud-new-york-cafe",
+    "osm": {
+      "lat": 47.4986782,
+      "lng": 19.0704636,
+      "osm": "https://www.openstreetmap.org/node/2385680010",
+      "label": "New York Café, 9-11, Erzsébet körút, Erzsébetváros, VII. kerület, Budapest, 1073, Magyarország"
+    }
+  },
+  {
+    "id": "bud-train-enfants",
+    "osm": {
+      "lat": 47.5271042,
+      "lng": 18.9540542,
+      "osm": "https://www.openstreetmap.org/node/708170958",
+      "label": "Szépjuhászné, Gyermekvasút, Budakeszi út, Jánoshegy, XII. kerület, Budapest, 1021, Magyarország"
+    }
+  },
+  {
+    "id": "bud-pont-chaines",
+    "wikidata": "https://www.wikidata.org/wiki/Q465534",
+    "label": "Széchenyi Lánchíd",
+    "labelCs": "Széchenyiho řetězový most",
+    "wikidataCoords": {
+      "lat": 47.498888888889,
+      "lng": 19.043611111111
+    },
+    "website": null,
+    "frwiki": "Széchenyi lánchíd",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Budapest_-_Chain_Bridge_-_panoramio.jpg/1280px-Budapest_-_Chain_Bridge_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Alireza Javaheri",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Budapest_-_Chain_Bridge_-_panoramio.jpg"
+    },
+    "osm": {
+      "lat": 47.4989791,
+      "lng": 19.0436494,
+      "osm": "https://www.openstreetmap.org/way/197110386",
+      "label": "Széchenyi lánchíd, 24498;14397;14398;14400, Széchenyi lánchíd, Víziváros, I. kerület, Budapest, 1051, Magyarország"
+    }
+  },
+  {
+    "id": "bud-frici-papa",
+    "osm": {
+      "lat": 47.5023698,
+      "lng": 19.0637292,
+      "osm": "https://www.openstreetmap.org/node/419952787",
+      "label": "Frici papa kifőzdéje, 55, Király utca, Erzsébetváros, VII. kerület, Budapest, 1077, Magyarország"
+    }
+  },
+  {
+    "id": "bud-kisharang",
+    "osm": {
+      "lat": 47.5016837,
+      "lng": 19.0509202,
+      "osm": "https://www.openstreetmap.org/node/276309562",
+      "label": "Kisharang Étkezde, 17, Október 6. utca, Lipótváros, V. kerület, Budapest, 1051, Magyarország"
+    }
+  },
+  {
+    "id": "bud-langos-retro",
+    "osm": {
+      "lat": 47.5053142,
+      "lng": 19.0493116,
+      "osm": "https://www.openstreetmap.org/node/2305183307",
+      "label": "Retro Lángos, 3, Vécsey utca, Lipótváros, V. kerület, Budapest, 1054, Magyarország"
+    }
+  },
+  {
+    "id": "bud-gerbeaud",
+    "osm": {
+      "lat": 47.4970762,
+      "lng": 19.0503834,
+      "osm": "https://www.openstreetmap.org/relation/11897",
+      "label": "Gerbeaud-ház, 7-9, Vörösmarty tér, Lipótváros, V. kerület, Budapest, 1051, Magyarország"
+    }
+  },
+  {
+    "id": "bud-for-sale-pub",
+    "osm": {
+      "lat": 47.5079862,
+      "lng": 19.0580209,
+      "osm": "https://www.openstreetmap.org/node/2306469031",
+      "label": "For Sale Pub, Weiner Leó utca, Terézváros, VI. kerület, Budapest, 1066, Magyarország"
+    }
+  },
+  {
+    "id": "bud-kurtos",
+    "osm": {
+      "lat": 47.4927458,
+      "lng": 19.0529762,
+      "osm": "https://www.openstreetmap.org/node/4656156889",
+      "label": "Molnár's Kürtőskalács, 31, Váci utca, Pest, Belváros, V. kerület, Budapest, 1052, Magyarország"
+    }
+  }
+]

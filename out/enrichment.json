@@ -1,0 +1,1087 @@
+[
+  {
+    "id": "tls-saint-sernin",
+    "wikidata": "https://www.wikidata.org/wiki/Q1010268",
+    "label": "basilique Saint-Sernin de Toulouse",
+    "labelCs": "Bazilika svatého Saturnina z Toulouse",
+    "wikidataCoords": {
+      "lat": 43.608485,
+      "lng": 1.442126
+    },
+    "website": "http://www.basilique-saint-sernin.fr/home.htm",
+    "frwiki": "Basilique Saint-Sernin de Toulouse",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Basilique_Saint-Sernin_de_Toulouse_-_exposition_ouest-1-.jpg/1280px-Basilique_Saint-Sernin_de_Toulouse_-_exposition_ouest-1-.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basilique_Saint-Sernin_de_Toulouse_-_exposition_ouest-1-.jpg"
+    }
+  },
+  {
+    "id": "tls-capitole",
+    "wikidata": "https://www.wikidata.org/wiki/Q2351013",
+    "label": "capitole de Toulouse",
+    "wikidataCoords": {
+      "lat": 43.60444444444445,
+      "lng": 1.444
+    },
+    "website": "https://www.toulouse-tourisme.com/le-capitole-hotel-de-ville/toulouse/pcumid031fs000a3",
+    "frwiki": "Capitole de Toulouse",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Toulouse_capitole_R.jpg/1280px-Toulouse_capitole_R.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Velvet",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toulouse_capitole_R.jpg"
+    }
+  },
+  {
+    "id": "tls-jacobins",
+    "wikidata": "https://www.wikidata.org/wiki/Q2759640",
+    "label": "couvent des Jacobins de Toulouse",
+    "labelCs": "Jakobínský klášter",
+    "wikidataCoords": {
+      "lat": 43.603888687885586,
+      "lng": 1.4402061780837778
+    },
+    "website": "https://www.jacobins.toulouse.fr",
+    "frwiki": "Couvent des Jacobins de Toulouse",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Couvent_des_Jacobins_de_Toulouse.jpg/1280px-Couvent_des_Jacobins_de_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Couvent_des_Jacobins_de_Toulouse.jpg"
+    }
+  },
+  {
+    "id": "tls-cathedrale",
+    "wikidata": "https://www.wikidata.org/wiki/Q2737833",
+    "label": "cathédrale Saint-Étienne de Toulouse",
+    "labelCs": "Katedrála svatého Štěpána",
+    "wikidataCoords": {
+      "lat": 43.5999,
+      "lng": 1.4504
+    },
+    "website": "http://paroissescathedraletoulouse.fr/",
+    "frwiki": "Cathédrale Saint-Étienne de Toulouse",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Fa%C3%A7ade_de_la_cath%C3%A9drale_Saint-%C3%89tienne_de_Toulouse.jpg/1280px-Fa%C3%A7ade_de_la_cath%C3%A9drale_Saint-%C3%89tienne_de_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_de_la_cath%C3%A9drale_Saint-%C3%89tienne_de_Toulouse.jpg"
+    }
+  },
+  {
+    "id": "tls-augustins",
+    "wikidata": "https://www.wikidata.org/wiki/Q2711480",
+    "label": "musée des Augustins de Toulouse",
+    "wikidataCoords": {
+      "lat": 43.601,
+      "lng": 1.446
+    },
+    "website": "https://www.augustins.org/",
+    "frwiki": "Musée des Augustins de Toulouse",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Mus%C3%A9e_des_Augustin_Clocher.jpg/1280px-Mus%C3%A9e_des_Augustin_Clocher.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_des_Augustin_Clocher.jpg"
+    }
+  },
+  {
+    "id": "tls-bemberg",
+    "wikidata": "https://www.wikidata.org/wiki/Q16303680",
+    "label": "Collection Bemberg",
+    "labelCs": "Fondation Bemberg",
+    "wikidataCoords": {
+      "lat": 43.6003,
+      "lng": 1.44206
+    },
+    "website": "https://www.fondation-bemberg.fr/",
+    "frwiki": "Collection Bemberg",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Bachelier_-_H%C3%B4tel_d%27Ass%C3%A9zat_-_Toulouse.jpg/1280px-Bachelier_-_H%C3%B4tel_d%27Ass%C3%A9zat_-_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bachelier_-_H%C3%B4tel_d%27Ass%C3%A9zat_-_Toulouse.jpg"
+    },
+    "osm": {
+      "lat": 43.6001991,
+      "lng": 1.4420464,
+      "osm": "https://www.openstreetmap.org/node/1982847379",
+      "label": "Fondation Bemberg, Place d'Assézat, Daurade, Esquirol, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-saint-raymond",
+    "wikidata": "https://www.wikidata.org/wiki/Q1376",
+    "label": "musée Saint-Raymond, musée d'Archéologie de Toulouse",
+    "wikidataCoords": {
+      "lat": 43.60787,
+      "lng": 1.44112
+    },
+    "website": "http://saintraymond.toulouse.fr/",
+    "frwiki": "Musée Saint-Raymond",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mus%C3%A9e_Saint-Raymond_-_Toulouse.jpg/1280px-Mus%C3%A9e_Saint-Raymond_-_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Saint-Raymond_-_Toulouse.jpg"
+    }
+  },
+  {
+    "id": "tls-abattoirs",
+    "osm": {
+      "lat": 43.6009177,
+      "lng": 1.429599,
+      "osm": "https://www.openstreetmap.org/way/22896377",
+      "label": "Les Abattoirs, Allée Charles Malpel, Saint-Cyprien, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31300, France"
+    }
+  },
+  {
+    "id": "tls-cite-espace",
+    "wikidata": "https://www.wikidata.org/wiki/Q1094325",
+    "label": "Cité de l'espace",
+    "labelCs": "Cité de l'espace",
+    "wikidataCoords": {
+      "lat": 43.58691667,
+      "lng": 1.49327778
+    },
+    "website": "http://www.cite-espace.com/",
+    "frwiki": "Cité de l'espace",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Maquette_Ariane_5_-_Cit%C3%A9_de_l%27Espace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Auteur inconnu",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maquette_Ariane_5_-_Cit%C3%A9_de_l%27Espace.jpg"
+    }
+  },
+  {
+    "id": "tls-aeroscopia",
+    "wikidata": "https://www.wikidata.org/wiki/Q15714017",
+    "label": "Aeroscopia",
+    "labelCs": "Aeroscopia",
+    "wikidataCoords": {
+      "lat": 43.6599,
+      "lng": 1.36053
+    },
+    "website": "https://www.aeroscopia.fr/",
+    "frwiki": "Aeroscopia",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Aeroscopia_Blagnac.jpg/1280px-Aeroscopia_Blagnac.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Patrice Bon",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aeroscopia_Blagnac.jpg"
+    }
+  },
+  {
+    "id": "tls-halle-machine",
+    "wikidata": "https://www.wikidata.org/wiki/Q78338188",
+    "label": "halle de La Machine",
+    "wikidataCoords": {
+      "lat": 43.573027777777774,
+      "lng": 1.4780555555555557
+    },
+    "website": "https://www.halledelamachine.fr",
+    "frwiki": "Halle de La Machine",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Minotauro_hall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Gpineda85",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minotauro_hall.jpg"
+    },
+    "osm": {
+      "lat": 43.5727561,
+      "lng": 1.478113,
+      "osm": "https://www.openstreetmap.org/way/613388194",
+      "label": "Halle de La Machine, Avenue de l'Aérodrome de Montaudran, L'Ormeau, Pont des Demoiselles / Ormeau/ Montaudran / La Terrasse / Malepère, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31400, France"
+    }
+  },
+  {
+    "id": "tls-museum",
+    "wikidata": "https://www.wikidata.org/wiki/Q422",
+    "label": "muséum de Toulouse",
+    "wikidataCoords": {
+      "lat": 43.59305555555556,
+      "lng": 1.4491666666666667
+    },
+    "website": "http://www.museum.toulouse.fr",
+    "frwiki": "Muséum de Toulouse",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Grand_carr%C3%A9_MHNT.jpg/1280px-Grand_carr%C3%A9_MHNT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand_carr%C3%A9_MHNT.jpg"
+    }
+  },
+  {
+    "id": "tls-jardin-plantes",
+    "wikidata": "https://www.wikidata.org/wiki/Q3162572",
+    "label": "jardin des plantes de Toulouse",
+    "wikidataCoords": {
+      "lat": 43.5929,
+      "lng": 1.4511
+    },
+    "website": null,
+    "frwiki": "Jardin des Plantes (Toulouse)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Ancienne_porte_du_Capitole_%28Toulouse%29.jpg/1280px-Ancienne_porte_du_Capitole_%28Toulouse%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ancienne_porte_du_Capitole_(Toulouse).jpg"
+    },
+    "osm": {
+      "lat": 43.593076,
+      "lng": 1.4512386,
+      "osm": "https://www.openstreetmap.org/way/10526259",
+      "label": "Jardin des Plantes, Saint-Michel / Saint-Agne / Empalot / Le Busca / Île du Ramier / Montplaisir, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, France"
+    }
+  },
+  {
+    "id": "tls-jardin-japonais",
+    "osm": null
+  },
+  {
+    "id": "tls-prairie-filtres",
+    "wikidata": "https://www.wikidata.org/wiki/Q3364236",
+    "label": "parc de la prairie des Filtres",
+    "wikidataCoords": {
+      "lat": 43.596,
+      "lng": 1.43701
+    },
+    "website": null,
+    "frwiki": "Parc de la prairie des Filtres",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Toulouse_pairie_des_filtres.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Camille Harang",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toulouse_pairie_des_filtres.jpg"
+    },
+    "osm": {
+      "lat": 43.5955971,
+      "lng": 1.4369958,
+      "osm": "https://www.openstreetmap.org/way/8063926",
+      "label": "Prairie des Filtres, Saint-Cyprien, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, France"
+    }
+  },
+  {
+    "id": "tls-grand-rond",
+    "wikidata": "https://www.wikidata.org/wiki/Q141742524",
+    "label": "jardin du Grand Rond et jardin royal",
+    "wikidataCoords": {
+      "lat": 43.59639,
+      "lng": 1.44722
+    },
+    "website": null,
+    "frwiki": null,
+    "osm": {
+      "lat": 43.5957891,
+      "lng": 1.4525769,
+      "osm": "https://www.openstreetmap.org/way/7975236",
+      "label": "Jardin du Grand-Rond, Saint-Aubin, Les Chalets / Bayard / Belfort / Saint-Aubin / Dupuy, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, France"
+    }
+  },
+  {
+    "id": "tls-pont-neuf",
+    "wikidata": "https://www.wikidata.org/wiki/Q1460090",
+    "label": "Pont-Neuf",
+    "wikidataCoords": {
+      "lat": 43.59935,
+      "lng": 1.43904
+    },
+    "website": null,
+    "frwiki": "Pont-Neuf (Toulouse)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Le_Pont-Neuf_de_Toulouse.jpg/1280px-Le_Pont-Neuf_de_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Pont-Neuf_de_Toulouse.jpg"
+    }
+  },
+  {
+    "id": "tls-daurade",
+    "wikidata": "https://www.wikidata.org/wiki/Q2887166",
+    "label": "basilique de la Daurade de Toulouse",
+    "wikidataCoords": {
+      "lat": 43.601002,
+      "lng": 1.439916
+    },
+    "website": "http://paroissescathedraletoulouse.fr/",
+    "frwiki": "Basilique Notre-Dame de la Daurade",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/31_-_Toulouse_-_Basilique_de_la_Daurade_-_Fa%C3%A7ade.jpg/1280px-31_-_Toulouse_-_Basilique_de_la_Daurade_-_Fa%C3%A7ade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:31_-_Toulouse_-_Basilique_de_la_Daurade_-_Fa%C3%A7ade.jpg"
+    }
+  },
+  {
+    "id": "tls-dome-grave",
+    "wikidata": "https://www.wikidata.org/wiki/Q3145280",
+    "label": "hôpital de La Grave",
+    "wikidataCoords": {
+      "lat": 43.6008,
+      "lng": 1.43413
+    },
+    "website": "http://www.chu-toulouse.fr/-hopital-la-grave-",
+    "frwiki": "Hôpital de La Grave",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Toulouse_hopital_st_Joseph.jpg/1280px-Toulouse_hopital_st_Joseph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Velvet",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toulouse_hopital_st_Joseph.jpg"
+    },
+    "osm": {
+      "lat": 43.6008032,
+      "lng": 1.4329816,
+      "osm": "https://www.openstreetmap.org/way/219747752",
+      "label": "Chapelle Saint-Joseph de la Grave, Rue du Pont Saint-Pierre, Saint-Cyprien, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31300, France"
+    }
+  },
+  {
+    "id": "tls-hotel-dieu",
+    "osm": {
+      "lat": 43.5997864,
+      "lng": 1.4366263,
+      "osm": "https://www.openstreetmap.org/way/219748548",
+      "label": "Hôtel-Dieu Saint-Jacques, 2, Rue Viguerie, Saint-Cyprien, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31300, France"
+    }
+  },
+  {
+    "id": "tls-paul-dupuy",
+    "wikidata": "https://www.wikidata.org/wiki/Q3329305",
+    "label": "musée des arts précieux Paul-Dupuy",
+    "wikidataCoords": {
+      "lat": 43.597,
+      "lng": 1.4469
+    },
+    "website": "https://museepauldupuy.toulouse.fr/",
+    "frwiki": "Musée des arts précieux Paul-Dupuy",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Le_Mus%C3%A9e_Paul_Dupuy.jpg/1280px-Le_Mus%C3%A9e_Paul_Dupuy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Mus%C3%A9e_Paul_Dupuy.jpg"
+    }
+  },
+  {
+    "id": "tls-bazacle",
+    "osm": null
+  },
+  {
+    "id": "tls-georges-labit",
+    "wikidata": "https://www.wikidata.org/wiki/Q167182",
+    "label": "musée Georges-Labit",
+    "wikidataCoords": {
+      "lat": 43.59111111,
+      "lng": 1.45847222
+    },
+    "website": "https://www.museegeorgeslabit.fr/",
+    "frwiki": "Musée Georges-Labit",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Mus%C3%A9e_Georges_Labit.jpg/1280px-Mus%C3%A9e_Georges_Labit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Georges_Labit.jpg"
+    }
+  },
+  {
+    "id": "tls-chateau-eau",
+    "wikidata": "https://www.wikidata.org/wiki/Q2968376",
+    "label": "Le Château d'eau",
+    "wikidataCoords": {
+      "lat": 43.598694444444,
+      "lng": 1.436925
+    },
+    "website": null,
+    "frwiki": "Le Château d'eau",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Chateau_d%27eau_Laganne.jpg/1280px-Chateau_d%27eau_Laganne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chateau_d%27eau_Laganne.jpg"
+    },
+    "osm": null
+  },
+  {
+    "id": "tls-carmes",
+    "osm": {
+      "lat": 43.5976347,
+      "lng": 1.4453677,
+      "osm": "https://www.openstreetmap.org/relation/11381439",
+      "label": "Place des Carmes, Salin, Esquirol, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-saint-cyprien",
+    "wikidata": "https://www.wikidata.org/wiki/Q3462012",
+    "label": "Saint-Cyprien",
+    "wikidataCoords": {
+      "lat": 43.59718,
+      "lng": 1.42721
+    },
+    "website": null,
+    "frwiki": "Saint-Cyprien (Toulouse)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Place_Saint-Cyprien_%28Toulouse%29.jpg/1280px-Place_Saint-Cyprien_%28Toulouse%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Place_Saint-Cyprien_(Toulouse).jpg"
+    },
+    "osm": {
+      "lat": 43.5980463,
+      "lng": 1.4320353,
+      "osm": "https://www.openstreetmap.org/way/1091959508",
+      "label": "Place Intérieure Saint-Cyprien, Saint-Cyprien, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31300, France"
+    }
+  },
+  {
+    "id": "tls-place-saint-georges",
+    "wikidata": "https://www.wikidata.org/wiki/Q3390089",
+    "label": "place Saint-Georges",
+    "wikidataCoords": {
+      "lat": 43.602,
+      "lng": 1.447734
+    },
+    "website": null,
+    "frwiki": "Place Saint-Georges (Toulouse)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Place_Saint-Georges_%28Toulouse%29.jpg/1280px-Place_Saint-Georges_%28Toulouse%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Place_Saint-Georges_(Toulouse).jpg"
+    },
+    "osm": {
+      "lat": 43.6020045,
+      "lng": 1.4475197,
+      "osm": "https://www.openstreetmap.org/relation/3933295",
+      "label": "Place Saint-Georges, Saint-Georges, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-envol-pionniers",
+    "wikidata": "https://www.wikidata.org/wiki/Q108596099",
+    "label": "L'Envol des pionniers",
+    "wikidataCoords": {
+      "lat": 43.57416666666667,
+      "lng": 1.4769444444444444
+    },
+    "website": "https://www.lenvol-des-pionniers.com/",
+    "frwiki": "L'Envol des pionniers",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Envol_des_pionniers.jpg/1280px-Envol_des_pionniers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Frédéric Neupont",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Envol_des_pionniers.jpg"
+    },
+    "osm": {
+      "lat": 43.5742566,
+      "lng": 1.4769494,
+      "osm": "https://www.openstreetmap.org/relation/8495554",
+      "label": "L'envol des pionniers, 6, Rue Jacqueline Auriol, L'Ormeau, Pont des Demoiselles / Ormeau/ Montaudran / La Terrasse / Malepère, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31400, France"
+    }
+  },
+  {
+    "id": "tls-vieux-toulouse",
+    "wikidata": "https://www.wikidata.org/wiki/Q3330403",
+    "label": "musée du Vieux Toulouse",
+    "wikidataCoords": {
+      "lat": 43.6024,
+      "lng": 1.44304
+    },
+    "website": "https://toulousainsdetoulouse.fr/index.php?option=com_content&view=article&id=87&Itemid=57",
+    "frwiki": "Musée du Vieux Toulouse",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/H%C3%B4tel_Dumay_-_Cour_int%C3%A9rieure_et_entr%C3%A9e_du_Mus%C3%A9e_du_Vieux_Toulouse.jpg/1280px-H%C3%B4tel_Dumay_-_Cour_int%C3%A9rieure_et_entr%C3%A9e_du_Mus%C3%A9e_du_Vieux_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Dumay_-_Cour_int%C3%A9rieure_et_entr%C3%A9e_du_Mus%C3%A9e_du_Vieux_Toulouse.jpg"
+    },
+    "osm": {
+      "lat": 43.6023148,
+      "lng": 1.4431296,
+      "osm": "https://www.openstreetmap.org/node/247081244",
+      "label": "Musée du Vieux-Toulouse, Rue du May, Daurade, Esquirol, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-cour-henri-iv",
+    "osm": {
+      "lat": 43.6044718,
+      "lng": 1.4442373,
+      "osm": "https://www.openstreetmap.org/way/1365313030",
+      "label": "Cour Henri IV, Victor Hugo, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-croix-occitane",
+    "wikidata": "https://www.wikidata.org/wiki/Q3390577",
+    "label": "place du Capitole",
+    "website": null,
+    "frwiki": "Place du Capitole"
+  },
+  {
+    "id": "tls-zodiaque-capitole",
+    "osm": {
+      "lat": 43.6043987,
+      "lng": 1.4433516,
+      "osm": "https://www.openstreetmap.org/relation/11148976",
+      "label": "Place du Capitole, Victor Hugo, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, France"
+    }
+  },
+  {
+    "id": "tls-donjon",
+    "wikidata": "https://www.wikidata.org/wiki/Q30449623",
+    "label": "Donjon du Capitole de Toulouse",
+    "wikidataCoords": {
+      "lat": 43.604391666667,
+      "lng": 1.4447694444444
+    },
+    "website": null,
+    "frwiki": null,
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Capitole_Toulouse_-_Le_donjon.jpg/1280px-Capitole_Toulouse_-_Le_donjon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Capitole_Toulouse_-_Le_donjon.jpg"
+    },
+    "osm": {
+      "lat": 43.6044077,
+      "lng": 1.4447789,
+      "osm": "https://www.openstreetmap.org/way/34923008",
+      "label": "Donjon du Capitole, Rue Ernest Roschach, Victor Hugo, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-porte-miegeville",
+    "wikidata": "https://www.wikidata.org/wiki/Q2375012",
+    "label": "porte Miègeville",
+    "wikidataCoords": {
+      "lat": 43.608175,
+      "lng": 1.441811
+    },
+    "website": null,
+    "frwiki": "Porte Miègeville",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Porte_Mi%C3%A9geville_-_Basilique_Saint-Sernin.jpg/1280px-Porte_Mi%C3%A9geville_-_Basilique_Saint-Sernin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "PierreSelim",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porte_Mi%C3%A9geville_-_Basilique_Saint-Sernin.jpg"
+    },
+    "osm": {
+      "lat": 43.6083818,
+      "lng": 1.4419702,
+      "osm": "https://www.openstreetmap.org/way/260584755",
+      "label": "Basilique Saint-Sernin, Place Saint-Sernin, Saint-Sernin, Arnaud Bernard, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-cour-assezat",
+    "wikidata": "https://www.wikidata.org/wiki/Q3145715",
+    "label": "hôtel d'Assézat",
+    "wikidataCoords": {
+      "lat": 43.6003,
+      "lng": 1.44203
+    },
+    "website": null,
+    "frwiki": "Hôtel d'Assézat",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Bachelier_-_H%C3%B4tel_d%27Ass%C3%A9zat_-_Toulouse.jpg/1280px-Bachelier_-_H%C3%B4tel_d%27Ass%C3%A9zat_-_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bachelier_-_H%C3%B4tel_d%27Ass%C3%A9zat_-_Toulouse.jpg"
+    }
+  },
+  {
+    "id": "tls-hotel-bernuy",
+    "wikidata": "https://www.wikidata.org/wiki/Q22938605",
+    "label": "hôtel de Jean Bernuy",
+    "wikidataCoords": {
+      "lat": 43.602827,
+      "lng": 1.441124
+    },
+    "website": null,
+    "frwiki": "Hôtel de Bernuy",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Lycee-Fermat_15.JPG/1280px-Lycee-Fermat_15.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Traumrune",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lycee-Fermat_15.JPG"
+    }
+  },
+  {
+    "id": "tls-hotel-pierre",
+    "wikidata": "https://www.wikidata.org/wiki/Q3145737",
+    "label": "hôtel de Bagis",
+    "wikidataCoords": {
+      "lat": 43.596969444444,
+      "lng": 1.4421555555556
+    },
+    "website": null,
+    "frwiki": "Hôtel de Bagis",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Hotel_de_Bagis_Toulouse.jpg/1280px-Hotel_de_Bagis_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hotel_de_Bagis_Toulouse.jpg"
+    },
+    "osm": {
+      "lat": 43.6082746,
+      "lng": 1.4539766,
+      "osm": "https://www.openstreetmap.org/node/1283982030",
+      "label": "Hôtel Riquet, Rue Pierre-Paul Riquet, Belfort, Saint-Aubin, Les Chalets / Bayard / Belfort / Saint-Aubin / Dupuy, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-dalbade",
+    "wikidata": "https://www.wikidata.org/wiki/Q3580740",
+    "label": "église Notre-Dame de la Dalbade",
+    "wikidataCoords": {
+      "lat": 43.5976,
+      "lng": 1.44247
+    },
+    "website": null,
+    "frwiki": "Église Notre-Dame de la Dalbade",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Fa%C3%A7ade_de_Notre-Dame_de_la_Dalbade.jpg/1280px-Fa%C3%A7ade_de_Notre-Dame_de_la_Dalbade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fa%C3%A7ade_de_Notre-Dame_de_la_Dalbade.jpg"
+    }
+  },
+  {
+    "id": "tls-vieux-raisin",
+    "wikidata": "https://www.wikidata.org/wiki/Q3146303",
+    "label": "hôtel du Vieux-Raisin",
+    "wikidataCoords": {
+      "lat": 43.5972,
+      "lng": 1.44576
+    },
+    "website": null,
+    "frwiki": "Hôtel du Vieux-Raisin",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/H%C3%B4tel_du_Vieux-Raisin.jpg/1280px-H%C3%B4tel_du_Vieux-Raisin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_du_Vieux-Raisin.jpg"
+    }
+  },
+  {
+    "id": "tls-griffoul",
+    "osm": {
+      "lat": 43.5998159,
+      "lng": 1.4491356,
+      "osm": "https://www.openstreetmap.org/way/793270925",
+      "label": "Fontaine du Griffoul, Place Saint-Étienne, Saint-Étienne, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-marche-victor-hugo",
+    "osm": {
+      "lat": 43.6065101,
+      "lng": 1.4466498,
+      "osm": "https://www.openstreetmap.org/way/828576847",
+      "label": "Marché Victor Hugo, Rue Rivals, Victor Hugo, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-marche-carmes",
+    "osm": {
+      "lat": 43.5976495,
+      "lng": 1.4449015,
+      "osm": "https://www.openstreetmap.org/way/216950080",
+      "label": "Marché des Carmes, Place des Carmes, Salin, Esquirol, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-quai-daurade",
+    "osm": {
+      "lat": 43.6004721,
+      "lng": 1.4397307,
+      "osm": "https://www.openstreetmap.org/way/22937315",
+      "label": "Quai de la Daurade, Daurade, Esquirol, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-ponts-jumeaux",
+    "wikidata": "https://www.wikidata.org/wiki/Q3100560",
+    "label": "Ponts-Jumeaux",
+    "wikidataCoords": {
+      "lat": 43.61111111,
+      "lng": 1.41944444
+    },
+    "website": null,
+    "frwiki": "Ponts-Jumeaux",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Ponts-Jumeaux_Toulouse.jpg/1280px-Ponts-Jumeaux_Toulouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ponts-Jumeaux_Toulouse.jpg"
+    },
+    "osm": {
+      "lat": 43.6109894,
+      "lng": 1.4186838,
+      "osm": "https://www.openstreetmap.org/way/80140902",
+      "label": "Ponts-Jumeaux, Amidonniers, Amidonniers / Compans-Caffarelli / Brouardel, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-port-saint-sauveur",
+    "wikidata": "https://www.wikidata.org/wiki/Q3058084",
+    "label": "port Saint-Sauveur",
+    "wikidataCoords": {
+      "lat": 43.5953,
+      "lng": 1.45629
+    },
+    "website": null,
+    "frwiki": "Port Saint-Sauveur",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Port_St_Sauveur_2.jpg/1280px-Port_St_Sauveur_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Yelles",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Port_St_Sauveur_2.jpg"
+    },
+    "osm": {
+      "lat": 43.5952482,
+      "lng": 1.4562994,
+      "osm": "https://www.openstreetmap.org/node/27502542",
+      "label": "Port Saint-Sauveur, Côte Pavée, Bonhoure / Guilheméry / Château de l'Hers / Limayrac / Côte Pavée, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-maison-violette",
+    "osm": null
+  },
+  {
+    "id": "tls-carmelites",
+    "wikidata": "https://www.wikidata.org/wiki/Q2957369",
+    "label": "chapelle des Carmélites de Toulouse",
+    "wikidataCoords": {
+      "lat": 43.6075,
+      "lng": 1.44333
+    },
+    "website": "https://metropole.toulouse.fr/annuaire/chapelle-des-carmelites",
+    "frwiki": "Chapelle des Carmélites de Toulouse",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Chapelle_des_Carm%C3%A9lites_-_Exterieur.jpg/1280px-Chapelle_des_Carm%C3%A9lites_-_Exterieur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chapelle_des_Carm%C3%A9lites_-_Exterieur.jpg"
+    },
+    "osm": {
+      "lat": 43.6075877,
+      "lng": 1.4432756,
+      "osm": "https://www.openstreetmap.org/way/60544436",
+      "label": "Chapelle des Carmélites, Rue de Périgord, Saint-Sernin, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-jardin-royal",
+    "osm": {
+      "lat": 43.5956107,
+      "lng": 1.4502188,
+      "osm": "https://www.openstreetmap.org/way/7975262",
+      "label": "Jardin Royal, Saint-Étienne, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, France"
+    }
+  },
+  {
+    "id": "tls-tour-tournoer",
+    "osm": {
+      "lat": 43.597126,
+      "lng": 1.4467336,
+      "osm": "https://www.openstreetmap.org/way/39446334",
+      "label": "Hôtel Dahus, Rue d'Aussargues, Salin, Les Carmes, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-statue-riquet",
+    "osm": {
+      "lat": 43.6058839,
+      "lng": 1.4491312,
+      "osm": "https://www.openstreetmap.org/way/1123201398",
+      "label": "Allées Jean Jaurès, Belfort, Saint-Aubin, Les Chalets / Bayard / Belfort / Saint-Aubin / Dupuy, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-fontaine-trinite",
+    "osm": {
+      "lat": 43.5997283,
+      "lng": 1.4440782,
+      "osm": "https://www.openstreetmap.org/way/615268825",
+      "label": "Fontaine de la Trinité, Place de la Trinité, Tounis, Esquirol, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-hotel-ulmo",
+    "wikidata": "https://www.wikidata.org/wiki/Q3145732",
+    "label": "hôtel d'Ulmo",
+    "wikidataCoords": {
+      "lat": 43.5975,
+      "lng": 1.4498
+    },
+    "website": null,
+    "frwiki": "Hôtel d'Ulmo",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/H%C3%B4tel_d%27Ulmo_Toulouse_Facade.jpg/1280px-H%C3%B4tel_d%27Ulmo_Toulouse_Facade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_d%27Ulmo_Toulouse_Facade.jpg"
+    },
+    "osm": null
+  },
+  {
+    "id": "tls-marche-saint-aubin",
+    "osm": {
+      "lat": 43.6036036,
+      "lng": 1.4553506,
+      "osm": "https://www.openstreetmap.org/way/34713901",
+      "label": "Église Saint-Aubin, Place Saint-Aubin, Dupuy, Saint-Aubin, Les Chalets / Bayard / Belfort / Saint-Aubin / Dupuy, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-quai-saint-pierre",
+    "osm": {
+      "lat": 43.6034957,
+      "lng": 1.4356877,
+      "osm": "https://www.openstreetmap.org/way/22717774",
+      "label": "Place Saint-Pierre, Daurade, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, France"
+    }
+  },
+  {
+    "id": "tls-taur",
+    "wikidata": "https://www.wikidata.org/wiki/Q3580780",
+    "label": "église Notre-Dame du Taur",
+    "labelCs": "Kostel Notre-Dame du Taur",
+    "wikidataCoords": {
+      "lat": 43.6056,
+      "lng": 1.44291
+    },
+    "website": "https://basilique-saint-sernin.fr/nd-du-taur/",
+    "frwiki": "Église Notre-Dame du Taur",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/31_-_Eglise_Notre-Dame_du_Taur_-_Facade.jpg/1280px-31_-_Eglise_Notre-Dame_du_Taur_-_Facade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:31_-_Eglise_Notre-Dame_du_Taur_-_Facade.jpg"
+    }
+  },
+  {
+    "id": "tls-jardin-raymond-vi",
+    "osm": {
+      "lat": 43.5998457,
+      "lng": 1.4294981,
+      "osm": "https://www.openstreetmap.org/node/308978792",
+      "label": "Jardin Raymond VI, Allées Charles de Fitte, Saint-Cyprien, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31300, France"
+    }
+  },
+  {
+    "id": "tls-canal-brienne",
+    "wikidata": "https://www.wikidata.org/wiki/Q2935989",
+    "label": "canal de Brienne",
+    "wikidataCoords": {
+      "lat": 43.607872,
+      "lng": 1.426329
+    },
+    "website": null,
+    "frwiki": "Canal de Brienne",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Canal_de_Brienne.jpg/1280px-Canal_de_Brienne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canal_de_Brienne.jpg"
+    },
+    "osm": {
+      "lat": 43.6088839,
+      "lng": 1.4228928,
+      "osm": "https://www.openstreetmap.org/way/59719610",
+      "label": "Allée de Brienne, Brouardel, Amidonniers, Amidonniers / Compans-Caffarelli / Brouardel, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-piste-geants",
+    "osm": {
+      "lat": 43.5712032,
+      "lng": 1.4791937,
+      "osm": "https://www.openstreetmap.org/way/210504665",
+      "label": "Piste des Géants, L'Ormeau, Pont des Demoiselles / Ormeau/ Montaudran / La Terrasse / Malepère, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31400, France"
+    }
+  },
+  {
+    "id": "tls-rue-saint-rome",
+    "osm": {
+      "lat": 43.6027072,
+      "lng": 1.4435244,
+      "osm": "https://www.openstreetmap.org/way/5150673",
+      "label": "Rue Saint-Rome, Daurade, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-bibent",
+    "osm": {
+      "lat": 43.6037802,
+      "lng": 1.4434455,
+      "osm": "https://www.openstreetmap.org/node/5981188951",
+      "label": "Le Bibent, 5, Place du Capitole, Victor Hugo, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-chez-emile",
+    "osm": {
+      "lat": 43.6022479,
+      "lng": 1.4472215,
+      "osm": "https://www.openstreetmap.org/node/450171441",
+      "label": "Restaurant Émile, 13, Place Saint-Georges, Saint-Georges, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-colombier",
+    "osm": {
+      "lat": 43.6086274,
+      "lng": 1.4475844,
+      "osm": "https://www.openstreetmap.org/node/2450406605",
+      "label": "Le Colombier, Rue de Bayard, Belfort, Matabiau, Les Chalets / Bayard / Belfort / Saint-Aubin / Dupuy, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-au-gascon",
+    "osm": {
+      "lat": 43.6041874,
+      "lng": 1.4415887,
+      "osm": "https://www.openstreetmap.org/node/2465993954",
+      "label": "Au Gascon, Rue des Jacobins, Daurade, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-chez-attila",
+    "osm": {
+      "lat": 43.6064019,
+      "lng": 1.4465589,
+      "osm": "https://www.openstreetmap.org/node/917437364",
+      "label": "Chez Attila, Place Victor Hugo, Victor Hugo, Saint-Georges, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-florida",
+    "osm": {
+      "lat": 43.6043078,
+      "lng": 1.4427387,
+      "osm": "https://www.openstreetmap.org/node/1666191502",
+      "label": "Le Florida, Place du Capitole, Victor Hugo, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-faim-haricots",
+    "osm": {
+      "lat": 43.6017706,
+      "lng": 1.4439027,
+      "osm": "https://www.openstreetmap.org/node/1585734411",
+      "label": "La Faim des Haricots, Rue du Puits-Vert, Daurade, Esquirol, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-sherpa",
+    "osm": {
+      "lat": 43.6066824,
+      "lng": 1.4424675,
+      "osm": "https://www.openstreetmap.org/node/1241251804",
+      "label": "Le Sherpa, Rue du Taur, Saint-Sernin, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-flowers",
+    "osm": {
+      "lat": 43.6029255,
+      "lng": 1.4451123,
+      "osm": "https://www.openstreetmap.org/node/1376674273",
+      "label": "The Flower's Café, Place Roger Salengro, Victor Hugo, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-fazoul",
+    "osm": null
+  },
+  {
+    "id": "tls-navarre",
+    "osm": {
+      "lat": 43.5969167,
+      "lng": 1.4474213,
+      "osm": "https://www.openstreetmap.org/node/868727687",
+      "label": "Chez Navarre, Rue Mage, Salin, Saint-Étienne, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-os-a-moelle",
+    "osm": {
+      "lat": 43.6105902,
+      "lng": 1.4454214,
+      "osm": "https://www.openstreetmap.org/node/7639743090",
+      "label": "L'Os à Moëlle, Rue Roquelaine, Belfort, Matabiau, Les Chalets / Bayard / Belfort / Saint-Aubin / Dupuy, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-aubrac",
+    "osm": {
+      "lat": 43.6043936,
+      "lng": 1.4513523,
+      "osm": "https://www.openstreetmap.org/node/776623621",
+      "label": "L'Aubrac, Rue de la Colombette, Belfort, Saint-Aubin, Les Chalets / Bayard / Belfort / Saint-Aubin / Dupuy, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-cave-cassoulet",
+    "osm": null
+  },
+  {
+    "id": "tls-caves-marechale",
+    "osm": {
+      "lat": 43.6025551,
+      "lng": 1.4441834,
+      "osm": "https://www.openstreetmap.org/node/3389502088",
+      "label": "Les Caves de la Maréchale, Impasse Baour-Lormian, Victor Hugo, Capitole, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-jgo",
+    "osm": {
+      "lat": 43.6063919,
+      "lng": 1.4470694,
+      "osm": "https://www.openstreetmap.org/node/1215767134",
+      "label": "Le J'Go, Rue Denis Méliet, Victor Hugo, Saint-Georges, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-genty-magre",
+    "osm": {
+      "lat": 43.6015089,
+      "lng": 1.445231,
+      "osm": "https://www.openstreetmap.org/node/843097451",
+      "label": "Le Genty Magre, Rue Genty Magre, Daurade, Esquirol, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-bapz",
+    "osm": {
+      "lat": 43.6006049,
+      "lng": 1.4423688,
+      "osm": "https://www.openstreetmap.org/node/2222655907",
+      "label": "Bapz, Rue de la Bourse, Daurade, Esquirol, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-cafe-artistes",
+    "osm": {
+      "lat": 43.6018873,
+      "lng": 1.4393523,
+      "osm": "https://www.openstreetmap.org/node/313986531",
+      "label": "Café des Artistes, 13, Place de la Daurade, Daurade, Esquirol, Capitole / Arnaud Bernard / Carmes, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  },
+  {
+    "id": "tls-copains-abord",
+    "osm": {
+      "lat": 43.6015125,
+      "lng": 1.4581045,
+      "osm": "https://www.openstreetmap.org/way/64850497",
+      "label": "Les copains d'abord, Rue du Pont Guilhemery, Guilheméry, Côte Pavée, Bonhoure / Guilheméry / Château de l'Hers / Limayrac / Côte Pavée, Toulouse, Haute-Garonne, Occitanie, France métropolitaine, 31000, France"
+    }
+  }
+]

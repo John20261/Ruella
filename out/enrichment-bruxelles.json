@@ -1,0 +1,495 @@
+[
+  {
+    "id": "bru-grand-place",
+    "wikidata": "https://www.wikidata.org/wiki/Q215429",
+    "label": "Grand-Place",
+    "labelCs": "Grand-Place v Bruselu",
+    "wikidataCoords": {
+      "lat": 50.84670775,
+      "lng": 4.35253815
+    },
+    "website": null,
+    "frwiki": "Grand-Place de Bruxelles",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Grand-Place%2C_Brussels_-_panorama%2C_June_2018.jpg/1280px-Grand-Place%2C_Brussels_-_panorama%2C_June_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Celuici",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grand-Place,_Brussels_-_panorama,_June_2018.jpg"
+    },
+    "osm": {
+      "lat": 50.8467139,
+      "lng": 4.3525151,
+      "osm": "https://www.openstreetmap.org/way/3517898",
+      "label": "Grand-Place - Grote Markt, Quartier du Centre - Centrumwijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-atomium",
+    "wikidata": "https://www.wikidata.org/wiki/Q180901",
+    "label": "Atomium",
+    "labelCs": "Atomium",
+    "wikidataCoords": {
+      "lat": 50.895,
+      "lng": 4.3413888888889
+    },
+    "website": null,
+    "frwiki": "Atomium",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Laeken_Atomium_06.jpg/1280px-Laeken_Atomium_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zairon",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laeken_Atomium_06.jpg"
+    },
+    "osm": {
+      "lat": 50.8887006,
+      "lng": 4.338985,
+      "osm": "https://www.openstreetmap.org/node/8652958076",
+      "label": "Atomium, 79, Avenue Houba-de Strooper - Houba-de Strooperlaan, Laeken - Laken, Mutsaard, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1020, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-manneken-pis",
+    "wikidata": "https://www.wikidata.org/wiki/Q152072",
+    "label": "Manneken-Pis",
+    "labelCs": "Manneken Pis",
+    "wikidataCoords": {
+      "lat": 50.8449844,
+      "lng": 4.349988
+    },
+    "website": null,
+    "frwiki": "Manneken-Pis",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Bruxelles_Manneken_Pis.jpg/1280px-Bruxelles_Manneken_Pis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Myrabella",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruxelles_Manneken_Pis.jpg"
+    },
+    "osm": {
+      "lat": 50.8449861,
+      "lng": 4.3499932,
+      "osm": "https://www.openstreetmap.org/node/240866019",
+      "label": "Manneken Pis, Rue de l'Étuve - Stoofstraat, Quartier du Centre - Centrumwijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-magritte",
+    "wikidata": "https://www.wikidata.org/wiki/Q943581",
+    "label": "Musée Magritte",
+    "labelCs": "Musée Magritte",
+    "wikidataCoords": {
+      "lat": 50.8424182,
+      "lng": 4.358796
+    },
+    "website": "http://www.musee-magritte-museum.be",
+    "frwiki": "Musée Magritte",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/BRX-mus%C3%A9e-magritte.2.JPG/1280px-BRX-mus%C3%A9e-magritte.2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Warburg",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BRX-mus%C3%A9e-magritte.2.JPG"
+    },
+    "osm": {
+      "lat": 50.8424182,
+      "lng": 4.358796,
+      "osm": "https://www.openstreetmap.org/node/9026522736",
+      "label": "Musée Magritte Museum, Place Royale - Koningsplein, Quartier Royal - Koninklijke Wijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-bd",
+    "wikidata": "https://www.wikidata.org/wiki/Q815542",
+    "label": "Centre belge de la bande dessinée",
+    "labelCs": "Belgické muzeum komixu",
+    "wikidataCoords": {
+      "lat": 50.85125,
+      "lng": 4.36016
+    },
+    "website": "https://www.comicscenter.net",
+    "frwiki": "Centre belge de la bande dessinée",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Centre_Belge_de_la_Bande_Dessin%C3%A9e_-_30.jpg/1280px-Centre_Belge_de_la_Bande_Dessin%C3%A9e_-_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Ramón",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Centre_Belge_de_la_Bande_Dessin%C3%A9e_-_30.jpg"
+    },
+    "osm": {
+      "lat": 50.8512487,
+      "lng": 4.3601777,
+      "osm": "https://www.openstreetmap.org/way/87493075",
+      "label": "Centre Belge de la Bande Dessinée - Belgisch Stripcentrum, Rue des Sables - Zandstraat, Quartier Marais-Jacqmain - Wijk Marais-Jacqmain, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-parlamentarium",
+    "wikidata": "https://www.wikidata.org/wiki/Q8062880",
+    "label": "Parlamentarium",
+    "wikidataCoords": {
+      "lat": 50.838498,
+      "lng": 4.376158
+    },
+    "website": "http://www.europarl.europa.eu/visiting/en/parlamentarium.html",
+    "frwiki": null,
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Parlamentarium_-_Parlement_europ%C3%A9en_-_Je_suis_Nice.jpg/1280px-Parlamentarium_-_Parlement_europ%C3%A9en_-_Je_suis_Nice.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "LeJC",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parlamentarium_-_Parlement_europ%C3%A9en_-_Je_suis_Nice.jpg"
+    },
+    "osm": {
+      "lat": 50.8400895,
+      "lng": 4.3743279,
+      "osm": "https://www.openstreetmap.org/node/1755861324",
+      "label": "Parlamentarium, Esplanade Solidarność 1980, Quartier Léopold - Leopoldswijk, Ixelles - Elsene, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1050, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-cinquantenaire",
+    "wikidata": "https://www.wikidata.org/wiki/Q1101790",
+    "label": "parc du Cinquantenaire",
+    "labelCs": "Parc du Cinquantenaire",
+    "wikidataCoords": {
+      "lat": 50.840555555556,
+      "lng": 4.3927777777778
+    },
+    "website": "https://cinquantenaire.brussels/en/",
+    "frwiki": "Parc du Cinquantenaire",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Parc_du_Cinquantenaire_30-05-06.JPG/1280px-Parc_du_Cinquantenaire_30-05-06.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "User:Ben2",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parc_du_Cinquantenaire_30-05-06.JPG"
+    },
+    "osm": {
+      "lat": 50.8410369,
+      "lng": 4.3934924,
+      "osm": "https://www.openstreetmap.org/relation/555230",
+      "label": "Parc du Cinquantenaire - Jubelpark, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-galeries",
+    "wikidata": "https://www.wikidata.org/wiki/Q1491935",
+    "label": "galeries royales Saint-Hubert",
+    "labelCs": "Galeries Royales Saint-Hubert",
+    "wikidataCoords": {
+      "lat": 50.84778,
+      "lng": 4.355
+    },
+    "website": "https://www.grsh.be/",
+    "frwiki": "Galeries royales Saint-Hubert",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Galeries_royales_Saint-Hubert%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-14%2C_DD_04-06_HDR.jpg/1280px-Galeries_royales_Saint-Hubert%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-14%2C_DD_04-06_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galeries_royales_Saint-Hubert,_Bruselas,_B%C3%A9lgica,_2021-12-14,_DD_04-06_HDR.jpg"
+    },
+    "osm": {
+      "lat": 50.848192,
+      "lng": 4.3551287,
+      "osm": "https://www.openstreetmap.org/relation/4097534",
+      "label": "Galeries royales Saint-Hubert - Koninklijke Sint-Hubertusgalerijen, Rue des Bouchers - Beenhouwersstraat, Quartier du Centre - Centrumwijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-mont-arts",
+    "wikidata": "https://www.wikidata.org/wiki/Q1865794",
+    "label": "mont des Arts",
+    "labelCs": "Mont des Arts",
+    "wikidataCoords": {
+      "lat": 50.844211853253,
+      "lng": 4.35760585
+    },
+    "website": null,
+    "frwiki": "Mont des Arts",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg/1280px-Brussels_view_from_Mont_des_Arts%2C_Brussels%2C_Belgium_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Ank Kumar",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brussels_view_from_Mont_des_Arts,_Brussels,_Belgium_(cropped).jpg"
+    },
+    "osm": {
+      "lat": 50.8438626,
+      "lng": 4.3567662,
+      "osm": "https://www.openstreetmap.org/node/10895578669",
+      "label": "Mont des Arts - Kunstberg, Quartier Royal - Koninklijke Wijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-palais-royal",
+    "wikidata": "https://www.wikidata.org/wiki/Q635307",
+    "label": "palais royal de Bruxelles",
+    "labelCs": "Královský palác v Bruselu",
+    "wikidataCoords": {
+      "lat": 50.841667,
+      "lng": 4.362222
+    },
+    "website": "http://www.monarchie.be/palace-and-heritage/palace-brussels",
+    "frwiki": "Palais royal de Bruxelles",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Palacio_Real%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-15%2C_DD_55.jpg/1280px-Palacio_Real%2C_Bruselas%2C_B%C3%A9lgica%2C_2021-12-15%2C_DD_55.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palacio_Real,_Bruselas,_B%C3%A9lgica,_2021-12-15,_DD_55.jpg"
+    },
+    "osm": {
+      "lat": 50.8419277,
+      "lng": 4.3622722,
+      "osm": "https://www.openstreetmap.org/relation/3299902",
+      "label": "Palais Royal - Koninklijk Paleis, Place des Palais - Paleizenplein, Quartier Royal - Koninklijke Wijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-horta",
+    "wikidata": "https://www.wikidata.org/wiki/Q1995367",
+    "label": "musée Horta",
+    "labelCs": "Hortův dům a ateliér",
+    "wikidataCoords": {
+      "lat": 50.824169,
+      "lng": 4.355561
+    },
+    "website": "https://www.hortamuseum.be/",
+    "frwiki": "Maison Horta",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Hortamuseum.tif/lossy-page1-1280px-Hortamuseum.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Paul Louis",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hortamuseum.tif"
+    },
+    "osm": {
+      "lat": 50.8240988,
+      "lng": 4.3553798,
+      "osm": "https://www.openstreetmap.org/way/893622441",
+      "label": "Musée Horta - Hortamuseum, Rue Américaine - Amerikastraat, Ma Campagne, Saint-Gilles - Sint-Gillis, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1060, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-sciences-naturelles",
+    "wikidata": "https://www.wikidata.org/wiki/Q16665660",
+    "label": "Institut royal des sciences naturelles de Belgique",
+    "wikidataCoords": {
+      "lat": 50.836547,
+      "lng": 4.37656
+    },
+    "website": "https://www.naturalsciences.be/",
+    "frwiki": "Institut royal des sciences naturelles",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Gebouw.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Koninklijk Museum voor NatuurwetenschappenOriginal uploader was MADe at nl.wikipedia",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gebouw.jpg"
+    },
+    "osm": {
+      "lat": 50.8365093,
+      "lng": 4.3764944,
+      "osm": "https://www.openstreetmap.org/node/3824736478",
+      "label": "Muséum des sciences naturelles de Belgique - Museum voor Natuurwetenschappen van België, Rue Vautier - Vautierstraat, Quartier européen - Europese wijk, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-jeanneke-pis",
+    "wikidata": "https://www.wikidata.org/wiki/Q152360",
+    "label": "Jeanneke-Pis",
+    "labelCs": "Jaenneke Pis",
+    "wikidataCoords": {
+      "lat": 50.848611,
+      "lng": 4.354167
+    },
+    "website": "http://www.jeannekepis.be",
+    "frwiki": "Jeanneke-Pis",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Bruksela%2C_Jeanneke_Pis_-_Siusiaj%C4%85ca_dziewczynka.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Aw58",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bruksela,_Jeanneke_Pis_-_Siusiaj%C4%85ca_dziewczynka.jpg"
+    },
+    "osm": {
+      "lat": 50.8485237,
+      "lng": 4.3541145,
+      "osm": "https://www.openstreetmap.org/node/249292417",
+      "label": "Jeanneke Pis, 11, Impasse de la Fidélité - Getrouwheidsgang, Quartier du Centre - Centrumwijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-murs-bd",
+    "osm": {
+      "lat": 50.8457961,
+      "lng": 4.3511811,
+      "osm": "https://www.openstreetmap.org/way/14391824",
+      "label": "Rue de l'Étuve - Stoofstraat, Quartier du Centre - Centrumwijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-toone",
+    "wikidata": "https://www.wikidata.org/wiki/Q41721236",
+    "label": "Théâtre royal de Toone et impasse Schuddeveld",
+    "wikidataCoords": {
+      "lat": 50.847663888889,
+      "lng": 4.353875
+    },
+    "website": null,
+    "frwiki": null,
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Belgique_-_Bruxelles_-_Estaminet_Toone_VII_-_01.jpg/1280px-Belgique_-_Bruxelles_-_Estaminet_Toone_VII_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "EmDee",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Belgique_-_Bruxelles_-_Estaminet_Toone_VII_-_01.jpg"
+    },
+    "osm": {
+      "lat": 50.8477148,
+      "lng": 4.3537192,
+      "osm": "https://www.openstreetmap.org/node/11123876657",
+      "label": "Théâtre Royal de Toone - Koninklijk Poppentheater Toone, Impasse Schuddeveld - Schuddeveldgang, Quartier du Centre - Centrumwijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-marche-jeu-balle",
+    "wikidata": "https://www.wikidata.org/wiki/Q2217006",
+    "label": "place du Jeu de Balle",
+    "wikidataCoords": {
+      "lat": 50.837024,
+      "lng": 4.345806
+    },
+    "website": null,
+    "frwiki": "Place du Jeu de Balle",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Jeu_de_Balle_Bxl_01.JPG/1280px-Jeu_de_Balle_Bxl_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "User:Ben2",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeu_de_Balle_Bxl_01.JPG"
+    },
+    "osm": {
+      "lat": 50.8370045,
+      "lng": 4.3458407,
+      "osm": "https://www.openstreetmap.org/way/1248912572",
+      "label": "Place du Jeu de Balle - Vossenplein, Marolles - Marollen, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-ascenseur-marolles",
+    "osm": {
+      "lat": 50.8379987,
+      "lng": 4.3510878,
+      "osm": "https://www.openstreetmap.org/way/129463929",
+      "label": "Ascenseurs Poelaert - Poelaertliften, Rue Notre-Dame de Grâces - Onze-Lieve-Vrouw van Gratiestraat, Marolles - Marollen, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-parc-bruxelles",
+    "wikidata": "https://www.wikidata.org/wiki/Q1892311",
+    "label": "parc de Bruxelles",
+    "labelCs": "Bruselský park",
+    "wikidataCoords": {
+      "lat": 50.8446,
+      "lng": 4.3637
+    },
+    "website": null,
+    "frwiki": "Parc de Bruxelles",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Warandepark--Brussel-centrum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Michaelkmd at Dutch Wikipedia (Original text: Michaelkmd)",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Warandepark--Brussel-centrum.jpg"
+    },
+    "osm": {
+      "lat": 50.844595,
+      "lng": 4.3636534,
+      "osm": "https://www.openstreetmap.org/way/3517578",
+      "label": "Parc de Bruxelles - Warandepark, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-rue-bouchers",
+    "wikidata": "https://www.wikidata.org/wiki/Q1882569",
+    "label": "rue des Bouchers",
+    "wikidataCoords": {
+      "lat": 50.847800354224,
+      "lng": 4.35469835
+    },
+    "website": null,
+    "frwiki": "Rue des Bouchers (Bruxelles)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Rue_des_Bouchers.jpg/1280px-Rue_des_Bouchers.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Rex",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rue_des_Bouchers.jpg"
+    },
+    "osm": {
+      "lat": 50.8475407,
+      "lng": 4.3555046,
+      "osm": "https://www.openstreetmap.org/way/8511528",
+      "label": "Rue des Bouchers - Beenhouwersstraat, Quartier du Centre - Centrumwijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-saint-gery",
+    "wikidata": "https://www.wikidata.org/wiki/Q3126123",
+    "label": "Halles Saint-Géry",
+    "wikidataCoords": {
+      "lat": 50.847983,
+      "lng": 4.347314
+    },
+    "website": "https://hallessaintgery.be/",
+    "frwiki": "Halles Saint-Géry",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/2009-05-10_in_Brussels_15.jpg/1280px-2009-05-10_in_Brussels_15.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Szilas",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009-05-10_in_Brussels_15.jpg"
+    },
+    "osm": {
+      "lat": 50.8479655,
+      "lng": 4.3472563,
+      "osm": "https://www.openstreetmap.org/way/244956000",
+      "label": "Halles Saint-Géry - Sint-Gorikshallen, Place Saint-Géry - Sint-Goriksplein, Quartier Saint-Géry - Sint-Gorikswijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-fin-de-siecle",
+    "osm": {
+      "lat": 50.8489285,
+      "lng": 4.3471046,
+      "osm": "https://www.openstreetmap.org/node/2522239865",
+      "label": "Fin de Siècle, Rue des Chartreux - Kartuizersstraat, Quartier de la Senne - Zennewijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-maison-antoine",
+    "osm": {
+      "lat": 50.8368136,
+      "lng": 4.3814771,
+      "osm": "https://www.openstreetmap.org/way/88289893",
+      "label": "Maison Antoine, Place Jourdan - Jourdanplein, Etterbeek, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1040, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-chez-leon",
+    "osm": {
+      "lat": 50.8481585,
+      "lng": 4.3540197,
+      "osm": "https://www.openstreetmap.org/node/10690834768",
+      "label": "Chez Léon, Rue des Bouchers - Beenhouwersstraat, Quartier du Centre - Centrumwijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-noordzee",
+    "osm": null
+  },
+  {
+    "id": "bru-maison-dandoy",
+    "osm": {
+      "lat": 50.8474532,
+      "lng": 4.3516298,
+      "osm": "https://www.openstreetmap.org/node/4440408251",
+      "label": "Maison Dandoy, Rue au Beurre - Boterstraat, Quartier du Centre - Centrumwijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  },
+  {
+    "id": "bru-nuetnigenough",
+    "osm": {
+      "lat": 50.8458359,
+      "lng": 4.3498269,
+      "osm": "https://www.openstreetmap.org/node/2824297378",
+      "label": "Nüetnigenough, Rue du Lombard - Lombardstraat, Quartier du Centre - Centrumwijk, Pentagone - Vijfhoek, Bruxelles - Brussel, Brussel-Hoofdstad - Bruxelles-Capitale, Région de Bruxelles-Capitale - Brussels Hoofdstedelijk Gewest, 1000, België / Belgique / Belgien"
+    }
+  }
+]

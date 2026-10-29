@@ -1,0 +1,480 @@
+[
+  {
+    "id": "mad-prado",
+    "wikidata": "https://www.wikidata.org/wiki/Q160112",
+    "label": "musée du Prado",
+    "labelCs": "Museo del Prado",
+    "wikidataCoords": {
+      "lat": 40.41388888888889,
+      "lng": -3.692222222222222
+    },
+    "website": "https://www.museodelprado.es/",
+    "frwiki": "Musée du Prado",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/1280px-Museo_del_Prado_2016_%2825185969599%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Emilio J. Rodríguez Posada",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museo_del_Prado_2016_(25185969599).jpg"
+    },
+    "osm": {
+      "lat": 40.4137925,
+      "lng": -3.6920407,
+      "osm": "https://www.openstreetmap.org/relation/7726080",
+      "label": "Museo del Prado, Paseo del Prado, Jerónimos, Retiro, Madrid, Comunidad de Madrid, 28014, España"
+    }
+  },
+  {
+    "id": "mad-palais-royal",
+    "wikidata": "https://www.wikidata.org/wiki/Q171517",
+    "label": "palais royal de Madrid",
+    "labelCs": "Královský palác v Madridu",
+    "wikidataCoords": {
+      "lat": 40.417955,
+      "lng": -3.714312
+    },
+    "website": "https://www.patrimonionacional.es/visita/palacio-real-de-madrid",
+    "frwiki": "Palais royal de Madrid",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Palacio_Real_de_Madrid_Julio_2016_%28cropped%29.jpg/1280px-Palacio_Real_de_Madrid_Julio_2016_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Tim Adams",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palacio_Real_de_Madrid_Julio_2016_(cropped).jpg"
+    },
+    "osm": {
+      "lat": 40.4178245,
+      "lng": -3.7151134,
+      "osm": "https://www.openstreetmap.org/relation/30399",
+      "label": "Palacio Real, Plaza de la Armería, Barrio de la Latina, Palacio, Centro, Madrid, Comunidad de Madrid, 28013, España"
+    }
+  },
+  {
+    "id": "mad-retiro",
+    "wikidata": "https://www.wikidata.org/wiki/Q1131807",
+    "label": "parc du Retiro",
+    "labelCs": "Park Retiro",
+    "wikidataCoords": {
+      "lat": 40.415,
+      "lng": -3.6838888888888888
+    },
+    "website": "https://www.esmadrid.com/informacion-turistica/parque-del-retiro",
+    "frwiki": "Parc du Retiro",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/June_Parc_Retiro_Madrid_-_Mythos_Spain_Photography_2014_-_panoramio_%288%29.jpg/1280px-June_Parc_Retiro_Madrid_-_Mythos_Spain_Photography_2014_-_panoramio_%288%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "pictures Jettcom",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:June_Parc_Retiro_Madrid_-_Mythos_Spain_Photography_2014_-_panoramio_(8).jpg"
+    },
+    "osm": {
+      "lat": 40.414946,
+      "lng": -3.6832845,
+      "osm": "https://www.openstreetmap.org/relation/13616929",
+      "label": "Parque del Retiro, Madrid, Comunidad de Madrid, España"
+    }
+  },
+  {
+    "id": "mad-plaza-mayor",
+    "wikidata": "https://www.wikidata.org/wiki/Q1123493",
+    "label": "Plaza Mayor de Madrid",
+    "labelCs": "Plaza Mayor",
+    "wikidataCoords": {
+      "lat": 40.415455555556,
+      "lng": -3.7073805555556
+    },
+    "website": null,
+    "frwiki": "Plaza Mayor de Madrid",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Madrid%2C_Plaza_Mayor%2C_2016%2C_%2802%29.jpg/1280px-Madrid%2C_Plaza_Mayor%2C_2016%2C_%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Draceane",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Madrid,_Plaza_Mayor,_2016,_(02).jpg"
+    },
+    "osm": {
+      "lat": 40.4153949,
+      "lng": -3.7069974,
+      "osm": "https://www.openstreetmap.org/relation/16657232",
+      "label": "Plaza Mayor, Barrio de los Austrias, Sol, Centro, Madrid, Comunidad de Madrid, 28012, España"
+    }
+  },
+  {
+    "id": "mad-sol",
+    "wikidata": "https://www.wikidata.org/wiki/Q427163",
+    "label": "Puerta del Sol",
+    "labelCs": "Puerta del Sol",
+    "wikidataCoords": {
+      "lat": 40.41694,
+      "lng": -3.70361
+    },
+    "website": null,
+    "frwiki": "Puerta del Sol (Madrid)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Puerta_del_Sol_%28Madrid%29_10.jpg/1280px-Puerta_del_Sol_%28Madrid%29_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Tomás Fano",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puerta_del_Sol_(Madrid)_10.jpg"
+    },
+    "osm": {
+      "lat": 40.416863,
+      "lng": -3.7038762,
+      "osm": "https://www.openstreetmap.org/relation/7424032",
+      "label": "Puerta del Sol, Barrio de los Austrias, Sol, Centro, Madrid, Comunidad de Madrid, 28013, España"
+    }
+  },
+  {
+    "id": "mad-reina-sofia",
+    "wikidata": "https://www.wikidata.org/wiki/Q460889",
+    "label": "musée national centre d'art Reina Sofía",
+    "labelCs": "Muzeum královny Sofie",
+    "wikidataCoords": {
+      "lat": 40.408571430555554,
+      "lng": -3.6939961
+    },
+    "website": "https://www.museoreinasofia.es/",
+    "frwiki": "Musée national centre d'art Reina Sofía",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/MNCARS_05.jpg/1280px-MNCARS_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Luis García (Zaqarbal)",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MNCARS_05.jpg"
+    },
+    "osm": {
+      "lat": 40.4080495,
+      "lng": -3.6944216,
+      "osm": "https://www.openstreetmap.org/way/991444051",
+      "label": "Museo Nacional Centro de Arte Reina Sofía, 52, Calle de Santa Isabel, Embajadores, Centro, Madrid, Comunidad de Madrid, 28012, España"
+    }
+  },
+  {
+    "id": "mad-thyssen",
+    "wikidata": "https://www.wikidata.org/wiki/Q176251",
+    "label": "musée Thyssen-Bornemisza",
+    "labelCs": "Muzeum Thyssenů-Bornemiszů",
+    "wikidataCoords": {
+      "lat": 40.416041,
+      "lng": -3.694925
+    },
+    "website": "https://www.museothyssen.org/",
+    "frwiki": "Musée Thyssen-Bornemisza",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Site_of_the_Retiro_and_the_Prado_in_Madrid_49_%2829684554308%29.jpg/1280px-Site_of_the_Retiro_and_the_Prado_in_Madrid_49_%2829684554308%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Kyle Magnuson from Los Angeles, United States",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Site_of_the_Retiro_and_the_Prado_in_Madrid_49_(29684554308).jpg"
+    },
+    "osm": {
+      "lat": 40.4162159,
+      "lng": -3.6949317,
+      "osm": "https://www.openstreetmap.org/relation/1869336",
+      "label": "Museo Thyssen-Bornemisza, 8, Paseo del Prado, Cortes, Centro, Madrid, Comunidad de Madrid, 28014, España"
+    }
+  },
+  {
+    "id": "mad-debod",
+    "wikidata": "https://www.wikidata.org/wiki/Q1140249",
+    "label": "temple d'Amon",
+    "labelCs": "Debod",
+    "wikidataCoords": {
+      "lat": 40.424052777778,
+      "lng": -3.7177777777778
+    },
+    "website": "http://www.munimadrid.es/templodebod/",
+    "frwiki": "Temple d'Amon (Debod)",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Templo_de_Debod_Madrid.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Auteur inconnu",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Templo_de_Debod_Madrid.JPG"
+    },
+    "osm": {
+      "lat": 40.4240689,
+      "lng": -3.7176131,
+      "osm": "https://www.openstreetmap.org/way/549109296",
+      "label": "Templo de Debod, Calle Profesor Martín Almagro Basch, Casa de Campo, Moncloa-Aravaca, Madrid, Comunidad de Madrid, 28008, España"
+    }
+  },
+  {
+    "id": "mad-bernabeu",
+    "wikidata": "https://www.wikidata.org/wiki/Q164027",
+    "label": "Bernabéu",
+    "labelCs": "Estadio Santiago Bernabéu",
+    "wikidataCoords": {
+      "lat": 40.45306,
+      "lng": -3.68835
+    },
+    "website": "https://bernabeu.realmadrid.com/en-US",
+    "frwiki": "Bernabéu",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Estadio_Santiago_Bernab%C3%A9u_Madrid.jpg/1280px-Estadio_Santiago_Bernab%C3%A9u_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Zoser",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Estadio_Santiago_Bernab%C3%A9u_Madrid.jpg"
+    },
+    "osm": {
+      "lat": 40.4530437,
+      "lng": -3.688197,
+      "osm": "https://www.openstreetmap.org/way/1507411898",
+      "label": "Bernabéu, Acceso Parking, Hispanoamérica, Chamartín, Madrid, Comunidad de Madrid, 28020, España"
+    }
+  },
+  {
+    "id": "mad-gran-via",
+    "wikidata": "https://www.wikidata.org/wiki/Q2729745",
+    "label": "Gran Vía",
+    "wikidataCoords": {
+      "lat": 40.42,
+      "lng": -3.701667
+    },
+    "website": null,
+    "frwiki": "Gran Vía (métro de Madrid)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Gran_V%C3%ADa_L5_7839.jpg/1280px-Gran_V%C3%ADa_L5_7839.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Draceane",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gran_V%C3%ADa_L5_7839.jpg"
+    },
+    "osm": {
+      "lat": 40.4220401,
+      "lng": -3.7087133,
+      "osm": "https://www.openstreetmap.org/way/104799919",
+      "label": "Gran Vía, Malasaña, Universidad, Centro, Madrid, Comunidad de Madrid, 28013, España"
+    }
+  },
+  {
+    "id": "mad-almudena",
+    "wikidata": "https://www.wikidata.org/wiki/Q849711",
+    "label": "cathédrale de l'Almudena",
+    "labelCs": "Katedrála Panny Marie Almudenské v Madridu",
+    "wikidataCoords": {
+      "lat": 40.415556,
+      "lng": -3.714444
+    },
+    "website": "http://www.catedraldelaalmudena.es/",
+    "frwiki": "Cathédrale de l'Almudena",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Almudena_2022_-_overview.jpg/1280px-Almudena_2022_-_overview.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Almudena_2022_-_overview.jpg"
+    },
+    "osm": {
+      "lat": 40.4157107,
+      "lng": -3.7145886,
+      "osm": "https://www.openstreetmap.org/relation/75658",
+      "label": "Catedral de la Almudena, Plaza de la Armería, Barrio de la Latina, Palacio, Centro, Madrid, Comunidad de Madrid, 28013, España"
+    }
+  },
+  {
+    "id": "mad-jardin-botanique",
+    "osm": {
+      "lat": 40.4123656,
+      "lng": -3.6921452,
+      "osm": "https://www.openstreetmap.org/node/9871956508",
+      "label": "Real Jardín Botánico, Plaza de Murillo, Jerónimos, Retiro, Madrid, Comunidad de Madrid, 28014, España"
+    }
+  },
+  {
+    "id": "mad-palais-cristal",
+    "wikidata": "https://www.wikidata.org/wiki/Q2420025",
+    "label": "palais de Cristal",
+    "wikidataCoords": {
+      "lat": 40.413556,
+      "lng": -3.682056
+    },
+    "website": null,
+    "frwiki": "Palais de cristal (Madrid)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Palacio_de_Cristal%2C_Retiro%2C_Madrid.jpg/1280px-Palacio_de_Cristal%2C_Retiro%2C_Madrid.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "vpogarcia",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palacio_de_Cristal,_Retiro,_Madrid.jpg"
+    },
+    "osm": {
+      "lat": 40.4135979,
+      "lng": -3.6820649,
+      "osm": "https://www.openstreetmap.org/way/23596451",
+      "label": "Palacio de Cristal, Paseo Julio Romero de Torres, Jerónimos, Retiro, Madrid, Comunidad de Madrid, 28009, España"
+    }
+  },
+  {
+    "id": "mad-kilometre-zero",
+    "osm": {
+      "lat": 40.4166272,
+      "lng": -3.7038081,
+      "osm": "https://www.openstreetmap.org/node/574669230",
+      "label": "Kilómetro Cero, Puerta del Sol, Barrio de los Austrias, Sol, Centro, Madrid, Comunidad de Madrid, 28013, España"
+    }
+  },
+  {
+    "id": "mad-ours-arbousier",
+    "wikidata": "https://www.wikidata.org/wiki/Q3887613",
+    "label": "Statue de l'Ours et de l'Arbousier",
+    "labelCs": "Medvěd a planika",
+    "wikidataCoords": {
+      "lat": 40.416977,
+      "lng": -3.702464
+    },
+    "website": null,
+    "frwiki": "Statue de l'Ours et de l'Arbousier",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/El_oso_y_el_madro%C3%B1o_-_02.jpg/1280px-El_oso_y_el_madro%C3%B1o_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Carlos Delgado",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_oso_y_el_madro%C3%B1o_-_02.jpg"
+    },
+    "osm": {
+      "lat": 40.4170191,
+      "lng": -3.7026184,
+      "osm": "https://www.openstreetmap.org/way/1221366732",
+      "label": "El Oso y el Madroño, Puerta del Sol, Barrio de los Austrias, Sol, Centro, Madrid, Comunidad de Madrid, 28013, España"
+    }
+  },
+  {
+    "id": "mad-ange-dechu",
+    "wikidata": "https://www.wikidata.org/wiki/Q1999259",
+    "label": "Fuente del Ángel Caído",
+    "wikidataCoords": {
+      "lat": 40.42189,
+      "lng": -3.682189
+    },
+    "website": null,
+    "frwiki": "Fuente del Ángel Caído",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Fuente_del_%C3%81ngel_Ca%C3%ADdo_2025.jpg/1280px-Fuente_del_%C3%81ngel_Ca%C3%ADdo_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Fernando",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fuente_del_%C3%81ngel_Ca%C3%ADdo_2025.jpg"
+    },
+    "osm": {
+      "lat": 40.4110479,
+      "lng": -3.6825391,
+      "osm": "https://www.openstreetmap.org/way/984800677",
+      "label": "Fuente del Ángel Caído, Glorieta del Ángel Caído, Jerónimos, Retiro, Madrid, Comunidad de Madrid, 28009, España"
+    }
+  },
+  {
+    "id": "mad-cuesta-moyano",
+    "wikidata": "https://www.wikidata.org/wiki/Q5794001",
+    "label": "Cuesta de Moyano, Madrid",
+    "wikidataCoords": {
+      "lat": 40.409586,
+      "lng": -3.690817
+    },
+    "website": null,
+    "frwiki": null,
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Cuesta_de_Moyano_%28Madrid%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "losmininos",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cuesta_de_Moyano_(Madrid)_01.jpg"
+    },
+    "osm": {
+      "lat": 40.4096071,
+      "lng": -3.6905425,
+      "osm": "https://www.openstreetmap.org/way/23076527",
+      "label": "Cuesta de Moyano, Jerónimos, Retiro, Madrid, Comunidad de Madrid, 28014, España"
+    }
+  },
+  {
+    "id": "mad-mirador-cibeles",
+    "osm": null
+  },
+  {
+    "id": "mad-rastro",
+    "wikidata": "https://www.wikidata.org/wiki/Q2916187",
+    "label": "Rastro",
+    "wikidataCoords": {
+      "lat": 40.40888889,
+      "lng": -3.7075
+    },
+    "website": null,
+    "frwiki": "Rastro",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Rastro_de_Madrid_%28Espa%C3%B1a%29_7.jpg/1280px-Rastro_de_Madrid_%28Espa%C3%B1a%29_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Auteur inconnu",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rastro_de_Madrid_(Espa%C3%B1a)_7.jpg"
+    },
+    "osm": {
+      "lat": 40.4086332,
+      "lng": -3.7073295,
+      "osm": "https://www.openstreetmap.org/relation/12953502",
+      "label": "El Rastro, Calle Rodrigo Guevara, Embajadores, Centro, Madrid, Comunidad de Madrid, 28005, España"
+    }
+  },
+  {
+    "id": "mad-plaza-villa",
+    "wikidata": "https://www.wikidata.org/wiki/Q2711992",
+    "label": "Plaza de la Villa",
+    "wikidataCoords": {
+      "lat": 40.41527778,
+      "lng": -3.71055556
+    },
+    "website": null,
+    "frwiki": null,
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/2012-04-30_Plaza_de_la_Villa_Madrid_anagoria_01.JPG/1280px-2012-04-30_Plaza_de_la_Villa_Madrid_anagoria_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Anagoria",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-04-30_Plaza_de_la_Villa_Madrid_anagoria_01.JPG"
+    },
+    "osm": {
+      "lat": 40.4152218,
+      "lng": -3.7103999,
+      "osm": "https://www.openstreetmap.org/relation/8096274",
+      "label": "Plaza de la Villa, Barrio de la Latina, Palacio, Centro, Madrid, Comunidad de Madrid, 28013, España"
+    }
+  },
+  {
+    "id": "mad-san-gines",
+    "osm": {
+      "lat": 40.4167707,
+      "lng": -3.706803,
+      "osm": "https://www.openstreetmap.org/node/178821166",
+      "label": "Chocolatería San Ginés, 5, Pasadizo de San Ginés, Barrio de los Austrias, Sol, Centro, Madrid, Comunidad de Madrid, 28013, España"
+    }
+  },
+  {
+    "id": "mad-botin",
+    "osm": {
+      "lat": 40.4141745,
+      "lng": -3.707981,
+      "osm": "https://www.openstreetmap.org/node/510812824",
+      "label": "Botín, 17, Calle de Cuchilleros, Barrio de la Latina, Sol, Centro, Madrid, Comunidad de Madrid, 28005, España"
+    }
+  },
+  {
+    "id": "mad-san-miguel",
+    "osm": {
+      "lat": 40.4153741,
+      "lng": -3.7090151,
+      "osm": "https://www.openstreetmap.org/way/4518846",
+      "label": "Mercado de San Miguel, Plaza de San Miguel, Barrio de la Latina, Palacio, Centro, Madrid, Comunidad de Madrid, 28005, España"
+    }
+  },
+  {
+    "id": "mad-casa-labra",
+    "osm": {
+      "lat": 40.4171561,
+      "lng": -3.7046107,
+      "osm": "https://www.openstreetmap.org/node/4860765421",
+      "label": "Casa Labra, 12, Calle de Tetuán, Barrio de los Austrias, Sol, Centro, Madrid, Comunidad de Madrid, 28013, España"
+    }
+  },
+  {
+    "id": "mad-el-brillante",
+    "osm": {
+      "lat": 40.408608,
+      "lng": -3.6928819,
+      "osm": "https://www.openstreetmap.org/node/942770846",
+      "label": "El Brillante, 8, Plaza del Emperador Carlos V, Embajadores, Centro, Madrid, Comunidad de Madrid, 28012, España"
+    }
+  },
+  {
+    "id": "mad-casa-lucio",
+    "osm": {
+      "lat": 40.4120917,
+      "lng": -3.7096742,
+      "osm": "https://www.openstreetmap.org/node/4684485889",
+      "label": "Casa Lucio, 35, Calle de la Cava Baja, Barrio de la Latina, Palacio, Centro, Madrid, Comunidad de Madrid, 28005, España"
+    }
+  }
+]

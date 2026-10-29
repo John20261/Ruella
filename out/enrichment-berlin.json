@@ -1,0 +1,468 @@
+[
+  {
+    "id": "ber-brandebourg",
+    "wikidata": "https://www.wikidata.org/wiki/Q82425",
+    "label": "porte de Brandebourg",
+    "labelCs": "Braniborská brána",
+    "wikidataCoords": {
+      "lat": 52.516272222222,
+      "lng": 13.377722222222
+    },
+    "website": "http://www.visitberlin.de/de/ort/brandenburger-tor",
+    "frwiki": "Porte de Brandebourg",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Brandenburger_Tor_morgens.jpg/1280px-Brandenburger_Tor_morgens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Thomas Wolf, www.foto-tw.de",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brandenburger_Tor_morgens.jpg"
+    },
+    "osm": {
+      "lat": 52.5162699,
+      "lng": 13.3777034,
+      "osm": "https://www.openstreetmap.org/way/518071791",
+      "label": "Brandenburger Tor, 1, Pariser Platz, Friedrich-Wilhelm-Stadt, Mitte, Berlin, 10117, Deutschland"
+    }
+  },
+  {
+    "id": "ber-reichstag",
+    "wikidata": "https://www.wikidata.org/wiki/Q151897",
+    "label": "palais du Reichstag",
+    "labelCs": "Budova Říšského sněmu v Berlíně",
+    "wikidataCoords": {
+      "lat": 52.51861111111111,
+      "lng": 13.376111111111111
+    },
+    "website": "http://www.bundestag.de",
+    "frwiki": "Palais du Reichstag",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Reichstagsgeb%C3%A4ude_von_Westen.jpg/1280px-Reichstagsgeb%C3%A4ude_von_Westen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Jörg Braukmann",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Reichstagsgeb%C3%A4ude_von_Westen.jpg"
+    },
+    "osm": {
+      "lat": 52.5186538,
+      "lng": 13.3761015,
+      "osm": "https://www.openstreetmap.org/relation/2201742",
+      "label": "Reichstagsgebäude, 1, Platz der Republik, Tiergarten, Mitte, Berlin, 11011, Deutschland"
+    }
+  },
+  {
+    "id": "ber-east-side",
+    "wikidata": "https://www.wikidata.org/wiki/Q313746",
+    "label": "East Side Gallery",
+    "labelCs": "East Side Gallery",
+    "wikidataCoords": {
+      "lat": 52.503055555556,
+      "lng": 13.444722222222
+    },
+    "website": "http://www.eastsidegallery-berlin.de",
+    "frwiki": "East Side Gallery",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Berlin_Wall6270.JPG/1280px-Berlin_Wall6270.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Freepenguin",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Wall6270.JPG"
+    },
+    "osm": {
+      "lat": 52.5044542,
+      "lng": 13.4408392,
+      "osm": "https://www.openstreetmap.org/relation/6807791",
+      "label": "East Side Gallery, Mühlenstraße, Mediaspree, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Deutschland"
+    }
+  },
+  {
+    "id": "ber-memorial-mur",
+    "wikidata": "https://www.wikidata.org/wiki/Q76632437",
+    "label": "Berlin Wall Memorial",
+    "wikidataCoords": {
+      "lat": 52.535207,
+      "lng": 13.389446
+    },
+    "website": "http://www.stiftung-berliner-mauer.de",
+    "frwiki": null,
+    "osm": {
+      "lat": 52.5375133,
+      "lng": 13.3946755,
+      "osm": "https://www.openstreetmap.org/relation/14375945",
+      "label": "Gedenkstätte Berliner Mauer, Brunnenstraße, Arkonakiez, Mitte, Berlin, 10115, Deutschland"
+    }
+  },
+  {
+    "id": "ber-ile-musees",
+    "wikidata": "https://www.wikidata.org/wiki/Q157316",
+    "label": "Neues Museum",
+    "labelCs": "Neues Museum",
+    "wikidataCoords": {
+      "lat": 52.5202,
+      "lng": 13.3976
+    },
+    "website": "https://www.smb.museum/en/museums-institutions/neues-museum/home/",
+    "frwiki": "Neues Museum",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Neues_Museum_-_Joy_of_Museums.jpg/1280px-Neues_Museum_-_Joy_of_Museums.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Joyofmuseums",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neues_Museum_-_Joy_of_Museums.jpg"
+    },
+    "osm": {
+      "lat": 52.5201553,
+      "lng": 13.3977381,
+      "osm": "https://www.openstreetmap.org/way/18578139",
+      "label": "Neues Museum, 1, Bodestraße, Spandauer Vorstadt, Mitte, Berlin, 10178, Deutschland"
+    }
+  },
+  {
+    "id": "ber-checkpoint-charlie",
+    "wikidata": "https://www.wikidata.org/wiki/Q68689",
+    "label": "Checkpoint Charlie",
+    "labelCs": "Checkpoint Charlie",
+    "wikidataCoords": {
+      "lat": 52.5075,
+      "lng": 13.390277777777778
+    },
+    "website": null,
+    "frwiki": "Checkpoint Charlie",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Checkpoint_Charlie_Berlin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Adrian Purser from London, UK",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Checkpoint_Charlie_Berlin.jpg"
+    },
+    "osm": {
+      "lat": 52.5074321,
+      "lng": 13.3903814,
+      "osm": "https://www.openstreetmap.org/node/417346627",
+      "label": "Checkpoint Charlie, 43-45, Friedrichstraße, Zeitungsviertel, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10969, Deutschland"
+    }
+  },
+  {
+    "id": "ber-memorial-juifs",
+    "wikidata": "https://www.wikidata.org/wiki/Q160700",
+    "label": "mémorial aux Juifs assassinés d'Europe",
+    "labelCs": "Židovský památník",
+    "wikidataCoords": {
+      "lat": 52.513888888889,
+      "lng": 13.378888888889
+    },
+    "website": "http://www.stiftung-denkmal.de",
+    "frwiki": "Mémorial aux Juifs assassinés d'Europe",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Berlin_Holocaust-Mahnmal_in_Mitte_1.jpg/1280px-Berlin_Holocaust-Mahnmal_in_Mitte_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "NoRud",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Holocaust-Mahnmal_in_Mitte_1.jpg"
+    },
+    "osm": {
+      "lat": 52.5138731,
+      "lng": 13.3787346,
+      "osm": "https://www.openstreetmap.org/way/172234733",
+      "label": "Denkmal für die ermordeten Juden Europas, 1, Cora-Berliner-Straße, Friedrich-Wilhelm-Stadt, Mitte, Berlin, 10117, Deutschland"
+    }
+  },
+  {
+    "id": "ber-tv-tower",
+    "wikidata": "https://www.wikidata.org/wiki/Q151356",
+    "label": "Fernsehturm de Berlin",
+    "labelCs": "Berliner Fernsehturm",
+    "wikidataCoords": {
+      "lat": 52.520833333333336,
+      "lng": 13.409444444444444
+    },
+    "website": "https://tv-turm.de/",
+    "frwiki": "Fernsehturm de Berlin",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Tv-turm_-_panoramio.jpg/1280px-Tv-turm_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "L-BBE",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tv-turm_-_panoramio.jpg"
+    },
+    "osm": {
+      "lat": 52.5208279,
+      "lng": 13.4094214,
+      "osm": "https://www.openstreetmap.org/way/556435241",
+      "label": "Berliner Fernsehturm, 1a, Panoramastraße, Klosterviertel, Spandauer Vorstadt, Mitte, Berlin, 10178, Deutschland"
+    }
+  },
+  {
+    "id": "ber-tiergarten",
+    "wikidata": "https://www.wikidata.org/wiki/Q342979",
+    "label": "Tiergarten",
+    "website": null,
+    "frwiki": "Tiergarten",
+    "osm": {
+      "lat": 52.5163027,
+      "lng": 13.3618184,
+      "osm": "https://www.openstreetmap.org/relation/7643526",
+      "label": "Großer Tiergarten, Mitte, Berlin, Deutschland"
+    }
+  },
+  {
+    "id": "ber-charlottenburg",
+    "wikidata": "https://www.wikidata.org/wiki/Q154996",
+    "label": "château de Charlottenbourg",
+    "labelCs": "Zámek Charlottenburg",
+    "wikidataCoords": {
+      "lat": 52.521111,
+      "lng": 13.295833
+    },
+    "website": "https://www.spsg.de/schloesser-gaerten/objekt/schloss-charlottenburg-altes-schloss/",
+    "frwiki": "Château de Charlottenbourg",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Schloss_Charlottenburg_2025.jpg/1280px-Schloss_Charlottenburg_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "abbilder",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schloss_Charlottenburg_2025.jpg"
+    },
+    "osm": {
+      "lat": 52.5206424,
+      "lng": 13.2927104,
+      "osm": "https://www.openstreetmap.org/way/186517395",
+      "label": "Schloss Charlottenburg, 10, Spandauer Damm, Danckelmannkiez, Charlottenburg, Charlottenburg-Wilmersdorf, Berlin, 14059, Deutschland"
+    }
+  },
+  {
+    "id": "ber-musee-technique",
+    "wikidata": "https://www.wikidata.org/wiki/Q706530",
+    "label": "musée allemand des techniques de Berlin",
+    "labelCs": "Deutsches Technikmuseum Berlin",
+    "wikidataCoords": {
+      "lat": 52.498611111111,
+      "lng": 13.3775
+    },
+    "website": "https://technikmuseum.berlin/",
+    "frwiki": "Musée allemand des techniques de Berlin",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Deutsches_Technikmuseum_Berlin-49410.jpg/1280px-Deutsches_Technikmuseum_Berlin-49410.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Raimond Spekking",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deutsches_Technikmuseum_Berlin-49410.jpg"
+    },
+    "osm": {
+      "lat": 52.4971811,
+      "lng": 13.3759289,
+      "osm": "https://www.openstreetmap.org/way/31622818",
+      "label": "Deutsches Technikmuseum, 9, Trebbiner Straße, Möckernkiez, Tempelhofer Vorstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10963, Deutschland"
+    }
+  },
+  {
+    "id": "ber-gendarmenmarkt",
+    "wikidata": "https://www.wikidata.org/wiki/Q170103",
+    "label": "Gendarmenmarkt",
+    "labelCs": "Gendarmenmarkt",
+    "wikidataCoords": {
+      "lat": 52.51361111111111,
+      "lng": 13.392777777777777
+    },
+    "website": null,
+    "frwiki": "Gendarmenmarkt",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Gendarmenmarkt_2010_11_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Christoph Matthias Siebenborn",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gendarmenmarkt_2010_11_01.jpg"
+    },
+    "osm": {
+      "lat": 52.5135698,
+      "lng": 13.392297,
+      "osm": "https://www.openstreetmap.org/way/844740667",
+      "label": "Gendarmenmarkt, Friedrichswerder, Friedrichstadt, Mitte, Berlin, Deutschland"
+    }
+  },
+  {
+    "id": "ber-tempelhof",
+    "wikidata": "https://www.wikidata.org/wiki/Q2402748",
+    "label": "champ de Tempelhof",
+    "wikidataCoords": {
+      "lat": 52.4733,
+      "lng": 13.4014
+    },
+    "website": "http://gruen-berlin.de/tempelhofer-feld",
+    "frwiki": "Champ de Tempelhof",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Tempelhofer_Feld_May_2021.jpg/1280px-Tempelhofer_Feld_May_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Coooohen",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tempelhofer_Feld_May_2021.jpg"
+    },
+    "osm": {
+      "lat": 52.4744192,
+      "lng": 13.4026007,
+      "osm": "https://www.openstreetmap.org/relation/7317281",
+      "label": "Tempelhofer Feld, Tempelhof-Schöneberg, Berlin, Deutschland"
+    }
+  },
+  {
+    "id": "ber-ampelmann",
+    "osm": null
+  },
+  {
+    "id": "ber-hackesche-hofe",
+    "wikidata": "https://www.wikidata.org/wiki/Q736425",
+    "label": "Hackesche Höfe",
+    "wikidataCoords": {
+      "lat": 52.524167,
+      "lng": 13.402222
+    },
+    "website": "https://www.hackesche-hoefe.de/",
+    "frwiki": "Hackesche Höfe (Berlin)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Hackesche_H%C3%B6fe_Berlin1.JPG/1280px-Hackesche_H%C3%B6fe_Berlin1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Schlaier",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hackesche_H%C3%B6fe_Berlin1.JPG"
+    },
+    "osm": {
+      "lat": 52.5242622,
+      "lng": 13.4017518,
+      "osm": "https://www.openstreetmap.org/node/12778769720",
+      "label": "Hackesche Höfe (Wendezeit), Rosenthaler Straße, Spandauer Vorstadt, Mitte, Berlin, 10178, Deutschland"
+    }
+  },
+  {
+    "id": "ber-mauerpark",
+    "wikidata": "https://www.wikidata.org/wiki/Q639887",
+    "label": "Mauerpark",
+    "wikidataCoords": {
+      "lat": 52.543611,
+      "lng": 13.403333
+    },
+    "website": null,
+    "frwiki": "Mauerpark",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Mauerpark_1979.jpg/1280px-Mauerpark_1979.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Franz Richter (User:FRZ)",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mauerpark_1979.jpg"
+    },
+    "osm": {
+      "lat": 52.5437161,
+      "lng": 13.4019327,
+      "osm": "https://www.openstreetmap.org/way/233994267",
+      "label": "Mauerpark, Prenzlauer Berg, Pankow, Berlin, Deutschland"
+    }
+  },
+  {
+    "id": "ber-oberbaum",
+    "wikidata": "https://www.wikidata.org/wiki/Q695082",
+    "label": "Oberbaumbrücke",
+    "labelCs": "Oberbaumbrücke",
+    "wikidataCoords": {
+      "lat": 52.50194,
+      "lng": 13.44556
+    },
+    "website": null,
+    "frwiki": "Oberbaumbrücke",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Oberbaumbr%C3%BCcke_mit_U-Bahn.jpg/1280px-Oberbaumbr%C3%BCcke_mit_U-Bahn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Sarah Jane at Flickr",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oberbaumbr%C3%BCcke_mit_U-Bahn.jpg"
+    },
+    "osm": {
+      "lat": 52.5017288,
+      "lng": 13.4457312,
+      "osm": "https://www.openstreetmap.org/way/288514442",
+      "label": "Oberbaumbrücke, Mediaspree, Friedrichshain, Friedrichshain-Kreuzberg, Berlin, 10243, Deutschland"
+    }
+  },
+  {
+    "id": "ber-markthalle-9",
+    "wikidata": "https://www.wikidata.org/wiki/Q1226563",
+    "label": "Markthalle Neun",
+    "wikidataCoords": {
+      "lat": 52.5022,
+      "lng": 13.4315
+    },
+    "website": null,
+    "frwiki": null,
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/68/Eisenbahnmarkthalle2_Berlin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Lienhard Schulz",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eisenbahnmarkthalle2_Berlin.JPG"
+    },
+    "osm": {
+      "lat": 52.5021661,
+      "lng": 13.4314886,
+      "osm": "https://www.openstreetmap.org/relation/9503840",
+      "label": "Markthalle Neun, 42-43, Eisenbahnstraße, Reichenberger kiez, Luisenstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10997, Deutschland"
+    }
+  },
+  {
+    "id": "ber-stolpersteine",
+    "osm": {
+      "lat": 52.5226808,
+      "lng": 13.4023418,
+      "osm": "https://www.openstreetmap.org/node/3867910430",
+      "label": "Hackescher Markt, Am Zwirngraben, Spandauer Vorstadt, Mitte, Berlin, 10178, Deutschland"
+    }
+  },
+  {
+    "id": "ber-treptower-park",
+    "wikidata": "https://www.wikidata.org/wiki/Q666937",
+    "label": "parc de Treptow",
+    "wikidataCoords": {
+      "lat": 52.490277777778,
+      "lng": 13.47
+    },
+    "website": "http://www.treptowerpark.de",
+    "frwiki": "Parc de Treptow",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Berlin_Treptower_Park_-_Wiese.jpg/1280px-Berlin_Treptower_Park_-_Wiese.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Andreas Steinhoff",
+      "license": "Attribution",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Berlin_Treptower_Park_-_Wiese.jpg"
+    },
+    "osm": {
+      "lat": 52.4884438,
+      "lng": 13.4703145,
+      "osm": "https://www.openstreetmap.org/way/4685998",
+      "label": "Treptower Park, Treptow-Köpenick, Berlin, 12435, Deutschland"
+    }
+  },
+  {
+    "id": "ber-curry-36",
+    "osm": {
+      "lat": 52.4934924,
+      "lng": 13.3876866,
+      "osm": "https://www.openstreetmap.org/node/30022140",
+      "label": "Curry 36, 36, Mehringdamm, Möckernkiez, Tempelhofer Vorstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10961, Deutschland"
+    }
+  },
+  {
+    "id": "ber-mustafas",
+    "osm": {
+      "lat": 52.4934492,
+      "lng": 13.3885243,
+      "osm": "https://www.openstreetmap.org/node/7060011377",
+      "label": "Mustafa's Gemüse Kebap, 33, Mehringdamm, Möckernkiez, Tempelhofer Vorstadt, Kreuzberg, Friedrichshain-Kreuzberg, Berlin, 10961, Deutschland"
+    }
+  },
+  {
+    "id": "ber-zur-letzten-instanz",
+    "osm": {
+      "lat": 52.5174527,
+      "lng": 13.4137758,
+      "osm": "https://www.openstreetmap.org/node/411728139",
+      "label": "Zur Letzten Instanz, 14-16, Waisenstraße, Klosterviertel, Spandauer Vorstadt, Mitte, Berlin, 10179, Deutschland"
+    }
+  },
+  {
+    "id": "ber-konnopke",
+    "osm": {
+      "lat": 52.5404746,
+      "lng": 13.412219,
+      "osm": "https://www.openstreetmap.org/node/149607221",
+      "label": "Konnopke’s Imbiß, 44b, Schönhauser Allee, Bremer Höhe, Gleimviertel, Prenzlauer Berg, Pankow, Berlin, 10435, Deutschland"
+    }
+  },
+  {
+    "id": "ber-rogacki",
+    "osm": null
+  },
+  {
+    "id": "ber-cafe-einstein",
+    "osm": null
+  }
+]

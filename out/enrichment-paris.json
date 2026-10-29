@@ -1,0 +1,538 @@
+[
+  {
+    "id": "par-tour-eiffel",
+    "wikidata": "https://www.wikidata.org/wiki/Q243",
+    "label": "tour Eiffel",
+    "labelCs": "Eiffelova věž",
+    "wikidataCoords": {
+      "lat": 48.858296,
+      "lng": 2.294479
+    },
+    "website": "https://www.toureiffel.paris",
+    "frwiki": "Tour Eiffel",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Tour_Eiffel_Wikimedia_Commons.jpg/1280px-Tour_Eiffel_Wikimedia_Commons.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Benh LIEU SONG",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tour_Eiffel_Wikimedia_Commons.jpg"
+    },
+    "osm": {
+      "lat": 48.8582599,
+      "lng": 2.2945006,
+      "osm": "https://www.openstreetmap.org/way/5013364",
+      "label": "Tour Eiffel, 5, Avenue Anatole France, Quartier du Gros-Caillou, Paris 7e Arrondissement, Paris, Île-de-France, France métropolitaine, 75007, France"
+    }
+  },
+  {
+    "id": "par-louvre",
+    "wikidata": "https://www.wikidata.org/wiki/Q19675",
+    "label": "Musée du Louvre",
+    "labelCs": "Louvre",
+    "wikidataCoords": {
+      "lat": 48.861111111111114,
+      "lng": 2.3358333333333334
+    },
+    "website": "https://www.louvre.fr/",
+    "frwiki": "Musée du Louvre",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Cour_Napol%C3%A9on_at_night_-_Louvre.jpg/1280px-Cour_Napol%C3%A9on_at_night_-_Louvre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Benh LIEU SONG",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cour_Napol%C3%A9on_at_night_-_Louvre.jpg"
+    },
+    "osm": {
+      "lat": 48.8620104,
+      "lng": 2.3390904,
+      "osm": "https://www.openstreetmap.org/node/679480157",
+      "label": "Le Louvre Parking, Rue Saint-Honoré, Quartier du Palais Royal, Paris 1er Arrondissement, Paris, Île-de-France, France métropolitaine, 75001, France"
+    }
+  },
+  {
+    "id": "par-notre-dame",
+    "wikidata": "https://www.wikidata.org/wiki/Q2981",
+    "label": "cathédrale Notre-Dame de Paris",
+    "labelCs": "Katedrála Notre-Dame",
+    "wikidataCoords": {
+      "lat": 48.853,
+      "lng": 2.3498
+    },
+    "website": "https://www.notredamedeparis.fr/",
+    "frwiki": "Cathédrale Notre-Dame de Paris",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Notre-Dame_de_Paris_2013-07-24.jpg/1280px-Notre-Dame_de_Paris_2013-07-24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "P e z i",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Notre-Dame_de_Paris_2013-07-24.jpg"
+    },
+    "osm": {
+      "lat": 48.8529371,
+      "lng": 2.3500501,
+      "osm": "https://www.openstreetmap.org/way/201611261",
+      "label": "Cathédrale Notre-Dame de Paris, 6, Parvis Notre-Dame - Place Jean-Paul II, Quartier Les Îles, Paris 4e Arrondissement, Paris, Île-de-France, France métropolitaine, 75004, France"
+    }
+  },
+  {
+    "id": "par-sainte-chapelle",
+    "wikidata": "https://www.wikidata.org/wiki/Q193193",
+    "label": "Sainte-Chapelle",
+    "labelCs": "Sainte-Chapelle",
+    "wikidataCoords": {
+      "lat": 48.855369,
+      "lng": 2.345028
+    },
+    "website": "https://www.sainte-chapelle.fr/",
+    "frwiki": "Sainte-Chapelle",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Szensapel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Mathae",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Szensapel.jpg"
+    },
+    "osm": {
+      "lat": 48.8553933,
+      "lng": 2.3449941,
+      "osm": "https://www.openstreetmap.org/relation/3344870",
+      "label": "Sainte-Chapelle, 8, Boulevard du Palais, Saint-Germain-l'Auxerrois, Paris 1er Arrondissement, Paris, Île-de-France, France métropolitaine, 75001, France"
+    }
+  },
+  {
+    "id": "par-arc-triomphe",
+    "wikidata": "https://www.wikidata.org/wiki/Q64436",
+    "label": "arc de triomphe de l'Étoile",
+    "labelCs": "Vítězný oblouk",
+    "wikidataCoords": {
+      "lat": 48.87378,
+      "lng": 2.29504
+    },
+    "website": "https://www.paris-arc-de-triomphe.fr",
+    "frwiki": "Arc de triomphe de l'Étoile",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Arc_de_Triomphe_-_Ao%C3%BBt_2026.jpg/1280px-Arc_de_Triomphe_-_Ao%C3%BBt_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "ZeusUpsistos",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arc_de_Triomphe_-_Ao%C3%BBt_2026.jpg"
+    },
+    "osm": {
+      "lat": 48.8737791,
+      "lng": 2.2950372,
+      "osm": "https://www.openstreetmap.org/way/226413508",
+      "label": "Arc de Triomphe, Place Charles de Gaulle, Quartier du Faubourg-du-Roule, Paris 8e Arrondissement, Paris, Île-de-France, France métropolitaine, 75008, France"
+    }
+  },
+  {
+    "id": "par-orsay",
+    "wikidata": "https://www.wikidata.org/wiki/Q23402",
+    "label": "musée d'Orsay",
+    "labelCs": "Muzeum Orsay",
+    "wikidataCoords": {
+      "lat": 48.859972,
+      "lng": 2.326527
+    },
+    "website": "https://www.musee-orsay.fr",
+    "frwiki": "Musée d'Orsay",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/MuseeDOrsay.jpg/1280px-MuseeDOrsay.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Sanchezn",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MuseeDOrsay.jpg"
+    },
+    "osm": {
+      "lat": 48.8599179,
+      "lng": 2.3265849,
+      "osm": "https://www.openstreetmap.org/way/63178753",
+      "label": "Musée d'Orsay, 1, Rue de la Légion d'Honneur, Quartier Saint-Thomas-d'Aquin, Paris 7e Arrondissement, Paris, Île-de-France, France métropolitaine, 75007, France"
+    }
+  },
+  {
+    "id": "par-sacre-coeur",
+    "wikidata": "https://www.wikidata.org/wiki/Q28785",
+    "label": "basilique du Sacré-Cœur de Montmartre",
+    "labelCs": "Bazilika Sacré-Cœur",
+    "wikidataCoords": {
+      "lat": 48.88665,
+      "lng": 2.34295
+    },
+    "website": "https://www.sacre-coeur-montmartre.com",
+    "frwiki": "Basilique du Sacré-Cœur de Montmartre",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Le_sacre_coeur.jpg/1280px-Le_sacre_coeur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Tonchino",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_sacre_coeur.jpg"
+    },
+    "osm": {
+      "lat": 48.8868058,
+      "lng": 2.3430153,
+      "osm": "https://www.openstreetmap.org/way/23762981",
+      "label": "Basilique du Sacré-Cœur, Rue du Chevalier de la Barre, Quartier de Clignancourt, Paris 18e Arrondissement, Paris, Île-de-France, France métropolitaine, 75018, France"
+    }
+  },
+  {
+    "id": "par-montmartre",
+    "wikidata": "https://www.wikidata.org/wiki/Q186115",
+    "label": "Montmartre",
+    "labelCs": "Montmartre",
+    "wikidataCoords": {
+      "lat": 48.886944444444,
+      "lng": 2.3411111111111
+    },
+    "website": null,
+    "frwiki": "Montmartre",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Montmarte_2_%28pixinn.net%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Christophe Meneboeuf",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montmarte_2_(pixinn.net).jpg"
+    },
+    "osm": {
+      "lat": 48.8854619,
+      "lng": 2.3391535,
+      "osm": "https://www.openstreetmap.org/relation/6438767",
+      "label": "Montmartre, Paris, Île-de-France, France métropolitaine, France"
+    }
+  },
+  {
+    "id": "par-luxembourg",
+    "wikidata": "https://www.wikidata.org/wiki/Q309458",
+    "label": "jardin du Luxembourg",
+    "labelCs": "Jardin du Luxembourg",
+    "wikidataCoords": {
+      "lat": 48.846944444444446,
+      "lng": 2.337222222222222
+    },
+    "website": "https://jardin.senat.fr",
+    "frwiki": "Jardin du Luxembourg",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/LuxembourgMontparnasse_2.jpg/1280px-LuxembourgMontparnasse_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Kirua",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LuxembourgMontparnasse_2.jpg"
+    },
+    "osm": {
+      "lat": 48.8467228,
+      "lng": 2.3364148,
+      "osm": "https://www.openstreetmap.org/way/128206209",
+      "label": "Jardin du Luxembourg, Boulevard Saint-Michel, Quartier de l'Odéon, Paris 6e Arrondissement, Paris, Île-de-France, France métropolitaine, 75005, France"
+    }
+  },
+  {
+    "id": "par-cite-sciences",
+    "wikidata": "https://www.wikidata.org/wiki/Q1094338",
+    "label": "Cité des sciences et de l'industrie",
+    "labelCs": "Cité des sciences et de l'industrie",
+    "wikidataCoords": {
+      "lat": 48.89555555555555,
+      "lng": 2.388055555555556
+    },
+    "website": "https://www.cite-sciences.fr/",
+    "frwiki": "Cité des sciences et de l'industrie",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Machines_%C3%A0_la_Cit%C3%A9_des_Sciences_et_de_l%27Industrie.jpg/1280px-Machines_%C3%A0_la_Cit%C3%A9_des_Sciences_et_de_l%27Industrie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Syced",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Machines_%C3%A0_la_Cit%C3%A9_des_Sciences_et_de_l%27Industrie.jpg"
+    },
+    "osm": {
+      "lat": 48.8956779,
+      "lng": 2.3879665,
+      "osm": "https://www.openstreetmap.org/way/64040845",
+      "label": "Cité des Sciences et de l'Industrie, Galerie de la Villette, Quartier du Pont-de-Flandre, Paris 19e Arrondissement, Paris, Île-de-France, France métropolitaine, 75019, France"
+    }
+  },
+  {
+    "id": "par-pantheon",
+    "wikidata": "https://www.wikidata.org/wiki/Q188856",
+    "label": "Panthéon",
+    "labelCs": "Pantheon",
+    "wikidataCoords": {
+      "lat": 48.846198,
+      "lng": 2.3461054
+    },
+    "website": "http://www.paris-pantheon.fr/",
+    "frwiki": "Panthéon (Paris)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Panth%C3%A9on%2C_Paris_25_March_2012.jpg/1280px-Panth%C3%A9on%2C_Paris_25_March_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Camille Gévaudan",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panth%C3%A9on,_Paris_25_March_2012.jpg"
+    },
+    "osm": {
+      "lat": 48.8461947,
+      "lng": 2.3460507,
+      "osm": "https://www.openstreetmap.org/way/16407465",
+      "label": "Panthéon, Place du Panthéon, Quartier de la Sorbonne, Paris 5e Arrondissement, Paris, Île-de-France, France métropolitaine, 75005, France"
+    }
+  },
+  {
+    "id": "par-invalides",
+    "wikidata": "https://www.wikidata.org/wiki/Q188977",
+    "label": "hôtel des Invalides",
+    "labelCs": "Invalidovna",
+    "wikidataCoords": {
+      "lat": 48.855,
+      "lng": 2.3125
+    },
+    "website": "https://www.invalides.fr/",
+    "frwiki": "Hôtel des Invalides",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/H%C3%B4tel_des_Invalides_-_20150801_16h09_%2810630%29.jpg/1280px-H%C3%B4tel_des_Invalides_-_20150801_16h09_%2810630%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Another one of my pictures: This photograph was taken by Medium69 (William Crochot) and released under the license stated below. You are free to use it for any purpose as long as you credit the author (William Crochot), the Source (Wikimedia Commons) and the license (CC-BY-SA 4.0) in close relation to the image. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source RAW. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_des_Invalides_-_20150801_16h09_(10630).jpg"
+    },
+    "osm": {
+      "lat": 48.8570374,
+      "lng": 2.3118779,
+      "osm": "https://www.openstreetmap.org/node/130102845",
+      "label": "Musée de l'Armée, 129, Rue de Grenelle, Quartier des Invalides, Paris 7e Arrondissement, Paris, Île-de-France, France métropolitaine, 75007, France"
+    }
+  },
+  {
+    "id": "par-marais",
+    "wikidata": "https://www.wikidata.org/wiki/Q749573",
+    "label": "Le Marais",
+    "labelCs": "Le Marais",
+    "wikidataCoords": {
+      "lat": 48.86,
+      "lng": 2.3608333333333333
+    },
+    "website": "https://www.parisinfo.com/decouvrir-paris/balades-a-paris/a-la-decouverte-du-marais",
+    "frwiki": "Le Marais (quartier parisien)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/MuseePicassoParis.jpg/1280px-MuseePicassoParis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Luctor",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MuseePicassoParis.jpg"
+    },
+    "osm": {
+      "lat": 48.8603823,
+      "lng": 2.360742,
+      "osm": "https://www.openstreetmap.org/relation/15537328",
+      "label": "Le Marais, Paris, Île-de-France, France métropolitaine, France"
+    }
+  },
+  {
+    "id": "par-grande-galerie",
+    "wikidata": "https://www.wikidata.org/wiki/Q2372049",
+    "label": "Grande galerie de l'Évolution",
+    "wikidataCoords": {
+      "lat": 48.8422,
+      "lng": 2.35639
+    },
+    "website": "http://www.grandegaleriedelevolution.fr/",
+    "frwiki": "Grande galerie de l'Évolution",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Grande_galerie_de_l%27%C3%A9volution%2C_Paris_10_April_2014.jpg/1280px-Grande_galerie_de_l%27%C3%A9volution%2C_Paris_10_April_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Ken and Nyetta",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grande_galerie_de_l%27%C3%A9volution,_Paris_10_April_2014.jpg"
+    },
+    "osm": {
+      "lat": 48.8421055,
+      "lng": 2.3562438,
+      "osm": "https://www.openstreetmap.org/way/83913793",
+      "label": "Grande Galerie de l'Évolution, Cour Censier, Quartier du Jardin des Plantes, Paris 5e Arrondissement, Paris, Île-de-France, France métropolitaine, 75005, France"
+    }
+  },
+  {
+    "id": "par-passage-panoramas",
+    "osm": {
+      "lat": 48.8709543,
+      "lng": 2.3416586,
+      "osm": "https://www.openstreetmap.org/way/152319685",
+      "label": "Passage des Panoramas, Vivienne, Paris 2e Arrondissement, Paris, Île-de-France, France métropolitaine, 75002, France"
+    }
+  },
+  {
+    "id": "par-rue-cremieux",
+    "osm": {
+      "lat": 48.8468799,
+      "lng": 2.3708677,
+      "osm": "https://www.openstreetmap.org/way/12800995",
+      "label": "Rue Crémieux, Quartier des Quinze-Vingts, Paris 12e Arrondissement, Paris, Île-de-France, France métropolitaine, 75012, France"
+    }
+  },
+  {
+    "id": "par-coulee-verte",
+    "wikidata": "https://www.wikidata.org/wiki/Q2060889",
+    "label": "coulée verte René-Dumont",
+    "labelCs": "Coulée verte René-Dumont",
+    "wikidataCoords": {
+      "lat": 48.849572,
+      "lng": 2.3711
+    },
+    "website": "https://www.paris.fr/lieux/coulee-verte-rene-dumont-1772",
+    "frwiki": "Coulée verte René-Dumont",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Promenade_plant%C3%A9e%2C_Paris_August_2009_%2810%29.jpg/1280px-Promenade_plant%C3%A9e%2C_Paris_August_2009_%2810%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "jean-louis Zimmermann from Moulins, FRANCE",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Promenade_plant%C3%A9e,_Paris_August_2009_(10).jpg"
+    },
+    "osm": {
+      "lat": 48.842735,
+      "lng": 2.3855718,
+      "osm": "https://www.openstreetmap.org/way/1218972986",
+      "label": "Coulée Verte René-Dumont, Quartier de Bercy, Paris 12e Arrondissement, Paris, Île-de-France, France métropolitaine, 75012, France"
+    }
+  },
+  {
+    "id": "par-vert-galant",
+    "wikidata": "https://www.wikidata.org/wiki/Q190063",
+    "label": "île de la Cité",
+    "labelCs": "Île de la Cité",
+    "wikidataCoords": {
+      "lat": 48.854722222222,
+      "lng": 2.3475
+    },
+    "website": null,
+    "frwiki": "Île de la Cité",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Paris_Notre_Dame_DSC00732.jpg/1280px-Paris_Notre_Dame_DSC00732.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "David Monniaux",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paris_Notre_Dame_DSC00732.jpg"
+    },
+    "osm": {
+      "lat": 48.8574066,
+      "lng": 2.3403279,
+      "osm": "https://www.openstreetmap.org/way/53570787",
+      "label": "Square du Vert Galant, Paris 1er Arrondissement, Paris, Île-de-France, France métropolitaine, 75001, France"
+    }
+  },
+  {
+    "id": "par-shakespeare",
+    "wikidata": "https://www.wikidata.org/wiki/Q1503157",
+    "label": "Shakespeare and Company",
+    "labelCs": "Shakespeare and Company",
+    "wikidataCoords": {
+      "lat": 48.8525,
+      "lng": 2.34694444
+    },
+    "website": "http://www.shakespeareandcompany.com",
+    "frwiki": "Shakespeare and Company",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Shakespeare_and_Company%2C_Paris.jpg/1280px-Shakespeare_and_Company%2C_Paris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Photograph by Mike Peel (www.mikepeel.net).",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakespeare_and_Company,_Paris.jpg"
+    },
+    "osm": {
+      "lat": 48.8459074,
+      "lng": 2.3465554,
+      "osm": "https://www.openstreetmap.org/node/11134959940",
+      "label": "Librairie, Place du Panthéon, Quartier de la Sorbonne, Paris 5e Arrondissement, Paris, Île-de-France, France métropolitaine, 75005, France"
+    }
+  },
+  {
+    "id": "par-mur-je-taime",
+    "osm": {
+      "lat": 48.884857,
+      "lng": 2.3386925,
+      "osm": "https://www.openstreetmap.org/way/142320229",
+      "label": "Square Jehan Rictus, Paris 18e Arrondissement, Paris, Île-de-France, France métropolitaine, 75018, France"
+    }
+  },
+  {
+    "id": "par-point-zero",
+    "wikidata": "https://www.wikidata.org/wiki/Q2720522",
+    "label": "parvis Notre-Dame - place Jean-Paul-II",
+    "labelCs": "Parvis Notre-Dame - place Jean-Paul-II",
+    "wikidataCoords": {
+      "lat": 48.85351,
+      "lng": 2.34839
+    },
+    "website": null,
+    "frwiki": "Parvis Notre-Dame - place Jean-Paul-II",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Parvis_Notre-Dame_-_Place_Jean-Paul_II_from_Notre-Dame_de_Paris_2011.jpg/1280px-Parvis_Notre-Dame_-_Place_Jean-Paul_II_from_Notre-Dame_de_Paris_2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Cristian Bortes from Cluj-Napoca, Romania",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parvis_Notre-Dame_-_Place_Jean-Paul_II_from_Notre-Dame_de_Paris_2011.jpg"
+    },
+    "osm": {
+      "lat": 48.8532366,
+      "lng": 2.3483979,
+      "osm": "https://www.openstreetmap.org/relation/8726561",
+      "label": "Parvis Notre-Dame - Place Jean-Paul II, Quartier Les Îles, Paris 4e Arrondissement, Paris, Île-de-France, France métropolitaine, 75004, France"
+    }
+  },
+  {
+    "id": "par-arenes-lutece",
+    "wikidata": "https://www.wikidata.org/wiki/Q641548",
+    "label": "arènes de Lutèce",
+    "labelCs": "Arènes de Lutèce",
+    "wikidataCoords": {
+      "lat": 48.845,
+      "lng": 2.35306
+    },
+    "website": null,
+    "frwiki": "Arènes de Lutèce",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Anfiteatro_de_Par%C3%ADs_01.jpg/1280px-Anfiteatro_de_Par%C3%ADs_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Rodelar",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anfiteatro_de_Par%C3%ADs_01.jpg"
+    },
+    "osm": {
+      "lat": 48.8486028,
+      "lng": 2.3425156,
+      "osm": "https://www.openstreetmap.org/node/2038017580",
+      "label": "Quartier latin, Paris, Île-de-France, France métropolitaine, 75005, France"
+    }
+  },
+  {
+    "id": "par-chartier",
+    "osm": {
+      "lat": 48.8719356,
+      "lng": 2.3430137,
+      "osm": "https://www.openstreetmap.org/node/10804882603",
+      "label": "Bouillon Chartier, 7, Rue du Faubourg Montmartre, Quartier du Faubourg-Montmartre, Paris 9e Arrondissement, Paris, Île-de-France, France métropolitaine, 75009, France"
+    }
+  },
+  {
+    "id": "par-bouillon-pigalle",
+    "osm": {
+      "lat": 48.8826186,
+      "lng": 2.3374142,
+      "osm": "https://www.openstreetmap.org/node/5239464697",
+      "label": "Bouillon Pigalle, 22, Boulevard de Clichy, Quartier des Grandes-Carrières, Paris 18e Arrondissement, Paris, Île-de-France, France métropolitaine, 75018, France"
+    }
+  },
+  {
+    "id": "par-as-fallafel",
+    "osm": {
+      "lat": 48.857415,
+      "lng": 2.3590682,
+      "osm": "https://www.openstreetmap.org/node/4413941090",
+      "label": "L'As du Fallafel, Rue des Rosiers, Quartier Saint-Gervais, Paris 4e Arrondissement, Paris, Île-de-France, France métropolitaine, 75004, France"
+    }
+  },
+  {
+    "id": "par-breizh-cafe",
+    "osm": {
+      "lat": 48.8606307,
+      "lng": 2.3618156,
+      "osm": "https://www.openstreetmap.org/node/2383363288",
+      "label": "Breizh Café, Rue Vieille du Temple, Quartier des Archives, Paris 3e Arrondissement, Paris, Île-de-France, France métropolitaine, 75003, France"
+    }
+  },
+  {
+    "id": "par-berthillon",
+    "osm": {
+      "lat": 48.8517084,
+      "lng": 2.356718,
+      "osm": "https://www.openstreetmap.org/node/4172451689",
+      "label": "Berthillon, 31, Rue Saint-Louis en l'Île, Quartier Les Îles, Paris 4e Arrondissement, Paris, Île-de-France, France métropolitaine, 75004, France"
+    }
+  },
+  {
+    "id": "par-relais-entrecote",
+    "osm": {
+      "lat": 48.8546432,
+      "lng": 2.3327719,
+      "osm": "https://www.openstreetmap.org/node/778287646",
+      "label": "Le Relais de l'Entrecôte, Rue Saint-Benoît, Quartier de Saint-Germain-des-Prés, Paris 6e Arrondissement, Paris, Île-de-France, France métropolitaine, 75006, France"
+    }
+  }
+]

@@ -1,0 +1,507 @@
+[
+  {
+    "id": "vie-schonbrunn",
+    "wikidata": "https://www.wikidata.org/wiki/Q131330",
+    "label": "château de Schönbrunn",
+    "labelCs": "Schönbrunn",
+    "wikidataCoords": {
+      "lat": 48.18479,
+      "lng": 16.31227
+    },
+    "website": "https://www.schoenbrunn.at/",
+    "frwiki": "Château de Schönbrunn",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Wien_-_Schloss_Sch%C3%B6nbrunn.JPG/1280px-Wien_-_Schloss_Sch%C3%B6nbrunn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Schloss_Sch%C3%B6nbrunn.JPG"
+    },
+    "osm": {
+      "lat": 48.1849894,
+      "lng": 16.3115684,
+      "osm": "https://www.openstreetmap.org/way/8756754",
+      "label": "Schloss Schönbrunn, 47, Schönbrunner Schloßstraße, Katastralgemeinde Schönbrunn, Hietzing, Wien, 1130, Österreich"
+    }
+  },
+  {
+    "id": "vie-stephansdom",
+    "wikidata": "https://www.wikidata.org/wiki/Q5943",
+    "label": "cathédrale Saint-Étienne de Vienne",
+    "labelCs": "Katedrála svatého Štěpána ve Vídni",
+    "wikidataCoords": {
+      "lat": 48.208427,
+      "lng": 16.373256
+    },
+    "website": "https://stephanskirche.at/",
+    "frwiki": "Cathédrale Saint-Étienne de Vienne",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Wien_-_Stephansdom_%281%29.JPG/1280px-Wien_-_Stephansdom_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Stephansdom_(1).JPG"
+    },
+    "osm": {
+      "lat": 48.2084923,
+      "lng": 16.3731269,
+      "osm": "https://www.openstreetmap.org/way/212496461",
+      "label": "Stephansdom, 3, Stephansplatz, Stubenviertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-hofburg",
+    "wikidata": "https://www.wikidata.org/wiki/Q46242",
+    "label": "Hofburg",
+    "labelCs": "Hofburg",
+    "wikidataCoords": {
+      "lat": 48.20638888888889,
+      "lng": 16.365277777777777
+    },
+    "website": "http://www.hofburg-wien.at/",
+    "frwiki": "Hofburg",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Wien_-_Neue_Hofburg.JPG/1280px-Wien_-_Neue_Hofburg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 3.0 at",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Neue_Hofburg.JPG"
+    },
+    "osm": {
+      "lat": 48.2063293,
+      "lng": 16.3656259,
+      "osm": "https://www.openstreetmap.org/relation/3898175",
+      "label": "Hofburg, Habsburgergasse, Widmerviertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-belvedere",
+    "wikidata": "https://www.wikidata.org/wiki/Q211818",
+    "label": "palais du Belvédère",
+    "labelCs": "Belveder",
+    "wikidataCoords": {
+      "lat": 48.1934,
+      "lng": 16.380519444444445
+    },
+    "website": "https://www.belvedere.at/",
+    "frwiki": "Palais du Belvédère (Vienne)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Wien_-_Schloss_Belvedere%2C_oberes_%282%29.JPG/1280px-Wien_-_Schloss_Belvedere%2C_oberes_%282%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Schloss_Belvedere,_oberes_(2).JPG"
+    },
+    "osm": {
+      "lat": 48.1915415,
+      "lng": 16.3808882,
+      "osm": "https://www.openstreetmap.org/way/5887599",
+      "label": "Oberes Belvedere, 27, Prinz-Eugen-Straße, Wieden, Katastralgemeinde Landstraße, Landstraße, Wien, 1030, Österreich"
+    }
+  },
+  {
+    "id": "vie-prater",
+    "wikidata": "https://www.wikidata.org/wiki/Q697578",
+    "label": "Grande Roue de Vienne",
+    "labelCs": "Obří kolo ve Vídni",
+    "wikidataCoords": {
+      "lat": 48.21683055555555,
+      "lng": 16.395919444444445
+    },
+    "website": "http://www.wienerriesenrad.com/en",
+    "frwiki": "Grande roue de Vienne",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Giant_Ferris_Wheel_Vienna_from_W_on_2010-09-20.jpg/1280px-Giant_Ferris_Wheel_Vienna_from_W_on_2010-09-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Robert F. Tobler",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_Ferris_Wheel_Vienna_from_W_on_2010-09-20.jpg"
+    },
+    "osm": {
+      "lat": 48.2167405,
+      "lng": 16.3959085,
+      "osm": "https://www.openstreetmap.org/way/97979331",
+      "label": "Riesenrad, 90, Wurstelprater, Leopoldstadt, Katastralgemeinde Leopoldstadt, Leopoldstadt, Wien, 1020, Österreich"
+    }
+  },
+  {
+    "id": "vie-naturhistorisches",
+    "wikidata": "https://www.wikidata.org/wiki/Q688704",
+    "label": "muséum d'histoire naturelle de Vienne",
+    "labelCs": "Přírodovědné muzeum ve Vídni",
+    "wikidataCoords": {
+      "lat": 48.205130555555556,
+      "lng": 16.359930555555554
+    },
+    "website": "http://www.nhm-wien.ac.at/",
+    "frwiki": "Musée d'histoire naturelle de Vienne",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Naturhistorisches_Museum_Wien_2.jpg/1280px-Naturhistorisches_Museum_Wien_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Stb1er (Dario Premm)",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Naturhistorisches_Museum_Wien_2.jpg"
+    },
+    "osm": {
+      "lat": 48.2052692,
+      "lng": 16.3597554,
+      "osm": "https://www.openstreetmap.org/relation/11187",
+      "label": "Naturhistorisches Museum, 7, Burgring, Regierungsviertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-kunsthistorisches",
+    "wikidata": "https://www.wikidata.org/wiki/Q95569",
+    "label": "musée d'Histoire de l'art de Vienne",
+    "labelCs": "Uměleckohistorické muzeum",
+    "wikidataCoords": {
+      "lat": 48.20388055555556,
+      "lng": 16.3616
+    },
+    "website": "https://www.khm.at/",
+    "frwiki": "Musée d'Histoire de l'art de Vienne",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Wien_Kunsthistorisches_Museum.jpg/1280px-Wien_Kunsthistorisches_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wien_Kunsthistorisches_Museum.jpg"
+    },
+    "osm": {
+      "lat": 48.2037395,
+      "lng": 16.3617819,
+      "osm": "https://www.openstreetmap.org/relation/20165",
+      "label": "Kunsthistorisches Museum, 5, Burgring, Kärntner Viertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-opera",
+    "wikidata": "https://www.wikidata.org/wiki/Q209937",
+    "label": "opéra d'État de Vienne",
+    "labelCs": "Vídeňská státní opera",
+    "wikidataCoords": {
+      "lat": 48.203333333333,
+      "lng": 16.369166666667
+    },
+    "website": "https://www.wiener-staatsoper.at/",
+    "frwiki": "Opéra d'État de Vienne",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Staatsoper_Wien_DSC_5273w.jpg/1280px-Staatsoper_Wien_DSC_5273w.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "P e z i",
+      "license": "CC BY-SA 3.0 at",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Staatsoper_Wien_DSC_5273w.jpg"
+    },
+    "osm": {
+      "lat": 48.2032864,
+      "lng": 16.3691936,
+      "osm": "https://www.openstreetmap.org/way/8097595",
+      "label": "Wiener Staatsoper, 2, Opernring, Kärntner Viertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-albertina",
+    "wikidata": "https://www.wikidata.org/wiki/Q371908",
+    "label": "Albertina",
+    "labelCs": "Albertina",
+    "wikidataCoords": {
+      "lat": 48.20472222222222,
+      "lng": 16.368333333333332
+    },
+    "website": "http://www.albertina.at/",
+    "frwiki": "Albertina (musée)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Wien_-_Albertina_%28b%29.JPG/1280px-Wien_-_Albertina_%28b%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Albertina_(b).JPG"
+    },
+    "osm": {
+      "lat": 48.2046365,
+      "lng": 16.3682605,
+      "osm": "https://www.openstreetmap.org/node/60438337",
+      "label": "Albertina, 1, Albertinaplatz, Kärntner Viertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-hundertwasser",
+    "wikidata": "https://www.wikidata.org/wiki/Q493126",
+    "label": "Hundertwasserhaus",
+    "labelCs": "Hundertwasserhaus",
+    "wikidataCoords": {
+      "lat": 48.2075,
+      "lng": 16.3939
+    },
+    "website": "http://www.hundertwasser-haus.info/en/",
+    "frwiki": "Hundertwasserhaus",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Wien_-_Hundertwasserhaus_%2803%29.JPG/1280px-Wien_-_Hundertwasserhaus_%2803%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Hundertwasserhaus_(03).JPG"
+    },
+    "osm": {
+      "lat": 48.2073844,
+      "lng": 16.3939411,
+      "osm": "https://www.openstreetmap.org/node/76469807",
+      "label": "Hundertwasserhaus, 36-38, Kegelgasse, Katastralgemeinde Landstraße, Landstraße, Wien, 1030, Österreich"
+    }
+  },
+  {
+    "id": "vie-zoo-schonbrunn",
+    "wikidata": "https://www.wikidata.org/wiki/Q752283",
+    "label": "jardin zoologique de Schönbrunn",
+    "labelCs": "Zoologická zahrada Schönbrunn",
+    "wikidataCoords": {
+      "lat": 48.182222222222,
+      "lng": 16.3025
+    },
+    "website": "https://www.zoovienna.at",
+    "frwiki": "Jardin zoologique de Schönbrunn",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Tiergarten_Schoenbrunn_Koala_1.jpg/1280px-Tiergarten_Schoenbrunn_Koala_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Aconcagua",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tiergarten_Schoenbrunn_Koala_1.jpg"
+    },
+    "osm": {
+      "lat": 48.1817341,
+      "lng": 16.3047717,
+      "osm": "https://www.openstreetmap.org/way/8079437",
+      "label": "Tiergarten Schönbrunn, 13/B, Maxingstraße, Katastralgemeinde Hietzing, Hietzing, Wien, 1130, Österreich"
+    }
+  },
+  {
+    "id": "vie-karlskirche",
+    "wikidata": "https://www.wikidata.org/wiki/Q408847",
+    "label": "église Saint-Charles-Borromée",
+    "labelCs": "Kostel svatého Karla Boromejského",
+    "wikidataCoords": {
+      "lat": 48.198280555555556,
+      "lng": 16.371880555555556
+    },
+    "website": "http://www.karlskirche.at/",
+    "frwiki": "Église Saint-Charles-Borromée de Vienne",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Wien_-_Karlskirche_%281%29.JPG/1280px-Wien_-_Karlskirche_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Karlskirche_(1).JPG"
+    },
+    "osm": {
+      "lat": 48.1982785,
+      "lng": 16.3718951,
+      "osm": "https://www.openstreetmap.org/way/8097149",
+      "label": "Karlskirche, 10, Karlsplatz, Freihausviertel, Wieden, Wien, 1040, Österreich"
+    }
+  },
+  {
+    "id": "vie-cafe-central",
+    "wikidata": "https://www.wikidata.org/wiki/Q694757",
+    "label": "café Central",
+    "labelCs": "Café Central",
+    "wikidataCoords": {
+      "lat": 48.210278,
+      "lng": 16.365278
+    },
+    "website": "https://www.cafecentral.wien",
+    "frwiki": "Café Central",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Palais_Ferstel_Cafe_Central.jpg/1280px-Palais_Ferstel_Cafe_Central.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palais_Ferstel_Cafe_Central.jpg"
+    },
+    "osm": {
+      "lat": 48.2103671,
+      "lng": 16.3653873,
+      "osm": "https://www.openstreetmap.org/node/319734659",
+      "label": "Café Central, Herrengasse, Schottenviertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-donaukanal",
+    "wikidata": "https://www.wikidata.org/wiki/Q701695",
+    "label": "canal du Danube",
+    "labelCs": "Donaukanal",
+    "wikidataCoords": {
+      "lat": 48.2586,
+      "lng": 16.3693
+    },
+    "website": null,
+    "frwiki": "Canal du Danube",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Donaukanal_vom_Ringturm_sued.jpg/1280px-Donaukanal_vom_Ringturm_sued.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Herbert Ortner",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donaukanal_vom_Ringturm_sued.jpg"
+    },
+    "osm": {
+      "lat": 48.1999641,
+      "lng": 16.4081925,
+      "osm": "https://www.openstreetmap.org/way/28281701",
+      "label": "Donaukanal, Wien, Österreich"
+    }
+  },
+  {
+    "id": "vie-anker-uhr",
+    "wikidata": "https://www.wikidata.org/wiki/Q557226",
+    "label": "Ankeruhr",
+    "wikidataCoords": {
+      "lat": 48.2108,
+      "lng": 16.3737
+    },
+    "website": null,
+    "frwiki": null,
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Ankeruhr%2C_Hoher_Markt%2C_Vienna.jpg/1280px-Ankeruhr%2C_Hoher_Markt%2C_Vienna.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Thomas Ledl",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ankeruhr,_Hoher_Markt,_Vienna.jpg"
+    },
+    "osm": {
+      "lat": 48.210761,
+      "lng": 16.3736753,
+      "osm": "https://www.openstreetmap.org/way/129241327",
+      "label": "Ankeruhr, Bauernmarkt, Stubenviertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-naschmarkt",
+    "wikidata": "https://www.wikidata.org/wiki/Q417645",
+    "label": "Naschmarkt",
+    "wikidataCoords": {
+      "lat": 48.1989,
+      "lng": 16.3636
+    },
+    "website": "https://www.naschmarkt-vienna.com",
+    "frwiki": "Naschmarkt",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Wien_-_Naschmarkt.JPG/1280px-Wien_-_Naschmarkt.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Naschmarkt.JPG"
+    },
+    "osm": {
+      "lat": 48.1981802,
+      "lng": 16.3626217,
+      "osm": "https://www.openstreetmap.org/way/29320733",
+      "label": "Naschmarkt, Laimgrube, Mariahilf, Katastralgemeinde Mariahilf, Mariahilf, Wien, Österreich"
+    }
+  },
+  {
+    "id": "vie-spittelberg",
+    "wikidata": "https://www.wikidata.org/wiki/Q1587233",
+    "label": "Spittelberg",
+    "wikidataCoords": {
+      "lat": 48.2033,
+      "lng": 16.3553
+    },
+    "website": null,
+    "frwiki": "Spittelberg (Vienne)",
+    "osm": {
+      "lat": 48.2033541,
+      "lng": 16.3554521,
+      "osm": "https://www.openstreetmap.org/node/706357196",
+      "label": "Spittelberg, Katastralgemeinde Neubau, Neubau, Wien, 1070, Österreich"
+    }
+  },
+  {
+    "id": "vie-majolikahaus",
+    "osm": {
+      "lat": 48.1974771,
+      "lng": 16.3591904,
+      "osm": "https://www.openstreetmap.org/way/93656069",
+      "label": "Majolikahaus, 40, Linke Wienzeile, Laimgrube, Mariahilf, Katastralgemeinde Mariahilf, Mariahilf, Wien, 1060, Österreich"
+    }
+  },
+  {
+    "id": "vie-haus-des-meeres",
+    "wikidata": "https://www.wikidata.org/wiki/Q460607",
+    "label": "Haus des Meeres",
+    "labelCs": "Haus des Meeres",
+    "wikidataCoords": {
+      "lat": 48.1977,
+      "lng": 16.3529
+    },
+    "website": "http://www.haus-des-meeres.at/",
+    "frwiki": "Haus des Meeres",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Haus_des_Meeres_2026%2C_Wien_3.jpg/1280px-Haus_des_Meeres_2026%2C_Wien_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Thomas Ledl",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haus_des_Meeres_2026,_Wien_3.jpg"
+    },
+    "osm": {
+      "lat": 48.1975784,
+      "lng": 16.352958,
+      "osm": "https://www.openstreetmap.org/node/11509599873",
+      "label": "Haus des Meeres, 1, Fritz-Grünbaum-Platz, Magdalenengrund, Mariahilf, Katastralgemeinde Mariahilf, Mariahilf, Wien, 1060, Österreich"
+    }
+  },
+  {
+    "id": "vie-kapuzinergruft",
+    "wikidata": "https://www.wikidata.org/wiki/Q662652",
+    "label": "crypte des Capucins",
+    "labelCs": "Císařská hrobka ve Vídni",
+    "wikidataCoords": {
+      "lat": 48.205555555556,
+      "lng": 16.369722222222
+    },
+    "website": "http://www.kapuzinergruft.com",
+    "frwiki": "Crypte des Capucins",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Wien_-_Kapuzinergruft%2C_Maria-Theresia-Gruft_%281%29.JPG/1280px-Wien_-_Kapuzinergruft%2C_Maria-Theresia-Gruft_%281%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "C.Stadler/Bwag",
+      "license": "CC BY-SA 3.0 at",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wien_-_Kapuzinergruft,_Maria-Theresia-Gruft_(1).JPG"
+    },
+    "osm": {
+      "lat": 48.2057727,
+      "lng": 16.3701652,
+      "osm": "https://www.openstreetmap.org/node/250063134",
+      "label": "Kaisergruft, Neuer Markt, Kärntner Viertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-figlmuller",
+    "osm": {
+      "lat": 48.2094207,
+      "lng": 16.3748431,
+      "osm": "https://www.openstreetmap.org/node/1426806930",
+      "label": "Figlmüller, 5, Wollzeile, Stubenviertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-plachutta",
+    "osm": {
+      "lat": 48.2075481,
+      "lng": 16.378755,
+      "osm": "https://www.openstreetmap.org/node/956430057",
+      "label": "Plachutta, 38, Wollzeile, Stubenviertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-sacher",
+    "osm": {
+      "lat": 48.203939,
+      "lng": 16.3696603,
+      "osm": "https://www.openstreetmap.org/node/4163604659",
+      "label": "Café Sacher Wien, Philharmonikerstraße, Kärntner Viertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-bitzinger",
+    "osm": null
+  },
+  {
+    "id": "vie-demel",
+    "osm": {
+      "lat": 48.2086051,
+      "lng": 16.367211,
+      "osm": "https://www.openstreetmap.org/node/964884519",
+      "label": "Demel, 14, Kohlmarkt, Widmerviertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  },
+  {
+    "id": "vie-zum-schwarzen-kameel",
+    "osm": {
+      "lat": 48.2099948,
+      "lng": 16.3683168,
+      "osm": "https://www.openstreetmap.org/node/549357085",
+      "label": "Zum Schwarzen Kameel, 5, Bognergasse, Widmerviertel, Katastralgemeinde Innere Stadt, Innere Stadt, Wien, 1010, Österreich"
+    }
+  }
+]

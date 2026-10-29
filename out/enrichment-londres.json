@@ -1,0 +1,536 @@
+[
+  {
+    "id": "lon-british-museum",
+    "wikidata": "https://www.wikidata.org/wiki/Q6373",
+    "label": "British Museum",
+    "labelCs": "Britské muzeum",
+    "wikidataCoords": {
+      "lat": 51.519444444444446,
+      "lng": -0.12694444444444444
+    },
+    "website": "https://www.britishmuseum.org/",
+    "frwiki": "British Museum",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/British_Museum_from_NE_2_%28cropped%29.JPG/1280px-British_Museum_from_NE_2_%28cropped%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Ham",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:British_Museum_from_NE_2_(cropped).JPG"
+    },
+    "osm": {
+      "lat": 51.5193118,
+      "lng": -0.1267051,
+      "osm": "https://www.openstreetmap.org/relation/177044",
+      "label": "British Museum, Great Russell Street, St Giles, Bloomsbury, London Borough of Camden, Greater London, England, WC1B 3DG, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-natural-history",
+    "wikidata": "https://www.wikidata.org/wiki/Q309388",
+    "label": "musée d'histoire naturelle de Londres",
+    "labelCs": "Přírodopisné muzeum v Londýně",
+    "wikidataCoords": {
+      "lat": 51.496111111111,
+      "lng": -0.17611111111111
+    },
+    "website": "http://www.nhm.ac.uk",
+    "frwiki": "Musée d'histoire naturelle de Londres",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/76/Entrance_to_Natural_History_Museum%2C_Cromwell_Road%2C_London_SW7_-_geograph.org.uk_-_1034304.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Christine Matthews",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entrance_to_Natural_History_Museum,_Cromwell_Road,_London_SW7_-_geograph.org.uk_-_1034304.jpg"
+    },
+    "osm": {
+      "lat": 51.4965109,
+      "lng": -0.1760019,
+      "osm": "https://www.openstreetmap.org/way/24436446",
+      "label": "Natural History Museum, Cromwell Road, Brompton, Royal Borough of Kensington and Chelsea, Greater London, England, SW7 5BD, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-science-museum",
+    "wikidata": "https://www.wikidata.org/wiki/Q674773",
+    "label": "Science Museum de Londres",
+    "labelCs": "Vědecké muzeum",
+    "wikidataCoords": {
+      "lat": 51.4975,
+      "lng": -0.17472222222222
+    },
+    "website": "https://www.sciencemuseum.org.uk/",
+    "frwiki": "Science Museum de Londres",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Science_Museum%2C_Exhibition_Road_%28cropped%29.jpg/1280px-Science_Museum%2C_Exhibition_Road_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Shadowssettle",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Science_Museum,_Exhibition_Road_(cropped).jpg"
+    },
+    "osm": {
+      "lat": 51.4973983,
+      "lng": -0.1746726,
+      "osm": "https://www.openstreetmap.org/way/27765411",
+      "label": "Science Museum, Observatory Road, Brompton, Royal Borough of Kensington and Chelsea, Greater London, England, SW7 9DU, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-tower-london",
+    "wikidata": "https://www.wikidata.org/wiki/Q62378",
+    "label": "tour de Londres",
+    "labelCs": "Tower",
+    "wikidataCoords": {
+      "lat": 51.5082,
+      "lng": -0.076198055555556
+    },
+    "website": "http://www.hrp.org.uk/tower-of-london/",
+    "frwiki": "Tour de Londres",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Tower_of_London_viewed_from_the_River_Thames.jpg/1280px-Tower_of_London_viewed_from_the_River_Thames.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bob Collowan",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tower_of_London_viewed_from_the_River_Thames.jpg"
+    },
+    "osm": {
+      "lat": 51.508217,
+      "lng": -0.0761879,
+      "osm": "https://www.openstreetmap.org/way/370870741",
+      "label": "Tower of London, Tower Hill, East Smithfield, Tower Hill, Whitechapel, London Borough of Tower Hamlets, Greater London, England, EC3N 4AB, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-tower-bridge",
+    "wikidata": "https://www.wikidata.org/wiki/Q83125",
+    "label": "Tower Bridge",
+    "labelCs": "Tower Bridge",
+    "wikidataCoords": {
+      "lat": 51.50555555555555,
+      "lng": -0.07527777777777778
+    },
+    "website": "https://www.towerbridge.org.uk/",
+    "frwiki": "Tower Bridge",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/London_-_London_Tower_Bridge_-_140806_171049.jpg/1280px-London_-_London_Tower_Bridge_-_140806_171049.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Barcex",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:London_-_London_Tower_Bridge_-_140806_171049.jpg"
+    },
+    "osm": {
+      "lat": 51.5055158,
+      "lng": -0.0753665,
+      "osm": "https://www.openstreetmap.org/way/378541210",
+      "label": "Tower Bridge, Horsleydown Old Stairs, Butler's Wharf, Bermondsey Village, Bermondsey, London Borough of Southwark, Greater London, England, SE1 2LY, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-london-eye",
+    "wikidata": "https://www.wikidata.org/wiki/Q160659",
+    "label": "London Eye",
+    "labelCs": "Londýnské oko",
+    "wikidataCoords": {
+      "lat": 51.50333333333333,
+      "lng": -0.11972222222222223
+    },
+    "website": "https://londoneye.com",
+    "frwiki": "London Eye",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/London_Eye_seen_from_the_north_bank_of_the_Thames%2C_London.jpg/1280px-London_Eye_seen_from_the_north_bank_of_the_Thames%2C_London.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Christian David",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:London_Eye_seen_from_the_north_bank_of_the_Thames,_London.jpg"
+    },
+    "osm": {
+      "lat": 51.5046369,
+      "lng": -0.1166806,
+      "osm": "https://www.openstreetmap.org/node/6074519070",
+      "label": "London Eye, Belvedere Road, South Bank, Waterloo, London Borough of Lambeth, Greater London, England, SE1 7GZ, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-westminster",
+    "wikidata": "https://www.wikidata.org/wiki/Q62408",
+    "label": "palais de Westminster",
+    "labelCs": "Westminsterský palác",
+    "wikidataCoords": {
+      "lat": 51.499444444444,
+      "lng": -0.12416666666667
+    },
+    "website": "https://www.parliament.uk/about/living-heritage/building/palace/",
+    "frwiki": "Palais de Westminster",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Houses_of_Parliament_in_2022_%28cropped%29.jpg/1280px-Houses_of_Parliament_in_2022_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Terry Ott from Washington, DC Metro Area, United States of America",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Houses_of_Parliament_in_2022_(cropped).jpg"
+    },
+    "osm": {
+      "lat": 51.499387,
+      "lng": -0.1244812,
+      "osm": "https://www.openstreetmap.org/relation/1567699",
+      "label": "Palace of Westminster, The Terrace, Westminster, Millbank, City of Westminster, Greater London, England, SW1A 0AA, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-buckingham",
+    "wikidata": "https://www.wikidata.org/wiki/Q42182",
+    "label": "palais de Buckingham",
+    "labelCs": "Buckinghamský palác",
+    "wikidataCoords": {
+      "lat": 51.501,
+      "lng": -0.142
+    },
+    "website": "https://www.royal.uk/royal-residences-buckingham-palace",
+    "frwiki": "Palais de Buckingham",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Buckingham_Palace%2C_London_-_April_2009.jpg/1280px-Buckingham_Palace%2C_London_-_April_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Diliff",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buckingham_Palace,_London_-_April_2009.jpg"
+    },
+    "osm": {
+      "lat": 51.5008349,
+      "lng": -0.1430045,
+      "osm": "https://www.openstreetmap.org/relation/5208404",
+      "label": "Buckingham Palace, Ambassador's Court, Victoria, City of Westminster, Greater London, England, SW1A 1AA, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-national-gallery",
+    "wikidata": "https://www.wikidata.org/wiki/Q180788",
+    "label": "National Gallery",
+    "labelCs": "Národní galerie",
+    "wikidataCoords": {
+      "lat": 51.50888888888889,
+      "lng": -0.12833333333333333
+    },
+    "website": "https://www.nationalgallery.org.uk",
+    "frwiki": "National Gallery",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Galer%C3%ADa_Nacional%2C_Londres%2C_Inglaterra%2C_2014-08-07%2C_DD_036.JPG/1280px-Galer%C3%ADa_Nacional%2C_Londres%2C_Inglaterra%2C_2014-08-07%2C_DD_036.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galer%C3%ADa_Nacional,_Londres,_Inglaterra,_2014-08-07,_DD_036.JPG"
+    },
+    "osm": {
+      "lat": 51.508881,
+      "lng": -0.1283826,
+      "osm": "https://www.openstreetmap.org/way/4372002",
+      "label": "National Gallery, St Martin's Street, St. James's, East Marylebone, Covent Garden, City of Westminster, Greater London, England, WC2N 5DN, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-tate-modern",
+    "wikidata": "https://www.wikidata.org/wiki/Q193375",
+    "label": "Tate Modern",
+    "labelCs": "Tate Modern",
+    "wikidataCoords": {
+      "lat": 51.507777777777775,
+      "lng": -0.09944444444444445
+    },
+    "website": "http://www.tate.org.uk/modern",
+    "frwiki": "Tate Modern",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Tate_Modern_viewed_from_Thames_Pleasure_Boat_-_geograph.org.uk_-_307445.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Christine Matthews",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tate_Modern_viewed_from_Thames_Pleasure_Boat_-_geograph.org.uk_-_307445.jpg"
+    },
+    "osm": {
+      "lat": 51.5074293,
+      "lng": -0.0993416,
+      "osm": "https://www.openstreetmap.org/way/24642569",
+      "label": "Tate Modern, Bankside, Southwark, London Borough of Southwark, Greater London, England, SE1 9TG, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-hyde-park",
+    "wikidata": "https://www.wikidata.org/wiki/Q123738",
+    "label": "Hyde Park",
+    "labelCs": "Hyde Park",
+    "wikidataCoords": {
+      "lat": 51.50861111111111,
+      "lng": -0.1636111111111111
+    },
+    "website": "http://www.royalparks.org.uk/parks/hyde-park",
+    "frwiki": "Hyde Park",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Hyde_Park_July_2015-1.jpg/1280px-Hyde_Park_July_2015-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyde_Park_July_2015-1.jpg"
+    },
+    "osm": {
+      "lat": 51.5074889,
+      "lng": -0.1622074,
+      "osm": "https://www.openstreetmap.org/way/372975520",
+      "label": "Hyde Park, Albion Street, Paddington, City of Westminster, Greater London, England, W2 2LG, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-covent-garden",
+    "wikidata": "https://www.wikidata.org/wiki/Q55019",
+    "label": "Covent Garden",
+    "labelCs": "Covent Garden",
+    "wikidataCoords": {
+      "lat": 51.5125,
+      "lng": -0.1225
+    },
+    "website": "https://www.coventgarden.london/",
+    "frwiki": "Covent Garden",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/%E6%9F%AF%E8%8A%AC%E5%9C%92_%2840400019900%29.jpg/1280px-%E6%9F%AF%E8%8A%AC%E5%9C%92_%2840400019900%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Wei-Te Wong from Taipei City, Taiwan, Republic of China",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9F%AF%E8%8A%AC%E5%9C%92_(40400019900).jpg"
+    },
+    "osm": {
+      "lat": 51.5128732,
+      "lng": -0.1225639,
+      "osm": "https://www.openstreetmap.org/way/33721672",
+      "label": "Royal Opera House, Bow Street, St Clement Danes, Covent Garden, City of Westminster, Greater London, England, WC2E 9DD, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-sky-garden",
+    "wikidata": "https://www.wikidata.org/wiki/Q61740755",
+    "label": "Sky Garden",
+    "wikidataCoords": {
+      "lat": 51.511342329854166,
+      "lng": -0.0834634726338889
+    },
+    "website": "https://skygarden.london/",
+    "frwiki": null,
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/The_Sky_Garden.jpg/1280px-The_Sky_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Colin",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Sky_Garden.jpg"
+    },
+    "osm": {
+      "lat": 51.51127,
+      "lng": -0.0835396,
+      "osm": "https://www.openstreetmap.org/way/201247295",
+      "label": "Sky Garden, 20, Fenchurch Street, Leadenhall Market, Monument, City of London, Greater London, England, EC3M 6BB, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-leadenhall",
+    "wikidata": "https://www.wikidata.org/wiki/Q961148",
+    "label": "Leadenhall Market",
+    "labelCs": "Leadenhall Market",
+    "wikidataCoords": {
+      "lat": 51.5127,
+      "lng": -0.0835
+    },
+    "website": "https://leadenhallmarket.co.uk/",
+    "frwiki": "Marché de Leadenhall",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Leadenhall_Market_In_London_-_Feb_2006_rotated.jpg/1280px-Leadenhall_Market_In_London_-_Feb_2006_rotated.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Diliff",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leadenhall_Market_In_London_-_Feb_2006_rotated.jpg"
+    },
+    "osm": {
+      "lat": 51.5100038,
+      "lng": -0.1262319,
+      "osm": "https://www.openstreetmap.org/way/107035569",
+      "label": "London Coliseum, 32-35, St Martin's Lane, East Marylebone, Covent Garden, City of Westminster, Greater London, England, WC2N 4ES, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-neals-yard",
+    "wikidata": "https://www.wikidata.org/wiki/Q38879",
+    "label": "Covent Garden",
+    "labelCs": "Covent Garden",
+    "wikidataCoords": {
+      "lat": 51.513056,
+      "lng": -0.124444
+    },
+    "website": null,
+    "frwiki": "Covent Garden (métro de Londres)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Covent_Garden_stn_building.JPG/1280px-Covent_Garden_stn_building.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Sunil060902",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Covent_Garden_stn_building.JPG"
+    },
+    "osm": {
+      "lat": 51.5144267,
+      "lng": -0.1263892,
+      "osm": "https://www.openstreetmap.org/way/175155024",
+      "label": "Neal's Yard, Seven Dials, Bloomsbury, London Borough of Camden, Greater London, England, WC2H 9DP, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-st-dunstan",
+    "osm": {
+      "lat": 51.5096776,
+      "lng": -0.0824956,
+      "osm": "https://www.openstreetmap.org/way/237522043",
+      "label": "St Dunstan in the East, St. Dunstan's Hill, Leadenhall Market, Monument, City of London, Greater London, England, EC3R 8HN, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-little-venice",
+    "osm": {
+      "lat": 51.5329978,
+      "lng": -0.1014487,
+      "osm": "https://www.openstreetmap.org/relation/3878210",
+      "label": "Regent's Canal, Greater London, England, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-postmans-park",
+    "wikidata": "https://www.wikidata.org/wiki/Q3305517",
+    "label": "Postman's Park",
+    "wikidataCoords": {
+      "lat": 51.5168,
+      "lng": -0.0976431
+    },
+    "website": null,
+    "frwiki": "Postman's Park",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Postman%27s_Park_and_the_Wall_of_Heroes.JPG/1280px-Postman%27s_Park_and_the_Wall_of_Heroes.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Iridescent",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Postman%27s_Park_and_the_Wall_of_Heroes.JPG"
+    },
+    "osm": {
+      "lat": 51.5100038,
+      "lng": -0.1262319,
+      "osm": "https://www.openstreetmap.org/way/107035569",
+      "label": "London Coliseum, 32-35, St Martin's Lane, East Marylebone, Covent Garden, City of Westminster, Greater London, England, WC2N 4ES, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-platform-934",
+    "wikidata": "https://www.wikidata.org/wiki/Q219867",
+    "label": "Londres-King's Cross",
+    "labelCs": "Nádraží King's Cross",
+    "wikidataCoords": {
+      "lat": 51.530972222222225,
+      "lng": -0.12333333333333334
+    },
+    "website": "http://www.nationalrail.co.uk/stations_destinations/KGX.aspx",
+    "frwiki": "Gare de King's Cross",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/King%27s_Cross_station%2C_August_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "George Rex from London, England",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:King%27s_Cross_station,_August_2014.jpg"
+    },
+    "osm": {
+      "lat": 51.5305975,
+      "lng": -0.1229032,
+      "osm": "https://www.openstreetmap.org/node/469760945",
+      "label": "King's Cross Station, Euston Road, King's Cross, London Borough of Camden, Greater London, England, N1C 4DE, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-kyoto-garden",
+    "wikidata": "https://www.wikidata.org/wiki/Q251630",
+    "label": "Holland Park",
+    "wikidataCoords": {
+      "lat": 51.503781,
+      "lng": -0.204417
+    },
+    "website": null,
+    "frwiki": "Holland Park",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/20060330-011-holland-park-pond.jpg/1280px-20060330-011-holland-park-pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Ghouston 12:34, 1 April 2006 (UTC)",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20060330-011-holland-park-pond.jpg"
+    },
+    "osm": {
+      "lat": 51.5030786,
+      "lng": -0.2045268,
+      "osm": "https://www.openstreetmap.org/way/332328663",
+      "label": "Kyoto Garden, Kensington, Royal Borough of Kensington and Chelsea, Greater London, England, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-seven-noses",
+    "wikidata": "https://www.wikidata.org/wiki/Q124010",
+    "label": "Soho",
+    "labelCs": "Soho",
+    "wikidataCoords": {
+      "lat": 51.513,
+      "lng": -0.131
+    },
+    "website": null,
+    "frwiki": "Soho (Londres)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Golden_Square%2C_Soho%2C_London_-_September_2006.jpg/1280px-Golden_Square%2C_Soho%2C_London_-_September_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Diliff",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_Square,_Soho,_London_-_September_2006.jpg"
+    },
+    "osm": {
+      "lat": 51.5067344,
+      "lng": -0.1286181,
+      "osm": "https://www.openstreetmap.org/relation/17074208",
+      "label": "Admiralty Arch, Whitehall, Westminster, Covent Garden, City of Westminster, Greater London, England, SW1A 2DY, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-borough-market",
+    "wikidata": "https://www.wikidata.org/wiki/Q894072",
+    "label": "Borough Market",
+    "wikidataCoords": {
+      "lat": 51.50555555555555,
+      "lng": -0.09083333333333334
+    },
+    "website": "https://boroughmarket.org.uk/",
+    "frwiki": "Borough Market",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Borough_Market_%284701274756%29.jpg/1280px-Borough_Market_%284701274756%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Jeremy Keith from Brighton &amp; Hove, United Kingdom",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Borough_Market_(4701274756).jpg"
+    },
+    "osm": {
+      "lat": 51.5055264,
+      "lng": -0.090438,
+      "osm": "https://www.openstreetmap.org/way/24282400",
+      "label": "Borough Market, Bankside, The Borough, London Borough of Southwark, Greater London, England, SE1 9AL, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-dishoom",
+    "osm": {
+      "lat": 51.5124271,
+      "lng": -0.126856,
+      "osm": "https://www.openstreetmap.org/way/207104925",
+      "label": "Dishoom, 12, Upper St Martin's Lane, East Marylebone, Covent Garden, City of Westminster, Greater London, England, WC2H 9FB, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-poppies",
+    "osm": null
+  },
+  {
+    "id": "lon-regency-cafe",
+    "osm": {
+      "lat": 51.494002,
+      "lng": -0.1320948,
+      "osm": "https://www.openstreetmap.org/way/100822479",
+      "label": "Regency Cafe, 17-19, Regency Street, Westminster, Millbank, City of Westminster, Greater London, England, SW1P 4BY, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-flat-iron",
+    "osm": {
+      "lat": 51.5108067,
+      "lng": -0.1239891,
+      "osm": "https://www.openstreetmap.org/node/4611099089",
+      "label": "Flat Iron Covent Garden, 17-18, Henrietta Street, St Clement Danes, Covent Garden, City of Westminster, Greater London, England, WC2E 8QH, United Kingdom"
+    }
+  },
+  {
+    "id": "lon-kanada-ya",
+    "osm": {
+      "lat": 51.5154947,
+      "lng": -0.1275876,
+      "osm": "https://www.openstreetmap.org/way/153690425",
+      "label": "Kanada-Ya, 64, St Giles High Street, St Giles, Bloomsbury, London Borough of Camden, Greater London, England, WC2H 8LE, United Kingdom"
+    }
+  }
+]

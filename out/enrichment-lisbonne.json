@@ -1,0 +1,527 @@
+[
+  {
+    "id": "lis-belem",
+    "wikidata": "https://www.wikidata.org/wiki/Q215003",
+    "label": "tour de Belém",
+    "labelCs": "Belémská věž",
+    "wikidataCoords": {
+      "lat": 38.691388888889,
+      "lng": -9.2158333333333
+    },
+    "website": "https://torrebelem.com/",
+    "frwiki": "Tour de Belém",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Belem_Tower_-_April_2019_%282%29.jpg/1280px-Belem_Tower_-_April_2019_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Rehman Abubakr",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Belem_Tower_-_April_2019_(2).jpg"
+    },
+    "osm": {
+      "lat": 38.691586,
+      "lng": -9.2159288,
+      "osm": "https://www.openstreetmap.org/way/24341353",
+      "label": "Torre de Belém, Avenida de Brasília, Pedrouços, São Francisco Xavier, Belém, Lisboa, 1400-038, Portugal"
+    }
+  },
+  {
+    "id": "lis-jeronimos",
+    "wikidata": "https://www.wikidata.org/wiki/Q272781",
+    "label": "monastère des Hiéronymites",
+    "labelCs": "Klášter svatého Jeronýma",
+    "wikidataCoords": {
+      "lat": 38.697846,
+      "lng": -9.205601
+    },
+    "website": "http://www.mosteirojeronimos.pt",
+    "frwiki": "Monastère des Hiéronymites",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/1502_legte_K%C3%B6nig_Manuel_I._den_Grundstein_f%C3%BCr_das_Hieronymus_Kloster_in_Lissabon._06.jpg/1280px-1502_legte_K%C3%B6nig_Manuel_I._den_Grundstein_f%C3%BCr_das_Hieronymus_Kloster_in_Lissabon._06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Holger Uwe Schmitt",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:1502_legte_K%C3%B6nig_Manuel_I._den_Grundstein_f%C3%BCr_das_Hieronymus_Kloster_in_Lissabon._06.jpg"
+    },
+    "osm": {
+      "lat": 38.6977531,
+      "lng": -9.2055912,
+      "osm": "https://www.openstreetmap.org/relation/3258300",
+      "label": "Mosteiro dos Jerónimos, Praça do Império, São Francisco Xavier, Belém, Lisboa, 1400-206, Portugal"
+    }
+  },
+  {
+    "id": "lis-castelo",
+    "wikidata": "https://www.wikidata.org/wiki/Q636780",
+    "label": "château de Saint-Georges",
+    "labelCs": "Hrad svatého Jiří",
+    "wikidataCoords": {
+      "lat": 38.71389,
+      "lng": -9.13333
+    },
+    "website": "http://castelodesaojorge.pt",
+    "frwiki": "Château Saint-Georges (Lisbonne)",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Castelo_Sao_Jorge_Lisboa_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Auteur inconnu",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castelo_Sao_Jorge_Lisboa_1.JPG"
+    },
+    "osm": {
+      "lat": 38.7139258,
+      "lng": -9.133483,
+      "osm": "https://www.openstreetmap.org/way/1382432568",
+      "label": "Castelo de São Jorge, Rua de Santa Cruz do Castelo, Castelo, Santa Maria Maior, Madalena, Lisboa, 1100-129, Portugal"
+    }
+  },
+  {
+    "id": "lis-alfama",
+    "wikidata": "https://www.wikidata.org/wiki/Q985517",
+    "label": "Alfama",
+    "labelCs": "Alfama",
+    "wikidataCoords": {
+      "lat": 38.710662,
+      "lng": -9.132385
+    },
+    "website": null,
+    "frwiki": "Alfama",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Alfama-CCBY.jpg/1280px-Alfama-CCBY.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Miguel Vieira [2]",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfama-CCBY.jpg"
+    },
+    "osm": {
+      "lat": 38.7117704,
+      "lng": -9.12838,
+      "osm": "https://www.openstreetmap.org/node/207597971",
+      "label": "Alfama, Santa Maria Maior, Madalena, Lisboa, 1100-095, Portugal"
+    }
+  },
+  {
+    "id": "lis-tram-28",
+    "wikidata": "https://www.wikidata.org/wiki/Q63034669",
+    "label": "ligne 28E",
+    "wikidataCoords": {
+      "lat": 38.71296,
+      "lng": -9.1296
+    },
+    "website": null,
+    "frwiki": null,
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Le_tram_28.jpg/1280px-Le_tram_28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Yvesdebxl",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_tram_28.jpg"
+    },
+    "osm": {
+      "lat": 38.7152246,
+      "lng": -9.1361279,
+      "osm": "https://www.openstreetmap.org/node/4562515058",
+      "label": "Martim Moniz, Praça Martim Moniz, Mouraria, Santa Maria Maior, Madalena, Lisboa, 1100-341, Portugal"
+    }
+  },
+  {
+    "id": "lis-commerce",
+    "wikidata": "https://www.wikidata.org/wiki/Q999002",
+    "label": "praça do Comércio",
+    "labelCs": "Praça do Comércio",
+    "wikidataCoords": {
+      "lat": 38.7075,
+      "lng": -9.1363888888889
+    },
+    "website": null,
+    "frwiki": "Praça do Comércio",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Plaza_del_Comercio%2C_Lisboa%2C_Portugal%2C_2012-05-12%2C_DD_01-03_PAN.jpg/1280px-Plaza_del_Comercio%2C_Lisboa%2C_Portugal%2C_2012-05-12%2C_DD_01-03_PAN.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_del_Comercio,_Lisboa,_Portugal,_2012-05-12,_DD_01-03_PAN.jpg"
+    },
+    "osm": {
+      "lat": 38.7077151,
+      "lng": -9.1365238,
+      "osm": "https://www.openstreetmap.org/way/677181958",
+      "label": "Praça do Comércio, São Nicolau, Santa Maria Maior, Madalena, Lisboa, 1100-148, Portugal"
+    }
+  },
+  {
+    "id": "lis-oceanario",
+    "wikidata": "https://www.wikidata.org/wiki/Q652806",
+    "label": "Oceanarium de Lisbonne",
+    "labelCs": "Oceanárium v Lisabonu",
+    "wikidataCoords": {
+      "lat": 38.763526,
+      "lng": -9.09375
+    },
+    "website": "https://www.oceanario.pt/",
+    "frwiki": "Oceanarium de Lisbonne",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Lisboa_June_2014-8a.jpg/1280px-Lisboa_June_2014-8a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lisboa_June_2014-8a.jpg"
+    },
+    "osm": {
+      "lat": 38.7635196,
+      "lng": -9.0937161,
+      "osm": "https://www.openstreetmap.org/way/1016189633",
+      "label": "Oceanário de Lisboa, Esplanada Dom Carlos I, Parque das Nações, Lisboa, 1990-005, Portugal"
+    }
+  },
+  {
+    "id": "lis-santa-justa",
+    "wikidata": "https://www.wikidata.org/wiki/Q168001",
+    "label": "ascenseur de Santa Justa",
+    "labelCs": "Výtah Santa Justa",
+    "wikidataCoords": {
+      "lat": 38.71194,
+      "lng": -9.13917
+    },
+    "website": null,
+    "frwiki": "Ascenseur de Santa Justa",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Elevador_de_Santa_Justa%2C_Lisboa%2C_Portugal%2C_2022-07-24%2C_DD_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elevador_de_Santa_Justa,_Lisboa,_Portugal,_2022-07-24,_DD_07.jpg"
+    },
+    "osm": {
+      "lat": 38.7121169,
+      "lng": -9.1393753,
+      "osm": "https://www.openstreetmap.org/way/115238861",
+      "label": "Elevador de Santa Justa, Rua de Santa Justa, Santa Maria Maior, Madalena, Lisboa, 1100-062, Portugal"
+    }
+  },
+  {
+    "id": "lis-gulbenkian",
+    "wikidata": "https://www.wikidata.org/wiki/Q211262",
+    "label": "musée Calouste-Gulbenkian",
+    "labelCs": "Muzeum Calousta Gulbenkiana v Lisabonu",
+    "wikidataCoords": {
+      "lat": 38.736666666667,
+      "lng": -9.1541666666667
+    },
+    "website": "https://gulbenkian.pt/museu/",
+    "frwiki": "Musée Calouste-Gulbenkian",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Museu_Calouste_Gulbenkian_%28Main_Entrance%29.jpg/1280px-Museu_Calouste_Gulbenkian_%28Main_Entrance%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Fundação Calouste Gulbenkian",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museu_Calouste_Gulbenkian_(Main_Entrance).jpg"
+    },
+    "osm": {
+      "lat": 38.7378228,
+      "lng": -9.1535149,
+      "osm": "https://www.openstreetmap.org/relation/17036063",
+      "label": "Museu Calouste Gulbenkian, Percurso do Lago, Campo Pequeno, Avenidas Novas, Lisboa, 1050-078, Portugal"
+    }
+  },
+  {
+    "id": "lis-azulejo",
+    "wikidata": "https://www.wikidata.org/wiki/Q2313815",
+    "label": "musée national de l'azulejo",
+    "labelCs": "Národní muzeum keramických dlaždic v Lisabonu",
+    "wikidataCoords": {
+      "lat": 38.7244,
+      "lng": -9.11389
+    },
+    "website": "http://www.museudoazulejo.gov.pt",
+    "frwiki": "Musée national de l'Azulejo",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Convento_da_Madre_de_Deus_-_Lisboa_-_Portugal_%2846913633574%29.jpg/1280px-Convento_da_Madre_de_Deus_-_Lisboa_-_Portugal_%2846913633574%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Convento_da_Madre_de_Deus_-_Lisboa_-_Portugal_(46913633574).jpg"
+    },
+    "osm": {
+      "lat": 38.7247242,
+      "lng": -9.113914,
+      "osm": "https://www.openstreetmap.org/way/1451054092",
+      "label": "Museu Nacional do Azulejo, 4, Rua da Madre de Deus, São João, Penha de França, Lisboa, 1900-455, Portugal"
+    }
+  },
+  {
+    "id": "lis-padrao",
+    "wikidata": "https://www.wikidata.org/wiki/Q1133712",
+    "label": "Padrão dos Descobrimentos",
+    "labelCs": "Památník objevitelů",
+    "wikidataCoords": {
+      "lat": 38.693676,
+      "lng": -9.20569
+    },
+    "website": "http://www.padraodosdescobrimentos.pt",
+    "frwiki": "Padrão dos Descobrimentos",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Lisbonne_-_Padr%C3%A3o_dos_Descobrimentos_-_Closeup.jpg/1280px-Lisbonne_-_Padr%C3%A3o_dos_Descobrimentos_-_Closeup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Jean-Christophe BENOIST",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lisbonne_-_Padr%C3%A3o_dos_Descobrimentos_-_Closeup.jpg"
+    },
+    "osm": {
+      "lat": 38.6936054,
+      "lng": -9.2057002,
+      "osm": "https://www.openstreetmap.org/way/152327819",
+      "label": "Padrão dos Descobrimentos, Rosa dos Ventos, São Francisco Xavier, Belém, Lisboa, 1449-003, Portugal"
+    }
+  },
+  {
+    "id": "lis-parque-nacoes",
+    "wikidata": "https://www.wikidata.org/wiki/Q1428475",
+    "label": "Parque das Nações",
+    "wikidataCoords": {
+      "lat": 38.76889,
+      "lng": -9.09528
+    },
+    "website": "http://jf-parquedasnacoes.pt/",
+    "frwiki": "Parque das Nações",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Alameda_dos_Oceanos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Filipe Rocha,user:sacavem (pt) http://pt.wikipedia.org/wiki/Usu%C3%A1rio:Sacavem",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alameda_dos_Oceanos.jpg"
+    },
+    "osm": {
+      "lat": 38.7638712,
+      "lng": -9.0953729,
+      "osm": "https://www.openstreetmap.org/relation/6427494",
+      "label": "Parque das Nações, Lisboa, Portugal"
+    }
+  },
+  {
+    "id": "lis-pasteis-belem",
+    "wikidata": "https://www.wikidata.org/wiki/Q3091352",
+    "label": "Fábrica dos pastéis de Belém",
+    "wikidataCoords": {
+      "lat": 38.697509425105515,
+      "lng": -9.203227603785944
+    },
+    "website": "https://pasteisdebelem.pt/",
+    "frwiki": "Fábrica dos pastéis de Belém",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Pasteis_de_Belem%2C_Lisbon%2C_Portugal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "User: (WT-shared) Shoestring at wts wikivoyage",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pasteis_de_Belem,_Lisbon,_Portugal.JPG"
+    },
+    "osm": {
+      "lat": 38.6974795,
+      "lng": -9.2033202,
+      "osm": "https://www.openstreetmap.org/node/398922337",
+      "label": "Pastéis de Belém, 84-92, Rua de Belém, São Francisco Xavier, Belém, Lisboa, 1300-085, Portugal"
+    }
+  },
+  {
+    "id": "lis-santa-luzia",
+    "wikidata": "https://www.wikidata.org/wiki/Q6837314",
+    "label": "Belvédère de Santa Luzia",
+    "wikidataCoords": {
+      "lat": 38.71168921962956,
+      "lng": -9.130208772964853
+    },
+    "website": null,
+    "frwiki": "Belvédère de Santa Luzia",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/MiradouroSantaLuzia.JPG/1280px-MiradouroSantaLuzia.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Auteur inconnu",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:MiradouroSantaLuzia.JPG"
+    },
+    "osm": {
+      "lat": 38.7117382,
+      "lng": -9.1301295,
+      "osm": "https://www.openstreetmap.org/node/5446794770",
+      "label": "Miradouro de Santa Luzia, Largo de Santa Luzia, Santiago, Santa Maria Maior, Madalena, Lisboa, 1100-487, Portugal"
+    }
+  },
+  {
+    "id": "lis-lx-factory",
+    "wikidata": "https://www.wikidata.org/wiki/Q112628482",
+    "label": "LxFactory",
+    "wikidataCoords": {
+      "lat": 38.70351,
+      "lng": -9.17882
+    },
+    "website": "https://www.lxfactory.com",
+    "frwiki": "LXFactory",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/LX_Factory_%2822379332901%29.jpg/1280px-LX_Factory_%2822379332901%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bex Walton from London, England",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LX_Factory_(22379332901).jpg"
+    },
+    "osm": {
+      "lat": 38.7026001,
+      "lng": -9.1786619,
+      "osm": "https://www.openstreetmap.org/way/221960606",
+      "label": "LX Factory, 103, Alcântara, Lisboa, 1300-501, Portugal"
+    }
+  },
+  {
+    "id": "lis-feira-ladra",
+    "wikidata": "https://www.wikidata.org/wiki/Q3068026",
+    "label": "Feira da Ladra",
+    "wikidataCoords": {
+      "lat": 38.7158,
+      "lng": -9.12417
+    },
+    "website": "https://informacoeseservicos.lisboa.pt/contactos/diretorio-da-cidade/feira-da-ladra",
+    "frwiki": "Feira da Ladra",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Feira_da_ladra.jpg/1280px-Feira_da_ladra.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Carlos Luis M C da Cruz",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Feira_da_ladra.jpg"
+    },
+    "osm": {
+      "lat": 38.7153925,
+      "lng": -9.1259289,
+      "osm": "https://www.openstreetmap.org/node/3827472183",
+      "label": "Feira da Ladra, Campo de Santa Clara, São Vicente de Fora, Graça, São Vicente, Lisboa, 1100-470, Portugal"
+    }
+  },
+  {
+    "id": "lis-bica",
+    "wikidata": "https://www.wikidata.org/wiki/Q99630",
+    "label": "funiculaire de Bica",
+    "labelCs": "Lanová dráha Bica",
+    "wikidataCoords": {
+      "lat": 38.708704,
+      "lng": -9.146783
+    },
+    "website": null,
+    "frwiki": "Funiculaire de Bica",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Ascensor_da_Bica_01.JPG/1280px-Ascensor_da_Bica_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "BKP",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ascensor_da_Bica_01.JPG"
+    },
+    "osm": {
+      "lat": 38.7086807,
+      "lng": -9.1467317,
+      "osm": "https://www.openstreetmap.org/way/1378985154",
+      "label": "Elevador da Bica, Largo de Santo Antoninho, São Paulo, Misericórdia, Lisboa, 1200-073, Portugal"
+    }
+  },
+  {
+    "id": "lis-sao-pedro-alcantara",
+    "wikidata": "https://www.wikidata.org/wiki/Q6672039",
+    "label": "Jardin de São Pedro de Alcântara",
+    "wikidataCoords": {
+      "lat": 38.71527778,
+      "lng": -9.14444444
+    },
+    "website": null,
+    "frwiki": "Jardin de São Pedro de Alcântara",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/JardimSPedroAlcantara.JPG/1280px-JardimSPedroAlcantara.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "CorreiaPM",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:JardimSPedroAlcantara.JPG"
+    },
+    "osm": {
+      "lat": 38.7154576,
+      "lng": -9.1440371,
+      "osm": "https://www.openstreetmap.org/node/419313189",
+      "label": "Miradouro de São Pedro de Alcântara, Rua de São Pedro de Alcântara, Bairro Alto, Misericórdia, Lisboa, 1250-238, Portugal"
+    }
+  },
+  {
+    "id": "lis-livraria-bertrand",
+    "wikidata": "https://www.wikidata.org/wiki/Q1866547",
+    "label": "Livraria Bertrand",
+    "wikidataCoords": {
+      "lat": 38.71062,
+      "lng": -9.141146
+    },
+    "website": "https://www.bertrand.pt/",
+    "frwiki": null,
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/LivrariaBertrand2.JPG/1280px-LivrariaBertrand2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "69joehawkins",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:LivrariaBertrand2.JPG"
+    },
+    "osm": {
+      "lat": 38.7106621,
+      "lng": -9.1411539,
+      "osm": "https://www.openstreetmap.org/node/4398508489",
+      "label": "Livraria Bertrand - Chiado, 73, Rua Garrett, Chiado, Santa Maria Maior, Madalena, Lisboa, 1200-203, Portugal"
+    }
+  },
+  {
+    "id": "lis-jardim-estrela",
+    "wikidata": "https://www.wikidata.org/wiki/Q10306236",
+    "label": "Jardin d'Estrela",
+    "wikidataCoords": {
+      "lat": 38.7146,
+      "lng": -9.15927
+    },
+    "website": null,
+    "frwiki": "Jardin d'Estrela",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Jardim_da_Estrela_-_Lissabon.JPG/1280px-Jardim_da_Estrela_-_Lissabon.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Stefan Didam - Schmallenberg",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jardim_da_Estrela_-_Lissabon.JPG"
+    },
+    "osm": {
+      "lat": 38.7146949,
+      "lng": -9.1590528,
+      "osm": "https://www.openstreetmap.org/way/23697561",
+      "label": "Jardim da Estrela, Prazeres, Estrela, Lisboa, 1200-694, Portugal"
+    }
+  },
+  {
+    "id": "lis-time-out-market",
+    "osm": {
+      "lat": 38.7070934,
+      "lng": -9.1458973,
+      "osm": "https://www.openstreetmap.org/way/1286260412",
+      "label": "Time Out Market Lisboa, 49, Praça Dom Luís I, São Paulo, Misericórdia, Lisboa, 1200-479, Portugal"
+    }
+  },
+  {
+    "id": "lis-cervejaria-ramiro",
+    "osm": {
+      "lat": 38.7201981,
+      "lng": -9.1357063,
+      "osm": "https://www.openstreetmap.org/node/2503432815",
+      "label": "Cervejaria Ramiro, 104, Avenida Almirante Reis, Anjos, Arroios, Lisboa, 1169-199, Portugal"
+    }
+  },
+  {
+    "id": "lis-bifanas-afonso",
+    "osm": {
+      "lat": 38.7115305,
+      "lng": -9.1356445,
+      "osm": "https://www.openstreetmap.org/node/4660168291",
+      "label": "As Bifanas do Afonso, 146, Rua da Madalena, São Cristóvão e São Lourenço, Alfama, Madalena, Lisboa, 1100-340, Portugal"
+    }
+  },
+  {
+    "id": "lis-taberna-rua-flores",
+    "osm": {
+      "lat": 38.7101395,
+      "lng": -9.1435869,
+      "osm": "https://www.openstreetmap.org/node/4213522792",
+      "label": "Taberna Da Rua das Flores, 94, Rua das Flores, Encarnação, Misericórdia, Lisboa, 1200-213, Portugal"
+    }
+  },
+  {
+    "id": "lis-manteigaria",
+    "osm": {
+      "lat": 38.7107638,
+      "lng": -9.1440621,
+      "osm": "https://www.openstreetmap.org/node/3798492284",
+      "label": "Manteigaria - Fábrica de Pastéis de Nata, 2, Rua do Loreto, Bairro Alto, Misericórdia, Lisboa, 1200-242, Portugal"
+    }
+  },
+  {
+    "id": "lis-ze-da-mouraria",
+    "osm": {
+      "lat": 38.7161038,
+      "lng": -9.1349389,
+      "osm": "https://www.openstreetmap.org/node/4712351890",
+      "label": "Zé da Mouraria, Rua João do Outeiro, Mouraria, Santa Maria Maior, Madalena, Lisboa, 1100-289, Portugal"
+    }
+  }
+]

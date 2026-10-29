@@ -1,0 +1,481 @@
+[
+  {
+    "id": "rom-colisee",
+    "wikidata": "https://www.wikidata.org/wiki/Q10285",
+    "label": "Colisée",
+    "labelCs": "Koloseum",
+    "wikidataCoords": {
+      "lat": 41.890277777778,
+      "lng": 12.492222222222
+    },
+    "website": "https://colosseo.it/area/colosseo/",
+    "frwiki": "Colisée",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1280px-Colosseo_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "FeaturedPics",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg"
+    },
+    "osm": {
+      "lat": 41.8909421,
+      "lng": 12.491903,
+      "osm": "https://www.openstreetmap.org/way/215801333",
+      "label": "Colosseo, Celio, Municipio Roma I, Roma, Roma Capitale, Lazio, 00184, Italia"
+    }
+  },
+  {
+    "id": "rom-forum",
+    "wikidata": "https://www.wikidata.org/wiki/Q180212",
+    "label": "Forum Romain",
+    "labelCs": "Forum Romanum",
+    "wikidataCoords": {
+      "lat": 41.8922,
+      "lng": 12.4852
+    },
+    "website": "https://parcocolosseo.it/area/foro-romano/",
+    "frwiki": "Forum romain (Rome)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Foro_Romano_Musei_Capitolini_Roma.jpg/1280px-Foro_Romano_Musei_Capitolini_Roma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention me as the author and send me a message. This image is not in the public domain. Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media, if applicable terms of the licenses listed here are not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foro_Romano_Musei_Capitolini_Roma.jpg"
+    },
+    "osm": {
+      "lat": 41.8916414,
+      "lng": 12.4867296,
+      "osm": "https://www.openstreetmap.org/relation/1841080",
+      "label": "Forum Romanum, Via del Tempio della Pace, Monti, Municipio Roma I, Roma, Roma Capitale, Lazio, 00184, Italia"
+    }
+  },
+  {
+    "id": "rom-pantheon",
+    "wikidata": "https://www.wikidata.org/wiki/Q99309",
+    "label": "Panthéon",
+    "labelCs": "Pantheon",
+    "wikidataCoords": {
+      "lat": 41.89861111111111,
+      "lng": 12.476944444444445
+    },
+    "website": "http://www.polomusealelazio.beniculturali.it/index.php?it/232/pantheon",
+    "frwiki": "Panthéon (Rome)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Pantheon_%28Rome%29_-_Right_side_and_front.jpg/1280px-Pantheon_%28Rome%29_-_Right_side_and_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "NikonZ7II",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Right_side_and_front.jpg"
+    },
+    "osm": {
+      "lat": 41.898616,
+      "lng": 12.4768334,
+      "osm": "https://www.openstreetmap.org/relation/3374342",
+      "label": "Pantheon, Piazza della Rotonda, Colonna, Municipio Roma I, Roma, Roma Capitale, Lazio, 00186, Italia"
+    }
+  },
+  {
+    "id": "rom-trevi",
+    "wikidata": "https://www.wikidata.org/wiki/Q185382",
+    "label": "fontaine de Trevi",
+    "labelCs": "Fontána di Trevi",
+    "wikidataCoords": {
+      "lat": 41.900932251961315,
+      "lng": 12.48331263850277
+    },
+    "website": "http://www.trevifountain.net/",
+    "frwiki": "Fontaine de Trevi",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Trevi_Fountain_-_Roma.jpg/1280px-Trevi_Fountain_-_Roma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "NikonZ7II",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trevi_Fountain_-_Roma.jpg"
+    },
+    "osm": {
+      "lat": 41.9009778,
+      "lng": 12.4832848,
+      "osm": "https://www.openstreetmap.org/relation/13448560",
+      "label": "Fontana di Trevi, Piazza di Trevi, Trevi, Municipio Roma I, Roma, Roma Capitale, Lazio, 00187, Italia"
+    }
+  },
+  {
+    "id": "rom-vatican",
+    "wikidata": "https://www.wikidata.org/wiki/Q182955",
+    "label": "musées du Vatican",
+    "labelCs": "Vatikánská muzea",
+    "wikidataCoords": {
+      "lat": 41.906388888889,
+      "lng": 12.454444444444
+    },
+    "website": "http://www.museivaticani.va",
+    "frwiki": "Musées du Vatican",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Mura_vaticane_-_ingresso_ai_Musei_00410.JPG/1280px-Mura_vaticane_-_ingresso_ai_Musei_00410.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "user:Lalupa",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mura_vaticane_-_ingresso_ai_Musei_00410.JPG"
+    },
+    "osm": {
+      "lat": 41.7949259,
+      "lng": 12.2488007,
+      "osm": "https://www.openstreetmap.org/node/4599903697",
+      "label": "Musei Vaticani, Via Leonardo da Vinci, Fiumicino, Roma Capitale, Lazio, 00054, Italia"
+    }
+  },
+  {
+    "id": "rom-saint-pierre",
+    "wikidata": "https://www.wikidata.org/wiki/Q12512",
+    "label": "basilique Saint-Pierre",
+    "labelCs": "Bazilika svatého Petra",
+    "wikidataCoords": {
+      "lat": 41.90222222222222,
+      "lng": 12.453416666666667
+    },
+    "website": "https://www.basilicasanpietro.va/",
+    "frwiki": "Basilique Saint-Pierre",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg/1280px-Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Alvesgaspar",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basilica_di_San_Pietro_in_Vaticano_September_2015-1a.jpg"
+    },
+    "osm": {
+      "lat": 41.893851,
+      "lng": 12.4931577,
+      "osm": "https://www.openstreetmap.org/way/201882369",
+      "label": "Basilica di San Pietro in Vincoli, 4/a, Piazza di San Pietro in Vincoli, Monti, Municipio Roma I, Roma, Roma Capitale, Lazio, 00184, Italia"
+    }
+  },
+  {
+    "id": "rom-navone",
+    "wikidata": "https://www.wikidata.org/wiki/Q463400",
+    "label": "piazza Navona",
+    "labelCs": "Piazza Navona",
+    "wikidataCoords": {
+      "lat": 41.89871,
+      "lng": 12.47316
+    },
+    "website": null,
+    "frwiki": "Piazza Navona",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/Paolo_Monti_-_Servizio_fotografico_%28Roma%2C_1966%29_-_BEIC_6329173.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Paolo Monti",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paolo_Monti_-_Servizio_fotografico_(Roma,_1966)_-_BEIC_6329173.jpg"
+    },
+    "osm": {
+      "lat": 41.8989282,
+      "lng": 12.4731178,
+      "osm": "https://www.openstreetmap.org/way/4247138",
+      "label": "Piazza Navona, Parione, Municipio Roma I, Roma, Roma Capitale, Lazio, Italia"
+    }
+  },
+  {
+    "id": "rom-chateau-saint-ange",
+    "wikidata": "https://www.wikidata.org/wiki/Q486382",
+    "label": "château Saint-Ange",
+    "labelCs": "Andělský hrad",
+    "wikidataCoords": {
+      "lat": 41.903044,
+      "lng": 12.466307
+    },
+    "website": "http://www.castelsantangelo.beniculturali.it/",
+    "frwiki": "Château Saint-Ange",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Castel_Sant%27Angelo_at_Night.jpg/1280px-Castel_Sant%27Angelo_at_Night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Livioandronico2013",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castel_Sant%27Angelo_at_Night.jpg"
+    },
+    "osm": {
+      "lat": 41.9031178,
+      "lng": 12.4663427,
+      "osm": "https://www.openstreetmap.org/way/8035487",
+      "label": "Castel Sant’Angelo, Lungotevere Castello, Borgo, Municipio Roma I, Roma, Roma Capitale, Lazio, 00120, Italia"
+    }
+  },
+  {
+    "id": "rom-espagne",
+    "wikidata": "https://www.wikidata.org/wiki/Q848072",
+    "label": "escalier de la Trinité-des-Monts",
+    "labelCs": "Španělské schody",
+    "wikidataCoords": {
+      "lat": 41.90611,
+      "lng": 12.48278
+    },
+    "website": null,
+    "frwiki": "Escalier de la Trinité-des-Monts",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Scalinata_della_Trinit%C3%A0_dei_Monti.jpg/1280px-Scalinata_della_Trinit%C3%A0_dei_Monti.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Hugo DK",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scalinata_della_Trinit%C3%A0_dei_Monti.jpg"
+    },
+    "osm": {
+      "lat": 41.9056392,
+      "lng": 12.482358,
+      "osm": "https://www.openstreetmap.org/relation/13474926",
+      "label": "Piazza di Spagna, Campo Marzio, Municipio Roma I, Roma, Roma Capitale, Lazio, Italia"
+    }
+  },
+  {
+    "id": "rom-villa-borghese",
+    "wikidata": "https://www.wikidata.org/wiki/Q678313",
+    "label": "villa Borghèse",
+    "wikidataCoords": {
+      "lat": 41.913647,
+      "lng": 12.485104
+    },
+    "website": "http://www.sovraintendenzaroma.it/i_luoghi/ville_e_parchi_storici/ville_dei_nobili/villa_borghese",
+    "frwiki": "Villa Borghèse",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Villa_Borghese_-_entrata_2669.JPG/1280px-Villa_Borghese_-_entrata_2669.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "user:Lalupa",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Villa_Borghese_-_entrata_2669.JPG"
+    },
+    "osm": {
+      "lat": 41.9144111,
+      "lng": 12.4848439,
+      "osm": "https://www.openstreetmap.org/relation/2985896",
+      "label": "Villa Borghese, Roma, Roma Capitale, Lazio, Italia"
+    }
+  },
+  {
+    "id": "rom-trastevere",
+    "wikidata": "https://www.wikidata.org/wiki/Q914255",
+    "label": "Trastevere",
+    "labelCs": "Trastevere",
+    "wikidataCoords": {
+      "lat": 41.887222222222,
+      "lng": 12.465555555556
+    },
+    "website": null,
+    "frwiki": "Trastevere",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Santa_Maria_in_Trastevere_fountain.jpg/1280px-Santa_Maria_in_Trastevere_fountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Jensens",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Santa_Maria_in_Trastevere_fountain.jpg"
+    },
+    "osm": {
+      "lat": 41.8911586,
+      "lng": 12.4668459,
+      "osm": "https://www.openstreetmap.org/relation/2529081",
+      "label": "Trastevere, Municipio Roma I, Roma, Roma Capitale, Lazio, Italia"
+    }
+  },
+  {
+    "id": "rom-capitole",
+    "wikidata": "https://www.wikidata.org/wiki/Q333906",
+    "label": "musées du Capitole",
+    "labelCs": "Kapitolská muzea",
+    "wikidataCoords": {
+      "lat": 41.893055555555556,
+      "lng": 12.482777777777777
+    },
+    "website": "https://www.museicapitolini.org/",
+    "frwiki": "Musées du Capitole",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Palazzo_dei_Conservatori_in_Rome_%282%29.jpg/1280px-Palazzo_dei_Conservatori_in_Rome_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Tournasol7",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palazzo_dei_Conservatori_in_Rome_(2).jpg"
+    },
+    "osm": {
+      "lat": 41.8926663,
+      "lng": 12.482201,
+      "osm": "https://www.openstreetmap.org/relation/9909127",
+      "label": "Musei Capitolini, Via del Campidoglio, Campitelli, Municipio Roma I, Roma, Roma Capitale, Lazio, 00187, Italia"
+    }
+  },
+  {
+    "id": "rom-serrure-aventin",
+    "wikidata": "https://www.wikidata.org/wiki/Q2529348",
+    "label": "villa du prieuré de Malte",
+    "wikidataCoords": {
+      "lat": 41.883611111111,
+      "lng": 12.4775
+    },
+    "website": "https://www.orderofmalta.int/es/gobierno/villa-magistral/",
+    "frwiki": "Villa du prieuré de Malte",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Roma_Aventino_Villa_Malta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Gobbler",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roma_Aventino_Villa_Malta.jpg"
+    },
+    "osm": {
+      "lat": 41.8828493,
+      "lng": 12.4785504,
+      "osm": "https://www.openstreetmap.org/way/24534437",
+      "label": "Piazza dei Cavalieri di Malta, Ripa, Municipio Roma I, Roma, Roma Capitale, Lazio, Italia"
+    }
+  },
+  {
+    "id": "rom-jardin-orangers",
+    "wikidata": "https://www.wikidata.org/wiki/Q3763895",
+    "label": "Jardin des Orangers",
+    "wikidataCoords": {
+      "lat": 41.8851,
+      "lng": 12.4804
+    },
+    "website": null,
+    "frwiki": "Jardin des Orangers",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Ripa_-_giardino_degli_aranci_01.JPG/1280px-Ripa_-_giardino_degli_aranci_01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "user:Lalupa",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ripa_-_giardino_degli_aranci_01.JPG"
+    },
+    "osm": {
+      "lat": 41.8849257,
+      "lng": 12.480451,
+      "osm": "https://www.openstreetmap.org/relation/8437974",
+      "label": "Giardino degli Aranci, Ripa, Municipio Roma I, Roma, Roma Capitale, Lazio, Italia"
+    }
+  },
+  {
+    "id": "rom-bouche-verite",
+    "osm": {
+      "lat": 41.8882567,
+      "lng": 12.4815441,
+      "osm": "https://www.openstreetmap.org/node/497186177",
+      "label": "Bocca della Verità, Piazza della Bocca della Verità, Ripa, Municipio Roma I, Roma, Roma Capitale, Lazio, 00153, Italia"
+    }
+  },
+  {
+    "id": "rom-coppede",
+    "osm": {
+      "lat": 41.9183644,
+      "lng": 12.5021894,
+      "osm": "https://www.openstreetmap.org/way/122598070",
+      "label": "Quartiere Coppedè, Trieste, Municipio Roma II, Roma, Roma Capitale, Lazio, Italia"
+    }
+  },
+  {
+    "id": "rom-tortues",
+    "osm": {
+      "lat": 41.8938333,
+      "lng": 12.4775752,
+      "osm": "https://www.openstreetmap.org/way/99368270",
+      "label": "Fontana delle Tartarughe, Piazza Mattei, Sant'Angelo, Municipio Roma I, Roma, Roma Capitale, Lazio, 00186, Italia"
+    }
+  },
+  {
+    "id": "rom-torre-argentina",
+    "wikidata": "https://www.wikidata.org/wiki/Q1541068",
+    "label": "largo di Torre Argentina",
+    "wikidataCoords": {
+      "lat": 41.89528,
+      "lng": 12.47694
+    },
+    "website": null,
+    "frwiki": "Largo di Torre Argentina",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Largo_di_Torre_Argentina_4.jpg/1280px-Largo_di_Torre_Argentina_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Wknight94",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Largo_di_Torre_Argentina_4.jpg"
+    },
+    "osm": {
+      "lat": 41.8953248,
+      "lng": 12.4768796,
+      "osm": "https://www.openstreetmap.org/way/23955329",
+      "label": "Largo di Torre Argentina, Via di San Nicola de' Cesarini, Pigna, Municipio Roma I, Roma, Roma Capitale, Lazio, 00186, Italia"
+    }
+  },
+  {
+    "id": "rom-elephant-minerve",
+    "wikidata": "https://www.wikidata.org/wiki/Q826635",
+    "label": "obélisque de la piazza della Minerva",
+    "wikidataCoords": {
+      "lat": 41.89797,
+      "lng": 12.47753
+    },
+    "website": null,
+    "frwiki": "Obélisque de la place de la Minerve",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Elephant_and_Obelisk_-_Bernini.jpg/1280px-Elephant_and_Obelisk_-_Bernini.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Petar Milošević",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Elephant_and_Obelisk_-_Bernini.jpg"
+    },
+    "osm": null
+  },
+  {
+    "id": "rom-pyramide",
+    "wikidata": "https://www.wikidata.org/wiki/Q725404",
+    "label": "pyramide de Cestius",
+    "labelCs": "Cestiova pyramida",
+    "wikidataCoords": {
+      "lat": 41.876388888889,
+      "lng": 12.480833333333
+    },
+    "website": null,
+    "frwiki": "Pyramide de Cestius",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Pyramide_Caio_Cestio_-_Rome_%28IT62%29_-_2021-08-29_-_3.jpg/1280px-Pyramide_Caio_Cestio_-_Rome_%28IT62%29_-_2021-08-29_-_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Chabe01",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyramide_Caio_Cestio_-_Rome_(IT62)_-_2021-08-29_-_3.jpg"
+    },
+    "osm": {
+      "lat": 41.878441,
+      "lng": 12.4828485,
+      "osm": "https://www.openstreetmap.org/node/12069396994",
+      "label": "BikeSquare Roma Ebike Rental, 33, Viale della Piramide Cestia, San Saba, Municipio Roma I, Roma, Roma Capitale, Lazio, 00153, Italia"
+    }
+  },
+  {
+    "id": "rom-da-enzo",
+    "osm": {
+      "lat": 41.8880864,
+      "lng": 12.477807,
+      "osm": "https://www.openstreetmap.org/node/1833917665",
+      "label": "Da Enzo, 29, Via dei Vascellari, Trastevere, Municipio Roma I, Roma, Roma Capitale, Lazio, 00153, Italia"
+    }
+  },
+  {
+    "id": "rom-da-baffetto",
+    "osm": {
+      "lat": 41.8983047,
+      "lng": 12.4703507,
+      "osm": "https://www.openstreetmap.org/node/550325597",
+      "label": "Il Baffetto, 114, Via del Governo Vecchio, Parione, Municipio Roma I, Roma, Roma Capitale, Lazio, 00186, Italia"
+    }
+  },
+  {
+    "id": "rom-roscioli-forno",
+    "osm": {
+      "lat": 41.8946562,
+      "lng": 12.4745854,
+      "osm": "https://www.openstreetmap.org/node/6920380585",
+      "label": "Antico Forno Roscioli, 34, Via dei Chiavari, Sant'Eustachio, Municipio Roma I, Roma, Roma Capitale, Lazio, 00186, Italia"
+    }
+  },
+  {
+    "id": "rom-pizzarium",
+    "osm": {
+      "lat": 41.9066975,
+      "lng": 12.4466606,
+      "osm": "https://www.openstreetmap.org/node/761341454",
+      "label": "Bonci Pizzarium, 43, Via della Meloria, Municipio Roma I, Roma, Roma Capitale, Lazio, 00136, Italia"
+    }
+  },
+  {
+    "id": "rom-giolitti",
+    "osm": {
+      "lat": 41.9010573,
+      "lng": 12.4772481,
+      "osm": "https://www.openstreetmap.org/node/32631124",
+      "label": "Giolitti, 40, Via degli Uffici del Vicario, Colonna, Municipio Roma I, Roma, Roma Capitale, Lazio, 00186, Italia"
+    }
+  },
+  {
+    "id": "rom-trapizzino",
+    "osm": {
+      "lat": 41.8914619,
+      "lng": 12.4699126,
+      "osm": "https://www.openstreetmap.org/node/1987147392",
+      "label": "Trapizzino, 46, Piazza Trilussa, Trastevere, Municipio Roma I, Roma, Roma Capitale, Lazio, 00186, Italia"
+    }
+  }
+]

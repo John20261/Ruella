@@ -1,0 +1,411 @@
+[
+  {
+    "id": "ams-rijksmuseum",
+    "wikidata": "https://www.wikidata.org/wiki/Q190804",
+    "label": "Rijksmuseum",
+    "labelCs": "Rijksmuseum",
+    "wikidataCoords": {
+      "lat": 52.36,
+      "lng": 4.885277777777778
+    },
+    "website": "https://www.rijksmuseum.nl/",
+    "frwiki": "Rijksmuseum Amsterdam",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Rijksmuseum_in_Amsterdam.jpg/1280px-Rijksmuseum_in_Amsterdam.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Marco Almbauer",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rijksmuseum_in_Amsterdam.jpg"
+    },
+    "osm": {
+      "lat": 52.3598431,
+      "lng": 4.8850395,
+      "osm": "https://www.openstreetmap.org/way/29989787",
+      "label": "Rijksmuseum, Hobbemastraat, Museumkwartier, Oud-Zuid, Zuid, Amsterdam, Noord-Holland, Nederland, 1071 CN, Nederland"
+    }
+  },
+  {
+    "id": "ams-van-gogh",
+    "wikidata": "https://www.wikidata.org/wiki/Q224124",
+    "label": "musée Van-Gogh",
+    "labelCs": "Van Goghovo muzeum",
+    "wikidataCoords": {
+      "lat": 52.358333333333,
+      "lng": 4.8811111111111
+    },
+    "website": "http://www.vangoghmuseum.nl/",
+    "frwiki": "Musée Van-Gogh",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Van_Gogh_Museum.jpg/1280px-Van_Gogh_Museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Warrox",
+      "license": "CC BY 2.5",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Van_Gogh_Museum.jpg"
+    },
+    "osm": {
+      "lat": 52.3583673,
+      "lng": 4.88109,
+      "osm": "https://www.openstreetmap.org/relation/6577680",
+      "label": "Van Gogh Museum, 7, Paulus Potterstraat, Museumkwartier, Oud-Zuid, Zuid, Amsterdam, Noord-Holland, Nederland, 1071 CX, Nederland"
+    }
+  },
+  {
+    "id": "ams-anne-frank",
+    "wikidata": "https://www.wikidata.org/wiki/Q165366",
+    "label": "maison Anne Frank",
+    "labelCs": "Dům Anne Frankové",
+    "wikidataCoords": {
+      "lat": 52.3751472,
+      "lng": 4.8840398
+    },
+    "website": "http://www.annefrank.org/",
+    "frwiki": "Maison Anne Frank",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Amsterdam_%28Paises_Bajos%29_%2815316045410%29.jpg/1280px-Amsterdam_%28Paises_Bajos%29_%2815316045410%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Jose A.",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam_(Paises_Bajos)_(15316045410).jpg"
+    },
+    "osm": {
+      "lat": 52.3751558,
+      "lng": 4.8840807,
+      "osm": "https://www.openstreetmap.org/way/601081859",
+      "label": "Anne Frank Huis, 267, Prinsengracht, Grachtengordel, Centrum, Amsterdam, Noord-Holland, Nederland, 1016 GV, Nederland"
+    }
+  },
+  {
+    "id": "ams-canaux",
+    "osm": {
+      "lat": 52.371979,
+      "lng": 4.8847268,
+      "osm": "https://www.openstreetmap.org/way/222278733",
+      "label": "Grachtengordel van Amsterdam, Haarlemmer Houttuinen, Centrum, Amsterdam, Noord-Holland, Nederland, 1013 GM, Nederland"
+    }
+  },
+  {
+    "id": "ams-dam",
+    "wikidata": "https://www.wikidata.org/wiki/Q1056152",
+    "label": "palais royal d'Amsterdam",
+    "labelCs": "Královský palác v Amsterdamu",
+    "wikidataCoords": {
+      "lat": 52.37316666666667,
+      "lng": 4.891361111111111
+    },
+    "website": "https://www.paleisamsterdam.nl/en/",
+    "frwiki": "Palais royal d'Amsterdam",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Palacio_Real%2C_%C3%81msterdam%2C_Pa%C3%ADses_Bajos%2C_2016-05-30%2C_DD_07-09_HDR.jpg/1280px-Palacio_Real%2C_%C3%81msterdam%2C_Pa%C3%ADses_Bajos%2C_2016-05-30%2C_DD_07-09_HDR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palacio_Real,_%C3%81msterdam,_Pa%C3%ADses_Bajos,_2016-05-30,_DD_07-09_HDR.jpg"
+    },
+    "osm": {
+      "lat": 52.3731449,
+      "lng": 4.8913363,
+      "osm": "https://www.openstreetmap.org/relation/3580875",
+      "label": "Koninklijk Paleis, 147, Nieuwezijds Voorburgwal, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 RJ, Nederland"
+    }
+  },
+  {
+    "id": "ams-vondelpark",
+    "wikidata": "https://www.wikidata.org/wiki/Q1419691",
+    "label": "Vondelpark",
+    "labelCs": "Vondelpark",
+    "wikidataCoords": {
+      "lat": 52.356944444444,
+      "lng": 4.8663888888889
+    },
+    "website": "http://www.hetvondelpark.net/",
+    "frwiki": "Vondelpark",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg/1280px-Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Dguendel",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amsterdam,_Vondelpark,_at_the_pond-2.jpg"
+    },
+    "osm": {
+      "lat": 52.3571974,
+      "lng": 4.864119,
+      "osm": "https://www.openstreetmap.org/relation/17080648",
+      "label": "Vondelpark, Zuid, Amsterdam, Noord-Holland, Nederland"
+    }
+  },
+  {
+    "id": "ams-nemo",
+    "wikidata": "https://www.wikidata.org/wiki/Q1422000",
+    "label": "NEMO",
+    "labelCs": "NEMO",
+    "wikidataCoords": {
+      "lat": 52.374106,
+      "lng": 4.912392
+    },
+    "website": "http://www.nemosciencemuseum.nl/",
+    "frwiki": "NEMO (Amsterdam)",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/NEMO_%28Amsterdam%29.jpg/1280px-NEMO_%28Amsterdam%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Gamekeeper at Dutch Wikipedia",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NEMO_(Amsterdam).jpg"
+    },
+    "osm": {
+      "lat": 52.3738532,
+      "lng": 4.9121113,
+      "osm": "https://www.openstreetmap.org/node/2741083161",
+      "label": "NEMO Science Museum, 2, Oosterdok, Rapenburg, Nieuwmarkt/Lastage, Centrum, Amsterdam, Noord-Holland, Nederland, 1011 VX, Nederland"
+    }
+  },
+  {
+    "id": "ams-artis",
+    "osm": {
+      "lat": 52.3662382,
+      "lng": 4.9165461,
+      "osm": "https://www.openstreetmap.org/way/4366723",
+      "label": "Artis, 38-40, Plantage Kerklaan, Plantage, Centrum, Amsterdam, Noord-Holland, Nederland, 1018 CZ, Nederland"
+    }
+  },
+  {
+    "id": "ams-maison-rembrandt",
+    "wikidata": "https://www.wikidata.org/wiki/Q277316",
+    "label": "musée de la maison de Rembrandt",
+    "labelCs": "Rembrandtův dům",
+    "wikidataCoords": {
+      "lat": 52.369444,
+      "lng": 4.901389
+    },
+    "website": "https://www.rembrandthuis.nl/nl/",
+    "frwiki": "Musée de la maison de Rembrandt",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Rembrandshuis.jpg/1280px-Rembrandshuis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "14:43, 17 October 2006",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rembrandshuis.jpg"
+    },
+    "osm": null
+  },
+  {
+    "id": "ams-a-dam",
+    "osm": {
+      "lat": 52.3838564,
+      "lng": 4.9021028,
+      "osm": "https://www.openstreetmap.org/node/4382053996",
+      "label": "A'dam Lookout, Overhoeksplein, Overhoeks, Noord, Amsterdam, Noord-Holland, Nederland, 1031 KS, Nederland"
+    }
+  },
+  {
+    "id": "ams-jordaan",
+    "wikidata": "https://www.wikidata.org/wiki/Q1401387",
+    "label": "Jordaan",
+    "wikidataCoords": {
+      "lat": 52.37917,
+      "lng": 4.88028
+    },
+    "website": null,
+    "frwiki": "Jordaan",
+    "photo": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/42/Canals_of_Amsterdam_-_Jordaan_area.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "No machine-readable author provided. Jonik assumed (based on copyright claims).",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Canals_of_Amsterdam_-_Jordaan_area.jpg"
+    },
+    "osm": {
+      "lat": 52.3754157,
+      "lng": 4.8810958,
+      "osm": "https://www.openstreetmap.org/relation/12011952",
+      "label": "Jordaan, Centrum, Amsterdam, Noord-Holland, Nederland"
+    }
+  },
+  {
+    "id": "ams-scheepvaart",
+    "osm": {
+      "lat": 52.372005,
+      "lng": 4.9149527,
+      "osm": "https://www.openstreetmap.org/way/1287492683",
+      "label": "Het Scheepvaartmuseum, 1, Kattenburgerplein, Marineterrein, Oostelijke Eilanden, Centrum, Amsterdam, Noord-Holland, Nederland, 1018 KK, Nederland"
+    }
+  },
+  {
+    "id": "ams-begijnhof",
+    "wikidata": "https://www.wikidata.org/wiki/Q1629214",
+    "label": "Begijnhof",
+    "wikidataCoords": {
+      "lat": 52.36944444444445,
+      "lng": 4.89
+    },
+    "website": null,
+    "frwiki": "Béguinage d'Amsterdam",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Begijnhof_Amsterdam_P1020930.JPG/1280px-Begijnhof_Amsterdam_P1020930.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "G.Lanting",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Begijnhof_Amsterdam_P1020930.JPG"
+    },
+    "osm": {
+      "lat": 52.3693959,
+      "lng": 4.889956,
+      "osm": "https://www.openstreetmap.org/way/26679394",
+      "label": "Begijnhof, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 WT, Nederland"
+    }
+  },
+  {
+    "id": "ams-marche-fleurs",
+    "wikidata": "https://www.wikidata.org/wiki/Q643079",
+    "label": "Bloemenmarkt",
+    "wikidataCoords": {
+      "lat": 52.366778,
+      "lng": 4.891347
+    },
+    "website": null,
+    "frwiki": "Bloemenmarkt",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/SingelBloemenmarkt.jpg/1280px-SingelBloemenmarkt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Massimo Catarinella",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SingelBloemenmarkt.jpg"
+    },
+    "osm": {
+      "lat": 52.3669308,
+      "lng": 4.8907645,
+      "osm": "https://www.openstreetmap.org/way/145953534",
+      "label": "Bloemenmarkt, Muntplein, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 WR, Nederland"
+    }
+  },
+  {
+    "id": "ams-maisons-dansantes",
+    "wikidata": "https://www.wikidata.org/wiki/Q901461",
+    "label": "Damrak",
+    "wikidataCoords": {
+      "lat": 52.376071,
+      "lng": 4.897113
+    },
+    "website": null,
+    "frwiki": "Damrak",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Damrak.jpg/1280px-Damrak.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "M.Minderhoud",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Damrak.jpg"
+    },
+    "osm": {
+      "lat": 52.3761096,
+      "lng": 4.8980545,
+      "osm": "https://www.openstreetmap.org/way/29474840",
+      "label": "Damrak, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 JP, Nederland"
+    }
+  },
+  {
+    "id": "ams-magere-brug",
+    "wikidata": "https://www.wikidata.org/wiki/Q1344400",
+    "label": "Magere Brug",
+    "labelCs": "Magere Brug",
+    "wikidataCoords": {
+      "lat": 52.363586,
+      "lng": 4.902357
+    },
+    "website": null,
+    "frwiki": "Magere Brug",
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Magere_Brug.jpg/1280px-Magere_Brug.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "S Sepp",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magere_Brug.jpg"
+    },
+    "osm": {
+      "lat": 52.3635843,
+      "lng": 4.9023753,
+      "osm": "https://www.openstreetmap.org/way/601096321",
+      "label": "Magere Brug, Amstel, Grachtengordel, Centrum, Amsterdam, Noord-Holland, Nederland, 1017 AL, Nederland"
+    }
+  },
+  {
+    "id": "ams-moulin-gooyer",
+    "osm": null
+  },
+  {
+    "id": "ams-negen-straatjes",
+    "osm": {
+      "lat": 52.3688508,
+      "lng": 4.8849938,
+      "osm": "https://www.openstreetmap.org/relation/17947340",
+      "label": "De 9 Straatjes, Grachtengordel, Centrum, Amsterdam, Noord-Holland, Nederland"
+    }
+  },
+  {
+    "id": "ams-pont-bicycle",
+    "wikidata": "https://www.wikidata.org/wiki/Q111657629",
+    "label": "Fietsenstalling Stationsplein",
+    "wikidataCoords": {
+      "lat": 52.378,
+      "lng": 4.898138888888889
+    },
+    "website": "https://www.amsterdam.nl/projecten/deentree/deelproject/ondergrondse-fietsenstalling",
+    "frwiki": null,
+    "photo": {
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Fietsenstalling_voor_Station_Amsterdam_Centraal_%283%29.jpg/1280px-Fietsenstalling_voor_Station_Amsterdam_Centraal_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Eriksw",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fietsenstalling_voor_Station_Amsterdam_Centraal_(3).jpg"
+    },
+    "osm": {
+      "lat": 52.3779706,
+      "lng": 4.8983297,
+      "osm": "https://www.openstreetmap.org/way/704340770",
+      "label": "Fietsenstalling Stationsplein, Sint Nicolaasbrug, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 AC, Nederland"
+    }
+  },
+  {
+    "id": "ams-ferry-noord",
+    "osm": null
+  },
+  {
+    "id": "ams-foodhallen",
+    "osm": {
+      "lat": 52.3669479,
+      "lng": 4.8682,
+      "osm": "https://www.openstreetmap.org/way/309944961",
+      "label": "Foodhallen, Hannie Dankbaarpassage, Kinkerbuurt, West, Amsterdam, Noord-Holland, Nederland, 1053 EH, Nederland"
+    }
+  },
+  {
+    "id": "ams-pancakes-amsterdam",
+    "osm": {
+      "lat": 52.3704712,
+      "lng": 4.8832353,
+      "osm": "https://www.openstreetmap.org/node/475217092",
+      "label": "Pancakes Amsterdam, 38, Berenstraat, De 9 Straatjes, Grachtengordel, Centrum, Amsterdam, Noord-Holland, Nederland, 1016 GH, Nederland"
+    }
+  },
+  {
+    "id": "ams-winkel-43",
+    "osm": {
+      "lat": 52.3790841,
+      "lng": 4.8862338,
+      "osm": "https://www.openstreetmap.org/node/13404073479",
+      "label": "Winkel 43, 43, Noordermarkt, Jordaan, Centrum, Amsterdam, Noord-Holland, Nederland, 1015 NA, Nederland"
+    }
+  },
+  {
+    "id": "ams-haesje-claes",
+    "osm": {
+      "lat": 52.3698955,
+      "lng": 4.8891296,
+      "osm": "https://www.openstreetmap.org/node/459976907",
+      "label": "Haesje Claes, 273, Spuistraat, Burgwallen-Nieuwe Zijde, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 VR, Nederland"
+    }
+  },
+  {
+    "id": "ams-vleminckx",
+    "osm": {
+      "lat": 52.3678977,
+      "lng": 4.8910171,
+      "osm": "https://www.openstreetmap.org/node/432862176",
+      "label": "Vlaams Friethuis Vleminckx, 33, Voetboogstraat, Centrum, Amsterdam, Noord-Holland, Nederland, 1012 XK, Nederland"
+    }
+  },
+  {
+    "id": "ams-stubbe-haring",
+    "osm": {
+      "lat": 52.3790639,
+      "lng": 4.8942367,
+      "osm": "https://www.openstreetmap.org/node/5203239222",
+      "label": "Stubbe's Haring, 1013GA, Singel, Centrum, Amsterdam, Noord-Holland, Nederland, 1013 GA, Nederland"
+    }
+  }
+]
