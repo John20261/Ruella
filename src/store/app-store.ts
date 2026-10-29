@@ -6,9 +6,9 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useSyncExternalStore } from 'react';
 
 import { getPlace, getPlaces } from '@/lib/catalog';
-import { computeTimes, newStop, rainSwap } from '@/lib/planner';
+import { computeTimes, insertStop, rainSwap } from '@/lib/planner';
 import { toTime } from '@/lib/schedule';
-import type { AppState, Profile, Trip, TripDay, Visit } from './types';
+import type { AppState, Expense, MealBudget, Profile, Trip, TripDay, Visit } from './types';
 
 const KEY = 'ruella.state.v1';
 
@@ -189,10 +189,33 @@ export const actions = {
     editDay(tripId, dayIndex, (d) => ({ ...d, stops: d.stops.filter((x) => x.id !== stopId) }));
   },
 
+  /** Ajoute un lieu à une journée, à l'endroit qui fait le moins de détour. */
   addPlaceToDay(tripId: string, dayIndex: number, placeId: string) {
-    editDay(tripId, dayIndex, (d) =>
-      d.stops.some((x) => x.placeId === placeId) ? d : { ...d, stops: [...d.stops, newStop(placeId)] },
-    );
+    setState((s) => {
+      const trip = s.trips.find((t) => t.id === tripId);
+      if (!trip) return s;
+      return { ...s, trips: updateDay(s.trips, tripId, dayIndex, (d) => insertStop(d, trip.base, placeId, getPlace)) };
+    });
+  },
+
+  setMealBudget(tripId: string, mealBudget: MealBudget) {
+    setState((s) => ({ ...s, trips: s.trips.map((t) => (t.id === tripId ? { ...t, mealBudget } : t)) }));
+  },
+
+  addExpense(tripId: string, e: Omit<Expense, 'id'>) {
+    const expense: Expense = { ...e, id: `x${Date.now().toString(36)}` };
+    setState((s) => ({ ...s, trips: s.trips.map((t) => (t.id === tripId ? { ...t, expenses: [...(t.expenses ?? []), expense] } : t)) }));
+  },
+
+  removeExpense(tripId: string, id: string) {
+    setState((s) => ({ ...s, trips: s.trips.map((t) => (t.id === tripId ? { ...t, expenses: (t.expenses ?? []).filter((x) => x.id !== id) } : t)) }));
+  },
+
+  toggleExpensePaid(tripId: string, id: string) {
+    setState((s) => ({
+      ...s,
+      trips: s.trips.map((t) => (t.id === tripId ? { ...t, expenses: (t.expenses ?? []).map((x) => (x.id === id ? { ...x, paid: !x.paid } : x)) } : t)),
+    }));
   },
 
   setDayStart(tripId: string, dayIndex: number, time: string) {

@@ -14,6 +14,8 @@ import { formatDuration, getPlace, kindLabel } from '@/lib/catalog';
 import { checkPlace } from '@/lib/check';
 import { dayLong } from '@/lib/dates';
 import { directionsUrl } from '@/lib/directions';
+import { familyCostEUR } from '@/lib/budget';
+import { formatEUR, formatLocal } from '@/lib/money';
 import { pointsFor } from '@/lib/rewards';
 import { actions, activeTrip, useApp } from '@/store/app-store';
 import type { Place } from '@/content/types';
@@ -40,6 +42,7 @@ export default function LieuScreen() {
   const [picker, setPicker] = useState(false);
   const trip = useApp(activeTrip);
   const visited = useApp((s) => s.visits.some((v) => v.placeId === id));
+  const travelers = useApp((s) => s.profile.travelers);
   const place = getPlace(id);
 
   if (!place) {
@@ -56,10 +59,18 @@ export default function LieuScreen() {
   const heroTone = isGem ? colors.pills.gem : place.kind === 'restaurant' ? colors.tiles.mint : colors.tiles.blue;
   const verified = place.verification.status === 'verified';
 
+  const family = familyCostEUR(place, travelers);
   const infos = [
     place.hours ? { label: 'Horaires', value: place.hours } : null,
     { label: 'Durée', value: formatDuration(place.durationMin) },
-    place.prices ? { label: 'Prix', value: place.prices } : isGem ? { label: 'Prix', value: 'Gratuit ou presque' } : null,
+    place.prices
+      ? { label: 'Prix', value: place.prices }
+      : place.meal
+        ? { label: 'Repas', value: `≈ ${formatLocal(place.meal.adult, place.meal.currency)} par adulte` }
+        : place.cost && place.cost.adult > 0
+          ? { label: 'Prix (estimé)', value: `Adulte ${formatLocal(place.cost.adult, place.cost.currency)}${place.cost.child !== undefined ? ` · enfant ${place.cost.child ? formatLocal(place.cost.child, place.cost.currency) : 'gratuit'}` : ''}` }
+          : { label: 'Prix', value: 'Gratuit' },
+    family ? { label: 'Pour votre groupe', value: family.amount > 0 ? `${family.estimate ? '≈ ' : ''}${formatEUR(family.amount)}` : 'Gratuit' } : null,
     { label: 'Pour qui', value: ageRange(place.ages) },
   ].filter((x): x is { label: string; value: string } => x !== null);
 
@@ -149,6 +160,15 @@ export default function LieuScreen() {
               </RText>
             </Pressable>
           </View>
+
+          {place.about ? (
+            <View style={[styles.box, { backgroundColor: colors.surface }]}>
+              <RText variant="overline" color={colors.accent}>
+                {place.kind === 'restaurant' ? 'Spécialités et histoire' : isGem ? 'C’est quoi ?' : 'Le lieu en bref'}
+              </RText>
+              <RText>{place.about}</RText>
+            </View>
+          ) : null}
 
           {isGem && place.why ? (
             <View style={[styles.box, { backgroundColor: colors.surface }]}>

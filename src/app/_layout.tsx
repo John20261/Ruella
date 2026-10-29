@@ -11,6 +11,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import { Pressable, Text, View } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { CelebrationHost } from '@/components/celebration';
 import { hydrate, useHydrated } from '@/store/app-store';
@@ -52,6 +53,8 @@ function ThemedNavigation() {
         <Stack.Screen name="ville/[id]" />
         <Stack.Screen name="lieu/[id]" />
         <Stack.Screen name="sejour/nouveau" options={{ presentation: 'modal' }} />
+        <Stack.Screen name="sejour/ajouter" options={{ presentation: 'modal' }} />
+        <Stack.Screen name="budget/[id]" />
         <Stack.Screen name="editeur" />
         <Stack.Screen name="confidentialite" />
       </Stack>
@@ -82,8 +85,10 @@ export default function RootLayout() {
   if ((!loaded && !error) || !ready) return null;
 
   return (
-    <RuellaThemeProvider>
-      <ThemedNavigation />
-    </RuellaThemeProvider>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <RuellaThemeProvider>
+        <ThemedNavigation />
+      </RuellaThemeProvider>
+    </GestureHandlerRootView>
   );
 }

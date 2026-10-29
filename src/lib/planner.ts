@@ -4,6 +4,7 @@
  */
 import { dayTitle } from '@/content/districts';
 import type { AgeBand, Place, Wish } from '@/content/types';
+import { mealEUR } from '@/lib/budget';
 import { centroid, distanceM, leg, type LatLng } from '@/lib/geo';
 import { toMinutes, toTime } from '@/lib/schedule';
 import type { Base, Pace, Stop, TripDay } from '@/store/types';
@@ -22,6 +23,8 @@ export type PlanInput = {
   rainDays?: number[];
   /** Lieux déjà faits : on ne les repropose pas. */
   exclude?: string[];
+  /** Prix maximum d'un déjeuner par adulte, en euros. */
+  mealCapEUR?: number;
 };
 
 /** Minutes d'activité visées par jour (visites + trajets), hors repas. */
@@ -286,7 +289,11 @@ export function planTrip(input: PlanInput): TripDay[] {
 
   const used = new Set<string>(chosen.map((p) => p.id));
   const gems = places.filter((p) => p.kind === 'gem' && !exclude.has(p.id) && suitable(p, ages));
-  const restaurants = places.filter((p) => p.kind === 'restaurant');
+  const allRestaurants = places.filter((p) => p.kind === 'restaurant');
+  const cap = input.mealCapEUR ?? Number.POSITIVE_INFINITY;
+  const affordable = allRestaurants.filter((p) => (mealEUR(p) ?? 0) <= cap);
+  // Budget très serré : on garde au moins les trois adresses les moins chères.
+  const restaurants = affordable.length >= 3 ? affordable : [...allRestaurants].sort((a, b) => (mealEUR(a) ?? 0) - (mealEUR(b) ?? 0)).slice(0, 3);
 
   return groups.map((group, i) => {
     let pool = group;
@@ -364,4 +371,29 @@ export function rainSwap(day: TripDay, base: LatLng, places: Place[], takenIds: 
 
 export function newStop(placeId: string): Stop {
   return { id: stopId(), placeId, time: '00:00', status: 'todo' };
+}
+
+/**
+ * Place une étape ajoutée à la main là où elle coûte le moins de détour,
+ * après les étapes déjà faites.
+ */
+export function insertStop(day: TripDay, base: LatLng, placeId: string, lookup: (id: string) => Place | undefined): TripDay {
+  const place = lookup(placeId);
+  if (!place || day.stops.some((s) => s.placeId === placeId)) return day;
+  const stop = newStop(placeId);
+  const lastDone = day.stops.reduce((acc, s, i) => (s.status === 'done' ? i : acc), -1);
+  let best = day.stops.length;
+  let bestCost = Number.POSITIVE_INFINITY;
+  for (let i = lastDone + 1; i <= day.stops.length; i++) {
+    const a: LatLng = i === 0 ? base : (lookup(day.stops[i - 1].placeId) ?? base);
+    const b = day.stops[i] ? lookup(day.stops[i].placeId) : undefined;
+    const cost = b ? distanceM(a, place) + distanceM(place, b) - distanceM(a, b) : distanceM(a, place);
+    if (cost < bestCost) {
+      bestCost = cost;
+      best = i;
+    }
+  }
+  const stops = [...day.stops];
+  stops.splice(best, 0, stop);
+  return computeTimes({ ...day, stops }, base, lookup);
 }

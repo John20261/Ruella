@@ -3,12 +3,29 @@ import type { Leg, LatLng } from '@/lib/geo';
 
 export type Pace = 'calme' | 'equilibre' | 'intense';
 
-export type Traveler = { id: string; name: string; band: AgeBand };
+export type Traveler = { id: string; name: string; band: AgeBand; /** Âge exact (enfants) : sert au calcul des tarifs. */ age?: number };
+
+/** Budget repas par adulte et par repas. */
+export type MealBudget = 'serre' | 'malin' | 'large' | 'libre';
+
+export type ExpenseCategory = 'train' | 'reservation' | 'transport' | 'autre';
+
+/** Dépense saisie à la main (billet de train, réservation…), en euros. */
+export type Expense = {
+  id: string;
+  label: string;
+  amountEUR: number;
+  category: ExpenseCategory;
+  /** Déjà payé avant le départ (sinon : à prévoir sur place). */
+  paid: boolean;
+  date?: string;
+};
 
 export type Profile = {
   travelers: Traveler[];
   pace: Pace;
   wishes: Wish[];
+  mealBudget?: MealBudget;
   /** Validation automatique quand on arrive sur le lieu (désactivée par défaut). */
   autoCheck: boolean;
   /** Notification du matin avec le programme du jour. */
@@ -43,6 +60,8 @@ export type Trip = {
   createdAt: string;
   base: Base;
   days: TripDay[];
+  mealBudget?: MealBudget;
+  expenses?: Expense[];
 };
 
 export type Visit = {

@@ -35,6 +35,28 @@ export type Verification = {
   sources: string[];
 };
 
+export type Currency = 'CZK' | 'EUR';
+
+/** Prix d'entrée par personne. */
+export type Cost = {
+  currency: Currency;
+  /** Plein tarif adulte (0 = gratuit). */
+  adult: number;
+  /** Tarif enfant ou réduit (par défaut : plein tarif). */
+  child?: number;
+  /** Gratuit avant cet âge (par défaut 6 ans). */
+  freeUnder?: number;
+  /** Tarif enfant jusqu'à cet âge inclus (par défaut 17 ans). */
+  childUntil?: number;
+  /** Billet commun à plusieurs lieux : compté une seule fois par séjour. */
+  group?: string;
+  /** Prix estimé, non relu sur une source officielle. */
+  estimate?: boolean;
+};
+
+/** Prix moyen d'un repas par personne (plat + boisson). */
+export type Meal = { currency: Currency; adult: number; child?: number; estimate?: boolean };
+
 export type Place = {
   id: string;
   cityId: string;
@@ -47,6 +69,10 @@ export type Place = {
   why?: string;
   tip?: string;
   story?: string;
+  /** « C'est quoi ? » : présentation du lieu (spécialités et histoire pour un restaurant). */
+  about?: string;
+  cost?: Cost;
+  meal?: Meal;
   howToFind?: string;
   bestMoment?: string;
   address?: string;
@@ -84,5 +110,22 @@ export type City = {
   bounds: { minLat: number; maxLat: number; minLng: number; maxLng: number };
   /** Centre historique : point de départ par défaut et centrage de la carte. */
   center?: { lat: number; lng: number };
+  transit?: Transit;
   hidden?: boolean;
+};
+
+/** Transports en commun d'une ville. */
+export type Transit = {
+  network: string;
+  currency: Currency;
+  /** Trajet simple (avec correspondances). */
+  single: { label: string; adult: number; child?: number; childFrom?: number; childUntil?: number };
+  /** Pass illimité 24 h. */
+  day: { label: string; adult: number; child?: number };
+  /** Gratuit avant cet âge. */
+  freeUnder: number;
+  howToBuy: string;
+  tips: string[];
+  source: string;
+  verifiedAt?: string;
 };

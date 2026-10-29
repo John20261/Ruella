@@ -1,12 +1,29 @@
+import { pragueAbout } from '@/content/about/prague';
+import { toulouseAbout } from '@/content/about/toulouse';
+import { pragueCosts, pragueMeals, pragueTransit } from '@/content/costs/prague';
+import { toulouseCosts, toulouseMeals, toulouseTransit } from '@/content/costs/toulouse';
 import { prague, praguePlaces } from '@/content/prague';
 import { toulouse, toulousePlaces } from '@/content/toulouse';
-import type { City, Place, PlaceKind } from '@/content/types';
+import type { City, Cost, Meal, Place, PlaceKind } from '@/content/types';
 
-export const cities: City[] = [prague, toulouse];
+export const cities: City[] = [
+  { ...prague, transit: pragueTransit },
+  { ...toulouse, transit: toulouseTransit },
+];
+
+/** Assemble chaque fiche avec sa présentation et ses prix (tenus dans des fichiers séparés). */
+function enrich(places: Place[], about: Record<string, string>, costs: Record<string, Cost>, meals: Record<string, Meal>): Place[] {
+  return places.map((p) => ({
+    ...p,
+    about: p.about ?? about[p.id],
+    cost: p.cost ?? costs[p.id],
+    meal: p.meal ?? meals[p.id],
+  }));
+}
 
 const placesByCity: Record<string, Place[]> = {
-  prague: praguePlaces,
-  toulouse: toulousePlaces,
+  prague: enrich(praguePlaces, pragueAbout, pragueCosts, pragueMeals),
+  toulouse: enrich(toulousePlaces, toulouseAbout, toulouseCosts, toulouseMeals),
 };
 
 /** Catégories affichées dans l'écran « Explorer la ville ». */

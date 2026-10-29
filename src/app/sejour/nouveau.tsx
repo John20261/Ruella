@@ -13,14 +13,19 @@ import { cities, getPlaces } from '@/lib/catalog';
 import { dayLong, dayShort, hour } from '@/lib/dates';
 import { currentPosition } from '@/lib/location';
 import { scheduleMorning } from '@/lib/notifications';
+import { MEAL_BUDGET_LABEL, MEAL_CAP_EUR } from '@/lib/budget';
 import { addDays, planTrip } from '@/lib/planner';
 import { toMinutes, toTime } from '@/lib/schedule';
 import { actions, getState, todayISO, useApp } from '@/store/app-store';
-import type { Base, Pace, Traveler, Trip } from '@/store/types';
+import type { Base, MealBudget, Pace, Traveler, Trip } from '@/store/types';
 import { useRuellaTheme } from '@/theme/theme-context';
 import { fonts, radius, space, touch } from '@/theme/tokens';
 
-const STEPS = ['Où ?', 'Quand ?', 'Qui ?', 'Comment ?', 'Départ'];
+function bandOf(age: number): AgeBand {
+  return age < 8 ? 'under8' : age <= 12 ? '8-12' : age <= 17 ? '13-17' : 'adult';
+}
+
+const STEPS = ['Où ?', 'Quand ?', 'Qui ?', 'Comment ?', 'Budget', 'Départ'];
 
 const SOON = ['Vienne', 'Budapest', 'Lisbonne'];
 
@@ -29,13 +34,6 @@ function cityDetail(id: string): string {
   const gems = places.filter((p) => p.kind === 'gem').length;
   return `${places.length} lieux · ${gems} pépites`;
 }
-
-const BANDS: { band: AgeBand; label: string }[] = [
-  { band: 'adult', label: 'Adulte' },
-  { band: '13-17', label: '13–17 ans' },
-  { band: '8-12', label: '8–12 ans' },
-  { band: 'under8', label: 'Moins de 8 ans' },
-];
 
 const PACES: { pace: Pace; title: string; detail: string; icon: IconName }[] = [
   { pace: 'calme', title: 'Tranquille', detail: 'Environ 5 h 30 de visites, pauses longues', icon: 'walk' },
@@ -93,11 +91,19 @@ export default function NouveauSejour() {
   const [rainDays, setRainDays] = useState<number[]>([]);
   const [locating, setLocating] = useState(false);
   const [busy, setBusy] = useState(false);
+  const [mealBudget, setMealBudget] = useState<MealBudget>(profile.mealBudget ?? 'malin');
 
   const progress = useAnimatedStyle(() => ({ width: withSpring(`${((step + 1) / STEPS.length) * 100}%`, { damping: 18 }) }));
 
   const addTraveler = (band: AgeBand) =>
-    setTravelers((t) => [...t, { id: `t${Date.now().toString(36)}`, name: band === 'adult' ? `Adulte ${t.filter((x) => x.band === 'adult').length + 1}` : `Enfant ${t.filter((x) => x.band !== 'adult').length + 1}`, band }]);
+    setTravelers((t) => [
+      ...t,
+      band === 'adult'
+        ? { id: `t${Date.now().toString(36)}`, name: `Adulte ${t.filter((x) => x.band === 'adult').length + 1}`, band }
+        : { id: `t${Date.now().toString(36)}`, name: `Enfant ${t.filter((x) => x.band !== 'adult').length + 1}`, band: bandOf(10), age: 10 },
+    ]);
+  const setAge = (id: string, age: number) =>
+    setTravelers((list) => list.map((x) => (x.id === id ? { ...x, age, band: bandOf(age) } : x)));
 
   const compose = () => {
     setBusy(true);
@@ -116,9 +122,10 @@ export default function NouveauSejour() {
         base,
         rainDays,
         exclude: [...new Set(getState().visits.map((v) => v.placeId))],
+        mealCapEUR: MEAL_CAP_EUR[mealBudget],
       });
-      const trip: Trip = { id: `trip${Date.now().toString(36)}`, cityId, createdAt: new Date().toISOString(), base, days: planned };
-      actions.setProfile({ travelers, pace, wishes });
+      const trip: Trip = { id: `trip${Date.now().toString(36)}`, cityId, createdAt: new Date().toISOString(), base, days: planned, mealBudget, expenses: [] };
+      actions.setProfile({ travelers, pace, wishes, mealBudget });
       actions.addTrip(trip);
       scheduleMorning(trip, getState().profile.morning);
       router.dismissAll();
@@ -208,13 +215,25 @@ export default function NouveauSejour() {
               {travelers.map((t) => (
                 <View key={t.id} style={[styles.traveler, { backgroundColor: colors.surface }]}>
                   <Icon name="user" size={22} color={colors.textMuted} />
-                  <View style={{ flex: 1 }}>
+                  <View style={{ flex: 1, gap: 6 }}>
                     <RText variant="bodyStrong">{t.name}</RText>
-                    <View style={[styles.wrap, { marginTop: 6 }]}>
-                      {BANDS.map((b) => (
-                        <Toggle key={b.band} small label={b.label} active={t.band === b.band} onPress={() => setTravelers((list) => list.map((x) => (x.id === t.id ? { ...x, band: b.band } : x)))} />
-                      ))}
-                    </View>
+                    {t.band === 'adult' ? (
+                      <RText variant="caption" muted>
+                        Adulte · plein tarif
+                      </RText>
+                    ) : (
+                      <View style={styles.ageRow}>
+                        <Pressable onPress={() => setAge(t.id, Math.max(0, (t.age ?? 10) - 1))} accessibilityRole="button" accessibilityLabel={`${t.name} : un an de moins`} style={[styles.ageBtn, { backgroundColor: colors.surfaceAlt }]}>
+                          <Icon name="left" size={16} />
+                        </Pressable>
+                        <RText variant="heading" style={{ minWidth: 64, textAlign: 'center' }}>
+                          {t.age ?? 10} ans
+                        </RText>
+                        <Pressable onPress={() => setAge(t.id, Math.min(17, (t.age ?? 10) + 1))} accessibilityRole="button" accessibilityLabel={`${t.name} : un an de plus`} style={[styles.ageBtn, { backgroundColor: colors.surfaceAlt }]}>
+                          <Icon name="right" size={16} />
+                        </Pressable>
+                      </View>
+                    )}
                   </View>
                   {travelers.length > 1 ? (
                     <Pressable onPress={() => setTravelers((list) => list.filter((x) => x.id !== t.id))} accessibilityRole="button" accessibilityLabel={`Retirer ${t.name}`} hitSlop={8} style={styles.iconBtn}>
@@ -228,7 +247,7 @@ export default function NouveauSejour() {
                 <Button label="+ Enfant" variant="secondary" style={{ flex: 1 }} onPress={() => addTraveler('8-12')} />
               </View>
               <RText variant="caption" muted>
-                Les âges servent à écarter ce qui ne plaira pas aux plus jeunes. Aucun compte n’est créé pour les enfants.
+                L’âge exact des enfants sert à choisir les visites et à calculer les tarifs réduits. Aucun compte n’est créé pour eux.
               </RText>
             </View>
           ) : null}
@@ -250,6 +269,23 @@ export default function NouveauSejour() {
           ) : null}
 
           {step === 4 ? (
+            <View style={{ gap: space.m }}>
+              <RText muted>Combien voulez-vous dépenser par repas ? Ruella choisit les restaurants en conséquence.</RText>
+              {(Object.keys(MEAL_BUDGET_LABEL) as MealBudget[]).map((k) => (
+                <Option key={k} title={MEAL_BUDGET_LABEL[k].title} detail={MEAL_BUDGET_LABEL[k].detail} icon={k === 'serre' ? 'walk' : k === 'libre' ? 'sparkles' : 'route'} active={mealBudget === k} onPress={() => setMealBudget(k)} />
+              ))}
+              <View style={[styles.note, { backgroundColor: colors.tiles.mint.bg }]}>
+                <RText variant="bodyStrong" color={colors.tiles.mint.ink}>
+                  Un budget complet vous attend
+                </RText>
+                <RText variant="caption" color={colors.tiles.mint.ink}>
+                  Entrées, repas, tickets de tram ou de métro, jour par jour : estimés pour {travelers.length} personne{travelers.length > 1 ? 's' : ''}. Vous pourrez y ajouter vos billets de train et vos réservations.
+                </RText>
+              </View>
+            </View>
+          ) : null}
+
+          {step === 5 ? (
             <View style={{ gap: space.m }}>
               <RText muted>Chaque journée part de là et s’organise autour.</RText>
               <Option
@@ -368,6 +404,9 @@ const styles = StyleSheet.create({
   toggleSmall: { paddingHorizontal: 10, minHeight: 34 },
   traveler: { flexDirection: 'row', alignItems: 'flex-start', gap: space.m, padding: space.m, borderRadius: radius.card },
   iconBtn: { width: 36, height: 36, alignItems: 'center', justifyContent: 'center' },
+  ageRow: { flexDirection: 'row', alignItems: 'center', gap: space.s },
+  ageBtn: { width: 40, height: 40, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
+  note: { borderRadius: radius.card, padding: space.l, gap: 4 },
   stepper: { flexDirection: 'row', alignItems: 'center', gap: space.s, padding: space.m, borderRadius: radius.card },
   stepBtn: { width: touch.min, height: touch.min, borderRadius: 14, alignItems: 'center', justifyContent: 'center' },
   footer: { padding: space.l, borderTopWidth: StyleSheet.hairlineWidth },

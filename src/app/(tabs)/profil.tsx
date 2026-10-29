@@ -13,7 +13,7 @@ import { askLocation } from '@/lib/location';
 import { scheduleMorning } from '@/lib/notifications';
 import { cityPhotos, downloadCity, offlineDate } from '@/lib/offline';
 import { actions, activeTrip, getState, useApp } from '@/store/app-store';
-import type { Pace } from '@/store/types';
+import type { Pace, Traveler } from '@/store/types';
 import { useRuellaTheme, type ThemePreference } from '@/theme/theme-context';
 import { fonts, radius, space, touch } from '@/theme/tokens';
 
@@ -27,8 +27,12 @@ const PACES: { value: Pace; label: string }[] = [
   { value: 'equilibre', label: 'Équilibré' },
   { value: 'intense', label: 'Intense' },
 ];
-const BAND_LABEL: Record<AgeBand, string> = { adult: 'Adulte', '13-17': '13–17 ans', '8-12': '8–12 ans', under8: 'Moins de 8 ans' };
-const BAND_ORDER: AgeBand[] = ['adult', '13-17', '8-12', 'under8'];
+const BAND_LABEL: Record<AgeBand, string> = { adult: 'Adulte', '13-17': '15', '8-12': '10', under8: '4' };
+/** Âge exact pour les enfants (tarifs) ; au-delà de 17 ans : adulte. */
+function withAge(t: Traveler, age: number): Traveler {
+  if (age >= 18) return { ...t, band: 'adult', age: undefined };
+  return { ...t, age, band: age < 8 ? 'under8' : age <= 12 ? '8-12' : '13-17' };
+}
 
 export default function ProfilScreen() {
   const { colors, preference, setPreference } = useRuellaTheme();
@@ -82,21 +86,32 @@ export default function ProfilScreen() {
                 accessibilityLabel={`Prénom du voyageur ${i + 1}`}
                 maxLength={24}
               />
-              <Pressable
-                onPress={() => {
-                  const next = BAND_ORDER[(BAND_ORDER.indexOf(t.band) + 1) % BAND_ORDER.length];
-                  actions.setProfile({ travelers: profile.travelers.map((x) => (x.id === t.id ? { ...x, band: next } : x)) });
-                }}
-                accessibilityRole="button"
-                accessibilityLabel={`Âge de ${t.name} : ${BAND_LABEL[t.band]}. Toucher pour changer`}
-                style={[styles.band, { backgroundColor: colors.surfaceAlt }]}>
-                <RText variant="caption">{BAND_LABEL[t.band]}</RText>
-              </Pressable>
+              <View style={styles.ageRow}>
+                <Pressable
+                  onPress={() => actions.setProfile({ travelers: profile.travelers.map((x) => (x.id === t.id ? withAge(x, x.band === 'adult' ? 17 : Math.max(0, (x.age ?? 10) - 1)) : x)) })}
+                  accessibilityRole="button"
+                  accessibilityLabel={`${t.name} : plus jeune`}
+                  hitSlop={6}
+                  style={[styles.ageBtn, { backgroundColor: colors.surfaceAlt }]}>
+                  <Icon name="left" size={14} />
+                </Pressable>
+                <RText variant="caption" style={{ minWidth: 58, textAlign: 'center' }}>
+                  {t.band === 'adult' ? 'Adulte' : `${t.age ?? BAND_LABEL[t.band]} ans`}
+                </RText>
+                <Pressable
+                  onPress={() => actions.setProfile({ travelers: profile.travelers.map((x) => (x.id === t.id ? withAge(x, x.band === 'adult' ? 18 : (x.age ?? 10) + 1) : x)) })}
+                  accessibilityRole="button"
+                  accessibilityLabel={`${t.name} : plus âgé`}
+                  hitSlop={6}
+                  style={[styles.ageBtn, { backgroundColor: colors.surfaceAlt }]}>
+                  <Icon name="right" size={14} />
+                </Pressable>
+              </View>
             </View>
           ))}
         </View>
         <RText variant="caption" muted>
-          Pas de compte enfant : les âges servent seulement à choisir les visites.
+          Pas de compte enfant : l’âge sert à choisir les visites et à calculer les tarifs réduits du budget.
         </RText>
       </Section>
 
@@ -271,7 +286,8 @@ const styles = StyleSheet.create({
     gap: space.s,
   },
   input: { flex: 1, fontFamily: fonts.bold, fontSize: 15, minHeight: touch.min, paddingVertical: 0 },
-  band: { paddingHorizontal: 12, minHeight: 34, borderRadius: radius.pill, justifyContent: 'center' },
+  ageRow: { flexDirection: 'row', alignItems: 'center', gap: 6 },
+  ageBtn: { width: 32, height: 32, borderRadius: 10, alignItems: 'center', justifyContent: 'center' },
   segment: { flexDirection: 'row', borderRadius: 12, padding: 3 },
   segmentItem: { minHeight: 36, paddingHorizontal: 10, borderRadius: 9, justifyContent: 'center' },
   segmentText: { fontFamily: fonts.bold, fontSize: 12 },

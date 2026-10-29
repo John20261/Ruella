@@ -804,7 +804,7 @@ export const praguePlaces: Place[] = [
     name: "Funiculaire de Petřín",
     localName: "Lanová dráha na Petřín",
     hook: "Le petit train à crémaillère qui grimpe la colline de Petřín au milieu des vergers.",
-    tip: "Il accepte les tickets de transport ordinaires : pas besoin de billet spécial.",
+    tip: "Les billets 30 et 90 min ne sont pas valables : prenez un billet funiculaire au distributeur de la station ou utilisez un pass 24 h ou 72 h.",
     address: "Újezd",
     lat: 50.082433,
     lng: 14.400319,
@@ -816,7 +816,6 @@ export const praguePlaces: Place[] = [
     ages: ['under8', '8-12', '13-17', 'adult'],
     wishes: ['enfants', 'vues'],
     durationMin: 15,
-    prices: "Ticket de transport en commun ordinaire",
     ticketUrl: "https://www.dpp.cz/en",
   },
   {

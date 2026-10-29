@@ -1,8 +1,8 @@
 import { Image } from 'expo-image';
 import { router, useFocusEffect } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { Dimensions, Linking, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
-import Animated, { FadeIn, useAnimatedScrollHandler, useAnimatedStyle, useSharedValue, interpolate, Extrapolation } from 'react-native-reanimated';
+import { Dimensions, Linking, Platform, Pressable, ScrollView, StyleSheet, View, type ScrollViewInstance } from 'react-native';
+import Animated, { FadeIn, useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { CityMap, type MapMarker } from '@/components/city-map';
@@ -14,12 +14,14 @@ import { Pill } from '@/components/ui/pill';
 import { RText } from '@/components/ui/r-text';
 import { Sheet, SheetItem } from '@/components/ui/sheet';
 import { Tile } from '@/components/ui/tile';
-import { cities, formatDuration, getPlace, kindLabel } from '@/lib/catalog';
+import { computeBudget } from '@/lib/budget';
+import { cities, formatDuration, getCity, getPlace, kindLabel } from '@/lib/catalog';
 import { checkStop } from '@/lib/check';
 import { dayLong, dayShort, hour } from '@/lib/dates';
 import { directionsUrl } from '@/lib/directions';
 import { distanceM } from '@/lib/geo';
 import { useUserLocation } from '@/lib/location';
+import { formatEUR } from '@/lib/money';
 import { dayEnd } from '@/lib/planner';
 import { pointsFor } from '@/lib/rewards';
 import { actions, activeTrip, defaultDayIndex, useApp, useHydrated } from '@/store/app-store';
@@ -27,7 +29,10 @@ import type { Stop } from '@/store/types';
 import { useRuellaTheme } from '@/theme/theme-context';
 import { fonts, radius, space } from '@/theme/tokens';
 
-const MAP_H = Math.round(Dimensions.get('window').height * 0.46);
+const SCREEN_H = Dimensions.get('window').height;
+/** Haut de la feuille de la journée : carte normale, ou carte agrandie. */
+const SHEET_TOP = Math.round(SCREEN_H * 0.44);
+const SHEET_TOP_OPEN = SCREEN_H - 190;
 
 export default function JourneeScreen() {
   const hydrated = useHydrated();
@@ -46,7 +51,7 @@ function DayView() {
   const [dayIndex, setDayIndex] = useState(() => defaultDayIndex(trip));
   const [menu, setMenu] = useState<Stop | null>(null);
   const [focused, setFocused] = useState(true);
-  const scrollRef = useRef<Animated.ScrollView>(null);
+  const scrollRef = useRef<ScrollViewInstance>(null);
   const rowY = useRef(new Map<string, number>());
 
   useFocusEffect(
@@ -88,39 +93,46 @@ function DayView() {
     if (p && distanceM(user, p) <= p.radiusM) checkStop(trip.id, dayIndex, next.id, p.id, true);
   }, [autoCheck, user, next, trip.id, dayIndex]);
 
-  const scrollY = useSharedValue(0);
-  const onScroll = useAnimatedScrollHandler((e) => {
-    scrollY.value = e.contentOffset.y;
-  });
-  const mapStyle = useAnimatedStyle(() => ({
-    transform: [{ translateY: interpolate(scrollY.value, [-200, 0, MAP_H], [60, 0, -MAP_H * 0.45], Extrapolation.CLAMP) }],
-  }));
-  const barStyle = useAnimatedStyle(() => ({ opacity: interpolate(scrollY.value, [0, MAP_H * 0.6], [1, 0], Extrapolation.CLAMP) }));
+  // La carte occupe tout l'écran ; la feuille de la journée glisse par-dessus.
+  const [mapOpen, setMapOpen] = useState(false);
+  const sheetTop = useSharedValue(SHEET_TOP);
+  useEffect(() => {
+    sheetTop.set(withSpring(mapOpen ? SHEET_TOP_OPEN : SHEET_TOP, { damping: 20, stiffness: 180 }));
+  }, [mapOpen, sheetTop]);
+  const sheetStyle = useAnimatedStyle(() => ({ top: sheetTop.get() }));
+  const visibleBottom = SCREEN_H - (mapOpen ? SHEET_TOP_OPEN : SHEET_TOP);
 
   const scrollToStop = (id: string) => {
+    setMapOpen(false);
     const y = rowY.current.get(id);
-    if (y !== undefined) scrollRef.current?.scrollTo({ y: Math.max(0, y + MAP_H - 180), animated: true });
+    if (y !== undefined) scrollRef.current?.scrollTo({ y: Math.max(0, y - 40), animated: true });
   };
+
+  const travelers = useApp((s) => s.profile.travelers);
+  const city = getCity(trip.cityId);
+  const budget = useMemo(() => computeBudget(trip, city, travelers, getPlace), [trip, city, travelers]);
+  const dayCost = budget.byDay[dayIndex]?.amount ?? 0;
 
   const menuPlace = menu ? getPlace(menu.placeId) : undefined;
   const menuIndex = menu ? stops.findIndex((s) => s.id === menu.id) : -1;
   const close = () => setMenu(null);
+  const webTop = Platform.OS === 'web' ? 64 : 0;
 
   return (
     <View style={[styles.root, { backgroundColor: colors.background }]}>
-      <Animated.View style={[styles.mapWrap, mapStyle]}>
-        <CityMap
-          cityId={trip.cityId}
-          markers={markers}
-          base={trip.base}
-          user={user}
-          insetTop={insets.top + 76 + (Platform.OS === 'web' ? 64 : 0)}
-          onSelect={scrollToStop}
-          style={{ height: MAP_H + 40 }}
-        />
-      </Animated.View>
+      <CityMap
+        cityId={trip.cityId}
+        markers={markers}
+        base={trip.base}
+        user={user}
+        insetTop={insets.top + 76 + webTop}
+        insetBottom={visibleBottom}
+        controlsBottom={visibleBottom + 12}
+        onSelect={scrollToStop}
+        style={StyleSheet.absoluteFill}
+      />
 
-      <Animated.View style={[styles.topBar, { top: insets.top + space.s + (Platform.OS === 'web' ? 64 : 0) }, barStyle]}>
+      <View style={[styles.topBar, { top: insets.top + space.s + webTop }]}>
         <Glass rounded={22}>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.days}>
             {trip.days.map((d, i) => {
@@ -146,17 +158,23 @@ function DayView() {
             })}
           </ScrollView>
         </Glass>
-      </Animated.View>
+      </View>
 
-      <Animated.ScrollView
-        ref={scrollRef}
-        onScroll={onScroll}
-        scrollEventThrottle={16}
-        contentContainerStyle={{ paddingTop: MAP_H - 28, paddingBottom: 140 }}
-        showsVerticalScrollIndicator={false}>
-        <View style={[styles.sheet, { backgroundColor: colors.background }]}>
+      <Animated.View style={[styles.sheetWrap, { backgroundColor: colors.background }, sheetStyle]}>
+        <Pressable
+          onPress={() => setMapOpen((o) => !o)}
+          accessibilityRole="button"
+          accessibilityLabel={mapOpen ? 'Revenir à la journée' : 'Agrandir la carte'}
+          style={styles.handleZone}>
           <View style={[styles.handle, { backgroundColor: colors.border }]} />
-
+          <View style={styles.handleRow}>
+            <Icon name={mapOpen ? 'up' : 'down'} size={16} color={colors.textMuted} />
+            <RText variant="caption" muted>
+              {mapOpen ? 'Revenir à la journée' : 'Agrandir la carte · glissez et pincez pour explorer'}
+            </RText>
+          </View>
+        </Pressable>
+        <ScrollView ref={scrollRef} contentContainerStyle={styles.sheetContent} showsVerticalScrollIndicator={false}>
           <Animated.View key={day.date} entering={FadeIn.duration(250)} style={{ gap: space.m }}>
             <View style={{ gap: 4 }}>
               <View style={styles.rowBetween}>
@@ -168,18 +186,24 @@ function DayView() {
               <RText variant="placeLarge" accessibilityRole="header">
                 {day.title}
               </RText>
+              <RText variant="caption" muted>
+                Départ {hour(day.startTime)} · fin vers {hour(dayEnd(day, getPlace))}
+              </RText>
             </View>
 
             <View style={styles.tiles}>
               <Tile label="Étapes" value={`${doneCount}/${live.length}`} tone={colors.tiles.blue} />
               <Tile label="Points du jour" value={String(dayPoints)} tone={colors.tiles.lilac} />
-              <Tile label="Fin estimée" value={hour(dayEnd(day, getPlace))} tone={colors.tiles.gold} />
+              <Pressable style={{ flex: 1 }} onPress={() => router.push({ pathname: '/budget/[id]', params: { id: trip.id, day: String(dayIndex) } })} accessibilityRole="button" accessibilityLabel={`Budget sur place du jour : environ ${formatEUR(dayCost)}. Ouvrir le budget`}>
+                <Tile label="Sur place" value={`≈ ${formatEUR(dayCost)}`} detail="Voir le budget" tone={colors.tiles.mint} />
+              </Pressable>
             </View>
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.chips}>
-              <Chip icon="play" label={`Je pars maintenant`} onPress={() => actions.startNow(trip.id, dayIndex)} detail={`départ ${hour(day.startTime)}`} />
+              <Chip icon="plus" label="Ajouter une étape" detail="visite, pépite, resto" onPress={() => router.push({ pathname: '/sejour/ajouter', params: { trip: trip.id, day: String(dayIndex) } })} />
+              <Chip icon="play" label="Je pars maintenant" onPress={() => actions.startNow(trip.id, dayIndex)} detail={`départ ${hour(day.startTime)}`} />
               <Chip icon="rain" label={day.rain ? 'Plan pluie actif' : 'Il pleut ?'} detail={day.rain ? 'refaire' : 'tout à l’abri'} onPress={() => actions.rainPlan(trip.id, dayIndex)} />
-              <Chip icon="plus" label="Ajouter" detail="une visite" onPress={() => router.push({ pathname: '/ville/[id]', params: { id: trip.cityId } })} />
+              <Chip icon="tram" label="Transports" detail="billets et prix" onPress={() => router.push({ pathname: '/budget/[id]', params: { id: trip.id, day: String(dayIndex) } })} />
             </ScrollView>
 
             {next ? <NextCard stop={next} onCheck={() => checkStop(trip.id, dayIndex, next.id, next.placeId)} /> : <DayDone empty={live.length === 0} />}
@@ -205,12 +229,18 @@ function DayView() {
               })}
             </View>
 
-            <RText variant="caption" muted style={{ textAlign: 'center', marginTop: space.s }}>
+            <Button
+              label="Ajouter une étape à cette journée"
+              variant="secondary"
+              icon={<Icon name="plus" size={18} />}
+              onPress={() => router.push({ pathname: '/sejour/ajouter', params: { trip: trip.id, day: String(dayIndex) } })}
+            />
+            <RText variant="caption" muted style={{ textAlign: 'center' }}>
               Appui long sur une étape : la déplacer, la passer ou l’envoyer à un autre jour.
             </RText>
           </Animated.View>
-        </View>
-      </Animated.ScrollView>
+        </ScrollView>
+      </Animated.View>
 
       <Sheet visible={!!menu && !!menuPlace} onClose={close} title={menuPlace?.name} subtitle={menuPlace ? `${kindLabel[menuPlace.kind]} · ${menu?.time.replace(':', ' h ')}` : undefined}>
         {menu && menuPlace ? (
@@ -312,7 +342,7 @@ function EmptyDay() {
   const insets = useSafeAreaInsets();
   return (
     <View style={[styles.root, { backgroundColor: colors.background }]}>
-      <CityMap cityId="prague" markers={[]} style={StyleSheet.absoluteFill} />
+      <CityMap cityId="prague" markers={[]} style={StyleSheet.absoluteFill} interactive={false} />
       <View style={[styles.emptyWrap, { paddingTop: insets.top + space.xxl }]}>
         <Animated.View entering={FadeIn.duration(500)} style={{ gap: space.m }}>
           <RText variant="overline" color={colors.accent}>
@@ -341,14 +371,16 @@ function EmptyDay() {
 
 const styles = StyleSheet.create({
   root: { flex: 1 },
-  mapWrap: { position: 'absolute', top: 0, left: 0, right: 0 },
+  sheetWrap: { position: 'absolute', left: 0, right: 0, bottom: 0, borderTopLeftRadius: radius.sheet, borderTopRightRadius: radius.sheet, overflow: 'hidden' },
+  handleZone: { paddingTop: space.s, paddingBottom: space.s, alignItems: 'center', gap: 6 },
+  handleRow: { flexDirection: 'row', alignItems: 'center', gap: 6 },
+  sheetContent: { paddingHorizontal: space.l, paddingBottom: 140 },
   topBar: { position: 'absolute', left: space.m, right: space.m, zIndex: 10 },
   days: { padding: 6, gap: 6 },
   dayChip: { paddingHorizontal: 14, paddingVertical: 6, borderRadius: 16, minHeight: 44, justifyContent: 'center' },
   dayChipTop: { fontFamily: fonts.bold, fontSize: 11, lineHeight: 14 },
   dayChipBottom: { fontFamily: fonts.heavy, fontSize: 14, lineHeight: 18 },
-  sheet: { borderTopLeftRadius: radius.sheet, borderTopRightRadius: radius.sheet, paddingHorizontal: space.l, paddingTop: space.s, minHeight: 600 },
-  handle: { alignSelf: 'center', width: 40, height: 5, borderRadius: 3, marginBottom: space.m },
+  handle: { alignSelf: 'center', width: 40, height: 5, borderRadius: 3 },
   rowBetween: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: space.s },
   tiles: { flexDirection: 'row', gap: space.s },
   chips: { gap: space.s, paddingRight: space.l },

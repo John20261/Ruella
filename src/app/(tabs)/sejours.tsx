@@ -10,18 +10,21 @@ import { Pill } from '@/components/ui/pill';
 import { RText } from '@/components/ui/r-text';
 import { Screen } from '@/components/ui/screen';
 import { Sheet, SheetItem } from '@/components/ui/sheet';
+import { computeBudget } from '@/lib/budget';
 import { cities, getCity, getPlace } from '@/lib/catalog';
+import { formatEUR } from '@/lib/money';
 import { dayShort, range } from '@/lib/dates';
 import { actions, useApp } from '@/store/app-store';
 import type { Trip } from '@/store/types';
 import { useRuellaTheme } from '@/theme/theme-context';
-import { radius, space } from '@/theme/tokens';
+import { fonts, radius, space } from '@/theme/tokens';
 
 export default function SejoursScreen() {
   const { colors } = useRuellaTheme();
   const trips = useApp((s) => s.trips);
   const activeId = useApp((s) => s.activeTripId ?? s.trips[0]?.id);
   const [menu, setMenu] = useState<Trip | null>(null);
+  const travelers = useApp((s) => s.profile.travelers);
 
   return (
     <Screen>
@@ -98,6 +101,23 @@ export default function SejoursScreen() {
                     </RText>
                   </View>
                 ))}
+                <Pressable
+                  onPress={() => router.push({ pathname: '/budget/[id]', params: { id: t.id } })}
+                  accessibilityRole="button"
+                  accessibilityLabel={`Budget estimé : ${formatEUR(computeBudget(t, getCity(t.cityId), travelers, getPlace).total)}. Ouvrir`}
+                  style={({ pressed }) => [styles.budget, { backgroundColor: colors.tiles.mint.bg, opacity: pressed ? 0.85 : 1 }]}>
+                  <Icon name="sparkles" size={18} color={colors.tiles.mint.ink} />
+                  <View style={{ flex: 1 }}>
+                    <RText variant="caption" color={colors.tiles.mint.ink}>
+                      Budget estimé sur place
+                    </RText>
+                    <RText variant="heading">≈ {formatEUR(computeBudget(t, getCity(t.cityId), travelers, getPlace).onSite)}</RText>
+                  </View>
+                  <RText variant="caption" color={colors.tiles.mint.ink} style={{ fontFamily: fonts.bold }}>
+                    Détails
+                  </RText>
+                  <Icon name="right" size={16} color={colors.tiles.mint.ink} />
+                </Pressable>
               </View>
             </Pressable>
           </Animated.View>
@@ -133,5 +153,6 @@ const styles = StyleSheet.create({
   row: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: space.s },
   bar: { height: 8, borderRadius: 4, overflow: 'hidden' },
   barFill: { height: 8, borderRadius: 4 },
+  budget: { flexDirection: 'row', alignItems: 'center', gap: space.s, borderRadius: radius.tile, padding: space.m, marginTop: space.xs },
   dayLine: { flexDirection: 'row', alignItems: 'center', gap: space.s, minHeight: 28 },
 });
